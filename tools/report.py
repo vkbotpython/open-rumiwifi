@@ -3,6 +3,7 @@ import json, os, collections
 
 rows = [l.rstrip('\n').split('\t') for l in open('data/all_clean.tsv', encoding='utf-8')]
 counts = collections.Counter(r[1] for r in rows)
+DICT_SIZE = len(json.load(open('extension/lang/zh_ru.json', encoding='utf-8')))
 
 NAMES = {
     'web_home': 'Состояние роутера (`/web/home`)',
@@ -47,7 +48,7 @@ lines.append('  jQuery-селектор `option:contains(\'自动\')` и JS-ко
 lines.append('')
 lines.append('## Словарь')
 lines.append('')
-lines.append('- `extension/lang/zh_ru.json` — 1105 пар «китайская строка → русская».')
+lines.append(f'- `extension/lang/zh_ru.json` — {DICT_SIZE} пар «китайская строка → русская».')
 lines.append('- Словарь собран с нуля по живому интерфейсу; машинные переводы RUMIWIFI не используются.')
 lines.append('- Ключи отсортированы по убыванию длины, а скрипт ищет самое длинное совпадение,')
 lines.append('  поэтому короткие слова больше не «съедают» части длинных фраз.')

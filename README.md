@@ -30,7 +30,7 @@
 ## ✨ Возможности
 
 - Перевод **14 разделов** панели и страницы входа: 1193 строки, 0 китайских остатков.
-- Словарь на **1105** пар «китайский → русский», собран вручную по реальному UI.
+- Словарь на **1114** пар «китайский → русский», собран вручную по реальному UI.
 - Поиск по самому длинному совпадению: короткие слова не разрезают длинные фразы.
 - `MutationObserver`: переводятся динамически добавленные узлы, `placeholder`, `title`.
 - Даты `2025年10月25日` автоматически превращаются в `25.10.2025`.
@@ -42,7 +42,7 @@
 
 ### Chromium: Chrome, Edge, Yandex, Opera
 
-1. Скачайте `dist/open-rumiwifi-2.1.1-chromium.zip` из релиза или соберите его:
+1. Скачайте `dist/open-rumiwifi-2.1.3-chromium.zip` из релиза или соберите его:
    `python tools/build.py`.
 2. Распакуйте архив в любую папку.
 3. Откройте `chrome://extensions` (в Edge — `edge://extensions`) и включите
@@ -52,7 +52,7 @@
 
 ### Firefox 142+
 
-1. Скачайте `dist/open-rumiwifi-2.1.1-firefox.xpi` из релиза или соберите его:
+1. Скачайте `dist/open-rumiwifi-2.1.3-firefox.xpi` из релиза или соберите его:
    `python tools/build.py`.
 2. Откройте `about:debugging#/runtime/this-firefox`.
 3. Нажмите «Загрузить временное дополнение» и выберите `.xpi` (или `manifest.json`
@@ -78,7 +78,7 @@
 
 ## 🆚 Чем отличается от RUMIWIFI
 
-| | RUMIWIFI 1.11.8 | Open RUMIWIFI 2.1.1 |
+| | RUMIWIFI 1.11.8 | Open RUMIWIFI 2.1.3 |
 |---|---|---|
 | Браузеры | Chromium | Chromium и Firefox |
 | Словарь | 2021 год, машинный перевод | собран по прошивке 2.0.28 |
@@ -105,7 +105,7 @@
 extension/            готовое расширение (manifest v3)
   api.js              chrome.* / browser.*
   content.js          переводчик DOM
-  lang/zh_ru.json     словарь на 1105 строк
+  lang/zh_ru.json     словарь на 1114 строк
   popup.html/css/js   вкл/выкл, язык, переход в панель
   img/                иконки (генерируются tools/make_icons.py)
 data/                 исходники перевода по разделам + TSV

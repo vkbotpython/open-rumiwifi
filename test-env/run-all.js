@@ -11,6 +11,9 @@ const PAGES = path.join(ROOT, 'router', 'pages');
 const CJK = /[\u3400-\u9fff\uf900-\ufaff]/g;
 const PUNCT = /[\u3000-\u303f]/g;
 const MODES = ['chromium', 'firefox'];
+const DICT_SIZE = Object.keys(
+  JSON.parse(fs.readFileSync(path.join(EXT, 'lang', 'zh_ru.json'), 'utf8'))
+).length;
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
@@ -109,12 +112,26 @@ async function checkDynamic(mode, status) {
   box.innerHTML =
     '<p>正在测速，请等待。</p><button title="添加Mesh节点">确定</button><span>2025年10月25日 14:05</span>';
   window.document.body.appendChild(box);
+
+  // Строки, которые панель собирает в JS: раньше они переводились частично
+  // («Порт “1” как WAN», «Текущая версия2.0.28», «还没有设备Добавить进来»).
+  const dynamic = window.document.createElement('div');
+  dynamic.innerHTML =
+    '<p class="form-message">智能识别网口“1”作为WAN口</p>' +
+    '<p id="version">当前版本<em>2.0.28</em>，你的版本是最新的，无需升级。</p>' +
+    '<table><tbody><tr><td>还没有设备添加进来</td></tr></tbody></table>';
+  window.document.body.appendChild(dynamic);
   await sleep(250);
 
+  const text = (selector) => dynamic.querySelector(selector).textContent;
   const ok =
     box.textContent.startsWith('Идёт тест скорости, подождите.ОК') &&
     box.querySelector('button').getAttribute('title') === 'Добавить Mesh-узел' &&
-    box.querySelector('span').textContent === '25.10.2025 14:05';
+    box.querySelector('span').textContent === '25.10.2025 14:05' &&
+    text('.form-message') === 'Порт «1» автоматически определён как WAN' &&
+    text('#version') ===
+      'Текущая версия 2.0.28, У вас последняя версия, обновление не требуется.' &&
+    text('td') === 'Устройства ещё не добавлены';
   window.close();
   return ok;
 }
@@ -163,7 +180,7 @@ async function checkPopup(mode, status) {
 
   const text = window.document.getElementById('status').textContent;
   const dict = window.document.getElementById('dict').textContent;
-  const ok = text.includes('Перевод активен') && dict === '1105';
+  const ok = text.includes('Перевод активен') && dict === String(DICT_SIZE);
   window.close();
   return ok;
 }
@@ -172,7 +189,7 @@ async function checkPopup(mode, status) {
   const files = fs.readdirSync(PAGES).filter((name) => name.endsWith('.html')).sort();
   const status = {
     enabled: true,
-    dictSize: 1105,
+    dictSize: DICT_SIZE,
     translated: 42,
     host: '192.168.31.1',
     supported: true

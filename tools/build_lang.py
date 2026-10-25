@@ -49,9 +49,10 @@ for key in list(translations):
         translations.pop(key)
 
 items = sorted(translations.items(), key=lambda kv: (-len(kv[0]), kv[0]))
-os.makedirs('build/lang', exist_ok=True)
-with open('build/lang/zh_ru.json', 'w', encoding='utf-8') as f:
-    json.dump(dict(items), f, ensure_ascii=False, indent=1)
+for target in ('build/lang/zh_ru.json', 'extension/lang/zh_ru.json'):
+    os.makedirs(os.path.dirname(target), exist_ok=True)
+    with open(target, 'w', encoding='utf-8') as f:
+        json.dump(dict(items), f, ensure_ascii=False, indent=1)
 print('dictionary:', len(translations), 'strings')
 
 CJK = re.compile(r'[\u3400-\u9fff\uf900-\ufaff]+')

@@ -34,3 +34,47 @@
 .rumi-i18n #userbar .ico-notice {
   margin-left: 4px !important;
 }
+
+/*
+ * Кнопки .btn-m в панели имеют фиксированную ширину 158 px. Русские
+ * подписи длиннее китайских, и текст вылезает за край кнопки — например,
+ * «Добавить из списка онлайн» на странице чёрного списка. Оставляем
+ * прежний минимальный размер, но разрешаем кнопке расшириться под текст.
+ */
+.rumi-i18n .btn-m span {
+  width: max-content !important;
+  min-width: 130px;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+}
+
+/*
+ * Выпадающий список режима WAN: «Автоопределение WAN/LAN (рекомендуется)»
+ * не помещается в фиксированные 308 px и упирается в правую рамку.
+ */
+.rumi-i18n #wanCheckForm .form-item-select .textContent {
+  width: max-content !important;
+  min-width: 308px;
+}
+
+/*
+ * Подпись «Режим» в форме WAN абсолютно спозиционирована внутри поля
+ * (right: 40px). При длинной русской подписи она наезжает на текст
+ * выпадающего списка — выносим её за правый край поля.
+ */
+.rumi-i18n #wanCheckForm .form-item-select > .k {
+  right: auto !important;
+  left: calc(100% + 10px) !important;
+  width: auto !important;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/*
+ * На странице системы заголовок «Сброс к заводским настройкам» обрезался
+ * по фиксированной ширине 160 px, рассчитанной на китайскую подпись.
+ */
+.rumi-i18n .mod-uploadlog .hd h3 {
+  width: auto !important;
+  min-width: 160px;
+}
