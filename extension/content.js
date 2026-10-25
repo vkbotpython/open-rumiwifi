@@ -251,6 +251,8 @@
       return;
     }
 
+    // Класс включает правки шапки под длинные русские подписи (panel.css).
+    document.documentElement.classList.add('rumi-i18n');
     translateTree(document.body);
     startObserver();
     markActivity();

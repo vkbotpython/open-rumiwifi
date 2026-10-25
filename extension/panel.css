@@ -1,0 +1,36 @@
+/* SPDX-License-Identifier: GPL-3.0-only */
+/*
+ * Русские подписи в шапке панели длиннее китайских, а #nav и #userbar
+ * позиционированы абсолютно — без правок они наезжают друг на друга.
+ * Класс rumi-i18n добавляет content.js только после включения перевода.
+ */
+
+.rumi-i18n #nav li {
+  margin-right: 20px !important;
+}
+
+.rumi-i18n #nav li a {
+  font-size: 16px !important;
+  white-space: nowrap;
+}
+
+.rumi-i18n #userbar {
+  font-size: 13px !important;
+}
+
+.rumi-i18n #addMesh {
+  margin-left: 8px !important;
+  font-size: 13px !important;
+  white-space: nowrap;
+}
+
+.rumi-i18n #userbar .name {
+  margin-left: 8px !important;
+  margin-right: 8px !important;
+  padding-right: 16px !important;
+  max-width: 10em !important;
+}
+
+.rumi-i18n #userbar .ico-notice {
+  margin-left: 4px !important;
+}

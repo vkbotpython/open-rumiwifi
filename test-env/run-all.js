@@ -90,7 +90,12 @@ async function checkPage(file, mode, status) {
   await sleep(400);
 
   const text = visibleText(window);
-  const result = { file, cjk: count(text, CJK), punct: count(text, PUNCT) };
+  const result = {
+    file,
+    cjk: count(text, CJK),
+    punct: count(text, PUNCT),
+    layout: window.document.documentElement.classList.contains('rumi-i18n')
+  };
   window.close();
   return result;
 }
@@ -178,10 +183,10 @@ async function checkPopup(mode, status) {
     console.log(`\nРежим ${mode === 'firefox' ? 'Firefox (browser.*)' : 'Chromium (chrome.*)'}:`);
     for (const file of files) {
       const result = await checkPage(file, mode, status);
-      const ok = result.cjk === 0 && result.punct === 0;
+      const ok = result.cjk === 0 && result.punct === 0 && result.layout;
       if (!ok) failed++;
       console.log(
-        `  ${ok ? 'OK  ' : 'FAIL'} ${file.padEnd(38)} CJK=${result.cjk} punct=${result.punct}`
+        `  ${ok ? 'OK  ' : 'FAIL'} ${file.padEnd(38)} CJK=${result.cjk} punct=${result.punct} layout=${result.layout}`
       );
     }
     const dynamic = await checkDynamic(mode, status);
