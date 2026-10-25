@@ -119,6 +119,7 @@ async function checkDynamic(mode, status) {
   dynamic.innerHTML =
     '<p class="form-message">智能识别网口“1”作为WAN口</p>' +
     '<p id="version">当前版本<em>2.0.28</em>，你的版本是最新的，无需升级。</p>' +
+    '<a id="add-rule"><span>添加规则</span></a>' +
     '<table><tbody><tr><td>还没有设备添加进来</td></tr></tbody></table>';
   window.document.body.appendChild(dynamic);
   await sleep(250);
@@ -131,6 +132,7 @@ async function checkDynamic(mode, status) {
     text('.form-message') === 'Порт «1» автоматически определён как WAN' &&
     text('#version') ===
       'Текущая версия 2.0.28, У вас последняя версия, обновление не требуется.' &&
+    text('#add-rule') === 'Добавить правило' &&
     text('td') === 'Устройства ещё не добавлены';
   window.close();
   return ok;
