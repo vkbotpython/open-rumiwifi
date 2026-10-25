@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Open RUMIWIFI — русификатор Xiaomi роутера",
   "short_name": "Open RUMIWIFI",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Перевод веб-панели Xiaomi и Redmi роутеров на русский язык. Работает офлайн и не меняет настройки роутера.",
   "icons": {
     "16": "img/icon_16.png",
@@ -20,6 +20,7 @@
         "<all_urls>"
       ],
       "js": [
+        "api.js",
         "content.js"
       ],
       "run_at": "document_idle",

@@ -10,6 +10,7 @@ npm-debug.log*
 
 # Сгенерированные файлы
 build/
+dist/
 
 # Оригинальное расширение RUMIWIFI — скачивается локально, не публикуется
 original/rumiwifi.crx

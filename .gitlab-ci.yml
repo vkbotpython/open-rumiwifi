@@ -2,7 +2,7 @@ stages:
   - test
 
 default:
-  image: node:20-bookworm-slim
+  image: node:24-bookworm-slim
   cache:
     key:
       files:
@@ -21,3 +21,12 @@ test:
     - cd test-env
     - npm ci --no-audit --no-fund
     - node run-all.js
+    - cd ..
+    - python3 tools/build.py
+  artifacts:
+    name: open-rumiwifi-packages
+    paths:
+      - dist/*.zip
+      - dist/*.xpi
+      - dist/SHA256SUMS.txt
+    expire_in: 1 week

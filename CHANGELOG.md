@@ -3,6 +3,28 @@
 Все заметные изменения проекта. Формат — [Keep a Changelog](https://keepachangelog.com/ru/1.1.0/),
 версии — [SemVer](https://semver.org/lang/ru/).
 
+## [2.1.0] — 2026-10-25
+
+Поддержка Firefox и сборка готовых пакетов.
+
+### Добавлено
+
+- Сборка `tools/build.py`: `dist/open-rumiwifi-<версия>-chromium.zip`,
+  `...-firefox.zip`, `...-firefox.xpi` и `SHA256SUMS.txt`.
+- Firefox-манифест с `browser_specific_settings.gecko` (id, минимальная версия 142,
+  `data_collection_permissions: none`).
+- `extension/api.js` — единая обёртка над `chrome.*` и `browser.*`.
+- Тесты прогоняются в двух режимах: Chromium (`chrome.*`) и Firefox (`browser.*`),
+  включая popup.
+- CI собирает пакеты и публикует их как артефакты (GitHub Actions и GitLab CI).
+
+### Изменено
+
+- GitHub Actions обновлены до версий на Node.js 24:
+  `checkout@v5`, `setup-python@v6`, `setup-node@v5`, `upload-artifact@v6`.
+- CI использует Node.js 24; GitLab-образ `node:24-bookworm-slim`.
+- README: отдельные инструкции для Chromium и Firefox.
+
 ## [2.0.0] — 2026-10-25
 
 Первая публичная версия Open RUMIWIFI.

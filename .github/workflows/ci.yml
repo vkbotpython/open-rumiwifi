@@ -12,15 +12,15 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-python@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '24'
 
       - name: Сборка словаря
         run: python tools/build_lang.py
@@ -32,6 +32,19 @@ jobs:
         working-directory: test-env
         run: npm ci
 
-      - name: Тесты на снимках панели
+      - name: Тесты (Chromium и Firefox)
         working-directory: test-env
         run: node run-all.js
+
+      - name: Сборка пакетов
+        run: python tools/build.py
+
+      - name: Артефакты
+        uses: actions/upload-artifact@v6
+        with:
+          name: open-rumiwifi-packages
+          path: |
+            dist/*.zip
+            dist/*.xpi
+            dist/SHA256SUMS.txt
+          if-no-files-found: error

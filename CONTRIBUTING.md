@@ -9,8 +9,8 @@
 ## Что понадобится
 
 - Python 3.10+ (стандартная библиотека; для иконок — Pillow);
-- Node.js 20+ (только для тестов, `jsdom`);
-- браузер на Chromium (Chrome, Edge, Yandex) для ручной проверки.
+- Node.js 22+ (только для тестов, `jsdom`; CI использует 24);
+- браузер на Chromium или Firefox для ручной проверки.
 
 ## Быстрый старт
 
@@ -19,6 +19,7 @@ git clone <repo-url>
 cd open-rumiwifi
 
 python tools/build_lang.py      # собрать словарь и проверить покрытие
+python tools/build.py           # собрать пакеты для Chromium и Firefox
 cd test-env
 npm ci
 node run-all.js                 # прогнать тесты на снимках панели
@@ -97,7 +98,8 @@ node run-all.js                 # прогнать тесты на снимка�
 
 - [ ] `python tools/build_lang.py` завершается без ошибок;
 - [ ] `python tools/verify.py` проходит;
-- [ ] `cd test-env && node run-all.js` — все страницы зелёные;
+- [ ] `python tools/build.py` собирает оба пакета;
+- [ ] `cd test-env && node run-all.js` — все страницы зелёные в Chromium и Firefox;
 - [ ] в снимках нет личных данных и живых токенов;
 - [ ] обновлён `docs/coverage.md` (если менялся набор строк);
 - [ ] описание PR объясняет, что и почему изменено.

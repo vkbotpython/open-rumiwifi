@@ -74,21 +74,28 @@ xiaomi  redmi  miwifi  router  localization  russian  chrome-extension  manifest
 ## 5. Релиз
 
 ```bash
-git tag -a v2.0.0 -m "Open RUMIWIFI 2.0.0"
-git push origin v2.0.0
+python tools/build.py
+git tag -a v2.1.0 -m "Open RUMIWIFI 2.1.0"
+git push origin v2.1.0
 ```
 
-На GitHub приложите к релизу ZIP папки `extension/` (соберите вручную:
-`Compress-Archive extension extension.zip`), чтобы расширение можно было
-скачать без клонирования.
+`tools/build.py` создаёт в `dist/`:
 
-На GitLab то же самое: **Deploy → Releases → New release**, тег `v2.0.0`,
-описание из `CHANGELOG.md`.
+- `open-rumiwifi-2.1.0-chromium.zip` — для Chrome, Edge, Yandex, Opera;
+- `open-rumiwifi-2.1.0-firefox.xpi` — для Firefox;
+- `open-rumiwifi-2.1.0-firefox.zip` — тот же пакет для проверки;
+- `SHA256SUMS.txt` — контрольные суммы.
+
+Приложите эти файлы к релизу на GitHub/GitLab, чтобы расширение можно было
+скачать без клонирования и сборки.
+
+На GitLab: **Deploy → Releases → New release**, тег `v2.1.0`,
+описание из `CHANGELOG.md`, файлы из `dist/`.
 
 ## 6. После публикации
 
 - Проверьте, что вкладка **Actions** (GitHub) или **CI/CD → Pipelines** (GitLab)
-  показывает зелёный статус.
+  показывает зелёный статус и артефакты `open-rumiwifi-packages`.
 - Добавьте бейдж CI в `README.md` (замените `<user>` и `<repo>`):
 
   ```markdown
@@ -102,9 +109,10 @@ git push origin v2.0.0
 ## 7. Чек-лист
 
 - [ ] `python tools/verify.py` проходит;
-- [ ] `node run-all.js` зелёный;
-- [ ] в репозитории нет `original/extracted/`, `*.crx`, `node_modules`;
+- [ ] `python tools/build.py` собирает chromium.zip и firefox.xpi;
+- [ ] `cd test-env && node run-all.js` зелёный (Chromium и Firefox);
+- [ ] в репозитории нет `original/extracted/`, `*.crx`, `node_modules`, `dist/`;
 - [ ] лицензия GPL-3.0 видна на странице репозитория;
 - [ ] CI зелёный;
-- [ ] создан релиз `v2.0.0`;
+- [ ] создан релиз `v2.1.0` с пакетами из `dist/`;
 - [ ] в описании репозитория есть фраза «не связан с Xiaomi».

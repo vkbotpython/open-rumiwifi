@@ -10,6 +10,10 @@
 (() => {
   'use strict';
 
+  const api =
+    (globalThis.RumiApi && globalThis.RumiApi.api) ||
+    (typeof browser !== 'undefined' ? browser : chrome);
+
   const CJK = /[\u3400-\u9fff\uf900-\ufaff]/;
   const SKIP_TAGS = new Set(['SCRIPT', 'STYLE', 'NOSCRIPT', 'TEXTAREA', 'CODE', 'PRE']);
   const ATTRS = ['placeholder', 'title', 'alt'];
@@ -189,10 +193,9 @@
 
   function markActivity() {
     try {
-      chrome.runtime.sendMessage({ type: 'rumi:activity', count: translatedNodes }, () => {
-        // popup может быть закрыт — ошибку доставки игнорируем
-        void chrome.runtime.lastError;
-      });
+      const result = api.runtime.sendMessage({ type: 'rumi:activity', count: translatedNodes });
+      // popup может быть закрыт — отклонённый промис игнорируем
+      if (result && typeof result.catch === 'function') result.catch(() => {});
     } catch (_) {
       /* контекст расширения недоступен */
     }
@@ -211,7 +214,7 @@
   // ---------- запуск ----------
 
   async function loadDictionary() {
-    const url = chrome.runtime.getURL('lang/zh_ru.json');
+    const url = api.runtime.getURL('lang/zh_ru.json');
     const response = await fetch(url);
     if (!response.ok) throw new Error(`dictionary ${response.status}`);
     const data = await response.json();
@@ -221,10 +224,10 @@
 
   async function boot() {
     if (!isRouterHost()) return;
-    const settings = await chrome.storage.local.get({ rumiEnabled: true, rumiLang: 'ru' });
+    const settings = await api.storage.local.get({ rumiEnabled: true, rumiLang: 'ru' });
     enabled = settings.rumiEnabled !== false && settings.rumiLang !== 'no';
 
-    chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
+    api.runtime.onMessage.addListener((message, _sender, sendResponse) => {
       if (message && message.type === 'rumi:status') {
         sendResponse(status());
         return true;
