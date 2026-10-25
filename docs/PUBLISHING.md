@@ -26,7 +26,7 @@ git status --short
 ```bash
 git init -b main
 git add .
-git commit -m "feat: initial release 2.0.0"
+git commit -m "feat: initial release 2.1.0"
 gh repo create open-rumiwifi --public --source=. --remote=origin --push
 ```
 
@@ -38,7 +38,7 @@ gh repo create open-rumiwifi --public --source=. --remote=origin --push
 ```bash
 git init -b main
 git add .
-git commit -m "feat: initial release 2.0.0"
+git commit -m "feat: initial release 2.1.0"
 git remote add origin https://github.com/<user>/open-rumiwifi.git
 git push -u origin main
 ```
@@ -50,7 +50,7 @@ git push -u origin main
 ```bash
 git init -b main
 git add .
-git commit -m "feat: initial release 2.0.0"
+git commit -m "feat: initial release 2.1.0"
 git remote add origin https://gitlab.com/<user>/open-rumiwifi.git
 git push -u origin main
 ```
