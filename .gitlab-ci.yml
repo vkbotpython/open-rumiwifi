@@ -1,0 +1,23 @@
+stages:
+  - test
+
+default:
+  image: node:20-bookworm-slim
+  cache:
+    key:
+      files:
+        - test-env/package-lock.json
+    paths:
+      - test-env/node_modules/
+
+test:
+  stage: test
+  before_script:
+    - apt-get update
+    - apt-get install -y --no-install-recommends python3
+  script:
+    - python3 tools/build_lang.py
+    - python3 tools/verify.py
+    - cd test-env
+    - npm ci --no-audit --no-fund
+    - node run-all.js

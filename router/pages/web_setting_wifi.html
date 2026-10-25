@@ -1,0 +1,3945 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie6 oldie" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="ie7 oldie" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="ie8 oldie" lang="zh"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="zh"> <!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="renderer" content="webkit">
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+<!--[if lt IE 7]>
+<meta http-equiv="refresh" content="0; url=http://miwifi.com/cgi-bin/luci/web/ieblock" />
+<![endif]-->
+<!--[if gte IE 9]>
+<style>
+body {
+   filter: none;
+}
+</style>
+<![endif]-->
+<meta name="viewport" content="width=1200">
+<link href="/xiaoqiang/web/css/bc.css?v=0.0.3" rel="stylesheet">
+<link href="/xiaoqiang/web/css/wifi.css?v=0.0.3" rel="stylesheet">
+</head>
+<body>
+<div id="doc">
+    
+<noscript>
+<div class="noscript">你的浏览器禁止了Javascript功能，会造成无法使用系统进行路由器管理，请开启。</div>
+</noscript>
+<script>
+var GLOBALHEADER = true;
+</script>
+<div id="hd">
+    <div class="inner">
+        <div class="mod-head clearfix">
+            <h1 id="logo"><a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/home"><img src="/xiaoqiang/web/img/logo.png?v=" alt="小米路由器"></a></h1>
+            <div id="nav">
+                <!-- netMode header=0 -->
+                
+                <ul>
+                    <li  style="margin-right: 70px"><a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/home">路由状态</a></li>
+                    
+                    <li class="active" style="margin-right: 70px"><a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/wifi">常用设置</a></li>
+
+                    <li  style="margin-right: 70px"><a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/prosetting/qos">高级设置</a></li>
+
+                </ul>
+                
+            </div>
+            <div id="userbar">
+                
+                
+
+
+                
+                   <span id="addMesh" style="cursor:pointer;margin-top:6px;margin-left:15px">添加Mesh子路由</span>
+                
+
+                <span id="sysmenu" class="name s-dropdown" style="margin-left:15px;margin-right:15px;max-width:8em;">No name (家)</span>
+                <span id="sysnotice" class="ico-notice"></span>
+            </div>
+        </div>
+
+        
+        
+        <div class="mod-set-nav">
+            <ul class="clearfix li-5">
+                <li class="active">
+                    <a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/wifi">
+                        <i class="ico ico-1"></i>
+                        <span>Wi-Fi设置</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/wan">
+                        <i class="ico ico-2"></i>
+                        <span>上网设置</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/safe">
+                        <i class="ico ico-3"></i>
+                        <span>安全中心</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/lannetset">
+                        <i class="ico ico-4"></i>
+                        <span>局域网设置</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/upgrade">
+                        <i class="ico ico-5"></i>
+                        <span>系统设置</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+
+        
+
+        
+    </div>
+</div>
+
+<script type="tmpl/html" id="tmplMeshMode">
+<div class="netmode-switch-dialog-cont">
+    <div class="switch-step step-select" id="mesh-select" style="display:block;overflow:hidden">
+        <div class="mesh_title">添加Mesh子路由</div>
+        <div class="mesh_content">
+            <p style="font-weight: bold;">您可以选择以下两种方式来新增Mesh子路由</p>
+            <p style="font-weight: bold;margin-top:6px">无线组网：</p>
+            <p style="margin-top:6px;">1、将未配置过的路由器作为子路由，放置在需要Wi-Fi信号覆盖的房间 （如已配置请长按Reset按键5秒以上进行重置）  </p>
+            <!-- <p style="color:#979797;;">*请确保此路由器处于未配置状态，如已配置请长按Reset按键5秒以上进行重置</p> -->
+            2、接通子路由电源，等待System指示灯变成蓝色或白色常亮（颜色取决于具体型号）<br/>
+            3、点击开始搜索<br/>
+            <p style="margin-top:6px;font-weight: bold;">有线组网：</p>
+            1、将未配置过的子路由WAN口与主路由LAN口通过网线连接<br/>
+            2、将子路由上电，启动完成后将自动进行组网，组网时子路由Internet指示灯快闪<br/>
+        </div>
+        <button class="mesh_buttons" id="mesh_search">开始搜索</button>
+    </div>
+
+    <div id="mesh-overMaxLength" class="switch-step">
+         <div class="mesh_title">温馨提示</div>
+         <div class="mesh_content">
+              <p class="content">
+             为保证Mesh网络良好的使用体验，当前至多可支持10台Mesh路由器组网，更多Mesh路由器建议组成新的Mesh网络。
+              </p>
+          </div>
+           <button class="mesh_buttons" id="mesh-close-button">知道了</button>
+    </div>
+
+     <div id="mesh-Off-5G" class="switch-step">
+         <div class="mesh_title">添加Mesh节点</div>
+         <div class="mesh_content">
+              <p class="content">
+             搜索并添加Mesh节点时，请先到Wi-Fi设置页面，开启5G Wi-Fi。
+              </p>
+          </div>
+           <button class="mesh_buttons" id="setting-5G-button">去开启</button>
+
+    </div>
+
+    <div class="switch-step step-search-loading" id="mesh-search-loading">
+        <div class="mesh_title">搜索要添加的Mesh子路由</div>
+        <img id="loading_mesh" src="/xiaoqiang/web/img/mesh_loading.png"/>
+        <div class="mesh_content" style="text-align:center">搜索Mesh子路由...</div>
+        <button class="mesh_buttons" id="mesh_search_cancle">取消</button>
+    </div>
+
+
+    <div class="switch-step step-search-lists"  id="mesh-search-lists">
+        <div class="mesh_title">选择要添加的Mesh子路由</div>
+        <div class="list_box"></div>
+        <button class="mesh_Dbuttons mesh_add_Dbuttons " id="show_locate_select">添加</button>
+        <button class="mesh_Dbuttons mesh_research_Dbuttons" id="mesh-research-btn">重试</button>
+    </div>
+
+    <div id="mesh_list_length0"  class="switch-step">
+      <div class="mesh_title">未找到可用的Mesh子路由</div>
+      <img class="fail_me" src="/xiaoqiang/web/img/mesh_fail.png"/>
+      <div class="mesh_content">
+          <p>可以尝试以下方法：</p>
+          <p>1、确认主路由与待添加的子路由均支持小米Mesh组网功能：<a href="http://www1.miwifi.com/mesh_device/index.html" target="_blank">支持小米Mesh组网的路由产品</a></p>
+          <p>2、确保待添加的子路由处于未配置状态（长按Reset按钮5秒后即可恢复成未配置状态）;</p>
+          <p>3、将待添加的子路由靠近主路由并重试（注意保持1米以外的距离以免干扰）；</p>
+          <p>4、将待添加的子路由升至最新固件，并重置后重试</p>
+      </div>
+      <button class="mesh_buttons" id="mesh_re_search">重新搜索</button>
+    </div>
+
+
+    <div class="switch-step step-add-loading"  id="mesh-add-loading">
+        <div class="mesh_title">正在扩展Mesh网络</div>
+        <img id="loading_mesh" src="/xiaoqiang/web/img/mesh_loading.png"/>
+        <p class="head">正在连接Mesh子路由...</p>
+    </div>
+
+    <div class="switch-step step-add-success"  id="mesh-add-success">
+        <div class="mesh_title">Mesh网络扩展成功</div>
+        <img class="success_me" src="/xiaoqiang/web/img/mesh_success.png"/>
+        <button class="mesh_buttons" id="mesh_add_success">完成</button>
+    </div>
+
+    <div class="switch-step step-add-failer"  id="mesh-add-failer">
+    <div class="mesh_title">Mesh网络扩展失败</div>
+        <img class="fail_me" src="/xiaoqiang/web/img/mesh_fail.png"/>
+        <div class="mesh_content">
+            <p>可以尝试以下方法：</p>
+            <p>1、将待添加的子路由靠近主路由并重试（注意保持1米以外的距离以免干扰）；</p>
+            <p>2、将主路由升至最新固件版本；</p>
+            <p>3、将待添加的子路由升至最新固件，并重置后重试（长按Reset按钮5秒后即可重置）</p>
+          
+        </div>
+        <button class="mesh_buttons" id="mesh_re_try">重试</button>
+    </div>
+    <div id="mesh-local" class="switch-step" style="display:none;">
+        <div class="mesh_title">选择放置的位置</div>
+        <div class="mesh_content">
+            <div class="form-item-select" style="margin-left:105px">
+                <select id="locateSelect" name="locateSelect" class="beautify">
+                    <option selected value="客厅">客厅</option>
+                    <option value="主卧">主卧</option>
+                    <option value="次卧">次卧</option>
+                    <option value="书房">书房</option>
+                    <option value="厨房">厨房</option>
+                    <option value="办公室">办公室</option>
+                    <option value="地下室">地下室</option>
+                    <option value="卫生间">卫生间</option>
+                    <option value="阁楼">阁楼</option>
+                    <option value="阳台">阳台</option>
+                    <option value="餐厅">餐厅</option>
+                </select>
+            </div>
+        </div>
+        <div style="clear:both">
+            <button class="mesh_buttons" id="mesh_search_add">确认</button>
+        </div>
+    </div>
+</div>
+</script>
+<script type="text/javascript">
+    try{
+        var children = document.getElementById('prosetting').children
+        var domArr = Array.prototype.slice.call(children)
+        var prosettingLen = children.length
+        var prosettingLiWidth = parseFloat((100 / prosettingLen).toFixed( 3 )) + '%'
+        for( var i = 0; i < domArr.length; i++){
+        domArr[i].style = 'width:' + prosettingLiWidth
+        }
+    }catch(e){}
+
+</script>
+
+    <div id="bd">
+
+        <div class="mod-set mod-wifi">
+            <div class="hd">
+                <h3 class="wifiTit">Wi-Fi多频合一</h3>
+                <div class="switch">
+                    <a href="#" id="bsdswitch" class="btn-switch btn-switch-off" data-on="0"></a>
+                </div>
+            </div>
+            <div class="bd">
+                
+                <p>开启后，2.4GHz和5GHz将合并显示为同一个名称，路由器将优先为终端选择最佳Wi-Fi网络。合并名称后部分终端可能离线，需重新连接。</p>
+                
+            </div>
+        </div>
+
+
+
+        
+
+<!-- fixed password autocomplete bug -->
+<input type="text" style="display:none">
+<input type="password" style="display:none">
+<!-- end -->
+
+        <div class="mod-set mod-wifi mod-wifi24">
+            <div class="hd">
+                <h3>Wi-Fi设置</h3>
+            </div>
+            <div class="bd">
+                <form class="form form-horizontal" id="wifiset24" name="wifiset24"  action="/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/set_wifi" autocomplete="off">
+                </form>
+            </div>
+        </div>
+        
+        <div class="mod-set mod-wifi mod-wifi50">
+            <div class="bd">
+                <form class="form form-horizontal" id="wifiset50" name="wifiset50" action="/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/set_wifi" autocomplete="off">
+                </form>
+            </div>
+        </div>
+        
+        
+        <div class="mod-set mod-wifi mod-wifi5g-2">
+            <div class="bd">
+                <form class="form form-horizontal" id="wifiset5g2" name="wifiset5g2" action="/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/set_wifi" autocomplete="off">
+                </form>
+            </div>
+        </div>
+        
+
+<!-- hidden guest wifi -->
+        <!--  -->
+        <!--         <div class="mod-set mod-wifi">
+            <div class="hd">
+                <h3>访客Wi-Fi</h3>
+            </div>
+            <div class="bd">
+                <form class="form form-horizontal" id="wifisetguest" name="wifisetguest" action="/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/set_wifi" autocomplete="off">
+                </form>
+            </div>
+        </div> -->
+        <!--  -->
+<!-- end -->
+    
+
+         <div class="mod-set mod-wifi">
+            <div class="hd">
+                <h3>Wi-Fi 5 兼容模式</h3>
+                <div class="switch">
+                    <a href="#WIFI6switch" id="WIFI6switch" class="btn-switch btn-switch-on" data-on="1"></a>
+                </div>
+            </div>
+            <div class="bd">
+                <p>某些老设备对Wi-Fi6协议支持不好，可能扫描不到信号或者连接不上等。开启此开关后，将会切换到Wi-Fi5模式，解决兼容问题。但同时会关闭Wi-Fi6的相关功能，如OFDMA、TWT、BSS Coloring等。
+                </p>
+            </div>
+        </div>
+
+        
+        <div class="mod-set mod-wifi mod-twt">
+            <div class="hd">
+                <div class="help">
+                    <span class="ico"></span>
+                    <span class="arrow-wrap" id="helpArrow">
+                        <span class="arrow1"></span>
+                        <span class="arrow2"></span>
+                    </span>
+                </div>
+                <h3>TWT节能模式</h3>
+                <div class="switch">
+                    <a href="#" id="twtswitch" class="btn-switch btn-switch-off" data-on="0"></a>
+                </div>
+            </div>
+            <div class="bd">
+                <div class="section section-help" id="helpSection">
+                    <div class="help-cont">
+                        <span class="help-close"></span>
+                        <div class="what">
+                            <h3>TWT节能模式兼容性问题解决办法</h3>
+                        </div>
+                        <div class="qa">
+                            <p>如果出现老旧终端在此路由开启TWT节能模式后出现兼容性问题，建议尝试以下方法：</p>
+                            <p>1. 到相应终端制造商官网下载更新驱动；</p>
+                            <p>2. 若最新驱动仍无法解决兼容性问题，建议先关闭该功能。</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <p>开启TWT节能模式后，可通过TWT节能技术降低接入此路由器的Wi-Fi6终端设备功耗，部分老旧终端可能会有兼容性问题。</p>
+                    <div class="tips" style="display: none;">
+                        <p>注：检测到已开启Wi-Fi5兼容模式，无法打开TWT开关。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        
+
+        
+        <div class="mod-set mod-wifi">
+            <div class="hd">
+                <h3>畅快连</h3>
+                <div class="switch">
+                    <a href="#cklswitch" id="cklswitch" class="btn-switch btn-switch-on" data-on="1"></a>
+                </div>
+            </div>
+            <div class="bd">
+                <p>开启此功能，路由器可自动发现支持畅快连的未初始化Wi-Fi设备，通过米家APP快速配网；修改路由器密码也将自动同步给支持畅快连的设备。</p>
+            </div>
+        </div>
+        
+
+    </div>
+    
+<div id="ft">
+    <p class="rom-ver">系统版本: 2.0.28 稳定版  MAC地址: AA:BB:CC:DD:EE:FF</p>
+    <p>&copy; 2025 小米路由器<span>|</span><a href="http://www1.miwifi.com" target="_blank">官方网站</a><span>|</span><a href="http://weibo.com/xiaomiluyouqi" target="_blank">官方微博</a><span>|</span><a href="/xiaoqiang/web/img/wx_code.png" target="_blank" id="wechatcode">官方微信</a><span>|</span><a href="https://www.xiaomi.cn/board/557962" target="_blank">用户社区</a><span>|</span><a target="_blank" href="http://www1.miwifi.com/miwifi_faq.html">常见问题</a><span>|</span>服务热线  400-100-5678<p>
+</div>
+
+
+</div>
+
+
+<!--[if lt IE 7]>
+<script>
+    try {
+        document.execCommand("BackgroundImageCache", false, true);
+    } catch (e) {
+    }
+</script>
+<![endif]-->
+<div class="mask-menu" id="maskMenu"
+     style="position:fixed;left:0;top:0; width:100%; height:100%; z-index:2; display:none;"></div>
+<div id="dropmenu" class="dropmenu" style="z-index:3; display:none;">
+    <ul>
+        <li><a href="#" id="toRename">修改路由器名称</a></li>
+        
+            
+            <li><a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/upgrade">系统升级</a></li>
+            
+        
+        
+        <li><a href="#" id="toDownloadClient">下载米家APP</a></li>
+        
+        <li><a href="#" id="toReboot">重启</a></li>
+        
+        <li class="last"><a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/logout">注销</a></li>
+    </ul>
+</div>
+<div id="noticebar" class="noticebar" style="z-index:3; display:none;">
+    <i class="ico-arrow"></i>
+    <div class="content"></div>
+</div>
+<script>
+var i18n = {};
+i18n.dialog = {
+	ok: '确认',
+	cancel: '取消',
+	loading: '加载中...',
+	dlgtitle: '消息框'
+};
+i18n.valid = {
+    n_integer: '请输入一个{$0}位以内正整数。',
+    n_format: '数字输入格式为&#34;{$0}&#34;。',
+    n_upper: '输入值太大，最大允许{$0}。', //注意：{$0}表示允许值，{$1}表示实际值
+    n_lower: '输入值太小，最小允许{$0}。',
+      n_negative: '请输入一个2位负整数。',
+    nrange_from: '您输入的范围不合理。',
+    nrange_to: '您输入的范围不合理。',
+    n_useless_zero: '数字前面好像有多余的&#34;0&#34;。',
+    _portnum: '请输入正确的端口号。',
+    _portnum_range: '请输入正确的端口号（XXX、XXX-YYY）。',
+    _portnum_relative: '起始端口必须小于终止端口',
+    d_format: '日期输入格式为&#34;YYYY-MM-DD&#34;。',
+    d_upper: '日期太晚，最晚允许{$0}。',
+    d_lower: '日期太早，最早允许{$0}。',
+    daterange_from: '起始日期不能大于截止日期。',
+    daterange_to: '截止日期不能小于起始日期。',
+    daterange_larger_span: "时间跨度不得超过{$0}天。",
+    text_longer: '最多允许{$0}个字。', //'{$1}字太多，最多允许{$0}字'
+    text_shorter: '请至少输入{$0}个字。', //'{$1}字太少，最少允许{$0}字'
+    bytetext_longer: '最多允许{$0}个字节。', //'{$1}字节太多，最多允许{$0}字节'
+    bytetext_shorter: '请至少输入{$0}个字节。', //'{$1}字节太少，最少允许{$0}字节'
+    richtext_longer: '最多允许{$0}个字。',
+    richtext_shorter: '请至少输入{$0}个字。',
+    _reconfirm: '两次输入不一致。',
+    _time: '请检查您输入的时间格式。',
+    _minute: '请检查您输入的时间格式。',
+    _email: '请检查您输入的Email格式。',
+    _mobilecode: '请检查您输入的手机号码。',
+    _phone: '请检查您输入的电话号码。',
+    _phonewithext: '请检查您输入的电话号码。',
+    _phonezone: '请检查您输入的电话区号。',
+    _phonecode: '请检查您输入的电话号码。',
+    _phoneext: '请检查您输入的电话分机号码。',
+    _phonenumber: '无效的手机号',
+    _mobiledata: '请输入0~10000的正整数。',
+    _hostnumber: '请输入有效的IP地址',
+    _zipcode: '请检查您输入的邮政编码。',
+    _idnumber: '请检查您输入的身份证号码，目前只支持15位或者18位。',
+    _bankcard: '请检查您输入的银行账号。',
+    _cnname: '请检查您输入的姓名。',
+    _vcode: '请检查您输入的验证码。',
+    _imgfile: '请检查您选择的图片文件路径，只支持jpg、jpeg、png、gif、tif、bmp格式。',
+    _regexp: '请检查您的输入。',
+    _magic: '请检查您的输入。',
+    _req_text: '请填写{$0}。',
+    _req_select: '请选择{$0}。',
+    _req_file: '请上传{$0}。',
+    _logicrequired: '{$0}输入不完整.',
+    _ssid: '输入格式不正确,请输入标准字符',
+    _macaddr: 'MAC地址格式有误，如ab:cd:ef:11:22:33',
+    _macname:'黑白名单名称不支持特殊字符$ &#38; | ；‘ ·',
+    _weppassword: '密码输入有误',
+    _wifipassword: '请输入数字、英文字母或英文符号',
+    _ipaddr: '该地址由4个 0~255 之间的数字组成，数字之间用点区隔',
+    _ipv6addr: 'IPv6地址由8组四个十六进制数组成，每组之间用:区隔',
+    _ipv6addrprefix: 'LAN IPv6前缀需要以::结尾',
+    _url: '必须是完整的URL,如 http://miwifi.com',
+    _server:'请输入正确的服务器地址',
+    _routerpassword:'密码应同时包含数字、英文字母和英文字符',
+    _routerpassword_strong:'密码应同时包含数字、英文字母和特殊字符(~!@#$等)',
+};
+</script>
+
+<script src="/js/jquery-1.8.3.js?v=0.0.3"></script>
+<script src="/js/qwrap.js?v=0.0.3"></script>
+<script src="/js/common.js?v=0.0.3"></script>
+<script src="/js/raphael.js?v=0.0.3"></script>
+<script src="/js/crypto-js/rollups/sha1.js?v=0.0.3"></script>
+<script src="/js/crypto-js/rollups/aes.js?v=0.0.3"></script>
+<script src="/js/crypto-js/rollups/sha256.js?v=0.0.3"></script>
+<script src="/js/valid.js?v=0.0.3"></script>
+<script src="/xiaoqiang/web/js/selectbeautify.js?v=0.0.3"></script>
+<script src="/xiaoqiang/web/js/jquery.dialog.js?v=0.0.3"></script>
+<script src="/xiaoqiang/web/js/jquery.cookie.js?v=0.0.3"></script>
+<script>
+    (function () {
+        var G_FEATURES = $.parseJSON('{"netmode":{"elink":"0","net2.5G":"0"},"hardware":{"disk":"0","usb_deploy":"0","usb":"0"},"wifi":{"wifi_access_ctl":"1","twt":"1","wifi24":"1","wifi50":"1","wifi_mu_mimo":"0","wifiguest":"1","wifimerge":"1","iot_dev":"1"},"apps":{"mipctlv2":"1","apptc":"0","timemachine":"0","LED_control":"1","wanLan":"1","swapmask":"0","lanPort":"1","game_port":"0","fault_diag":"1","nfc":"1","dhcpMsg":"1","local_gw_security":"1","sec_center":"2","ports_custom":"1","firewall":"1","xqdatacenter":"1","upnp":"1","download":"0","qos":"1","lan_lag":"1"},"apmode":{"lanapmode":"1","wifiapmode":"1"},"system":{"infileupload":"1","new_update":"1","task":"0","ipmaccheck":"1","multiwan":"1","downloadlogs":"0","ipv6_wired":"0","i18n":"0","ipv6_wired_v2":"1","mesh_bhtype_mode":"1","set_router_location":"0","shutdown":"0","upnp":"1","support_1000_dhcp":"0","ipv6_passthrough_relay":"1","change_time":"0"}}');
+        window['G_FEATURES'] = G_FEATURES;
+    }())
+</script>
+
+<script>
+// reboot
+var global_api_reboot = {
+	url : '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/reboot',
+	param : {"client":"web"}
+};
+function reboot_window( needconfirm ) {
+	console.log( needconfirm );
+	var reboot = function(){
+			$.getJSON( global_api_reboot.url, global_api_reboot.param, function( rsp ) {
+				if( rsp.code !== 0 ){
+					$.alert( rsp.msg ).time( 1.5*1000 );
+				} else {
+					var ip = rsp.lanIp[0].ip;
+					rebootWait( {
+						lanIp : ip,
+						action : '重启路由器',
+						refresh : true
+					} );
+				}
+			});
+		};
+	if ( typeof( needconfirm ) !== "undefined" && needconfirm === false ) {
+		reboot();
+		return;
+	}
+	$.confirm('确定重启路由器，重启将断开和小米路由器的连接。',function () {
+			var dlg = this;
+			reboot();
+			dlg.close();
+			return false;
+		});
+}
+// shutdown
+function shutdown_window(){
+	$.confirm('是否确定关闭路由器，操作将断开和小米路由器的连接。', function () {
+			$.getJSON( '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/shutdown', {}, function( rsp ){
+				if( rsp.code !== 0 ){
+					$.alert(rsp.msg).time( 1.5*1000 );
+				} else {
+					$.loadingDialog({
+						title: '关闭路由器',
+						content: '关机中，请等待路由器指示灯熄灭后再断开电源'
+					});
+				}
+			});
+		});
+}
+//reset
+function reset_window( format ){
+
+	var reset = (function( format ){
+		var requestURL = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/reset',
+			requestData = {
+				format: format ? 1 : 0
+			},
+			wait = function(){
+				rebootWait( {
+					action : '恢复出厂设置',
+					refresh : true,
+					lanIp: '192.168.31.1'
+				} );
+			},
+			clearCookies = function (){
+				var keys = document.cookie.match(/[^ =;]+(?=\=)/g);
+				if ( keys ) {
+					for (var i = keys.length; i--;){
+						document.cookie = keys[i]+'=0;path=/;expires=' + new Date(0).toUTCString();
+					}
+				}
+			};
+
+		return function(){
+			$.getJSON( requestURL , requestData, function( rsp ) {
+				if ( rsp.code !== 0 ) {
+					$.alert( rsp.msg ).time( 3*1000 );
+				}else{
+					// clear cookies
+					clearCookies();
+					//block wait
+					wait();
+				}
+			});
+		}
+	})( format );
+
+	$.confirm('确定要恢复出厂设置让小米路由器回到初始状态？', function(){
+		reset();
+	});
+}
+</script>
+
+<script type="text/tmpl" id="tplrename">
+<div class="mod-rename-dlg">
+    <p class="img"><img src="/xiaoqiang/web/img/topograph/router_rd03v2_101.png" style="width:96px;height:auto"></p>
+    <div class="form-rename">
+        <form action="#" class="form" id="routerNameEdit">
+            <div class="form-item">
+                <label class="k">路由器名称</label>
+                <span class="v">
+                    <input type="text" name="routername" id="routername" class="ipt-text" autocomplete="off" datatype="bytetext" maxlength="27" reqMsg="路由器名称" value="{$name}">
+                </span>
+                <em class="t"></em>
+            </div>
+            
+            <div class="form-contral">
+                <button type="submit" class="btn btn-primary btn-l"><span>保存</span></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</script>
+<script type="text/tmpl" id="tplshutdown">
+<div class="mod-reboot-dlg">
+    <p class="img"><img src="/xiaoqiang/web/img/ico_shutdown.png"></p>
+    <p class="text">关闭路由器将断开其他设备的数据访问和网络连接，之后便可以安全的断开电源。（再次启动需要手工连接电源）</p>
+    <button id="shutdownAction" type="button" class="btn btn-primary btn-l"><span>关闭路由器</span></button>
+</div>
+
+</script>
+<script type="text/tmpl" id="tplreboot">
+<div class="mod-shutdown-dlg">
+    <p class="img"><img src="/xiaoqiang/web/img/ico_reboot.png"></p>
+    <p class="text">路由器重启需要等待十几秒或更多时间，重启过程中将会断开网络连接，稍后将自动重新连接网络。</p>
+    <button type="button" id="rebootAction" class="btn btn-primary btn-l"><span>重启路由器</span></button>
+</div>
+
+</script>
+<script type="text/tmpl" id="tpldowncn">
+<div class="mod-downloadclient-dlg">
+    <table>
+        <tr>
+            <td>
+                <i class="ico-down-client ico-down-pc"></i>
+                <a href="http://bigota.miwifi.com/xiaoqiang/client/xqpc_client.exe">PC客户端</a>
+            </td>
+            <td class="c1"></td>
+            <td class="c2"></td>
+            <td>
+                <i class="ico-down-client ico-down-mac"></i>
+                <a href="http://bigota.miwifi.com/xiaoqiang/client/xqmac_client.dmg">MAC客户端</a>
+            </td>
+        </tr>
+        <tr class="last">
+            <td>
+                <i class="ico-down-client ico-down-andriod"></i>
+                <a href="http://www1.miwifi.com/pc2app_download.html">手机客户端</a>
+            </td>
+            <td class="c1"></td>
+            <td class="c2"></td>
+            <td>
+                <i class=" ico-down-code"></i>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</script>
+<script type="text/tmpl" id="tpldownintl">
+    
+    <img style="width:183px;height:183px" class="onlineimg" src-local="/xiaoqiang/web/img/miHome.png" src="/xiaoqiang/web/img/miHome.png">
+    <p>手机扫描二维码安装米家APP</p>
+    
+
+</script>
+<script type="tmpl/html" id="wifiSetSucess">
+    <div class="meshContent">
+        <img class="success_me" src="/xiaoqiang/web/img/mesh_success.png"/>
+        <p>设置成功</p>
+
+    </div>
+
+</script>
+<script>
+    var DEBUG = false;
+    var isRedmi = '0'
+    if(isRedmi == 1){
+        document.title = "Redmi路由器";
+    }else if(isRedmi == 0){
+        document.title = "小米路由器";
+    }
+
+    if (!window.console || DEBUG == false) {
+        window.console = {
+            log: function () {
+            }
+        };
+    }
+    var isSetRouterLoaction = '0'
+    var newEncryptMode = parseInt('1')
+    var Encrypt = {
+        key: 'a2ffa5c9be07488bbb04a3a47d3c5f6a',
+        iv: '64175472480004614961023454661220',
+        nonce: null,
+        init: function () {
+            var nonce = this.nonceCreat();
+            this.nonce = nonce;
+            return this.nonce;
+        },
+        nonceCreat: function () {
+            var type = 0;
+            var deviceId = 'AA:BB:CC:DD:EE:FF';
+            var time = Math.floor(new Date().getTime() / 1000);
+            var random = Math.floor(Math.random() * 10000);
+            return [type, deviceId, time, random].join('_');
+        },
+        oldPwd: function (pwd) {
+            if(newEncryptMode == 1){
+                return CryptoJS.SHA256(this.nonce + CryptoJS.SHA256(pwd + this.key).toString()).toString();
+            }else{
+                return CryptoJS.SHA1(this.nonce + CryptoJS.SHA1(pwd + this.key).toString()).toString();
+            }
+
+        },
+        newPwd: function (pwd, newpwd) {
+            var key = CryptoJS.SHA1(pwd + this.key).toString();
+            var password = CryptoJS.SHA1(newpwd + this.key).toString();
+
+            key = CryptoJS.enc.Hex.parse(key).toString();
+            key = key.substr(0, 32);
+            key = CryptoJS.enc.Hex.parse(key);
+            var iv = CryptoJS.enc.Hex.parse(this.iv);
+            var aes = CryptoJS.AES.encrypt(
+                password,
+                key,
+                {iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7}
+            ).toString();
+            return aes;
+        },
+        newPwd256: function (pwd, newpwd) {
+            var key = CryptoJS.SHA256(pwd + this.key).toString();
+            var password = CryptoJS.SHA256(newpwd + this.key).toString();
+
+            key = CryptoJS.enc.Hex.parse(key).toString();
+            key = key.substr(0, 32);
+            key = CryptoJS.enc.Hex.parse(key);
+            var iv = CryptoJS.enc.Hex.parse(this.iv);
+            var aes = CryptoJS.AES.encrypt(
+                password,
+                key,
+                {iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7}
+            ).toString();
+            return aes;
+        }
+    };
+
+    var pingRouter = function (on, off, ip) {
+        var online = on || function () {
+            },
+            offline = off || function () {
+            },
+            host = ip || location.host,
+            imgUrl = 'http://' + host + '/xiaoqiang/web/img/logo.png',
+            time = 5000,
+            timecounter = 0,
+            img = null,
+            wait = function () {
+                console.log('pingRouter:wait');
+                offline();
+            },
+            done = function () {
+                console.log('pingRouter:done');
+                window.clearInterval(timer);
+                online();
+            },
+            loadImg = function (onload, onerror) {
+                img = new Image();
+                img.onload = onload;
+                img.onerror = onerror;
+                img.src = imgUrl + '?' + (+new Date());
+            },
+            timer = window.setInterval(function () {
+
+                if ('onLine' in navigator) {
+                    if (navigator.onLine) {
+                        loadImg(
+                            function () {
+                                done();
+                            }, function () {
+                                wait();
+                            }
+                        );
+                    } else {
+                        wait();
+                    }
+                } else {
+                    loadImg(function () {
+                        done();
+                    }, function () {
+                        wait();
+                    });
+                }
+            }, time);
+    };
+
+    var rebootWait = function (opt) {
+        var action = opt.action,
+            ip = opt.lanIp || window.location.host,
+            refresh = opt.refresh || false,
+            tStart = (+new Date()),
+            tUse,
+            dlgRebootWait = $.loadingDialog({
+                title: '重启中...',
+                content: '操作生效，等待设备重启...'
+            }),
+            online = function () {
+                dlgRebootWait.content('操作生效,重启成功！');
+                dlgRebootWait.time(3 * 1000);
+                if (refresh) {
+                    window.setTimeout('window.top.location.href="http://' + ip + '";', 3000);
+                }
+            },
+            offline = function () {
+                tUse = Math.round(((+new Date()) - tStart) / 1000);
+                if (tUse > 150) {
+                    dlgRebootWait.content('自动连接路由器失败，请检查无线或者网线是否连接正确。');
+                    return;
+                }
+                dlgRebootWait.content(action + ', 等待自动跳转... 用时{$time}秒'.tmpl({time: tUse}));
+            };
+
+        window.setTimeout(function () {
+            pingRouter(online, offline, ip);
+        }, 1000 * 60);
+    };
+
+    (function ($) {
+
+        function formInit(container) {
+            var clsInput = 'form-item form-item-input',
+                clsEmpty = 'form-item form-item-empty',
+                clsDisabled = 'form-item-disabled',
+                clsError = 'form-item-err',
+                clsPassword = 'form-item-pwd';
+
+            container = container || 'body';
+            $(container).find('.form-item input').each(function () {
+                var me = this,
+                    $me = $(me),
+                    parent = $(me.parentNode.parentNode),
+                    label = parent.find('.k'),
+                    offsetX = $me.position().left;
+                if (!(this.type == 'text' || this.type == 'password')) {
+                    return;
+                }
+                // some input do not need init
+                if ($me.hasClass('no-init')) {
+                    return;
+                }
+                if (me.value !== '') {
+                    parent[0].className = clsInput;
+                } else {
+                    parent[0].className = clsEmpty;
+                    if (offsetX > 0) {
+                        label.css({'left': offsetX + 10});
+                    }
+                }
+                if (me.disabled) {
+                    parent.addClass(clsDisabled);
+                }
+                if ($me.attr('data-type') === 'password') {
+                    parent.addClass(clsPassword);
+                    parent.append('<i class="bt-showpwd bt-showpwd-off"></i>');
+                }
+
+                label.on('click', function (e) {
+                    try {
+                        me.focus();
+                    } catch (ex) {
+                    }
+                });
+
+            });
+            var focusHandler = function () {
+                if (!(this.type == 'text' || this.type == 'password')) {
+                    return;
+                }
+                var me = $(this),
+                    parent = $(this.parentNode.parentNode),
+                    label = parent.find('.k'),
+                    t = parent.find('.t'),
+                    classname;
+                if (me.hasClass('no-init')) {
+                    return;
+                }
+                if (parent.hasClass(clsPassword)) {
+                    classname = clsInput + ' ' + clsPassword;
+                } else {
+                    classname = clsInput;
+                }
+                if (parent.hasClass(clsError)) {
+                    t.hide();
+                }
+                label.css({'left': 'auto'});
+                label.hide();
+                parent[0].className = classname;
+            };
+            var blurHandler = function () {
+                var me = this,
+                    $me = $(me),
+                    parent = $(me.parentNode.parentNode),
+                    classname,
+                    label = parent.find('.k'),
+                    offsetX = $me.position().left;
+                if (!(this.type == 'text' || this.type == 'password')) {
+                    return;
+                }
+                if ($(this).hasClass('no-init')) {
+                    return;
+                }
+                label.show();
+                if (me.value == '') {
+                    if (parent.hasClass(clsPassword)) {
+                        classname = clsEmpty + ' ' + clsPassword;
+                    } else {
+                        classname = clsEmpty;
+                    }
+                    if (offsetX > 0) {
+                        label.css({'left': offsetX + 10});
+                    } else {
+                        label.css({'left': 12});
+                    }
+                    parent[0].className = classname;
+                }
+            };
+            var addInputEvent = function () {
+                $(container).find('.form-item input')
+                    .on('focus', focusHandler)
+                    .on('blur', blurHandler);
+            };
+
+            var delInputEvent = function () {
+                $(container).find('.form-item input').off('focus', focusHandler);
+                $(container).find('.form-item input').off('blur', blurHandler);
+            };
+            // del password event
+            $('body').undelegate('.bt-showpwd', 'click');
+            $('body').delegate('.bt-showpwd', 'click', function (e) {
+                console.log('showpwd');
+                var me = this,
+                    meclass = 'bt-showpwd',
+                    formItem = $(this).closest('.form-item'),
+                    input = formItem.find('input'),
+                    inputValue = input.val(),
+                    inputWrap = formItem.find('.v'),
+                    newinput = '',
+                    inputHTML = inputWrap.html();
+
+                if (input.attr('type') == 'password') {
+                    newinput = inputHTML.replace(/type\s*=\s*('|")?password('|")?/ig, 'type="text"');
+                    inputWrap.html(newinput).find('input')[0].value = inputValue;
+                    me.className = meclass + ' bt-showpwd-on';
+                } else {
+                    newinput = inputHTML.replace(/type\s*=\s*('|")?text('|")?/ig, 'type="password"');
+                    inputWrap.html(newinput).find('input')[0].value = inputValue;
+                    me.className = meclass + ' bt-showpwd-off';
+                }
+
+                setTimeout(function () {
+                    delInputEvent();
+                    addInputEvent();
+                }, 0);
+            });
+
+            addInputEvent();
+        }
+
+        $.formInit = formInit;
+
+    })(jQuery);
+
+    /**
+     * byte format
+     */
+    function byteFormat(number, precision, isarray) {
+        var val,
+            label,
+            ret;
+        precision = precision || 100,
+            isarray = isarray || false;
+        if (number > 1024 * 1024 * 1024) {
+            val = Math.floor(number / 1024 / 1024 / 1024 * precision) / precision;
+            label = 'GB';
+        } else if (number > 1024 * 1024 && number < 1024 * 1024 * 1024) {
+            val = Math.floor(number / 1024 / 1024 * precision) / precision;
+            label = 'MB';
+        } else {
+            val = Math.floor(number / 1024 * precision) / precision;
+            label = 'KB';
+        }
+
+        if (isarray) {
+            ret = [val, label];
+        } else {
+            ret = val + label;
+        }
+
+        return ret;
+    }
+
+
+    function secondToHour(time) {
+        var pint = function (num) {
+                return parseInt(num, 10);
+            },
+            hour = pint(time / 3600.0),
+            minute = pint((parseFloat(time / 3600.0) - hour) * 60),
+            second = pint(time) - hour * 3600 - minute * 60,
+            format = hour + '小时' + minute + '分' + second + '秒';
+        return format;
+    }
+
+    function secondToDate(second) {
+        var time = parseFloat(second),
+            pint = function (num) {
+                return parseInt(num, 10);
+            },
+            day;
+        if (time !== null && time !== "") {
+            if (time > 60 && time < 60 * 60) {
+                time = pint(time / 60.0) + '分' + pint((parseFloat(time / 60.0) - pint(time / 60.0, 10)) * 60) + '秒';
+            } else if (time >= 60 * 60 && time < 60 * 60 * 24) {
+                time = secondToHour(time);
+            } else if (time >= 24 * 60 * 60) {
+                day = pint(time / (3600.0 * 24));
+                time = time - (day * 3600 * 24);
+                time = day + '天' + secondToHour(time);
+            } else {
+                time = pint(time) + '秒';
+            }
+        }
+        return time;
+    }
+
+    (function ($) {
+        function pint(num) {
+            return parseInt(num, 10);
+        }
+
+        function secondToHour(time) {
+            var hour = pint(time / 3600.0),
+                minute = pint((parseFloat(time / 3600.0) - hour) * 60),
+                second = pint(time) - hour * 3600 - minute * 60,
+                format = hour + '小时' + minute + '分' + second + '秒';
+            return format;
+        }
+
+        function secondToDate(second) {
+            var time = parseFloat(second),
+                day;
+            if (time !== null && time !== "") {
+                if (time > 60 && time < 60 * 60) {
+                    time = pint(time / 60.0) + '分' + pint((parseFloat(time / 60.0) - pint(time / 60.0, 10)) * 60) + '秒';
+                } else if (time >= 60 * 60 && time < 60 * 60 * 24) {
+                    time = secondToHour(time);
+                } else if (time >= 24 * 60 * 60) {
+                    day = pint(time / (3600.0 * 24));
+                    time = time - (day * 3600 * 24);
+                    time = day + '天' + secondToHour(time);
+                } else {
+                    time = pint(time) + '秒';
+                }
+            }
+            return time;
+        }
+
+        function secondToDate2(second) {
+            var time = parseFloat(second),
+                num = 0,
+                unit = '天';
+            console.log(second, time);
+            if (!isNaN(time)) {
+                if (time > 60 && time < 60 * 60) {
+                    num = Math.floor(time / 60.0);
+                    unit = '分钟';
+                } else if (time >= 60 * 60 && time < 60 * 60 * 24) {
+                    num = Math.floor(time / 3600.0);
+                    unit = '小时'
+                } else if (time >= 24 * 60 * 60) {
+                    num = Math.floor(time / (3600.0 * 24));
+                    unit = '天';
+                } else {
+                    num = Math.floor(time);
+                    unit = '秒';
+                }
+            }
+            return {
+                num: num,
+                unit: unit
+            };
+        }
+
+        $.secondToHour = secondToHour;
+        $.secondToDate = secondToDate;
+        $.secondToDate2 = secondToDate2;
+    })(jQuery);
+
+
+    $(document).ajaxSuccess(function (event, xhr, settings) {
+        var rsp = xhr.responseText;
+        rsp = $.parseJSON(rsp);
+        // console.log(event, xhr, settings);
+        var ignore = [
+            'api\/xqsystem\/login',
+            'api\/xqsystem\/upgrade_rom'
+        ];
+        for (var i = 0; i < ignore.length; i++) {
+            var ignoreTest = new RegExp(ignore[i]);
+            // console.log( ignoreTest );
+            if (ignoreTest.test(settings.url)) {
+                return;
+            }
+        }
+        if (rsp.code === 401 || rsp.code === 403) {
+            document.location.href = 'http://' + location.host;
+        }
+    });
+
+    $(document).ajaxError(function (event, xhr, settings) {
+        if (xhr.status === 403) {
+            document.location.href = 'http://' + location.host;
+        }
+    });
+
+    $.sub('wait', function (evt, data) {
+        var selector = data.id;
+        if (!$.waitStatus) {
+            $.waitStatus = {};
+        }
+        $.waitStatus[selector] = $(selector).text();
+        $(selector).addClass('btn-primary-disabled').prop('disabled', true).find('span').text('处理中...');
+    });
+
+    $.sub('done', function (evt, data) {
+        var selector = data.id,
+            text = $.waitStatus[selector];
+        $(selector).removeClass('btn-primary-disabled').prop('disabled', false).find('span').text(text);
+    });
+
+    $.sub('loading:start', function () {
+        var isLoading = $('html').hasClass('isloading');
+        if (isLoading) {
+            return;
+        }
+        var tplMask = '<div id="panel-loading-mask" class="panel-mask" style="position:fixed;left:0;top:0;style:none;"></div>',
+            tplLoading = ''
+                + '<div id="panel-loading" class="panel-loading" style="style:none;">'
+                + '<img src="/img/loading2.gif">'
+                + '</div>',
+            $mask = $(tplMask),
+            $loading = $(tplLoading),
+            zIndex = 10000;
+        $mask.css({
+            'z-index': zIndex,
+            width: $(window).width() + 'px',
+            height: $(window).height() + 'px'
+        });
+        $loading.css({'z-index': zIndex + 1});
+        $mask.appendTo(document.body).show();
+        $loading.appendTo(document.body).show();
+        $('html').addClass('isloading');
+    });
+
+    $.sub('loading:stop', function () {
+        $('html').removeClass('isloading');
+        $('#panel-loading, #panel-loading-mask').remove();
+    });
+
+    // dialog block loading
+    (function ($) {
+        $.loadingDialog = function (config) {
+            var mix = ObjectH.mix,
+                _config = config || {
+                    title: '',
+                    content: ''
+                },
+                conf = mix(_config, {
+                    width: 390,
+                    padding: '25px 30px',
+                    title: config.title,
+                    content: '<p style="padding-bottom:30px;">{$content}</p><div class="loading-bar"></div>'.tmpl({content: config.content}),
+                    cancel: false
+                }, true),
+                dialog = $.dialog(conf);
+
+            var oldcontent = dialog.content;
+            dialog.content = function (cont) {
+                var _cont = '<p style="padding-bottom:30px;">{$content}</p><div class="loading-bar"></div>'.tmpl({content: cont});
+                return oldcontent.call(dialog, _cont);
+            };
+            return dialog;
+        }
+    })(jQuery);
+
+    // dialog block loading
+    (function( $ ){
+        $.radarDialog = function( config ){
+            var mix = ObjectH.mix,
+            _config = config || {
+                title: '',
+                content: ''
+            },
+            conf = mix( _config, {
+                width: 500,
+                padding:'25px 30px',
+                title: config.title,
+                content: '<div>{$content}</div>'.tmpl({content: config.content}),
+                cancel: false
+            }, true ),
+            dialog = $.dialog( conf );
+
+            var oldcontent = dialog.content;
+            dialog.content = function( cont ){
+            var _cont = '<p style="padding-bottom:30px;">{$content}</p><div class="loading-bar"></div>'.tmpl({content: cont});
+                return oldcontent.call( dialog, _cont);
+            };
+            return dialog;
+        }
+    })(jQuery);
+
+    // dialog alert
+    (function ($) {
+        $.alert = function (content, ok) {
+            ok = ok || function () {
+            };
+            return $.dialog({
+                width: 390,
+                padding: '25px 30px',
+                title: '提示信息',
+                content: content,
+                ok: ok,
+                cancel: false
+            });
+        }
+    })(jQuery);
+
+    // dialog confirm
+    (function ($) {
+        $.confirm = function (content, ok, cancel) {
+            var _cancel = cancel || function () {
+            };
+            return $.dialog({
+                width: 390,
+                padding: '25px 30px',
+                title: '确认信息',
+                content: content,
+                ok: ok,
+                cancel: _cancel,
+                lock: true
+            });
+        }
+    })(jQuery);
+
+    // wechat code dialog
+    $(function () {
+        $('#wechatcode').click(function (e) {
+            e.preventDefault();
+            var $this = $(this),
+                href = $this.attr('href');
+            $.dialog({
+                title: '官方微信',
+                content: '<img width="200" src="' + href + '">',
+                width: 250,
+                lock: true
+            });
+        });
+    });
+
+
+    // set sys language
+    (function ($) {
+        $.i18nSet = function (el) {
+            var $lan = $(el),
+                apiGetLan = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/get_languages',
+                apiSetlan = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/set_language',
+                dtd = $.Deferred();
+
+            $.get(apiGetLan, function (rsp) {
+                var rsp = $.parseJSON(rsp);
+                var selectContent = [];
+                if (rsp.code == 0) {
+                    for (var i = 0; i < rsp.list.length; i++) {
+                        var item = rsp.list[i],
+                            selected = item.lang == rsp.lang ? 'selected' : '',
+                            option = '<option value="' + item.lang + '" ' + selected + '>' + item['name'] + '</option>';
+                        // clear old conf en item
+                        // if ( item.lang != 'en') {
+                        selectContent.push(option);
+                        // }
+                    }
+                    ;
+                    $lan.html(selectContent.join(''));
+                    dtd.resolve();
+                }
+            });
+
+            $lan.on('change', function (e) {
+                var el = this,
+                    val = $(this).val();
+                $.pub('loading:start');
+                $.post(apiSetlan, {language: val}, function (rsp) {
+                    var rsp = $.parseJSON(rsp);
+                    if (rsp.code == 0) {
+                        location.reload(1);
+                    } else {
+                        $.alert(rsp.msg);
+                    }
+                    $.pub('loading:stop');
+                });
+            });
+
+            return dtd.promise();
+        };
+    }(jQuery));
+
+    function fillMessages(rsp) {
+        var classname;
+        var dwb_type = '0';
+        var dwb_status = '0';
+        var hardware = 'rd03v2';
+        if (rsp.count > 0 || (dwb_type == 1 && hardware == "rb08" && dwb_status != 1)) {
+            classname = 'ico-notice-new';
+        } else {
+            classname = 'ico-notice';
+        }
+        if ($('#sysnotice')[0]) {
+            $('#sysnotice')[0].className = classname;
+        }
+        var msgMap = {
+            '1': '<p>检测到最新版本为{$version}，<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/upgrade">点击此处立即升级</a>。</p>',
+            '2': '<p>你有新短信，<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/prosetting/upnp">点击此处查看</a></p>',
+            '3': '<p>5G Wi-Fi启动失败，<a target="_blank" href="http://www.mi.com/service/contact/">请联系小米客服解决</a></p>',
+            '4': '<p>检测到与上级路由器存在IP冲突，建议切换到<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/wan#netmode">有线中继模式</a>或者<a href="#" id="ipconflict" data-ip="{$ip}">避让IP冲突</a></p>',
+            '5': '<p>短信箱已满，<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/prosetting/upnp">请删除无用短信以保障短信功能正常</a></p>'
+        };
+
+        var msgMapD01 = {
+            '1': '<p>检测到最新版本为{$version}，<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/upgrade">点击此处立即升级</a>。</p>',
+            '2': '<p>你有新短信，<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/prosetting/upnp">点击此处查看</a></p>',
+            '3': '<p>5G Wi-Fi启动失败，<a target="_blank" href="http://www.mi.com/service/contact/">请联系小米客服解决</a></p>',
+            '4': '<p>检测到与上级路由器存在IP冲突，请<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/lannetset">修改局域网IP地址网段</a></p>',
+            '5': '<p>短信箱已满，<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/prosetting/upnp">请删除无用短信以保障短信功能正常</a></p>'
+        };
+
+        var msgHTML = [];
+        //rsp.messages = [{type: 4, data: {version: "0.3.78"}, timestamp: 1547150097}];
+        var hardware = 'rd03v2';
+        var isMesh = 'true';
+        if (isMesh) {
+            for (var i = rsp.messages.length - 1; i >= 0; i--) {
+                msgHTML.push(msgMapD01[rsp.messages[i].type].tmpl(rsp.messages[i].data));
+            }
+            ;
+        } else {
+            for (var i = rsp.messages.length - 1; i >= 0; i--) {
+                msgHTML.push(msgMap[rsp.messages[i].type].tmpl(rsp.messages[i].data));
+            }
+            ;
+        }
+
+        $('#noticebar .content').html(msgHTML.join(''));
+        if(dwb_type == 1){
+            var content = '<p>检测到Mesh网络均为有线组网，<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/wifi">您可以开放专有回程频段以获得更好的Wi-Fi体验</a></p>'
+            $('#noticebar .content').append(content)
+        }
+        if (rsp.count > 0 || (dwb_type == 1 && hardware == "rb08" && dwb_status != 1)) {
+            $('#sysnotice').trigger('click');
+        }
+    }
+    function getNotice() {
+        $.getJSON('/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/messages', function (rsp) {
+            if (rsp.code == 0) {
+                fillMessages(rsp);
+            }
+        });
+    }
+
+/************************************************************************
+* name  : throttle
+* func  : Block multiple submissions of requests within the set time frame
+* input : 
+        parm1 : the request function handle which needs to limit multiple submissions
+        parm2 : the delay for limiting multiple submissions, default is 1s
+* Demo  : throttle(req, 1000)
+************************************************************************/
+    function throttle(fn, delay = 1000) {
+        let throttleTimer = null;
+        return function(...args) {
+            if (throttleTimer) {
+                return;
+            }
+            fn.apply(this, args);
+            throttleTimer = setTimeout(() => {
+                throttleTimer = null;
+            }, delay);
+        }
+    }
+
+/************************************************************************
+* name  : arrayCompare
+* func  : Compare according to the key value in the specified order
+* input : parm1 : the array's key name for comparison
+            parm2 : specified order, such as 'ASC' and 'DESC'
+* Demo  : Arrayobj.sort(arrayCompare('id', 'DESC'))
+************************************************************************/
+    function arrayCompare(key, order) {
+        return function(object1, object2) {
+            var val1 = object1[key],
+                val2 = object2[key];
+            if (order == 'DESC') {
+                if (val1 > val2) {
+                    return -1;
+                }
+                else if (val1 == val2) {
+                    return 0;
+                }
+                else {
+                    return 1;
+                }
+            }
+            else {
+                if (val1 < val2) {
+                    return -1;
+                }
+                else if (val1 == val2) {
+                    return 0;
+                }
+                else {
+                    return 1;
+                }
+            }
+        }
+    }
+
+    // global event
+    (function ($) {
+        var dlgReboot,
+            dlgShutdown,
+            dlgRouterName;
+
+
+
+        function reNameHandler(e) {
+            e.preventDefault();
+            $.getJSON('/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/router_name')
+                .done(function (rsp) {
+                    if (rsp.code == 0) {
+                        var html = StringH.tmpl($('#tplrename').html(), {
+                            locale: StringH.encode4HtmlValue(rsp.locale),
+                            name: StringH.encode4HtmlValue(rsp.name)
+                        });
+                        dlgRouterName = $.dialog({
+                            width: 390,
+                            title: '修改路由器名称',
+                            content: html,
+                            lock: true
+                        });
+                        setTimeout(function () {
+                            $.formInit('.mod-rename-dlg');
+                            $.selectBeautify({container: '.mod-rename-dlg'});
+                        }, 100);
+                    }
+                });
+        }
+
+        function downloadClientHandler(e) {
+            e.preventDefault();
+            var ccode = 'CN', content;
+            // if (ccode == 'CN') {
+            //     content = $('#tpldowncn').html();
+            // } else {
+                content = $('#tpldownintl').html()
+            // }
+            var ispName = ''
+            if (ispName == "CMCC") {
+                $.dialog({
+                    width: 390,
+                    title: '下载和家亲APP',
+                    content: content,
+                    lock: true
+                });
+            }
+            else if (ispName == "CTCC") {
+                $.dialog({
+                    width: 390,
+                    title: '下载小翼管家APP',
+                    content: content,
+                    lock: true
+                });
+            }
+            else {
+                $.dialog({
+                    width: 390,
+                    title: '下载米家APP',
+                    content: content,
+                    lock: true
+                });
+            }
+
+            setTimeout(function () {
+                $('.onlineimg').each(function () {
+                    var img = new Image();
+                    var el = this;
+                    var remote = el.src;
+                    var local = $(el).attr('src-local');
+                    img.onerror = function () {
+                        el.src = local;
+                    }
+                    img.src = remote;
+                });
+            }, 100);
+        }
+
+        function rebootHandler(e) {
+            e.preventDefault();
+            dlgReboot = $.dialog({
+                width: 390,
+                title: '重启路由器',
+                content: $('#tplreboot').html(),
+                lock: true
+            });
+        }
+
+        function shutdownHandler(e) {
+            e.preventDefault();
+            dlgShutdown = $.dialog({
+                width: 390,
+                title: '路由器关机',
+                content: $('#tplshutdown').html(),
+                lock: true
+            });
+        }
+
+        function noticeHandler(e) {
+            e.preventDefault();
+            var that = this,
+                $this = $(this),
+                pos = $('#userbar').position(),
+                right,
+                wt = 1160,
+                wwt = $(window).width(),
+                offset = 0,
+                $arrow = $('#noticebar .ico-arrow');
+            if ('' == '1') {
+                wt = 1200
+                offset = 71;
+                $('#hd .inner').css({'width': wt});
+                $('#sysnotice').css({'margin-left': 7, 'margin-right': 1, 'height': 28});
+            }
+            if ($this.hasClass('ico-notice-new')) {
+                // right = wt - pos.left - 20;
+                if ('' == '1') {
+                    $('#noticebar').css({'top': 74});
+                }
+                if ($("#userbar .cpe-rat").text() === "") {
+                    offset = 53;
+                }
+                $arrow.css({'right': '10px'});
+                $('#noticebar').css({'right': offset + (wwt - wt) / 2});
+                $('#noticebar').toggle();
+            }
+            $('#maskMenu').height($(window).height());
+            $('#maskMenu').show();
+        }
+
+        function sysmenuHandler(e) {
+            e.preventDefault();
+            var that = this,
+                $this = $(this);
+            if ($this.hasClass('s-dropdown')) {
+                var ww = $(window).width();
+                // var rt = (ww - 1160) / 2;
+                var lt = $this.offset().left + $this.outerWidth() - $('#dropmenu').width();
+                $('#dropmenu').css({left: lt});
+                $('#dropmenu').show();
+                that.className = 'name s-dropup';
+            } else {
+                $('#dropmenu').hide();
+                that.className = 'name s-dropdown';
+            }
+            $('#maskMenu').height($(window).height());
+            $('#maskMenu').show();
+        }
+
+        function maskHandler(e) {
+            e.preventDefault();
+            $('#noticebar').hide();
+            $('#dropmenu').hide();
+            $('#maskMenu').hide();
+            $('#sysmenu')[0].className = 'name s-dropdown';
+        }
+        $(function () {
+            // notice
+            $('#sysnotice').click(noticeHandler);
+            // user dropmenu
+            $('#sysmenu').click(sysmenuHandler);
+            // space click
+            $('#maskMenu').click(maskHandler);
+            // rename
+            $('body').delegate('#toRename', 'click', reNameHandler);
+            // toDownloadClient
+            $('body').delegate('#toDownloadClient', 'click', downloadClientHandler);
+            // toReboot
+            $('body').delegate('#toReboot', 'click', rebootHandler);
+            // toShutdown
+            $('body').delegate('#toShutdown', 'click', shutdownHandler);
+
+            $('body').delegate('#shutdownAction', 'click', function (e) {
+                e.preventDefault();
+                dlgShutdown.close();
+                shutdown_window();
+            });
+
+            $('body').delegate('#rebootAction', 'click', function (e) {
+                e.preventDefault();
+                dlgReboot.close();
+                reboot_window();
+            });
+
+            $('body').delegate('#routerNameEdit', 'submit', function (e) {
+                e.preventDefault();
+                var validator = Valid.checkAll(this);
+                var routername = $('#routername').val();
+                var locale = $('#locale').val();
+                if (validator) {
+                    $.getJSON('/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/set_router_name', {
+                        name: routername,
+                        locale: locale
+                    }).done(function (rsp) {
+                        if (rsp.code == 0) {
+                            location.reload(1);
+                        } else {
+                            $.alert(rsp.msg)
+                        }
+                    });
+                }
+            });
+
+            $('body').delegate('#ipconflict', 'click', function (e) {
+                e.preventDefault();
+                var api = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/r_ip_conflict',
+                    ip = $(this).attr('data-ip');
+                $.dialog({
+                    title: '避让IP冲突',
+                    content: '执行此操作，局域网IP将会变更为' + ip + '<br>' + '该过程无线网络会重启，将出现短暂掉线。',
+                    lock: true,
+                    ok: function () {
+                        $.post(api, function (rsp) {
+                            rsp = $.parseJSON(rsp);
+                            if (rsp.code !== 0) {
+                                alert(rsp.msg);
+                            }
+                        });
+                    },
+                    cancel: function () {
+                    }
+                });
+            });
+
+            var meshModeDialog;
+            var isClick = false; //判断是否已经点击过添加按钮，防止多次点击，多次调用接口
+            $('body').delegate('#addMesh', 'click', function (e) {
+                e.preventDefault();
+
+                if (isClick) return;
+                // var apiDevicesGet = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/devicelist';
+                var apiDevicesGet = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/topo_graph';
+                isClick = true;
+                $.getJSON('/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/wifi_detail_all')
+                    .done(function (rsp) {
+// isClick = false;
+                        if (rsp.code == 0) {
+                            /*
+                               if (rsp.info[1].status == 0) {
+                                // console.log('此时5G网络已关闭');
+                                // debugger;
+                                meshModeDialog = $.dialog({
+                                    title: false,
+                                    content: $('#tmplMeshMode').html(),
+                                    padding: '30px 40px',
+                                    lock: true,
+                                    width: 400
+                                });
+
+                                $('#mesh-Off-5G').siblings('.switch-step').hide();
+                                $('#mesh-Off-5G').show();
+
+
+                            } else {
+                            */
+                                //console.log('此时5G网络已打开');
+                                $.ajax({
+                                    url: apiDevicesGet,
+                                    type: 'GET',
+                                    datatype: 'json',
+                                    data: {},
+                                    async: true,
+                                    success: function (rsp) {
+
+                                        rsp = $.parseJSON(rsp);
+                                        isClick = false;
+                                        if (rsp.code === 0) {
+                                            //取到devicelist中list数组
+                                            //  console.log(rsp.list);
+                                            var count = 0;
+                                            var maxMeshCount = '9';
+                                            //获取已添加Mesh组网设备数量
+                                            if (rsp.graph.renumber) {
+                                                count = rsp.graph.renumber
+                                            }
+                                            // debugger;
+                                            // console.log(count);
+
+                                            meshModeDialog = $.dialog({
+                                                title: false,
+                                                content: $('#tmplMeshMode').html(),
+                                                padding: '30px 30px',
+                                                lock: true,
+                                                width: 600,
+                                            });
+
+                                            // 设置最多只能添加九个路由器(新)
+
+                                            if (count >= maxMeshCount) {
+
+                                                $('#mesh-overMaxLength').siblings('.switch-step').hide();
+                                                $('#mesh-overMaxLength').show();
+
+
+                                            } else {
+
+                                                $('#mesh-select').siblings('.switch-step').hide();
+                                                $('#mesh-select').show();
+
+                                            }
+
+                                        }
+
+                                    }
+                                })
+                            //}
+
+
+                        }
+
+                    })
+
+
+            });
+
+            $('body').delegate('#mesh_re_try', 'click', function (e) {
+                e.preventDefault();
+                $('#mesh-add-loading').siblings('.switch-step').hide();
+                $('#mesh-add-loading').show();
+            });
+
+            //设置5G网络打开，跳转至常用设置页面
+            $('body').delegate('#setting-5G-button', 'click', function (e) {
+                e.preventDefault();
+                window.location.href = '/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/wifi'
+            });
+
+
+            $('body').delegate('#mesh_search_cancle,#mesh_add_success,#mesh-close-button,#setting-5G-button', 'click', function (e) {
+
+                e.preventDefault();
+                if(isStopSearch) {
+                  isStopSearch.abort(); //停止搜索节点请求 接口scan_mesh_node
+                }
+                clearInterval(timeout);
+                $('#mesh-select,#mesh-search-lists,#mesh-overMaxLength,#mesh-search-loading,#mesh_list_length0,#mesh-add-success,#mesh-add-failer,#mesh-local,#mesh-Off-5G,#mesh-add-loading').hide();
+                meshModeDialog.close();
+            });
+
+            //点击关闭按钮关闭定时器
+            $('body').delegate('.panel span.d-close','click',function(e){
+                // debugger;
+                if(isStopSearch) {
+                  isStopSearch.abort();//停止搜索节点请求 接口scan_mesh_node
+                }
+                clearInterval(timeout);
+
+            })
+            $('body').delegate('#show_locate_select', 'click', function (e) {
+                e.preventDefault();
+
+                var iteValue = $('.list_box').find(".selected").attr("data-mac");
+
+                if (iteValue) {
+                    $('#mesh-local').siblings('.switch-step').hide();
+                    if(isSetRouterLoaction != 0 || isSetRouterLoaction == ""){
+                        $('#mesh-local').show();
+                    }else{
+                        addMeshNode()
+                    }
+                } else {
+                    $.alert('请选择要添加的设备');
+                }
+
+            });
+
+            var timeout ;
+            $('body').delegate('#mesh_search_add,#mesh_re_try', 'click', function (e) {
+                e.preventDefault();
+                addMeshNode()
+                
+            });
+
+            function addMeshNode(){
+                var iteValue = $('.list_box').find(".selected").attr("data-mac");
+                //开始添加子节点  api/xqnetwork/add_mesh_node
+                var localValue = isSetRouterLoaction!=0?$("#locateSelect").find("option:selected").val():'';
+                if (iteValue) {
+
+                    // $('#mesh-search-lists').hide();
+                    $('#mesh-add-loading').siblings('.switch-step').hide();
+                    $('#mesh-add-loading').show();
+                    // $('#mesh-local').hide();
+
+
+                    var api = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/add_mesh_node';
+                    $.post(api, {mac: iteValue, locate: localValue}, function (rsp) {
+                        rsp = $.parseJSON(rsp);
+                        // rsp = {
+                        //     "code": 0,
+                        //     "status": 4
+                        // };
+                        // 0:添加成功； 1：正在连接mesh节点  2：正在同步Mesh网络配置  3：正在扩展Mesh网络  4：失败
+
+                        if (rsp.code == 0) {
+                            timeout = setInterval(function () {
+                                getMeshStatus(iteValue);
+                            }, 10000)
+                        }
+                    })
+                }
+            }
+            function getMeshStatus(iteValue) {
+                //轮询获取添加子节点状态  api/xqnetwork/get_addnode_status
+                var api = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/get_addnode_status';
+                $.get(api, {mac: iteValue}, function (rsp) {
+                    rsp = $.parseJSON(rsp);
+                    // 0:添加成功； 1：正在连接mesh节点  2：正在同步Mesh网络配置  3：正在扩展Mesh网络  4：失败
+                    // rsp = {"status":4,"code":0}
+                    if (rsp.code == 0) {
+                        if (rsp.status == 0) {
+                            $('#mesh-add-success').siblings('.switch-step').hide();
+                            $('#mesh-add-success').show();
+                            clearInterval(timeout)
+                        } else if (rsp.status == 4) {
+                            $('#mesh-add-failer').siblings('.switch-step').hide();
+                            $('#mesh-add-failer').show();
+                            clearInterval(timeout)
+                        } else {
+                            if (rsp.status === 3) {
+                                $('#mesh-add-loading').find('p').html('正在扩展Mesh节点(1-2分钟)...')
+                            } else if (rsp.status === 2) {
+                                $('#mesh-add-loading').find('p').html('正在同步Mesh节点配置...')
+                            }
+                        }
+                    }
+                })
+            }
+
+            var isStopSearch ;
+            $('body').delegate('#mesh_search ,#mesh_re_search,#mesh-research-btn', 'click', function (e) {
+                e.preventDefault();
+                // $('#mesh-select').hide();
+                //隐藏 选择要添加的设备 的弹窗
+                // $('#mesh-search-lists').hide();
+
+                $('#mesh-search-loading').siblings('.switch-step').hide();
+                $('#mesh-search-loading').show();
+                // $('#mesh_list_length0').hide();
+                $('.d-hd').html('搜索并添加Mesh节点');
+                //获取可添加的Mesh子节点 /api/xqnetwork/scan_mesh_node
+                var api = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/scan_mesh_node';
+                // debugger;
+                isStopSearch = $.get(api, function (rsp) {
+                    rsp = $.parseJSON(rsp);
+                    if (rsp.code == 0) {
+                        // debugger;
+
+                        if (rsp.list.length > 0) {
+                            $.selectBeautify({
+                                'maxHeight': '205px'
+                            });
+
+
+                            var select = $('.list_box');
+                            select.html('');//添加之前清空列表，防止重复添加
+                            var list = rsp.list;
+
+
+                            $(list).each(function (index, item) {
+                                var div = $('<div class=' + (list.length === 1 ? '"mesh_item selected"' : '"mesh_item"') + '>');
+                                div.attr('data-ssid', StringH.encode4Html(item.ssid));
+                                div.attr('data-mac', StringH.encode4Html(item.mac));
+                                var rssi = '';
+                                var name = '<div class="name">' + StringH.encode4Html(item.ssid) + '</div>';
+                                var mac = '';
+                                if(item.rssi >= -15){
+                                    rssi = '<div class="rssi img_signal_red"></div>';
+                                    mac = '<div class="mac">' + StringH.encode4Html(item.mac) +  '<span>请放置在主路由1米以外</span>'  + '</div>';
+                                }else if(item.rssi >=-55 && item.rssi < -15){
+                                    rssi = '<div class="rssi img_signal_green"></div>';
+                                    mac = '<div class="mac">' + StringH.encode4Html(item.mac)   + '</div>';
+                                }else if(item.rssi >=-70 && item.rssi <= -55){
+                                    rssi = '<div class="rssi img_signal_yellow"></div>';
+                                    mac = '<div class="mac">' + StringH.encode4Html(item.mac)   + '</div>';
+                                }else if(item.rssi < -70){
+                                    rssi = '<div class="rssi img_badsignal_red"></div>';
+                                    mac = '<div class="mac">' + StringH.encode4Html(item.mac) +  '<span>请靠近主路由</span>' + '</div>';
+                                }
+                                //var mac = '<div class="mac">' + StringH.encode4Html(item.mac) + (item.rssi < -60 ? '<span>请靠近主路由</span>' : '') + '</div>';
+                                div.on('click', function () {
+                                    $('.list_box').find('.mesh_item').removeClass('selected')
+                                    $(this).addClass('selected');
+                                });
+
+                                div.append(rssi).append(name).append(mac)
+                                select.append(div);
+                            });
+                            $('#mesh-search-lists').siblings('.switch-step').hide();
+                            $('#mesh-search-lists').show();
+                        } else {
+                            //  debugger;
+                            $('#mesh_list_length0').siblings('.switch-step').hide();
+                            $('#mesh_list_length0').show();
+                            $('.d-hd').html('没有搜索到可用的mesh节点');
+
+                        }
+
+
+
+
+
+                        $('#mesh-search-loading').hide();
+
+                    } else {
+                        alert(rsp.msg);
+                    }
+                });
+
+            })
+
+
+            // user logined and has global header get notice
+            if (typeof (GLOBALHEADER) !== 'undefined' && GLOBALHEADER === true) {
+                var message = JSON.parse('[]')
+                var messageRsp = {
+                    code : 0,
+                    messages: message,
+                    count: message.length
+                }
+                fillMessages(messageRsp);
+            }
+            var betaFlag = '';
+            var romChannel = 'release';
+            if(betaFlag == "1" || romChannel == "stable"){
+                TpWatermark('only for test','170','300','-20','#333','25','.07');
+            }
+            function TpWatermark(CON,H,W,R,C,S,O){
+                if (document.getElementById('tp-watermark') != null) {
+    					return
+    			}
+    				var TpLine = parseInt(document.body.clientWidth/W) * 2; // 一行显示几列
+    				var StrLine = '';
+    				for(var i = 0; i < TpLine; i++){
+    					StrLine += '<span style="display: inline-block; line-height:' + H + 'px; width:' + W + 'px; text-align: center; transform:rotate(' + R + 'deg); color:' + C + '; font-size:'+ S + 'px; opacity:' + O + ';">'+ CON +'</span>'
+    				}
+    				var DivLine = document.createElement("div");
+    					DivLine.innerHTML = StrLine;
+    		
+    				var TpColumn = parseInt(document.body.clientHeight/H) * 2; // 一列显示几行
+    				var StrColumn = '';
+    				for(var i = 0; i < TpColumn; i++){
+    					StrColumn += '<div style="white-space: nowrap;">' + DivLine.innerHTML + '</div>';
+    				}
+    				var DivLayer = document.createElement("div");
+    					DivLayer.innerHTML = StrColumn;
+    					DivLayer.id = "tp-watermark"; // 给水印盒子添加类名
+    					DivLayer.style.position = "fixed";
+    					DivLayer.style.top = "0px"; // 整体水印距离顶部距离
+    					DivLayer.style.left = "-100px"; // 改变整体水印的left值
+    					DivLayer.style.zIndex = "99999"; // 水印页面层级
+    					DivLayer.style.pointerEvents = "none";
+    		
+    				document.body.appendChild(DivLayer); // 到页面中
+                }
+                //wifi设置请求成功提示框
+                $.sub( 'wifi:wifiSetSucessDialog', function(evt, data){
+                    $.dialog({
+                            title: false,
+                            content: $('#wifiSetSucess').html(),
+                            padding: '30px 40px',
+                            lock: true,
+                            width: 450,
+                            cancel: false
+                        });
+                    setTimeout(function () {
+                        window.location.reload( true );
+                    },1500)
+                })
+        });
+    })(jQuery);
+
+    if ('' == '1') {
+        //超时退出
+        var lastTime = new Date().getTime();
+        var currentTime = new Date().getTime();
+        var timeOut = 5 * 60 * 1000; //设置超时时间： 5分
+        $(document).ready(function(){
+            /* 鼠标移动事件 */
+            $(document).mousemove(function(){
+                lastTime = new Date().getTime(); 
+            });
+        });
+
+        function updateTime(){
+            currentTime = new Date().getTime(); //更新时间
+            if(currentTime - lastTime > timeOut){ //判断是否超时
+                console.log("超时");
+                document.location.href = 'http://' + location.host;//跳转ip地址
+            }
+        }
+        /* 定时器 间隔10秒(10000)轮询检测是否长时间未操作页面 */
+        window.setInterval(updateTime, 10*1000);
+    }
+
+</script>
+<script src="/js/miwifi-monitor.js"></script>
+<script>
+    // 流量统计
+    (function () {
+        var IS_MOBILE = (
+            navigator.userAgent.match(/Android/i)
+            || navigator.userAgent.match(/webOS/i)
+            || navigator.userAgent.match(/iPhone/i)
+            || navigator.userAgent.match(/iPad/i)
+            || navigator.userAgent.match(/iPod/i)
+            || navigator.userAgent.match(/BlackBerry/i)
+            || navigator.userAgent.match(/Windows Phone/i)
+        );
+        var PAGEURL = document.URL.split('/web/')[1];
+        var PAGE_MONITOR_CONF = {
+            deviceId: '26d90904-aa9e-3a9b-e879-4e0e3fcd090e',
+            isMobile: IS_MOBILE ? IS_MOBILE[0] : 'pc',
+            url: PAGEURL ? '/web/' + PAGEURL : '/web/login',
+            romVersion: '2.0.28',
+            romChannel: 'release',
+            hardwareVersion: 'RD03v2'
+        };
+
+        //默认URL配置，并启用鼠标点击和按键统计
+        setTimeout(function(){
+            MIWIFI_MONITOR.setConf({
+                trackUrl: window.location.protocol + '//' + 'api.miwifi.com/res_stat/track.gif',
+                clickUrl: window.location.protocol + '//' + 'api.miwifi.com/res_stat/click.gif',
+                wpoUrl: ''
+            });
+            MIWIFI_MONITOR.setProject('MIWIFIWEB');
+            MIWIFI_MONITOR.log(PAGE_MONITOR_CONF, 'track');
+
+            $(document).ajaxSend(function (event, jqxhr, settings) {
+                var apiUrl = settings.url.split('/api/')[1],
+                    api = '/api/' + apiUrl.split('?')[0],
+                    apiParams = StringH.queryUrl(apiUrl);
+
+                // console.log(apiUrl, api, apiParams);
+
+                var API_MONITOR_CONF = ObjectH.mix({element: 'apicall', api: api}, [PAGE_MONITOR_CONF, apiParams]);
+                // console.log(API_MONITOR_CONF);
+                MIWIFI_MONITOR.log(API_MONITOR_CONF);
+            });
+        },1000);
+        
+    }());
+</script>
+
+
+<script type="text/tmpl" id="tplbsdWrap">
+    <form class="form form-horizontal" id="wifisetbsd">
+        <!--  -->
+        <div id="wifisetbsdtop"></div>
+        <p class="bsd-ground">2.4GHz 选项</p>
+        <div id="wifiset24" class="form"></div>
+        <p class="bsd-ground"><span class="wifi5gTit">5GHz</span> 选项</p>
+        <div id="wifiset50" class="form"></div>
+
+        
+    </form>
+</script>
+<script type="text/tmpl" id="tplWifiBsdTop">
+
+    <div class="item">
+        <span class="k">开关</span>
+        <span class="v">
+            <label><input type="radio" name="on" value="1"{if ($status == 1)} checked{/if}> <span>开启</span></label>
+            <label><input type="radio" name="on" value="0"{if ($status == 0)} checked{/if}> <span>关闭</span></label>
+        </span>
+
+    </div>
+
+    <div class="form-item">
+        <label class="k">名称</label>
+        <span class="v"><input type="text" name="ssid" value="{$ssid}" class="ipt-text" autocomplete="off" datatype="ssid" maxLength="{$ssidLenMax}" minLength="1" reqMsg="Wi-Fi名称" /></span>
+        <em class="t"></em>
+    </div>
+    
+    <div class="form-item">
+        <label for="hidessid{$wifitype}"> <input type="checkbox" id="hidessid{$wifitype}" name="hidden" value="1" {if ($hidden == 1)}checked{/if}> <span>隐藏网络不被发现</span></label>
+    </div>
+    
+    <div class="form-item-select">
+        <label class="k">加密方式</label>
+        <span class="v">
+            <select name="encryption" class="beautify encryption" >
+
+                <option value="ccmp"{if ($encryption == "ccmp")} selected{/if}>超强加密(WPA3个人版)</option>
+                <option value="psk2+ccmp"{if ($encryption == "psk2+ccmp")} selected{/if}>强混合加密(WPA3/WPA2个人版)</option>
+
+
+                <option value="psk2"{if ($encryption == "psk2")} selected{/if}>强加密(WPA2个人版)</option>
+                <option value="mixed-psk"{if ($encryption == "mixed-psk")} selected{/if}>混合加密(WPA/WPA2个人版)</option>
+                <option value="none"{if ($encryption == "none")} selected{/if}>无加密(允许所有人连接)</option>
+            </select>
+        </span>
+        <em class="t0" style="display: inline;">
+            {if ($encryption == "ccmp")} WPA3为新一代加密技术，可使安全性大大加强，但选择该选项后部分旧设备会存在兼容性问题而无法接入
+            {/if}
+            {if ($encryption == "psk2+ccmp")} WPA3为新一代加密技术，可使安全性大大加强，但选择该选项后部分旧设备会存在兼容性问题而无法接入
+            {/if}
+        </em>
+    </div>
+    <div class="form-item" {if($encryption == "none")} style="display:none;"{/if}>
+        <label class="k">密码</label>
+        <span class="v">
+            <input type="password" data-type="password" name="pwd"  value="{$password}" class="ipt-text" autocomplete="off" datatype="wifipassword" minLength="8" maxLength="63" reqMsg="Wi-Fi密码" />
+        </span>
+        <em class="t"></em>
+    </div>
+    <!--新加信号强度-->
+   <!--  <div class="form-item-select">
+        <label class="k">信号强度</label>
+        <span class="v">
+            <select name="txpwr" class="beautify txpwr">
+                <option value="max"{if ($txpwr == "max")} selected{/if}>穿墙</option>
+                <option value="mid"{if ($txpwr == "mid")} selected{/if}>标准</option>
+                <option value="min"{if ($txpwr == "min")} selected{/if}>节能</option>
+            </select>
+        </span>
+        <em class="t"></em>
+    </div> -->
+
+</script>
+<script type="text/tmpl" id="tplWifiBsd">
+    <!-- 双频合一时不显示 -->
+    {if ($wifitype == 4)}
+    <input type="hidden" value="{$wifiIndex}" name="wifiIndex">
+    <div class="item">
+            <span class="k">开关</span>
+            <span class="v">
+            {if ($wifitype == 3)}
+                <label><input type="radio" name="on" value="1"{if ($enabled == 1 && $status == 1)} checked{/if}> <span>开启</span></label>
+                <label><input type="radio" name="on" value="0"{if ($enabled == 0 || $status == 0)} checked{/if}> <span>关闭</span></label>
+            {else}
+                <label><input type="radio" name="on" value="1"{if ($status == 1)} checked{/if}> <span>开启</span></label>
+                <label><input type="radio" name="on" value="0"{if ($status == 0)} checked{/if}> <span>关闭</span></label>
+            {/if}
+            </span>
+
+    </div>
+    <div class="form-item">
+        <label class="k">名称</label>
+        <span class="v"><input type="text" name="ssid" value="{$ssid}" class="ipt-text" autocomplete="off" datatype="ssid" maxLength="{$ssidLenMax}" minLength="1" reqMsg="Wi-Fi名称" /></span>
+        <em class="t"></em>
+    </div>
+    <div class="form-item-select">
+        <label class="k">加密方式</label>
+        <span class="v">
+            <select name="encryption" class="beautify encryption">
+
+                <option value="ccmp"{if ($encryption == "ccmp")} selected{/if}>超强加密(WPA3个人版)</option>
+                <option value="psk2+ccmp"{if ($encryption == "psk2+ccmp")} selected{/if}>强混合加密(WPA3/WPA2个人版)</option>
+
+                <option value="psk2"{if ($encryption == "psk2")} selected{/if}>强加密(WPA2个人版)</option>
+                <option value="mixed-psk"{if ($encryption == "mixed-psk")} selected{/if}>混合加密(WPA/WPA2个人版)</option>
+                <option value="none"{if ($encryption == "none")} selected{/if}>无加密(允许所有人连接)</option>
+            </select>
+        </span>
+        <em class="t0" style="display: inline;">
+          {if ($encryption == "ccmp")} WPA3为新一代加密技术，可使安全性大大加强，但选择该选项后部分旧设备会存在兼容性问题而无法接入
+          {/if}
+          {if ($encryption == "psk2+ccmp")} WPA3为新一代加密技术，可使安全性大大加强，但选择该选项后部分旧设备会存在兼容性问题而无法接入
+          {/if}
+        </em>
+    </div>
+    <div class="form-item" {if($encryption == "none")} style="display:none;"{/if}>
+        <label class="k">密码</label>
+        <span class="v">
+            <input type="password" data-type="password" name="pwd" value="{$password}" class="ipt-text" autocomplete="off" datatype="wifipassword" minLength="8" maxLength="63" reqMsg="Wi-Fi密码" />
+        </span>
+        <em class="t"></em>
+    </div>
+    {/if}
+
+    {if ($wifitype != 3)}
+    <div class="form-item-select itemChannel">
+        <label class="k">无线信道</label>
+        <span class="v">
+        <select name="channel" class="beautify channel" data-id="{$wifitype}">
+            
+            {for(var i=0, len=$channels.length; i<len; i++)}
+                <option value="{$channels[i]['c']}" {if ($channel==$channels[i]['c'])}selected{/if}>
+                {if ($channels[i]['c']==0)}自动
+                    {if ($channelInfo["channel"] != "0")}
+                        ({$channelInfo["channel"]})
+                    {/if}
+                {else}
+                    {$channels[i]['c']}
+                {/if}
+                </option>
+             {/for}
+            
+        </select>
+        </span>
+        
+             <em class="t"></em>
+        
+    </div>
+
+    <div class="form-item-select itemBandwidth" >
+        <label class="k">频段带宽</label>
+        <span class="v">
+            <select name="bandwidth" class="beautify bandwidth" >
+                {if ($channelInfo["bandList"].length > 3)}
+                    <option value="0" {if ($bandwidth  == "0" )}selected="selected"{/if}>160/80/40/20MHz</option>
+                {/if}
+                {if ($channelInfo["bandList"].length == 3)}
+                    <option value="0" {if ($bandwidth  == "0" )}selected="selected"{/if}>80/40/20MHz</option>
+                {/if}
+                {if ($channelInfo["bandList"].length == 2)}
+                    <option value="0" {if ($bandwidth  == "0" )}selected="selected"{/if}>40/20MHz</option>
+                {/if}
+                {for(var i=0, len=$channelInfo["bandList"].length; i<len && i<3; i++)}
+                    <option value="{$channelInfo["bandList"][i]}" {if ($channelInfo["bandList"][i] == $bandwidth)}selected="selected"{/if}>{$channelInfo["bandList"][i]}MHz</option>
+                {/for}
+            </select>
+        </span>
+        <em class="t"></em>
+    </div>
+    
+    <div class="form-item-select">
+        <label class="k">信号强度</label>
+        <span class="v">
+            <select name="txpwr" class="beautify txpwr">
+                <option value="max"{if ($txpwr == "max")} selected{/if}>穿墙</option>
+                <option value="mid"{if ($txpwr == "mid")} selected{/if}>标准</option>
+                <option value="min"{if ($txpwr == "min")} selected{/if}>节能</option>
+            </select>
+        </span>
+        <em class="t"></em>
+    </div>
+    
+    {/if}
+    {if ($wifiIndex == 3 && $on3 == 1 || $wifiIndex == 2 && $on3 == 0)}
+    <div class="form-contral">
+        <button type="submit" class="btn btn-primary btn-l hidden"><span>保存</span></button>
+    </div>
+    {/if}
+</script>
+<script type="text/tmpl" id="tplWifi">
+    <input type="hidden" value="{$wifiIndex}" name="wifiIndex">
+    <div class="item">
+            <span class="k">开关</span>
+            <span class="v">
+            {if ($wifitype == 3)}
+                <label><input type="radio" name="on" value="1"{if ($enabled == 1 && $status == 1)} checked{/if}> <span>开启</span></label>
+                <label><input type="radio" name="on" value="0"{if ($enabled == 0 || $status == 0)} checked{/if}> <span>关闭</span></label>
+            {else}
+                <label><input type="radio" name="on" value="1"{if ($status == 1)} checked{/if}> <span>开启</span></label>
+                <label><input type="radio" name="on" value="0"{if ($status == 0)} checked{/if}> <span>关闭</span></label>
+            {/if}
+            </span>
+
+
+    </div>
+
+    <div class="form-item">
+        <label class="k">名称</label>
+        <span class="v"><input type="text" name="ssid" value="{$ssid}" class="ipt-text" autocomplete="off" datatype="ssid" maxLength="{$ssidLenMax}" minLength="1" reqMsg="Wi-Fi名称" /></span>
+        <em class="t"></em>
+    </div>
+    {if ($wifitype != 3)}
+    <div class="form-item">
+        <label for="hidessid{$wifitype}"> <input type="checkbox" id="hidessid{$wifitype}" name="hidden" value="1" {if ($hidden == 1)}checked{/if}> <span>隐藏网络不被发现</span></label>
+    </div>
+    {/if}
+    <div class="form-item-select">
+        <label class="k">加密方式</label>
+        <span class="v">
+            <select name="encryption" class="beautify encryption" >
+
+                <option value="ccmp"{if ($encryption == "ccmp")} selected{/if}>超强加密(WPA3个人版)</option>
+                <option value="psk2+ccmp"{if ($encryption == "psk2+ccmp")} selected{/if}>强混合加密(WPA3/WPA2个人版)</option>
+
+                <option value="psk2"{if ($encryption == "psk2")} selected{/if}>强加密(WPA2个人版)</option>
+                <option value="mixed-psk"{if ($encryption == "mixed-psk")} selected{/if}>混合加密(WPA/WPA2个人版)</option>
+                <option value="none"{if ($encryption == "none")} selected{/if}>无加密(允许所有人连接)</option>
+            </select>
+        </span>
+        <em class="t0" style="display: inline;">
+            {if ($encryption == "ccmp")} WPA3为新一代加密技术，可使安全性大大加强，但选择该选项后部分旧设备会存在兼容性问题而无法接入
+            {/if}
+            {if ($encryption == "psk2+ccmp")} WPA3为新一代加密技术，可使安全性大大加强，但选择该选项后部分旧设备会存在兼容性问题而无法接入
+            {/if}
+        </em>
+    </div>
+    <div class="form-item" {if($encryption == "none")} style="display:none;"{/if}>
+        <label class="k">密码</label>
+        <span class="v">
+            <input type="password" data-type="password" name="pwd" value="{$password}" class="ipt-text" autocomplete="off" datatype="wifipassword" minLength="8" maxLength="63" reqMsg="Wi-Fi密码" />
+        </span>
+        <em class="t"></em>
+    </div>
+    {if ($wifitype != 3)}
+    <div class="form-item-select itemChannel">
+        <label class="k">无线信道</label>
+        <span class="v">
+        <select name="channel" class="beautify channel" data-id="{$wifitype}">
+            
+            {for(var i=0, len=$channels.length; i<len; i++)}
+                <option value="{$channels[i]['c']}" {if ($channel==$channels[i]['c'])}selected{/if}>
+                {if ($channels[i]['c']==0)}自动
+                    {if ($channelInfo["channel"] != "0")}
+                        ({$channelInfo["channel"]})
+                    {/if}
+                {else}
+                    {$channels[i]['c']}
+                {/if}
+                </option>
+            {/for}
+            
+        </select>
+        </span>
+        
+             <em class="t"></em>
+        
+
+    </div>
+    <div class="form-item-select itemBandwidth" >
+        <label class="k">频段带宽</label>
+        <span class="v">
+            <select name="bandwidth" class="beautify bandwidth">
+               {if ($channelInfo["bandList"].length > 3)}
+                    <option value="0" {if ($bandwidth  == "0" )}selected="selected"{/if}>160/80/40/20MHz</option>
+                {/if}
+                {if ($channelInfo["bandList"].length == 3)}
+                    <option value="0" {if ($bandwidth  == "0" )}selected="selected"{/if}>80/40/20MHz</option>
+                {/if}
+               {if ($channelInfo["bandList"].length == 2)}
+                    <option value="0" {if ($bandwidth  == "0" )}selected="selected"{/if}>40/20MHz</option>
+                {/if}
+                {for(var i=0, len=$channelInfo["bandList"].length; i<len && i<3; i++)}
+                    <option value="{$channelInfo["bandList"][i]}" {if ($channelInfo["bandList"][i] == $bandwidth)}selected="selected"{/if}>{$channelInfo["bandList"][i]}MHz</option>
+                {/for}
+            </select>
+        </span>
+        <em class="t"></em>
+    </div>
+    
+    <div class="form-item-select">
+        <label class="k">信号强度</label>
+        <span class="v">
+            <select name="txpwr" class="beautify txpwr" >
+                <option value="max"{if ($txpwr == "max")} selected{/if}>穿墙</option>
+                <option value="mid"{if ($txpwr == "mid")} selected{/if}>标准</option>
+                <option value="min"{if ($txpwr == "min")} selected{/if}>节能</option>
+            </select>
+        </span>
+        <em class="t"></em>
+    </div>
+    
+    {/if}
+    {if (($wifiIndex == 3 && $on3 == 1 || $wifiIndex == 2 && $on3 == 0))}
+    <div class="form-contral">
+        <button type="submit" class="btn btn-primary btn-l hidden"><span>保存</span></button>
+    </div>
+    {/if}
+</script>
+<script type="tmpl/html" id="meshDialogContent">
+    <div class="meshContent">
+        <p>该信道属于DFS信道，当与不支持DFS信道的设备组网时，可能导致组网失败，是否继续？</p> 
+        <button class="mesh_buttons mesh_research_Dbuttons" id="meshDialogCancel">取消</button>
+        <button class="mesh_buttons mesh_research_Dbuttons" id="meshDialogOpen">继续</button>
+
+    </div>
+
+</script>
+<script>
+  var isMesh = true;
+  var netmod = 4;
+  var wificount = 2;
+(function(){
+    var global = {};
+    var backhaulDialog = '';
+    var meshDialog = '';
+    var wifiSetSucessDialog = '';
+    var wifiSetLoadDialog = '';
+    //5g1信道初始值
+    var channelData5g1Text = '';
+    var channelData5g1Val = '';
+    var channelData5g2Text = '';
+    var channelData5g2Val = '';
+    var channelType = '';
+    //2.4G 信道
+    var channelDataText = ''
+    var generateMixed = function (n) {
+         var res = "";
+         var chars = ['0','1','2','3','4','5','6','7','8','9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+         for(var i = 0; i < n ; i ++) {
+             var id = Math.ceil(Math.random()*35);
+             res += chars[id];
+         }
+         return res;
+    }
+    function onControlFocus() {
+        $(this).parents('form').find('.btn-primary').removeClass('hidden');
+        if($(this).parents('form').attr('id') == 'wifiset24'){
+            $('.mod-wifi50').find('#wifiset50').find('.btn-primary').removeClass('hidden');
+        }
+        $('.mod-wifi5g-2').find('#wifiset5g2').find('.btn-primary').removeClass('hidden');
+       
+    }
+    
+    if ((netmod != 3) && ('0' == '1')) {
+        function getMLOCfg() {
+            var isClosed = false;
+            if ($("#WIFI6switch").attr("data-on") == 1) {
+                isClosed = true;
+                $(".mod-mlo").find(".tips").show().find("p").html("注：检测到已开启Wi-Fi5兼容模式，无法打开MLO开关。");
+            }
+            else if ($("#bsdswitch").attr("data-on") == 0) {
+                isClosed = true;
+                $(".mod-mlo").find(".tips").show().find("p").html("注：检测到未开启Wi-Fi多频合一，无法打开MLO开关。");
+            }
+            if (isClosed) {
+                $("#mloswitch").removeClass("btn-switch-on")
+                .addClass("btn-switch-off")
+                .attr("data-on", "0");
+                return;
+            }
+            $(".mod-mlo").find(".tips").hide();
+            $.ajax({
+                url: '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/get_hostap_mlo',
+                type: 'GET',
+                datatype: 'json',
+                async: true,
+                success: function( rsp ){
+                    rsp = $.parseJSON(rsp);
+                    if (rsp.code === 0) {
+                        if (rsp.mlo_enable == 1) {
+                            $("#mloswitch").removeClass("btn-switch-off")
+                            .addClass("btn-switch-on")
+                            .attr("data-on", "1");
+                        }
+                        else {
+                            $("#mloswitch").removeClass("btn-switch-on")
+                            .addClass("btn-switch-off")
+                            .attr("data-on", "0");
+                        }
+                    }
+                }
+            });
+        }
+        $.sub( 'wifi:mlo', function(){
+            function setMLOCfg() {
+                var mlo_enable = $("#mloswitch").attr("data-on") == "0" ? 1 : 0,
+                    requestData = {mlo_enable:mlo_enable};
+
+                $.ajax({
+                    url: '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/set_hostap_mlo',
+                    type: 'POST',
+                    datatype: 'json',
+                    data: requestData,
+                    async: true,
+                    success: function( rsp ){
+                        rsp = $.parseJSON(rsp);
+                        if (rsp.code === 0) {
+                            if (mlo_enable == 1) {
+                                $("#mloswitch").removeClass("btn-switch-off")
+                                .addClass("btn-switch-on")
+                                .attr("data-on", "1");
+                            }
+                            else {
+                                $("#mloswitch").removeClass("btn-switch-on")
+                                .addClass("btn-switch-off")
+                                .attr("data-on", "0");
+                            }
+                        }
+                    }
+                });
+            }
+            $("body").on('click', "#mloswitch", function(e) {
+                e && e.preventDefault();
+                var bsd = $("#bsdswitch").attr("data-on"),
+                    wifi6switch = $('#WIFI6switch').attr("data-on"),
+                    mlo = $("#mloswitch").attr("data-on") == "0" ? 1 : 0;
+                if (wifi6switch == '1') {
+                    return;
+                }
+                if (bsd == '0') {
+                    $.dialog({
+                        title: "提示信息",
+                        content: "检测到未启用Wi-Fi多频合一，无法打开MLO开关。",
+                        padding: '30px 30px',
+                        lock: true,
+                        width: 450,
+                        ok: function() {}
+                    }).lock();
+                    return;
+                }
+                if (mlo == 0) {
+                    $.dialog({
+                        title: "提示信息",
+                        content: "关闭MLO多链路加速将会重启Wi-Fi模块，此期间所有接入此路由器的设备都会断开Wi-Fi连接，请确认是否继续。",
+                        padding: '30px 30px',
+                        lock: true,
+                        width: 450,
+                        ok: function() {
+                            setMLOCfg();
+                        },
+                        cancel: function() {}
+                    }).lock();
+                }
+                else {
+                    setMLOCfg();
+                }
+            })
+        });
+    }
+    if ('0' == '1') {
+        $.sub( 'wifi:mode', function() {
+            function setWifiMode() {
+                var wifimode = $("#modeSelect").val();
+                var requestData = {
+                    wifi_split: wifimode
+                };
+                $.pub( 'wifi:confirm', {
+                    ok : function(){
+                        $.ajax({
+                            url: '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/set_wifi_split',
+                            dataType: 'json',
+                            timeout: 40000,
+                            type: 'POST',
+                            data: requestData,
+                            success: function( rsp ){
+                                if( rsp.code === 0 ){
+                                    var time = rsp.hasOwnProperty('time') ? rsp.time : 60
+                                    if( time == 0 ){
+                                        $.alert('设置成功').time(1.5 * 1000);
+                                    }else{
+                                        var dialog = $.loadingDialog({
+                                            title: '修改Wi-Fi设置',
+                                            content : '设置成功，请等待{$time}秒完成模式切换'.tmpl({time:time}),
+                                        }).lock().time( time*1000 );
+                                        var interval = setInterval(function(){
+                                            if( time < 1 ){
+                                                dialog.close()
+                                                clearInterval(interval)
+                                            }
+                                            time --
+                                            dialog.content('设置成功，请等待{$time}秒完成模式切换'.tmpl({time:time}))
+                                        },1000)
+                                    }
+
+                                    setTimeout(function(){
+                                        window.location.reload( 1 );
+                                    }, (time + 1) * 1000);
+                                } else {
+                                    $.alert( rsp.msg );
+                                }
+                            },
+                            error: function() {
+                                $.alert( '网络异常，请检查是否联网' );
+                            }
+                        });
+                    },
+                    cancel : function(){},
+                    requestData : requestData
+                } );
+            }
+            $(document).on("click", "#btnSetWifiMode", function(e) {
+                e.preventDefault();
+                setWifiMode();
+            });
+        });
+    }
+
+    $.sub( 'wifi:init', function(evt, data){
+        global.wifi = {
+            configs: [],
+            pddk: {
+                '1': '[{"c":0,"b":["20","40"]},{"c":1,"b":["20","40"]},{"c":2,"b":["20","40"]},{"c":3,"b":["20","40"]},{"c":4,"b":["20","40"]},{"c":5,"b":["20","40"]},{"c":6,"b":["20","40"]},{"c":7,"b":["20","40"]},{"c":8,"b":["20","40"]},{"c":9,"b":["20","40"]},{"c":10,"b":["20","40"]},{"c":11,"b":["20","40"]},{"c":12,"b":["20","40"]},{"c":13,"b":["20","40"]}]',
+                '2': '[{"c":0,"b":["20","40","80","160"]},{"c":36,"b":["20","40","80","160"]},{"c":40,"b":["20","40","80","160"]},{"c":44,"b":["20","40","80","160"]},{"c":48,"b":["20","40","80","160"]},{"c":52,"b":["20","40","80","160"]},{"c":56,"b":["20","40","80","160"]},{"c":60,"b":["20","40","80","160"]},{"c":64,"b":["20","40","80","160"]},{"c":149,"b":["20","40","80"]},{"c":153,"b":["20","40","80"]},{"c":157,"b":["20","40","80"]},{"c":161,"b":["20","40","80"]},{"c":165,"b":["20"]}]',
+                '3': '[]'
+            }
+        };
+
+        // get wifi and rander html
+        var containers = ['wifiset24', 'wifiset50','wifiset5g2'],
+            roamContainer = ['roamset24', 'roamset50'],
+            tpl = $('#tplWifi').html();
+        hardware = 'rd03v2';
+        
+        
+            
+        var wifiinfo = [{"ifname":"wl1","channelInfo":{"bandwidth":"20","bandList":["20","40"],"channel":6},"encryption":"psk2","wifimode":"11ax","bandwidth":"20","kickthreshold":"0","status":"1","mode":"Master","bsd":"1","ssid":"No name","weakthreshold":"0","device":"wifi0.network1","ax":"1","hidden":"0","ssidHtmlEncode":1,"password":"oka12332145","weakenable":"0","ssid_len_limit":"28","channel":"6","txpwr":"max","txbf":"3","available_channels":[{"c":0,"b":["20","40"]},{"c":1,"b":["20","40"]},{"c":2,"b":["20","40"]},{"c":3,"b":["20","40"]},{"c":4,"b":["20","40"]},{"c":5,"b":["20","40"]},{"c":6,"b":["20","40"]},{"c":7,"b":["20","40"]},{"c":8,"b":["20","40"]},{"c":9,"b":["20","40"]},{"c":10,"b":["20","40"]},{"c":11,"b":["20","40"]},{"c":12,"b":["20","40"]},{"c":13,"b":["20","40"]}],"signal":-98},{"ifname":"wl0","channelInfo":{"bandwidth":"0","bandList":["20","40","80","160"],"channel":48},"encryption":"psk2","wifimode":"11ax","bandwidth":"0","kickthreshold":"0","status":"1","mode":"Master","bsd":"1","ssid":"No name","weakthreshold":"0","device":"wifi1.network1","ax":"1","hidden":"0","ssidHtmlEncode":1,"password":"oka12332145","weakenable":"0","ssid_len_limit":"31","channel":"48","txpwr":"max","txbf":"3","available_channels":[{"c":0,"b":["20","40","80","160"]},{"c":36,"b":["20","40","80","160"]},{"c":40,"b":["20","40","80","160"]},{"c":44,"b":["20","40","80","160"]},{"c":48,"b":["20","40","80","160"]},{"c":52,"b":["20","40","80","160"]},{"c":56,"b":["20","40","80","160"]},{"c":60,"b":["20","40","80","160"]},{"c":64,"b":["20","40","80","160"]},{"c":149,"b":["20","40","80"]},{"c":153,"b":["20","40","80"]},{"c":157,"b":["20","40","80"]},{"c":161,"b":["20","40","80"]},{"c":165,"b":["20"]}],"signal":-91}];
+        var on3 = 1;
+        var haswifi50 = $('#wifiset50').length > 0 ? true : false;
+
+        if ( wifiinfo[0].ax == 1 || wifiinfo[0].ax == "1") {
+             $('#WIFI6switch')
+            .removeClass('btn-switch-on')
+            .addClass('btn-switch-off')
+            .attr('data-on', '0');
+        }
+        // 适配双频机型
+        if(wificount == 2){
+            containers.pop();
+            on3 = 0;
+        }
+
+        for(var i = 0, len = wifiinfo.length; i < len; i ++){
+            var id = containers[i];
+            var container;
+            //if( !haswifi50 && i == 1 ){
+                //container = $(document.getElementById( 'wifisetguest' ));
+            //}else{
+                if (haswifi50 && i == 1) {
+                    if ( wifiinfo[i].txbf == 0 || wifiinfo[i].txbf == "0") {
+                         $('#txbfswitch')
+                        .removeClass('btn-switch-on')
+                        .addClass('btn-switch-off')
+                        .attr('data-on', '0');
+                    }
+
+                }
+                container = $(document.getElementById(id));
+            //}
+            var wifiitem = wifiinfo[i];
+            var password = wifiitem.password;
+            var encryption = wifiitem.encryption;
+
+            if ( encryption == 'none' ) {
+                password = '';
+            }
+            var tplData = {
+                wifitype: (!haswifi50 && i == 1) ? i+1 : i,
+                wifiIndex: (!haswifi50 && i == 1) ? i+2 : i+1,
+                status: wifiitem.status,
+                ssid: wifiitem.ssid,
+                ssidLenMax: wifiitem.ssid_len_limit,
+                password: password,
+                encryption: wifiitem.encryption,
+                channels: $.parseJSON(global.wifi.pddk[i+1]),
+                channel: wifiitem.channel,
+                bandwidth: wifiitem.bandwidth,
+                channelInfo: wifiitem.channelInfo,
+                weakenable: wifiitem.weakenable,
+                weakthreshold: wifiitem.weakthreshold,
+                kickthreshold: wifiitem.kickthreshold,
+                hidden: wifiitem.hidden,
+                txpwr: wifiitem.txpwr,
+                txbf: wifiitem.txbf,
+                enabled: wifiitem.enabled,
+                wifilei:i,
+                on3:on3
+            };
+            
+            container.html( tpl.tmpl(tplData) );
+            //debugger;
+            global.wifi.configs[i+1] = tplData;
+            
+        }
+
+        $('#wifiset24').children('.item').children('.k').text('2.4GHz Wi-Fi')
+        $('#wifiset50').children('.item').children('.k').text('5GHz Wi-Fi')
+        $('#wifiset5g2').children('.item').children('.k').text('5GHz-Game Wi-Fi')
+        
+        if(wifiinfo[0].bsd == 1){
+            $('#bsdswitch')
+                .removeClass('btn-switch-off')
+                .addClass('btn-switch-on')
+                .attr('data-on', '1');
+            $('.mod-wifi24 .hd h3').text('Wi-Fi');
+            $('.mod-wifi24 .bd').html( $('#tplbsdWrap').html() );
+            $('.mod-wifi50').remove();
+            $('.mod-wifi5g-2').hide()
+
+            tpl = $('#tplWifiBsd').html();
+            for(var i = 0; i < containers.length; i++){
+                $(document.getElementById(containers[i])).html(tpl.tmpl(global.wifi.configs[i+1]))
+                $('#wifisetbsdtop').html( $('#tplWifiBsdTop').html().tmpl(global.wifi.configs[1]));
+            }
+                $('#wifisetbsdtop').html( $('#tplWifiBsdTop').html().tmpl(global.wifi.configs[1]));
+                //这得改变下wifitype，与tplwifibsd里的判断相一致，更改这个为1会造成后选择5GGame的信道时出现错误（三频合一时），解决：在渲染时更改它的赋值方式
+               // global.wifi.configs[3].wifitype = 1
+               // $(document.getElementById('wifiset5g2')).html(tpl.tmpl(global.wifi.configs[3]))
+        }
+        // 联动TWT
+        if ('1' == '1') {
+            getTWTCfg();
+        }
+        // 联动MLO
+        if ((netmod != 3) && ('0' == '1')) {
+            getMLOCfg();
+        }
+        $('#wifisetbsd').delegate('input[type=text], input[type=checkbox], input[type=radio]', 'click', onControlFocus)
+                        .delegate('.ipt-text', 'click', onControlFocus);
+        setTimeout( function(){
+                $.selectBeautify();
+                $.formInit();
+                $.pub('wifi:bindEventEncryption');
+                $.pub('wifi:bindEventChannel');
+                $.pub('wifi:bindEventBandwidth');
+                channelDataText = $("#wifiset24").find('.itemChannel').find(".dummy").text();
+                channelData5g1Text = $("#wifiset50").find('.itemChannel').find(".dummy").text();
+                channelData5g1Val =  $("#wifiset50").find('[name=channel]').val();
+                channelData5g2Text = $("#wifiset5g2").find('.itemChannel').find(".dummy").text();
+                channelData5g2Val =  $("#wifiset5g2").find('[name=channel]').val();
+            }, 100 );
+
+        $.getJSON('/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/get_miotrelay_switch')
+            .done(function( rsp ){
+                if ( rsp.code == 0 ) {
+                    if( rsp.enabled == 1 ){
+                        $('#cklswitch')
+                            .removeClass('btn-switch-off')
+                            .addClass('btn-switch-on')
+                            .attr('data-on', '1');
+                    }else{
+                        $('#cklswitch')
+                            .removeClass('btn-switch-on')
+                            .addClass('btn-switch-off')
+                            .attr('data-on', '0');
+                    }
+
+                }
+            });
+            
+            
+    });
+
+    $.sub( 'wifi:bindEventEncryption', function(){
+        $( '.encryption' ).on( 'change', function( e ){
+            var val = $( this ).val(),
+                root = $( this ).parents('form'),
+                pwd = root.find('.form-item-pwd'),
+                tips = $(this.parentNode).next('.t0');
+
+                // tips0 = $(this.parentNode).next('.t0');
+
+
+            if ( val === 'none' ) {
+                pwd.hide();
+            } else {
+                pwd.show();
+            }
+
+
+
+            if (val === 'psk2') {
+                tips.html('仅支持WPA加密方式的设备将无法连接').show();
+            }else if(val == 'ccmp'||val == 'psk2+ccmp'){
+                tips.html('WPA3为新一代加密技术，可使安全性大大加强，但选择该选项后部分旧设备会存在兼容性问题而无法接入').show();
+            }else{
+                tips.html('');
+            }
+        } );
+    });
+
+    $.sub( 'wifi:bindEventChannel', function(){
+        $( '.channel' ).on( 'change', function( e ){
+            var channelVal = this.value,
+                that = this,
+                id = $(this).attr('data-id'),
+                id = parseInt(id, 10) + 1,
+                root = $( this ).parents('form'),
+                pwd = root.find('.form-item-pwd'),
+                $bandwidth = $( this ).closest('.form').find('[name=bandwidth]'),
+                $itemBandwidth = $( this ).closest('.form').find('.itemBandwidth'),
+                tips = $(this.parentNode).next('.t'),
+                pddk,
+                item,
+                bandtext,
+                bdlist = [];
+                var wifiname = $( this ).closest('.form').attr('id');
+
+
+
+
+            pddk = $.parseJSON( global.wifi.pddk[id] );
+
+            for (var i = 0; i < pddk.length; i++) {
+                var _c = pddk[i]['c'];
+                if ( _c == channelVal ) {
+                    bdlist = pddk[i]['b'];
+                    break;
+                }
+            }
+            if (bdlist.length > 3)
+            {
+                bandtext = '160/80/40/20MHz';
+                item = '<option value="0">160/80/40/20MHz</option>';
+                
+                
+            }
+            else if(bdlist.length == 3){
+                bandtext = '80/40/20MHz';
+                item = '<option value="0">80/40/20MHz</option>';
+            }
+            else if (bdlist.length == 2)
+            {
+                bandtext = '40/20MHz';
+                item = '<option value="0">40/20MHz</option>';
+            }
+            else
+            {
+                bandtext = '20MHz';
+                item = '';
+            }
+            
+
+            for ( var i = 0; (i <  bdlist.length) && (i < 3); i++ ) {
+                item += '<option value="'+bdlist[i]+'">'+ bdlist[i] +'MHz</option>';
+            }
+
+            //$.alert(bdlist.length+''+bandtext);
+            //mesh模式下选择DFS信道做提示 52-64,149-165
+            if(channelVal>=52 && channelVal<=64){
+                meshDialog = $.dialog({
+                    title: "提示",
+                    content: $('#meshDialogContent').html(),
+                    padding: '30px 40px',
+                    lock: true,
+                    width: 450
+                });
+                channelType = '#' + $(this).closest(".form").attr("id");
+            }
+
+            if ($bandwidth.val() == '0' && (channelVal <= 161 && channelVal >= 149))
+            {
+                    // $.alert('160MHz频宽只适用于36至64信道，系统将自动为您切换至80MHz频宽');
+                    // $bandwidth.html( item ).val("80")
+                    // $itemBandwidth
+                    //     .find( '.dummy' )
+                    //     .text("80MHz");
+            }
+            else if (($bandwidth.val() == '160'|| $bandwidth.val() == '80'|| $bandwidth.val() == '40' || $bandwidth.val() == '0') && (channelVal == 165))
+            {
+                    $.alert('当前频宽不支持将要切换的信道，系统已自动选择可用的频宽');
+                    $bandwidth.html( item ).val("20")
+                    $itemBandwidth
+                        .find( '.dummy' )
+                        .text("20MHz");
+            }
+            else if (channelVal == 165)
+            {
+                    $bandwidth.html( item )
+                    $itemBandwidth
+                        .find( '.dummy' )
+                        .text(bandtext);
+            }
+            else
+            {
+                    var bandwidthSelect = $bandwidth.val()
+                    $bandwidth.html( item ).val(bandwidthSelect);
+            }
+            /*
+            if ( channelVal === '0' ) {
+                $itemBandwidth.hide();
+                return;
+            }
+
+            if (wifiname == 'wifiset24') {
+                $bandwidth.html( item ).val( '20' );
+                $itemBandwidth
+                    .find( '.dummy' )
+                    .text("20M");
+            }
+            else {
+                    $bandwidth.html( item )
+                    $itemBandwidth
+                        .find( '.dummy' )
+                        .text("自动");
+            }
+        */
+            $itemBandwidth.show();
+        /*
+            var channelIsBad = /36|40|44|48|52|56|60|64/.test( channelVal );
+
+            if ( channelIsBad ) {
+                tips.html('你手工选择的当前信道有可能造成部分机型较旧的设备无法连接');
+            } else {
+                tips.html('');
+            }
+        */
+
+        });
+    } );
+
+    $.sub( 'wifi:bindEventBandwidth', function(){
+        $( '.bandwidth' ).on( 'change', function( e ){
+            var val = $( this ).val(),
+                tips = $(this.parentNode).next('.t0'),
+                $channel = $( this ).closest('.form').find('[name=channel]'),
+                $itemChannel = $( this ).closest('.form').find('.itemChannel');
+
+                // tips0 = $(this.parentNode).next('.t0');
+
+            if (val === '0') {
+                //tips.html('推荐使用自动(80M)频宽，以获得更好的覆盖及抗干扰性能').show();
+                // if ($channel.val()  >= 149)
+                // {
+                //     $.alert('160MHz频宽只适用于36至64信道，系统将自动为您切换至36信道');
+                //     $channel.val('36');
+                //     $itemChannel
+                //         .find( '.dummy' )
+                //         .text("36");
+                // }
+            }else{
+                tips.html('');
+            }
+
+        } );
+    });
+
+    $.sub( 'wifi:bindEvent', function( evt, data ){
+
+        function wifiSubmitHandler(e,backhaulBtn){
+            e.preventDefault();
+            var formAction = 'set_all_wifi',
+                formOjb24 = document.getElementById('wifiset24'),
+                formOjb50 = document.getElementById('wifiset50'),
+                formOjb5g2 = document.getElementById('wifiset5g2'),
+                validator24 = Valid.checkAll(formOjb24),
+                validator50 = Valid.checkAll(formOjb50),
+                validator5g2 = Valid.checkAll(formOjb5g2);
+
+            if ( validator24 && validator50 && validator5g2) {
+            var bsd = 0;
+            var form1 = $('#wifiset24');
+            var form2 = $('#wifiset50');
+            var form3 = $('#wifiset5g2');
+            var on1 = $( 'input[name=on]:checked', form1 ).val(),
+                ssid1 = $( 'input[name=ssid]', form1 ).val(),
+                pwd1 =  $( 'input[name=pwd]', form1 ).val(),
+                encryption1 = $( 'select[name=encryption]', form1 ).val(),
+                hidden1 = $('input[name=hidden]', form1 ).prop('checked') ? '1' : '0';
+                channel1 = $( 'select[name=channel]', form1 ).val(),
+                bandwidth1 = $( 'select[name=bandwidth]', form1 ).val(),
+                //txpwr1 = $( 'select[name=txpwr]', form1 ).val(),
+                txpwr1 = $( 'select[name=txpwr]', form1 ).val(),
+                pwd1 = $.pwddecode( pwd1 ),
+                on2 = $( 'input[name=on]:checked', form2 ).val(),
+                ssid2 = $( 'input[name=ssid]', form2 ).val(),
+                pwd2 = $( 'input[name=pwd]', form2 ).val(),
+                encryption2 = $( 'select[name=encryption]', form2 ).val(),
+                hidden2 = $('input[name=hidden]', form2 ).prop('checked') ? '1' : '0';
+                channel2 = $( 'select[name=channel]', form2 ).val(),
+                bandwidth2 = $( 'select[name=bandwidth]', form2 ).val(),
+                //txpwr2 = $( 'select[name=txpwr]', form2 ).val();
+                txpwr2 = $( 'select[name=txpwr]', form2 ).val(),
+                on3 = backhaulBtn?backhaulBtn: $( 'input[name=on]:checked', form3 ).val(),
+                ssid3 = $( 'input[name=ssid]', form3 ).val(),
+                pwd3 = $( 'input[name=pwd]', form3 ).val(),
+                encryption3 = $( 'select[name=encryption]', form3 ).val(),
+                hidden3 = $('input[name=hidden]', form3 ).prop('checked') ? '1' : '0';
+                channel3 = $( 'select[name=channel]', form3 ).val(),
+                bandwidth3 = $( 'select[name=bandwidth]', form3 ).val(),
+                txpwr3 = $( 'select[name=txpwr]', form3 ).val(),
+                hardware = 'rd03v2';
+                // if(typeof(on1) == "undefined"){
+                //     on1 = 1;
+                //     on2 = on1
+                // };
+                // if(typeof(bsd) == "undefined"){
+                //     bsd = 1
+                // };
+                // if(isMesh){
+                //     on1 = 1;
+                //     on2 = on1;
+                //     bsd = 1;
+                // }
+
+                var isDFS;
+
+                if ((channel2 >= 52 && channel2 <= 64) || (bandwidth2 == 0))
+                {
+                    isDFS = 1;
+                }
+                else
+                {
+                    isDFS = 0;
+                }
+                //当5G频段关闭时，也不需要有雷达检测的提示
+                if (on2 == 0){
+                    isDFS = 0
+                }
+            var requestData = {
+                bsd: bsd,
+                on1: on1,
+                ssid1: ssid1,
+                encryption1: encryption1,
+                channel1: channel1,
+                bandwidth1: bandwidth1,
+                hidden1: hidden1,
+                txpwr1: txpwr1,
+                pwd1: pwd1,
+                on2: on2,
+                ssid2: ssid2,
+                encryption2: encryption2,
+                channel2: channel2,
+                bandwidth2: bandwidth2,
+                hidden2: hidden2,
+                txpwr2: txpwr2,
+                pwd2: pwd2,
+                on3: on3,
+                ssid3: ssid3,
+                encryption3: encryption3,
+                channel3: channel3,
+                bandwidth3: bandwidth3,
+                hidden3: hidden3,
+                txpwr3: txpwr3,
+                pwd3: pwd3,
+                isDFS: isDFS,
+                
+            };
+
+                //$.alert(isDFS);
+              //console.info(requestData)
+              $.pub( 'wifi:confirm', {
+                    ok : function(){
+                        $.pub('loading:start');
+                        $.ajax({
+                            url: '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/set_all_wifi',
+                            dataType: 'json',
+                            timeout: 40000,
+                            type: 'POST',
+                            data: requestData,
+                            success: function( rsp ){
+                                if( rsp.code === 0 ){
+                                    $.pub( 'wifi:success' , {
+                                        cac_time : rsp.cac_time,
+                                    });
+                                } else {
+                                    $.pub('loading:stop');
+                                    if ( rsp.code !== 401) {
+                                        var msg = StringH.encode4Html( rsp.msg );
+                                        $.alert( msg ).lock();
+                                    }
+                                    $("#backhaulBtn").removeClass('btn-switch-off').addClass('btn-switch-on').attr('data-on',backhaulBtn)
+                                }
+                            },
+                            error: function() {
+                                $.pub('loading:stop');
+                                $.alert( '网络异常，请检查是否联网' );
+                                $("#backhaulBtn").removeClass('btn-switch-off').addClass('btn-switch-on').attr('data-on',backhaulBtn)
+                            }
+                        });
+                    },
+                    cancel : function(){}
+                } );
+            }
+        }
+
+        function roamSubmitHandler(e){
+            e.preventDefault();
+            var formOjb = this,
+                formAction = this.action,
+                validator = Valid.checkAll(formOjb);
+            if ( validator) {
+                var wifiIndex = $( 'input[name=wifiIndex]', formOjb ).val(),
+                    weakenable = $( 'input[name=on]:checked', formOjb ).val(),
+                    weakthreshold =  $( 'input[name=weakthreshold]', formOjb ).val(),
+                    kickthreshold = $( 'input[name=kickthreshold]', formOjb ).val()
+
+                var requestData = {
+                    wifiIndex: wifiIndex,
+                    weakenable: weakenable,
+                    weakthreshold: weakthreshold,
+                    kickthreshold: kickthreshold
+                };
+
+                $.pub( 'wifi:confirm', {
+                    ok : function(){
+                        $.pub( 'wifi:modify', {
+                            requestData : requestData,
+                            url : formAction
+                        } );
+                    },
+                    cancel : function(){}
+                } );
+            }
+        }
+
+        function bsdWiFiSubmitHandler(e,backhaulBtn){
+            e && e.preventDefault();
+            //var bsd = $('#bsdswitch').attr('data-on') == 1 ? 1 : 0;
+            var formObj = document.getElementById('wifisetbsd'),
+                   validator = Valid.checkAll(formObj);
+            if(!validator){
+                return;
+            }
+            var bsd = $('#bsdswitch').attr('data-on') ;
+            var topContainer = $('#wifisetbsdtop');
+            var form1 = $('#wifiset24');
+            var form2 = $('#wifiset50');
+            var form3 = $('#wifiset5g2');
+            var on1 = $( 'input[name=on]:checked', topContainer ).val(),
+                ssid1 = $( 'input[name=ssid]', topContainer ).val(),
+                pwd1 =  $( 'input[name=pwd]', topContainer ).val(),
+                encryption1 = $( 'select[name=encryption]', topContainer ).val(),
+                hidden1 = $('input[name=hidden]', topContainer ).prop('checked') ? '1' : '0';
+                channel1 = $( 'select[name=channel]', form1 ).val(),
+                bandwidth1 = $( 'select[name=bandwidth]', form1 ).val(),
+                //txpwr1 = $( 'select[name=txpwr]', form1 ).val(),
+                txpwr1 = $( 'select[name=txpwr]', form1 ).val(),
+                pwd1 = $.pwddecode( pwd1 ),
+                on2 = on1,
+                ssid2 = ssid1
+                pwd2 = pwd1,
+                encryption2 = encryption1,
+                hidden2 = hidden1,
+                channel2 = $( 'select[name=channel]', form2 ).val(),
+                bandwidth2 = $( 'select[name=bandwidth]', form2 ).val(),
+                //txpwr2 = $( 'select[name=txpwr]', form2 ).val();
+                txpwr2 = $( 'select[name=txpwr]', form2 ).val(),
+                on3 = on1,
+                ssid3 = ssid1,
+                pwd3 = pwd1,
+                encryption3 = encryption1,
+                hidden3 = hidden1;
+                channel3 = $( 'select[name=channel]', form3 ).val(),
+                bandwidth3 = $( 'select[name=bandwidth]', form3 ).val(),
+                txpwr3 = $( 'select[name=txpwr]', form3 ).val(),
+                hardware = 'rd03v2';
+                if(typeof(on1) == "undefined"){
+                    on1 = 1;
+                    on2 = on1
+                };
+                // if(typeof(bsd) == "undefined"){
+                //     bsd = 1
+                // };
+                // if(isMesh){
+                //     on1 = 1;
+                //     on2 = on1;
+                //     bsd = 1;
+                // }
+
+                var isDFS;
+
+                if ((channel2 >= 52 && channel2 <= 64) || (bandwidth2 == 0))
+                {
+                    isDFS = 1;
+                }
+                else
+                {
+                    isDFS = 0;
+                }
+                //当5G频段关闭时，也不需要有雷达检测的提示
+                if (on2 == 0 || on3 == 0){
+                    isDFS = 0
+                }
+
+            var requestData = {
+                bsd: bsd,
+                on1: on1,
+                ssid1: ssid1,
+                encryption1: encryption1,
+                channel1: channel1,
+                bandwidth1: bandwidth1,
+                hidden1: hidden1,
+                txpwr1: txpwr1,
+                pwd1: pwd1,
+                on2: on2,
+                ssid2: ssid2,
+                encryption2: encryption2,
+                channel2: channel2,
+                bandwidth2: bandwidth2,
+                hidden2: hidden2,
+                txpwr2: txpwr2,
+                pwd2: pwd2,
+                on3: on3,
+                ssid3: ssid3,
+                encryption3: encryption3,
+                channel3: channel3,
+                bandwidth3: bandwidth3,
+                hidden3: hidden3,
+                txpwr3: txpwr3,
+                pwd3: pwd3,
+                isDFS: isDFS,
+            };
+
+            $.pub( 'wifi:confirm', {
+                    ok : function(){
+                        $.pub('loading:start')
+                        $.ajax({
+                            url: '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/set_all_wifi',
+                            dataType: 'json',
+                            timeout: 40000,
+                            type: 'POST',
+                            data: requestData,
+                            success: function( rsp ){
+                                if( rsp.code === 0 ){
+                                    $.pub( 'wifi:success' , {
+                                        cac_time : rsp.cac_time,
+                                    });
+                                    
+                                } else {
+                                    $.pub('loading:stop')
+                                    if ( rsp.code !== 401) {
+                                        var msg = StringH.encode4Html( rsp.msg );
+                                        $.alert( msg ).lock();
+                                    }
+                                }
+                            },
+                            error: function() {
+                                $.pub('loading:stop');
+                                $.alert( '网络异常，请检查是否联网' );
+                            }
+                        });
+                    },
+                    cancel : function(){
+                        $("#bsdswitch").removeClass('btn-switch-off').addClass('btn-switch-on').attr('data-on', '1');
+                        if ((netmod != 3) && ('0' == '1')) {
+                            getMLOCfg();
+                        }
+                    }
+            } );
+
+
+        }
+
+        $('#wifiset24').on('submit', wifiSubmitHandler);
+        $('#wifiset50').on('submit', wifiSubmitHandler);
+        $('#wifiset5g2').on('submit', wifiSubmitHandler);
+          $('#roam24').on('submit', roamSubmitHandler);
+        $('#roam50').on('submit', roamSubmitHandler);
+        $('body').delegate('#wifisetbsd', 'submit', bsdWiFiSubmitHandler);
+
+        $('body').delegate('input[name=ssid]' ,'blur', function(e){
+            var tar = e.currentTarget;
+            if ( escape(tar.value).indexOf("%u") >= 0 ) {
+                $(tar.parentNode).next('.t').text('少数设备可能不支持中文或特殊字符').show();
+            }
+        });
+        $('body').delegate('input[type=password]','focus',onControlFocus);
+        $('#wifiset24, #wifiset50,#wifiset5g2, #roamset24,#roamset50').delegate('input[type=text], input[type=checkbox], input[type=radio]', 'click', onControlFocus)
+                .delegate('.ipt-text', 'click', onControlFocus);
+        //为了兼容safari浏览器需要点击两次才会出现保存按钮：只对text文本框换成focus事件,password可以正常触发
+        $('#wifiset24, #wifiset50,#wifiset5g2, #roamset24,#roamset50').delegate('input[type=text],input[type=password]','focus', onControlFocus)
+        
+        $('#WIFI6switch').on('click', function(e){
+            e.preventDefault();
+            var ax = $(this).attr('data-on');
+            var self = this;
+
+
+            var isDFS;
+
+            if ((global.wifi.configs[2].channel >= 52 && global.wifi.configs[2].channel <= 64)
+                || ( global.wifi.configs[2].bandwidth == 0))
+            {
+                isDFS = 1;
+            }
+            else
+            {
+                isDFS = 0;
+            }
+
+            var requestData = {
+                ax: ax,
+                isDFS: isDFS,
+            };
+            $.pub('loading:start')
+            $.ajax({
+                url: '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/set_wifi_ax',
+                dataType: 'json',
+                timeout: 40000,
+                type: 'POST',
+                data: requestData,
+                success: function( rsp ){
+                    if( rsp.code === 0 ){
+                        if(ax == 1) {
+                            $(self)
+                            .removeClass('btn-switch-on')
+                            .addClass('btn-switch-off')
+                            .attr('data-on', '0');
+                        }else {
+                            $(self)
+                            .removeClass('btn-switch-off')
+                            .addClass('btn-switch-on')
+                            .attr('data-on', '1');
+                            }
+
+                        $.pub( 'wifi:success', {
+                            cac_time : rsp.cac_time,
+                        });
+                    } else {
+                        $.pub('loading:stop')
+                        if ( rsp.code !== 401) {
+                            var msg = StringH.encode4Html( rsp.msg );
+                            $.alert( msg ).lock();
+                        }
+                    }
+                },
+                error: function() {
+                    $.pub('loading:stop');
+                    $.alert( '网络异常，请检查是否联网' );
+                }
+            });
+
+        });
+
+
+        $('#txbfswitch').on('click', function(e){
+            e.preventDefault();
+            var txbf = $(this).attr('data-on') == 1 ? 0 : 3;
+            var self = this;
+
+            if ((global.wifi.configs[2].channel >= 52 && global.wifi.configs[2].channel <= 64)
+                || ( global.wifi.configs[2].bandwidth == 0))
+            {
+                isDFS = 1;
+            }
+            else
+            {
+                isDFS = 0;
+            }
+
+            var requestData = {
+                txbf: txbf,
+                isDFS: isDFS,
+            };
+            $.pub('loading:start')
+            $.ajax({
+                url: '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/set_wifi_txbf',
+                dataType: 'json',
+                timeout: 40000,
+                type: 'POST',
+                data: requestData,
+                success: function( rsp ){
+                    
+                    if( rsp.code === 0 ){
+                        if(txbf == 0) {
+                            $(self)
+                            .removeClass('btn-switch-on')
+                            .addClass('btn-switch-off')
+                            .attr('data-on', '0');
+                        }else {
+                            $(self)
+                            .removeClass('btn-switch-off')
+                            .addClass('btn-switch-on')
+                            .attr('data-on', '1');
+                            }
+
+                        $.pub( 'wifi:success', {
+                            cac_time : rsp.cac_time,
+                        });
+                    } else {
+                        $.pub('loading:stop')
+                        if ( rsp.code !== 401) {
+                            var msg = StringH.encode4Html( rsp.msg );
+                            $.alert( msg ).lock();
+                        }
+                    }
+                },
+                error: function() {
+                    $.pub('loading:stop');
+                    $.alert( '网络异常，请检查是否联网' );
+                }
+            });
+
+        });
+
+
+
+
+        $('#AIOTswitch').on('click', function(e){
+            e.preventDefault();
+            var on = $(this).attr('data-on') == 1 ? 0:1;
+            var self = this;
+
+            if ((global.wifi.configs[2].channel >= 52 && global.wifi.configs[2].channel <= 64)
+                || ( global.wifi.configs[2].bandwidth == 0))
+            {
+                isDFS = 1;
+            }
+            else
+            {
+                isDFS = 0;
+            }
+
+            var requestData = {
+                on: on,
+                isDFS: isDFS,
+            };
+            $.ajax({
+                url: '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/miscan_switch',
+                dataType: 'json',
+                timeout: 40000,
+                type: 'POST',
+                data: requestData,
+                success: function( rsp ){
+                    if( rsp.code === 0 ){
+                        if(on == 0) {
+                            $(self)
+                            .removeClass('btn-switch-on')
+                            .addClass('btn-switch-off')
+                            .attr('data-on', '0');
+                        }else {
+                            $(self)
+                            .removeClass('btn-switch-off')
+                            .addClass('btn-switch-on')
+                            .attr('data-on', '1');
+                            }
+                        /*
+                        $.pub( 'wifi:success', {
+                            requestData : requestData,
+                        });
+                        */
+                    } else {
+                        if ( rsp.code !== 401) {
+                            var msg = StringH.encode4Html( rsp.msg );
+                            $.alert( msg ).lock();
+                        }
+                    }
+                },
+                error: function() {
+                    $.pub('loading:stop');
+                    $.alert( '网络异常，请检查是否联网' );
+                }
+            });
+
+        });
+        $('#cklswitch').on('click', function(e){
+            e.preventDefault();
+            var cklOn = $(this).attr('data-on') == 1 ? 0 : 1
+            var self = this;
+
+            var requestData = {
+                on: cklOn
+            };
+            $.ajax({
+                url: '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/miotrelay_switch',
+                dataType: 'json',
+                timeout: 40000,
+                type: 'POST',
+                data: requestData,
+                success: function( rsp ){
+                    if( rsp.code === 0 ){
+                        if(cklOn == 1) {
+                            $(self)
+                                .removeClass('btn-switch-off')
+                                .addClass('btn-switch-on')
+                                .attr('data-on', '1');
+                        }else {
+                            $(self)
+                                .removeClass('btn-switch-on')
+                                .addClass('btn-switch-off')
+                                .attr('data-on', '0');
+                        }
+                    } else {
+                        // if ( rsp.code !== 401) {
+                        //     var msg = StringH.encode4Html( rsp.msg );
+                        //     $.alert( msg ).lock();
+                        // }
+                    }
+                },
+                error: function() {
+                    $.alert( '网络异常，请检查是否联网' );
+                }
+            });
+
+        });
+
+
+        $('#bsdswitch').on('click', function(e){
+            e.preventDefault();
+            var on = $(this).attr('data-on');
+            var self = this;
+            console.log(global.wifi.configs[2]);
+            if ((global.wifi.configs[2].channel >= 52 && global.wifi.configs[2].channel <= 64)
+                || ( global.wifi.configs[2].bandwidth == 0))
+            {
+                isDFS = 1;
+            }
+            else
+            {
+                isDFS = 0;
+            }
+            //当5G频段关闭时，也不需要有雷达检测的提示
+            if (global.wifi.configs[2].status == 0){
+                isDFS = 0
+            }
+
+            if( on == 0 ){
+                var formObj = document.getElementById('wifiset24'),
+                    validator = Valid.checkAll(formObj);
+                if(!validator){
+                    return;
+                }
+                var formOjb = $('#wifiset24');
+                var on1 = $( 'input[name=on]:checked', formOjb ).val(),
+                    ssid1 = $( 'input[name=ssid]', formOjb ).val(),
+                    pwd1 =  $( 'input[name=pwd]', formOjb ).val(),
+                    encryption1 = $( 'select[name=encryption]', formOjb ).val(),
+                    channel1 = $( 'select[name=channel]', formOjb ).val(),
+                    bandwidth1 = $( 'select[name=bandwidth]', formOjb ).val(),
+                    hidden1 = $('input[name=hidden]', formOjb ).prop('checked') ? '1' : '0',
+                    txpwr1 = $( 'select[name=txpwr]', formOjb ).val(),
+                    pwd1 = $.pwddecode( pwd1 );
+                var requestData = {
+                    bsd: 1,
+                    on1: on1,
+                    ssid1: ssid1,
+                    encryption1: encryption1,
+                    channel1: channel1,
+                    bandwidth1: bandwidth1,
+                    hidden1: hidden1,
+                    txpwr1: txpwr1,
+                    pwd1: pwd1,
+                    isDFS: isDFS,
+                };
+                $.pub('loading:start')
+                $.ajax({
+                    url: '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/set_all_wifi',
+                    dataType: 'json',
+                    timeout: 40000,
+                    type: 'POST',
+                    data: requestData,
+                    success: function( rsp ){
+                        
+                        if( rsp.code === 0 ){
+                            $(self)
+                            .removeClass('btn-switch-off')
+                            .addClass('btn-switch-on')
+                            .attr('data-on', '1');
+                            if ((netmod != 3) && ('0' == '1')) {
+                                getMLOCfg();
+                            }
+                            $.pub( 'wifi:success', {
+                                cac_time : rsp.cac_time
+                        });
+                        } else {
+                            $.pub('loading:stop')
+                            if ( rsp.code !== 401) {
+                                var msg = StringH.encode4Html( rsp.msg );
+                                $.alert( msg ).lock();
+                            }
+                        }
+                    },
+                    error: function() {
+                        $.pub('loading:stop');
+                        $.alert( '网络异常，请检查是否联网' );
+                    }
+                });
+            }else{
+                var tips = 'WiFi双频合一关闭，5GHz会默认使用2.4GHz相同的网络名称（加后缀_5G）和密码，如需设成不一样，请进行修改。';
+                if ('2' == 3) {
+                    if ('0' == 1) {
+                        tips = 'WiFi多频合一关闭，5GHz和5GHz-Game Wi-Fi会默认使用2.4GHz相同的网络名称（加后缀）和密码，如需设成不一样，请进行修改。';
+                    }
+                    else {
+                        tips = 'WiFi多频合一关闭，5GHz和5GHz-2 Wi-Fi会默认使用2.4GHz相同的网络名称（加后缀）和密码，如需设成不一样，请进行修改。';
+                    }
+                }
+                $.dialog({
+                    width: 390,
+                    title : "提示信息",
+                    content : tips,
+                    ok: function(){
+                        var formObj = document.getElementById('wifisetbsd'),
+                            validator = Valid.checkAll(formObj);
+                        if(!validator){
+                            return;
+                        }
+                        $(self)
+                        .removeClass('btn-switch-on')
+                        .addClass('btn-switch-off')
+                        .attr('data-on', '0');
+                        setTimeout(function(){
+                            bsdWiFiSubmitHandler();
+                            if ((netmod != 3) && ('0' == '1')) {
+                                $("#mloswitch").removeClass("btn-switch-on")
+                                .addClass("btn-switch-off")
+                                .attr("data-on", "0");
+                            }
+                        }, 0);
+                    }
+                });
+            }
+        });
+
+        $('body').delegate('#meshDialogOpen,#channelContentOpen', 'click', function (e) {
+            meshDialog.close()
+            //set_dwb_wifi(1);
+        })
+        $('body').delegate('#meshDialogCancel', 'click', function (e) {
+            meshDialog.close();
+            if(channelType == "#wifiset50"){
+                $("#wifiset50").find('.itemChannel').find(".dummy").text(channelData5g1Text)
+                $("#wifiset50").find('[name=channel]').val(channelData5g1Val);
+            }else if(channelType == "#wifiset5g2"){
+                $("#wifiset5g2").find('.itemChannel').find(".dummy").text(channelData5g2Text)
+                $("#wifiset5g2").find('[name=channel]').val(channelData5g2Val);
+            }
+        })
+        $('body').delegate('#channelContentCancel', 'click', function (e) {
+            meshDialog.close();
+            $("#wifiset24").find('.itemChannel').find(".dummy").text(channelDataText)
+            $("#wifiset24").find('[name=channel]').val(channelDataText);
+        })
+    });
+
+    $.sub( 'wifi:success', function( evt, data ){
+        var cac_time =  data.cac_time;
+        if (cac_time && cac_time !=0)
+        {
+            $.pub('loading:stop')
+            $.radarDialog({
+              width:500,
+            title : '修改 Wi-Fi 设置',
+            content : '<div class="dialog_con_radar"></div><div class="radar_tips">设置成功正在重启，遵照国家法律法规，路由器正在做退避雷达信号探测，Wi-Fi信号要<span>' + cac_time +'</span>s后才能开启，请稍候...</div>',
+            cancel: false
+            }).lock().time( cac_time*1000 );
+            setTimeout( function(){
+               window.location.reload(true);
+            }, cac_time*1000 );
+            setInterval(function(){
+              var n = $('.radar_tips').find('span').html();
+              $('.radar_tips').find('span').html(--n);
+            },1000)
+        }
+        else
+        {
+            setTimeout( function(){
+                $.pub('loading:stop')
+                $.pub( 'wifi:wifiSetSucessDialog');
+            },1000)
+            
+            
+        }
+    } );
+    $.sub( 'wifi:confirm', function( evt, data ){
+        var ok = data.ok || function(){},
+            cancel = data.cancel || function(){};
+        var content = '该操作将重启 Wi-Fi 并导致 Wi-Fi 下的所有设备失去连接，是否确认修改？';
+        if (data.requestData  && data.requestData.wifiIndex == 2 && data.requestData.on == 0) {
+          content = '<div style="text-align: left">1.该操作将重启Wi-Fi并导致Wi-Fi下的所有设备失去连接；<br/>2.关闭5GHz Wi-Fi，将无法添加子Mesh节点；<br/>是否确认修改？</div>';
+        }
+        if (data.requestData && data.requestData.wifi_split == 0) {
+            content = "该修改会导致路由器重启，所有设备会短暂失去连接，是否确认修改？"
+        }
+        else if (data.requestData && data.requestData.wifi_split == 1) {
+            content = "三频模式覆盖明显弱于双频模式，该修改会导致路由器重启，所有设备会短暂失去连接，是否确认修改？"
+        }
+        $.dialog({
+            id : "confirm",
+            width: 390,
+            title : "修改Wi-Fi设置",
+            content : content,
+            ok: function(){
+                ok();
+            },
+            cancel: function () {
+                cancel();
+            }
+        }).lock();
+    } );
+
+    $.sub( 'wifi:modify', function( evt, data ){
+        var requestData =  data.requestData;
+        var url = data.url;
+        $.ajax({
+            url: url,
+            dataType: 'json',
+            timeout: 40000,
+            type: "POST",
+            data: requestData,
+            success: function( rsp ) {
+                if( rsp.code === 0 ){
+                    $.pub( 'wifi:success', {
+                            requestData : requestData,
+                        });
+                } else {
+                    if ( rsp.code !== 401) {
+                        var msg = StringH.encode4Html( rsp.msg );
+                        $.alert( msg ).lock();
+                    }
+                }
+            },
+            error: function() {
+                $.alert( '网络异常，请检查是否联网' );
+            }
+        });
+    });
+
+    $.sub( 'wifi:txpwr', function( evt, data ){
+        var txpwr = '',
+            setTxpwr = function( root , data ){
+                var that = root,
+                    requestData = data,
+                    requestURL = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/set_wifi_txpwr';
+
+                return function(){
+                    $.getJSON( requestURL, requestData, function( rsp ){
+                        if ( rsp.code === 0 ) {
+                            $.loadingDialog({
+                                title: 'Wi-Fi 信号强度设置',
+                                content : '设置已经生效，等待30秒后 Wi-Fi 重启。'
+                            }).lock().time( 30*1000 );
+
+                            setTimeout(function(){
+                                window.location.reload( 1 );
+                            }, 30 * 1000);
+
+                        } else {
+                            $.alert( rsp.msg );
+                        }
+                    });
+                };
+            };
+
+        $( '#wifiSetTxpwr' ).on( 'submit', function( e ){
+            e.preventDefault();
+            var that = this,
+                requestData = {
+                    txpwr: $('#txpwr').val()
+                },
+                ok;
+
+            if ( requestData.txpwr === txpwr ) {
+                $.alert( '你什么都没改变，提交什么啊' );
+                return;
+            }
+
+            ok = setTxpwr( that, requestData );
+
+            $.pub( 'wifi:confirm', {
+                ok : ok,
+                cancel : function(){}
+            } );
+        } );
+    } );
+
+    $.sub('countrycode', function(evt, data){
+        var apiGet = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/country_code',
+            apiSet = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/set_country_code',
+            $select = $('#countrycode');
+
+        $.get(apiGet, function( rsp ){
+            var rsp = $.parseJSON( rsp );
+            var selectContent = [];
+            if ( rsp.code == 0 ) {
+                for (var i = 0; i < rsp.list.length; i++) {
+                    var item = rsp.list[i],
+                        selected = item.code == rsp.current ? 'selected' : '',
+                        option = '<option value="' + item.code + '" '+ selected +'>' + item['name'] + '</option>';
+                    selectContent.push(option);
+                };
+                $select.html( selectContent.join('') );
+            }
+            $.selectBeautify({container: '#countrycode'});
+        });
+
+        $select.on('change', function( e ){
+            var el = this,
+                val = $(this).val();
+            $.confirm('切换国家或地区将会变更路由器的无线网络工作信道，需要重启后生效，是否确定？', function(){
+                $.post(apiSet, {country: val}, function( rsp ){
+                    var rsp = $.parseJSON( rsp );
+                    if ( rsp.code == 0 ) {
+                        rebootWait({ action: '切换国家或地区', refresh: true});
+                    } else {
+                        $.alert( rsp.msg );
+                    }
+                });
+            })
+
+        });
+    });
+    if ('1' == '1') {
+        function getTWTCfg() {
+            if ($("#WIFI6switch").attr("data-on") == 1) {
+                $("#twtswitch").removeClass("btn-switch-on")
+                .addClass("btn-switch-off")
+                .attr("data-on", "0");
+                $(".mod-twt").find(".tips").show();
+                return;
+            }
+            $.ajax({
+                url: '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/get_twt',
+                type: 'GET',
+                datatype: 'json',
+                async: true,
+                success: function( rsp ){
+                    rsp = $.parseJSON(rsp);
+                    if (rsp.code === 0) {
+                        if (rsp.status == 1) {
+                            $("#twtswitch").removeClass("btn-switch-off")
+                            .addClass("btn-switch-on")
+                            .attr("data-on", "1");
+                        }
+                        else {
+                            $("#twtswitch").removeClass("btn-switch-on")
+                            .addClass("btn-switch-off")
+                            .attr("data-on", "0");
+                        }
+                    }
+                }
+            });
+        }
+        $.sub( 'wifi:twt' , function(){
+            function setTWTCfg() {
+                var on = $("#twtswitch").attr("data-on") == "0" ? 1 : 0,
+                    requestData = {on:on};
+
+                $.ajax({
+                    url: '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/set_twt',
+                    type: 'POST',
+                    datatype: 'json',
+                    data: requestData,
+                    async: true,
+                    success: function( rsp ){
+                        rsp = $.parseJSON(rsp);
+                        if (rsp.code === 0) {
+                            if (on == 1) {
+                                $("#twtswitch").removeClass("btn-switch-off")
+                                .addClass("btn-switch-on")
+                                .attr("data-on", "1");
+                            }
+                            else {
+                                $("#twtswitch").removeClass("btn-switch-on")
+                                .addClass("btn-switch-off")
+                                .attr("data-on", "0");
+                            }
+                        }
+                    }
+                });
+            }
+
+            $('body').on('click', '#twtswitch', function(e) {
+                e && e.preventDefault();
+                var wifi6switch = $('#WIFI6switch').attr("data-on");
+                if (wifi6switch == '1') {
+                    return;
+                }
+                setTWTCfg();
+            })
+
+            $('.help .ico').on('click', function(){
+                $('#helpArrow').show();
+                $('#helpSection').show();
+            });
+            $('.help-close').on('click', function(){
+                $('#helpArrow').hide();
+                $('#helpSection').hide();
+            });
+        });
+    }
+
+    // 切换信道带宽联动逻辑
+    $('body').on("change", "select[name=channel]", function() {
+        var formObj = $(this).closest(".form");
+        var bwObj = formObj.find("select[name=bandwidth]");
+        var bwItem = formObj.find('.itemBandwidth');
+        var bwVal = bwObj.val();
+        var chVal = formObj.find("select[name=channel]").val();
+        var isSupport160M = bwObj.text().indexOf("160") > -1;
+
+        // 当自动带宽支持160时才切换
+        if ((isSupport160M && (bwVal == 0 || bwVal == 160)) && (chVal >= 149 && chVal <= 161)) {
+            bwObj.val(80);
+            bwItem.find('.dummy').text("80MHz");
+            $.alert("当前频宽不支持将要切换的信道，系统已自动选择可用的频宽");
+        }
+        else if ((bwVal == 160 || bwVal == 80 || bwVal == 40 || bwVal == 0) && chVal == 165) {
+            bwObj.val(20);
+            bwItem.find('.dummy').text("20MHz");
+            $.alert("当前频宽不支持将要切换的信道，系统已自动选择可用的频宽");
+        }
+    });
+
+    $('body').on("change", "select[name=bandwidth]", function() {
+        var formObj = $(this).closest(".form");
+        var chObj = formObj.find("select[name=channel]");
+        var bwObj = formObj.find("select[name=bandwidth]");
+        var chItem = formObj.find('.itemChannel');
+        var chVal = chObj.val();
+        var bwVal = formObj.find("select[name=bandwidth]").val();
+        var isSupport160M = bwObj.text().indexOf("160") > -1;
+
+        // 当自动带宽支持160时才切换
+        if ((isSupport160M && (bwVal == 0 || bwVal == 160)) && (chVal >= 149 && chVal <= 161)) {
+            chObj.val(0);
+            var autoText = chObj.find("option:contains('自动')").text();
+            chItem.find('.dummy').text(autoText);
+            $.alert("当前频宽不支持将要切换的信道，系统已自动选择可用的频宽");
+        }
+        else if ((bwVal == 160 || bwVal == 80 || bwVal == 40 || bwVal == 0) && chVal == 165) {
+            chObj.val(0);
+            var autoText = chObj.find("option:contains('自动')").text();
+            chItem.find('.dummy').text(autoText);
+            $.alert("当前频宽不支持将要切换的信道，系统已自动选择可用的频宽");
+        }
+    });
+
+    $(function(){
+        if ('0' == '1') {
+            $.pub( 'wifi:mode' );
+        }
+        $.pub( 'wifi:init' );
+        if ((netmod != 3) && ('0' == '1')) {
+            $.pub( 'wifi:mlo' );
+        }
+        if ('1' == '1') {
+            $.pub( 'wifi:twt');
+        }
+        $.pub( 'wifi:bindEvent' );
+        $.pub( 'wifi:txpwr' );
+//        $.pub( 'countrycode' );
+        
+    });
+}());
+</script>

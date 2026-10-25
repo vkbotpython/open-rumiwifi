@@ -1,0 +1,5080 @@
+{
+ "避让IP冲突": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "IP地址": [
+  "web_home",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_setting_lannetset",
+  "web_setting_wan"
+ ],
+ "Xiaomi路由器BE7000": [
+  "web_home"
+ ],
+ "温馨提示": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "阁楼": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "请选择要添加的设备": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "小米路由器AC2100": [
+  "web_home"
+ ],
+ "Mesh组网": [
+  "web_home"
+ ],
+ "小米路由器Mesh": [
+  "web_home"
+ ],
+ "设置": [
+  "web_home",
+  "web_prosetting_networkportcustom"
+ ],
+ "主卧": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "两次输入不一致。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "下载米家APP": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "手工设置外网带宽": [
+  "web_home",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos"
+ ],
+ "确定要恢复出厂设置让小米路由器回到初始状态？": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "No name (家)": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "拨号成功": [
+  "web_home",
+  "web_setting_wan"
+ ],
+ "连接设备数量：": [
+  "web_home"
+ ],
+ "小米路由器青春版": [
+  "web_home"
+ ],
+ "没有搜索到可用的mesh节点": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "操作生效，等待设备重启...": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "内测版": [
+  "web_home"
+ ],
+ "外网带宽检测": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "请输入正确的端口号。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "截止日期不能小于起始日期。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "请输入0~10000的正整数。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "小米路由器3 Pro": [
+  "web_home"
+ ],
+ "添加Mesh子路由": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "餐厅": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "设置带宽": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "正在拨号...": [
+  "web_home",
+  "web_prosetting_vpn",
+  "web_setting_wan"
+ ],
+ "小米路由器": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "重试": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "已连接:": [
+  "web_home"
+ ],
+ "上次测速": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "次卧": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "WAN 1 外网带宽": [
+  "web_home"
+ ],
+ "3、点击开始搜索": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "1、将未配置过的路由器作为子路由，放置在需要Wi-Fi信号覆盖的房间 （如已配置请长按Reset按键5秒以上进行重置）": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "完成": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "MAC地址:": [
+  "web_home"
+ ],
+ "请检查您输入的邮政编码。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "暂无设备接入": [
+  "web_home"
+ ],
+ "无线组网：": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "© 2025 小米路由器": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "下载小翼管家APP": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "请检查您输入的银行账号。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "立即测速": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "重新测速": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "输入格式不正确,请输入标准字符": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "此时5G网络已打开": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "超时": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "为保证Mesh网络良好的使用体验，当前至多可支持10台Mesh路由器组网，更多Mesh路由器建议组成新的Mesh网络。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "最高下载速度": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "静态IP": [
+  "web_home",
+  "web_setting_wan"
+ ],
+ "手机客户端": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "阳台": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "当前未有5G连网设备": [
+  "web_home"
+ ],
+ "您可以选择以下两种方式来新增Mesh子路由": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "关闭路由器": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "未找到可用的Mesh子路由": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "起始日期不能大于截止日期。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "注销": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "黑白名单名称不支持特殊字符$ & | ；‘ ·": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "2、确保待添加的子路由处于未配置状态（长按Reset按钮5秒后即可恢复成未配置状态）;": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "正在同步Mesh节点配置...": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "Mesh 组网设备": [
+  "web_home"
+ ],
+ "小米路由器3A": [
+  "web_home"
+ ],
+ "Redmi路由器 AX3000": [
+  "web_home"
+ ],
+ "Xiaomi 全屋路由": [
+  "web_home"
+ ],
+ "路由器重启需要等待十几秒或更多时间，重启过程中将会断开网络连接，稍后将自动重新连接网络。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "网关地址": [
+  "web_home"
+ ],
+ "官方网站": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "1、将未配置过的子路由WAN口与主路由LAN口通过网线连接": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "取消": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "终端设备": [
+  "web_home"
+ ],
+ "PC客户端": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "WAN 2 外网状态": [
+  "web_home"
+ ],
+ "小米路由器4C": [
+  "web_home"
+ ],
+ "有线组网：": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "恢复出厂设置": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "你确认要关闭自己？": [
+  "web_home"
+ ],
+ "自动配置": [
+  "web_home",
+  "web_setting_wan"
+ ],
+ "外网速度": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "关闭路由器将断开其他设备的数据访问和网络连接，之后便可以安全的断开电源。（再次启动需要手工连接电源）": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "确定": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan"
+ ],
+ "任务管理器": [
+  "web_home"
+ ],
+ "外网带宽": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "已断开": [
+  "web_home",
+  "web_prosetting_vpn",
+  "web_setting_wan"
+ ],
+ "上传": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "该过程无线网络会重启，将出现短暂掉线。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "还没有进行测速": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "WAN 2 外网带宽": [
+  "web_home"
+ ],
+ "请检查您输入的电话号码。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "小米路由器2600": [
+  "web_home"
+ ],
+ "请输入正确的服务器地址": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "选择放置的位置": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "路由器名称": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "WAN 1 外网状态": [
+  "web_home"
+ ],
+ "开启访客Wi-Fi": [
+  "web_home"
+ ],
+ "小米路由器4Q": [
+  "web_home"
+ ],
+ "2、将子路由上电，启动完成后将自动进行组网，组网时子路由Internet指示灯快闪": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "修改路由器名称": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "关机中，请等待路由器指示灯熄灭后再断开电源": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "该地址由4个 0~255 之间的数字组成，数字之间用点区隔": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "Wi-Fi密码: 未设置": [
+  "web_home"
+ ],
+ "IPv6地址由8组四个十六进制数组成，每组之间用:区隔": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "5GHz 连网设备": [
+  "web_home"
+ ],
+ "支持小米Mesh组网的路由产品": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "提示": [
+  "web_home",
+  "web_prosetting_networkportcustom",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "MAC地址": [
+  "web_home",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_wan"
+ ],
+ "任务名称": [
+  "web_home"
+ ],
+ "请检查您输入的电话区号。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "下载和家亲APP": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "请输入一个2位负整数。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "小米路由器 AX3000": [
+  "web_home"
+ ],
+ "正在测速...": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "MAC客户端": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "你的浏览器禁止了Javascript功能，会造成无法使用系统进行路由器管理，请开启。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "消息框": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "小米Wi-Fi 7 路由器": [
+  "web_home"
+ ],
+ "重启中...": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "开启后会自动生成一个独立的WiFi，这样在亲朋到好友到来时，独立的WiFi账号和家庭网络彼此隔离，也不用担心家庭网络中的任何隐私会泄露出去": [
+  "web_home"
+ ],
+ "密码应同时包含数字、英文字母和特殊字符(~!@#$等)": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "密码应同时包含数字、英文字母和英文字符": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "5GHz-Game 连网设备": [
+  "web_home"
+ ],
+ "发生未知错误，测速失败": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "服务热线 400-100-5678": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "办公室": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "常用设置": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "保存": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "未开启": [
+  "web_home"
+ ],
+ "请检查您输入的姓名。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "点击进行网络检测": [
+  "web_home"
+ ],
+ "密码输入有误": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "连接类型": [
+  "web_home"
+ ],
+ "正在测速，请等待。": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "Mesh网络扩展失败": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "小米路由器4": [
+  "web_home"
+ ],
+ "选择要添加的Mesh子路由": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "官方微博": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "3、将待添加的子路由升至最新固件，并重置后重试（长按Reset按钮5秒后即可重置）": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "开始测速": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "小米路由器3G": [
+  "web_home"
+ ],
+ "添加Mesh节点": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "卫生间": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "您输入的范围不合理。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "连接设备数量 --": [
+  "web_home"
+ ],
+ "Wi-Fi 连网设备": [
+  "web_home"
+ ],
+ "搜索并添加Mesh节点时，请先到Wi-Fi设置页面，开启5G Wi-Fi。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "正在连接Mesh子路由...": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "全盘访问": [
+  "web_home"
+ ],
+ "3、将待添加的子路由靠近主路由并重试（注意保持1米以外的距离以免干扰）；": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "请检查您输入的手机号码。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "1、确认主路由与待添加的子路由均支持小米Mesh组网功能：": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "2、将主路由升至最新固件版本；": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "起始端口必须小于终止端口": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "地下室": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "手工设置": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "访问外网": [
+  "web_home"
+ ],
+ "请输入正确的端口号（XXX、XXX-YYY）。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "小米AIoT路由器 AX1800": [
+  "web_home"
+ ],
+ "手机扫描二维码安装米家APP": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "Wi-Fi名称": [
+  "web_home",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "小米路由器1500": [
+  "web_home"
+ ],
+ "Mesh网络扩展成功": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "请输入有效的IP地址": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "双WAN模式下，不支持在此处设置外网带宽": [
+  "web_home"
+ ],
+ "操作生效,重启成功！": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "小米路由器2100": [
+  "web_home"
+ ],
+ "此时5G网络已关闭": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "客厅": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "请检查您的输入。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "拨号失败": [
+  "web_home",
+  "web_setting_wan"
+ ],
+ "数字前面好像有多余的\"0\"。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "系统版本: 2.0.28 稳定版 MAC地址: D4:53:2A:3D:0B:47": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "测速不准？": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "频段": [
+  "web_home"
+ ],
+ "确认": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "路由器关机": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "小米路由器HD": [
+  "web_home"
+ ],
+ "请检查您输入的验证码。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "IoT专属网络 连网设备": [
+  "web_home"
+ ],
+ "IP地址:": [
+  "web_home"
+ ],
+ "小米路由器3C": [
+  "web_home"
+ ],
+ "上传带宽": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "设置成功": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "访客连网设备": [
+  "web_home"
+ ],
+ "小米路由器 AX6000": [
+  "web_home"
+ ],
+ "4、将待添加的子路由升至最新固件，并重置后重试": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "日期输入格式为\"YYYY-MM-DD\"。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "用户社区": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "稳定版": [
+  "web_home"
+ ],
+ "加载中...": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "| 本机": [
+  "web_home"
+ ],
+ "系统升级": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "静态IPv6": [
+  "web_home",
+  "web_setting_wan"
+ ],
+ "系统ROM版本": [
+  "web_home"
+ ],
+ "没有运行中的任务": [
+  "web_home"
+ ],
+ "知道了": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "常见问题": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "下载": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "，正在尝试特殊拨号模式...": [
+  "web_home",
+  "web_setting_wan"
+ ],
+ "Wi-Fi名称：": [
+  "web_home"
+ ],
+ "下载带宽": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "路由器型号": [
+  "web_home"
+ ],
+ "路由状态": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "开发版": [
+  "web_home"
+ ],
+ "小米路由器2": [
+  "web_home"
+ ],
+ "正在扩展Mesh节点(1-2分钟)...": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "去开启": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "可以尝试以下方法：": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "1、将待添加的子路由靠近主路由并重试（注意保持1米以外的距离以免干扰）；": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "请检查您输入的时间格式。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "2.4GHz 连网设备": [
+  "web_home"
+ ],
+ "正在扩展Mesh网络": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "限速设置": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "当前未开启访客模式": [
+  "web_home"
+ ],
+ "搜索并添加Mesh节点": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "Xiaomi路由器 AX3000T": [
+  "web_home"
+ ],
+ "高级设置": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "是否确定关闭路由器，操作将断开和小米路由器的连接。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "自动连接路由器失败，请检查无线或者网线是否连接正确。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "书房": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "开始搜索": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "请检查您输入的身份证号码，目前只支持15位或者18位。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "小米路由器4A": [
+  "web_home"
+ ],
+ "小米路由器4 v2": [
+  "web_home"
+ ],
+ "Mesh组网设备": [
+  "web_home"
+ ],
+ "执行此操作，局域网IP将会变更为": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "网线连网设备": [
+  "web_home"
+ ],
+ "Redmi路由器": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "添加": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "内存": [
+  "web_home"
+ ],
+ "搜索要添加的Mesh子路由": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "操作": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe"
+ ],
+ "Xiaomi万兆路由器": [
+  "web_home"
+ ],
+ "重新搜索": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "*请确保此路由器处于未配置状态，如已配置请长按Reset按键5秒以上进行重置": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "互联网": [
+  "web_home"
+ ],
+ "小米路由器MINI": [
+  "web_home"
+ ],
+ "Wi-Fi密码：": [
+  "web_home"
+ ],
+ "小米AIoT路由器 AX3600": [
+  "web_home"
+ ],
+ "LAN IPv6前缀需要以::结尾": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "Xiaomi路由器 AX3000E": [
+  "web_home"
+ ],
+ "无效的手机号": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "确定重启路由器，重启将断开和小米路由器的连接。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "搜索Mesh子路由...": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "厨房": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "最高上传速度": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "请检查您输入的电话分机号码。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "网络速度": [
+  "web_home",
+  "web_prosetting_qos"
+ ],
+ "重启路由器": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "MAC地址格式有误，如ab:cd:ef:11:22:33": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "请输入数字、英文字母或英文符号": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "5G Wi-Fi是运行在5GHz以上的高频段的独立Wi-Fi比较2.4G Wi-Fi速度更快更稳定，适合电视、盒子包括距离路由器较近的设备": [
+  "web_home"
+ ],
+ "请检查您输入的Email格式。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "请检查您选择的图片文件路径，只支持jpg、jpeg、png、gif、tif、bmp格式。": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "官方微信": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "重启": [
+  "web_home",
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "小米路由器3": [
+  "web_home"
+ ],
+ "去小米网购买5G智能设备": [
+  "web_home"
+ ],
+ "主机名称为从运营商申请的域名；": [
+  "web_prosetting_ddns"
+ ],
+ "停用": [
+  "web_prosetting_ddns"
+ ],
+ "端口转发": [
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn"
+ ],
+ "网口自定义": [
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn"
+ ],
+ "DDNS（Dynamic Domain Name Server）是动态域名服务的缩写。": [
+  "web_prosetting_ddns"
+ ],
+ "注意事项:": [
+  "web_prosetting_ddns",
+  "web_prosetting_vpn"
+ ],
+ "1. 通过DDNS服务商获得域名及账号密码信息；": [
+  "web_prosetting_ddns"
+ ],
+ "服务提供商及主机名称": [
+  "web_prosetting_ddns"
+ ],
+ "编辑": [
+  "web_prosetting_ddns",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_upgrade"
+ ],
+ "强制更新": [
+  "web_prosetting_ddns"
+ ],
+ "密码": [
+  "web_prosetting_ddns",
+  "web_prosetting_vpn",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "用户名": [
+  "web_prosetting_ddns",
+  "web_prosetting_vpn"
+ ],
+ "启用": [
+  "web_prosetting_ddns"
+ ],
+ "服务列表：": [
+  "web_prosetting_ddns"
+ ],
+ "主机名称": [
+  "web_prosetting_ddns"
+ ],
+ "强制更新为域名与IP强制更新的时间，如无特殊需求，建议使用默认配置；": [
+  "web_prosetting_ddns"
+ ],
+ "只能同时开启一个DDNS服务。": [
+  "web_prosetting_ddns"
+ ],
+ "状态检查的分钟间隔": [
+  "web_prosetting_ddns"
+ ],
+ "2. 开启DDNS服务，添加服务，输入前一步获取的信息，保存并启用该服务。": [
+  "web_prosetting_ddns"
+ ],
+ "添加服务": [
+  "web_prosetting_ddns",
+  "web_prosetting_vpn"
+ ],
+ "删除": [
+  "web_prosetting_ddns",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_vpn",
+  "web_setting_safe",
+  "web_setting_upgrade"
+ ],
+ "公云（3322.org）": [
+  "web_prosetting_ddns"
+ ],
+ "目前路由器拨号上网获得的多半都是动态IP，DDNS可以将路由器变化的外网IP和固定的域名绑定，从而用户可以在外网通过该固定域名来访问路由器。": [
+  "web_prosetting_ddns"
+ ],
+ "未启动无法强制更新": [
+  "web_prosetting_ddns"
+ ],
+ "最近更新": [
+  "web_prosetting_ddns"
+ ],
+ "状态检查": [
+  "web_prosetting_ddns"
+ ],
+ "用户名和密码为注册该运营商的用户名与密码；": [
+  "web_prosetting_ddns"
+ ],
+ "服务提供商": [
+  "web_prosetting_ddns"
+ ],
+ "连接正常": [
+  "web_prosetting_ddns"
+ ],
+ "暂无更新": [
+  "web_prosetting_ddns"
+ ],
+ "更新成功": [
+  "web_prosetting_ddns"
+ ],
+ "保存中...": [
+  "web_prosetting_ddns",
+  "web_setting_safe",
+  "web_setting_wan"
+ ],
+ "强制检查为WAN口IP的检查时间，如无特殊需求，建议使用默认配置；": [
+  "web_prosetting_ddns"
+ ],
+ "分钟": [
+  "web_prosetting_ddns"
+ ],
+ "手动更新": [
+  "web_prosetting_ddns"
+ ],
+ "可以通过内置的DDNS运营商去该运营商官网去注册账号及申请域名；": [
+  "web_prosetting_ddns"
+ ],
+ "什么是DDNS？": [
+  "web_prosetting_ddns"
+ ],
+ "如何设置DDNS？": [
+  "web_prosetting_ddns"
+ ],
+ "花生壳（oray.com）": [
+  "web_prosetting_ddns"
+ ],
+ "状态": [
+  "web_prosetting_ddns",
+  "web_prosetting_nat",
+  "web_prosetting_vpn"
+ ],
+ "小时": [
+  "web_prosetting_ddns"
+ ],
+ "编辑服务": [
+  "web_prosetting_ddns"
+ ],
+ "连接错误": [
+  "web_prosetting_ddns"
+ ],
+ "连接中...": [
+  "web_prosetting_ddns"
+ ],
+ "强制更新的小时间隔": [
+  "web_prosetting_ddns"
+ ],
+ "QoS智能限速": [
+  "web_prosetting_ddns",
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn"
+ ],
+ "配置成功，请稍候...": [
+  "web_prosetting_dmz"
+ ],
+ "应用": [
+  "web_prosetting_dmz",
+  "web_prosetting_nat",
+  "web_setting_lannetset",
+  "web_setting_wan"
+ ],
+ "DMZ IP地址": [
+  "web_prosetting_dmz",
+  "web_prosetting_nat"
+ ],
+ "关闭成功，生效中，请稍候...": [
+  "web_prosetting_dmz",
+  "web_prosetting_nat"
+ ],
+ "未生效": [
+  "web_prosetting_dmz",
+  "web_prosetting_nat"
+ ],
+ "设置DMZ": [
+  "web_prosetting_dmz",
+  "web_prosetting_nat"
+ ],
+ "开启DMZ功能可以将内网某一个设备的IP映射到外网，方便从外网访问到该设备。": [
+  "web_prosetting_dmz",
+  "web_prosetting_nat"
+ ],
+ "已生效": [
+  "web_prosetting_dmz",
+  "web_prosetting_nat"
+ ],
+ "端口转发开启了，不可以设置DMZ": [
+  "web_prosetting_dmz",
+  "web_prosetting_nat"
+ ],
+ "IP地址最后一位": [
+  "web_prosetting_dmz",
+  "web_prosetting_nat"
+ ],
+ "DMZ状态：": [
+  "web_prosetting_dmz",
+  "web_prosetting_nat"
+ ],
+ "设置成功正在重启，需要30秒请等待...": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "关闭": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp",
+  "web_setting_wifi"
+ ],
+ "编辑端口转发规则": [
+  "web_prosetting_nat"
+ ],
+ "内部IP地址": [
+  "web_prosetting_nat"
+ ],
+ "起始端口": [
+  "web_prosetting_nat"
+ ],
+ "配置中，请稍候...": [
+  "web_prosetting_nat"
+ ],
+ "确定要删除这条规则吗？": [
+  "web_prosetting_nat"
+ ],
+ "修改Wi-Fi设置": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp",
+  "web_setting_wifi"
+ ],
+ "没有UPnP设备": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "dBm(取值范围-90~-60)": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "需在-90~-60范围内取值": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "拒绝阈值": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "踢除阈值": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "外部端口": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "编辑范围转发规则": [
+  "web_prosetting_nat"
+ ],
+ "内部端口": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "需在-85~-55范围内取值": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "5G 漫游": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "目标IP": [
+  "web_prosetting_nat"
+ ],
+ "dBm(取值范围-85~-55)": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "客户端IP": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "UPnP未开启": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "UPnP状态": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "网络异常，请检查是否联网": [
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_upnp",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "需在-100~-70范围内取值": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "新建端口转发规则": [
+  "web_prosetting_nat"
+ ],
+ "新建范围转发规则": [
+  "web_prosetting_nat"
+ ],
+ "该操作将重启 Wi-Fi 并导致 Wi-Fi 下的所有设备失去连接，是否确认修改？": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp",
+  "web_setting_wifi"
+ ],
+ "修改 Wi-Fi 设置": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp",
+  "web_setting_wifi"
+ ],
+ "应用名称": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "2.4G 漫游": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "协议": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "UPnP设备列表：": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "名称": [
+  "web_prosetting_nat",
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_safe",
+  "web_setting_wifi"
+ ],
+ "范围转发规则列表：": [
+  "web_prosetting_nat"
+ ],
+ "查询中...": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp",
+  "web_prosetting_vpn",
+  "web_setting_lannetset"
+ ],
+ "dBm(取值范围-100~-70)": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "需在-95~-65范围内取值": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "结束端口": [
+  "web_prosetting_nat"
+ ],
+ "更新": [
+  "web_prosetting_nat"
+ ],
+ "开启": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp",
+  "web_setting_wifi"
+ ],
+ "端口转发规则列表：": [
+  "web_prosetting_nat"
+ ],
+ "dBm(取值范围-95~-65)": [
+  "web_prosetting_nat",
+  "web_prosetting_upnp"
+ ],
+ "手工添加": [
+  "web_prosetting_networkportcustom",
+  "web_setting_safe"
+ ],
+ "聚合失败，检测到选定的LAN口实际生效速率不同": [
+  "web_prosetting_networkportcustom"
+ ],
+ "（3）外网路径选择（带宽聚合模式）：可选择部分设备的数据优先通过固定的WAN口宽带，比如部分数据走移动网络，部分数据走电信网络": [
+  "web_prosetting_networkportcustom"
+ ],
+ "设置中": [
+  "web_prosetting_networkportcustom"
+ ],
+ "保存成功": [
+  "web_prosetting_networkportcustom"
+ ],
+ "网络服务提供商配置": [
+  "web_prosetting_networkportcustom"
+ ],
+ "自定义": [
+  "web_prosetting_networkportcustom",
+  "web_setting_upgrade"
+ ],
+ "将两个LAN口聚合，实现网口速率叠加": [
+  "web_prosetting_networkportcustom",
+  "web_setting_lannetset",
+  "web_setting_wan"
+ ],
+ "WAN口转发规则设置": [
+  "web_prosetting_networkportcustom"
+ ],
+ "请选择一个网口作为游戏网口": [
+  "web_prosetting_networkportcustom"
+ ],
+ "双WAN功能介绍": [
+  "web_prosetting_networkportcustom"
+ ],
+ "修改端口设置": [
+  "web_prosetting_networkportcustom"
+ ],
+ "配置生效过程中路由器会短暂断开网络，现在保存配置？": [
+  "web_prosetting_networkportcustom"
+ ],
+ "网口协商速率不同时，将无法聚合成功。对端网卡需开启LACP协议。": [
+  "web_prosetting_networkportcustom"
+ ],
+ "双WAN功能是指支持两条外网宽带线路同时工作以带来更佳的网络体验，其主要的功能如下：": [
+  "web_prosetting_networkportcustom"
+ ],
+ "1.开启双WAN功能后会与部分功能冲突，若仍想使用冲突功能，请先尝试关闭双WAN后再试": [
+  "web_prosetting_networkportcustom"
+ ],
+ "2.若某些终端设备出现金融类app无法正常使用的情况，可尝试在“WAN口策略”功能中将该设备设置为“WAN1优先”或“WAN2优先”后再试": [
+  "web_prosetting_networkportcustom"
+ ],
+ "聚合失败，检测到聚合的LAN口未插入网线": [
+  "web_prosetting_networkportcustom"
+ ],
+ "中进行WAN口配置": [
+  "web_prosetting_networkportcustom"
+ ],
+ "4.双WAN功能仅支持IPv4，IPV6及IPTV功能仅支持在WAN1上部署": [
+  "web_prosetting_networkportcustom"
+ ],
+ "“常用设置-上网设置”": [
+  "web_prosetting_networkportcustom"
+ ],
+ "（1）增加带宽（带宽聚合模式）：可同时使用两条外网宽带线路以增加外网总带宽，实现更大的下载速率": [
+  "web_prosetting_networkportcustom"
+ ],
+ "WAN2口带宽": [
+  "web_prosetting_networkportcustom"
+ ],
+ "正在查询中...": [
+  "web_prosetting_networkportcustom",
+  "web_prosetting_vpn",
+  "web_setting_safe"
+ ],
+ "WAN2优先": [
+  "web_prosetting_networkportcustom"
+ ],
+ "聚合未开启，请配置聚合": [
+  "web_prosetting_networkportcustom"
+ ],
+ "WAN2口": [
+  "web_prosetting_networkportcustom"
+ ],
+ "设备信息": [
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_setting_safe"
+ ],
+ "请至少选择一个设备": [
+  "web_prosetting_networkportcustom",
+  "web_prosetting_vpn",
+  "web_setting_safe"
+ ],
+ "IPTV VLAN优先级(0~7)": [
+  "web_prosetting_networkportcustom"
+ ],
+ "前往上网配置设置": [
+  "web_prosetting_networkportcustom"
+ ],
+ "什么是双WAN？": [
+  "web_prosetting_networkportcustom"
+ ],
+ "还没有策略加入": [
+  "web_prosetting_networkportcustom"
+ ],
+ "注意：": [
+  "web_prosetting_networkportcustom"
+ ],
+ "设备IP": [
+  "web_prosetting_networkportcustom"
+ ],
+ "WAN1优先，WAN2备份": [
+  "web_prosetting_networkportcustom"
+ ],
+ "配置生效过程中连接在路由器上的有线设备会短暂断开网络，请确认是否保存修改？": [
+  "web_prosetting_networkportcustom"
+ ],
+ "错误：策略数量最大值为'+ MAX_ROUTER_POLICY_LIST_NUM +'": [
+  "web_prosetting_networkportcustom"
+ ],
+ "WAN1口": [
+  "web_prosetting_networkportcustom"
+ ],
+ "3.请勿将WAN1或WAN2口与其他Mesh组网设备相连": [
+  "web_prosetting_networkportcustom"
+ ],
+ "LAN口聚合": [
+  "web_prosetting_networkportcustom",
+  "web_setting_lannetset",
+  "web_setting_wan"
+ ],
+ "设备名称": [
+  "web_prosetting_networkportcustom",
+  "web_prosetting_qos",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_safe"
+ ],
+ "（2）冗余备份（WAN1优先，WAN2备份/WAN2优先，WAN1备份）：如果其中一条外网宽带出现故障，可以数据分流到另一条宽带上，以保障与外部网络连通": [
+  "web_prosetting_networkportcustom"
+ ],
+ "请选择网口作为WAN口，并在": [
+  "web_prosetting_networkportcustom"
+ ],
+ "WAN1口带宽": [
+  "web_prosetting_networkportcustom"
+ ],
+ "前往上网设置配置": [
+  "web_prosetting_networkportcustom"
+ ],
+ "从在线列表添加": [
+  "web_prosetting_networkportcustom",
+  "web_setting_safe"
+ ],
+ "可用端口不足，请先关闭其他端口功能后再试": [
+  "web_prosetting_networkportcustom"
+ ],
+ "带宽聚合": [
+  "web_prosetting_networkportcustom"
+ ],
+ "请选择网口": [
+  "web_prosetting_networkportcustom"
+ ],
+ "WAN1口/WAN2口转发比例设置": [
+  "web_prosetting_networkportcustom"
+ ],
+ "网络异常，获取列表失败": [
+  "web_prosetting_networkportcustom"
+ ],
+ "双WAN设置中，请稍等...": [
+  "web_prosetting_networkportcustom"
+ ],
+ "为保证正常上网，请在“常用设置”-“上网设置”中进行WAN口配置": [
+  "web_prosetting_networkportcustom"
+ ],
+ "确认是否关闭双WAN功能": [
+  "web_prosetting_networkportcustom"
+ ],
+ "聚合中，请确保接入聚合口的设备支持聚合功能": [
+  "web_prosetting_networkportcustom"
+ ],
+ "WAN口转发规则列表：": [
+  "web_prosetting_networkportcustom"
+ ],
+ "WAN口策略": [
+  "web_prosetting_networkportcustom"
+ ],
+ "IPTV VLAN优先级": [
+  "web_prosetting_networkportcustom"
+ ],
+ "请选择网口：": [
+  "web_prosetting_networkportcustom"
+ ],
+ "提示信息": [
+  "web_prosetting_networkportcustom",
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "请选择需要聚合的两个LAN口": [
+  "web_prosetting_networkportcustom",
+  "web_setting_lannetset",
+  "web_setting_wan"
+ ],
+ "不再提示": [
+  "web_prosetting_networkportcustom"
+ ],
+ "错误：策略数量最大值为1000": [
+  "web_prosetting_networkportcustom"
+ ],
+ "WAN1优先": [
+  "web_prosetting_networkportcustom"
+ ],
+ "双WAN设置": [
+  "web_prosetting_networkportcustom"
+ ],
+ "模式": [
+  "web_prosetting_networkportcustom",
+  "web_setting_lannetset",
+  "web_setting_wan"
+ ],
+ "WAN2优先，WAN1备份": [
+  "web_prosetting_networkportcustom"
+ ],
+ "聚合口": [
+  "web_prosetting_networkportcustom",
+  "web_setting_lannetset",
+  "web_setting_wan"
+ ],
+ "游戏网口": [
+  "web_prosetting_networkportcustom",
+  "web_setting_lannetset",
+  "web_setting_wan"
+ ],
+ "LAN口聚合成功": [
+  "web_prosetting_networkportcustom"
+ ],
+ "桥接模式": [
+  "web_prosetting_networkportcustom"
+ ],
+ "确认是否关闭LAN口聚合功能": [
+  "web_prosetting_networkportcustom"
+ ],
+ "设置中，请稍等...": [
+  "web_prosetting_networkportcustom"
+ ],
+ "手工限速模式": [
+  "web_prosetting_qos"
+ ],
+ "访客WiFi限速": [
+  "web_prosetting_qos"
+ ],
+ "访客WiFi限速:": [
+  "web_prosetting_qos"
+ ],
+ "游戏优先": [
+  "web_prosetting_qos"
+ ],
+ "系统根据设备需要自动调配网速": [
+  "web_prosetting_qos"
+ ],
+ "自动模式下路由器会根据当前网络使用情况动态调整带宽分配，保证网络体验流畅": [
+  "web_prosetting_qos"
+ ],
+ "未设置": [
+  "web_prosetting_qos"
+ ],
+ "QoS智能分配": [
+  "web_prosetting_qos"
+ ],
+ "上传限速": [
+  "web_prosetting_qos"
+ ],
+ "视频优先": [
+  "web_prosetting_qos"
+ ],
+ "当前网速": [
+  "web_prosetting_qos"
+ ],
+ "根据应用优先级分配网速": [
+  "web_prosetting_qos"
+ ],
+ "优先保证浏览网页的网速，大图秒打开": [
+  "web_prosetting_qos"
+ ],
+ "当外网下载带宽超过50Mbps时，建议无需开启QoS功能": [
+  "web_prosetting_qos"
+ ],
+ "IP和MAC": [
+  "web_prosetting_qos"
+ ],
+ "优先级模式下路由器会动态调整带宽分配，保证优先级较高的设备网络体验流畅": [
+  "web_prosetting_qos"
+ ],
+ "优先级": [
+  "web_prosetting_qos"
+ ],
+ "下载速度": [
+  "web_prosetting_qos"
+ ],
+ "最大速度": [
+  "web_prosetting_qos"
+ ],
+ "优先级模式": [
+  "web_prosetting_qos"
+ ],
+ "自动模式": [
+  "web_prosetting_qos"
+ ],
+ "最高速度设置": [
+  "web_prosetting_qos"
+ ],
+ "系统自动": [
+  "web_prosetting_qos"
+ ],
+ "系统错误，请重试": [
+  "web_prosetting_qos"
+ ],
+ "下载限速": [
+  "web_prosetting_qos"
+ ],
+ "无限制": [
+  "web_prosetting_qos"
+ ],
+ "网页优先": [
+  "web_prosetting_qos"
+ ],
+ "当前QoS服务暂未开启": [
+  "web_prosetting_qos"
+ ],
+ "优先保证打游戏的网速，不卡顿不掉线": [
+  "web_prosetting_qos"
+ ],
+ "优先保证看视频的网速，高清也流畅": [
+  "web_prosetting_qos"
+ ],
+ "限速模式": [
+  "web_prosetting_qos"
+ ],
+ "无限速阈值，请先进行限速设置": [
+  "web_prosetting_qos"
+ ],
+ "设置QoS": [
+  "web_prosetting_qos"
+ ],
+ "手工模式下路由器会根据您设置的速度调整带宽分配": [
+  "web_prosetting_qos"
+ ],
+ "上传速度": [
+  "web_prosetting_qos"
+ ],
+ "家庭WiFi限速": [
+  "web_prosetting_qos"
+ ],
+ "可以通过添加设备来限定哪些设备可以使用VPN流量": [
+  "web_prosetting_vpn"
+ ],
+ "VPN设置失败": [
+  "web_prosetting_vpn"
+ ],
+ "地址": [
+  "web_prosetting_vpn"
+ ],
+ "添加服务地址": [
+  "web_prosetting_vpn"
+ ],
+ "按设备分流": [
+  "web_prosetting_vpn"
+ ],
+ "按服务地址分流": [
+  "web_prosetting_vpn"
+ ],
+ "离线": [
+  "web_prosetting_vpn"
+ ],
+ "在线": [
+  "web_prosetting_vpn"
+ ],
+ "断开连接": [
+  "web_prosetting_vpn"
+ ],
+ "取消连接": [
+  "web_prosetting_vpn"
+ ],
+ "已连接": [
+  "web_prosetting_vpn"
+ ],
+ "协议类型": [
+  "web_prosetting_vpn"
+ ],
+ "小米服务走VPN": [
+  "web_prosetting_vpn"
+ ],
+ "什么是VPN": [
+  "web_prosetting_vpn"
+ ],
+ "重新连接vpn后该设置将生效，是否确认重新连接？": [
+  "web_prosetting_vpn"
+ ],
+ "VPN 服务列表：": [
+  "web_prosetting_vpn"
+ ],
+ "开启该功能后，需要您重新连接VPN方可生效，且智能分流功能将关闭。若开启后发现路由器App远程访问出现异常，请您关闭。是否确认开启？": [
+  "web_prosetting_vpn"
+ ],
+ "1.首先需要在VPN服务商官网上注册账号，获得用户名、密码、服务器地址、协议类型等信息。": [
+  "web_prosetting_vpn"
+ ],
+ "可以通过添加服务地址来限定哪些服务流量会经过VPN": [
+  "web_prosetting_vpn"
+ ],
+ "你可以自定义哪些服务或设备会走VPN的流量": [
+  "web_prosetting_vpn"
+ ],
+ "通过MAC地址添加": [
+  "web_prosetting_vpn"
+ ],
+ "没有设置信息": [
+  "web_prosetting_vpn",
+  "web_setting_lannetset",
+  "web_setting_upgrade"
+ ],
+ "连接": [
+  "web_prosetting_vpn"
+ ],
+ "请输入地址": [
+  "web_prosetting_vpn"
+ ],
+ "从设备列表添加设备": [
+  "web_prosetting_vpn"
+ ],
+ "2.服务器地址可以是域名或IP地址，具体由服务商提供。": [
+  "web_prosetting_vpn"
+ ],
+ "1.VPN用户名、密码、服务器地址、协议类型等信息需要向VPN服务商获取。": [
+  "web_prosetting_vpn"
+ ],
+ "你确定要删除此项吗？": [
+  "web_prosetting_vpn"
+ ],
+ "连接异常": [
+  "web_prosetting_vpn"
+ ],
+ "2.将信息添加到服务中，并启用该VPN服务": [
+  "web_prosetting_vpn"
+ ],
+ "连接失败": [
+  "web_prosetting_vpn"
+ ],
+ "VPN属于远程访问技术，应用举例：出差员工在外地通过VPN服务访问企业内部网络。": [
+  "web_prosetting_vpn"
+ ],
+ "如何设置VPN": [
+  "web_prosetting_vpn"
+ ],
+ "开机自动连接": [
+  "web_prosetting_vpn"
+ ],
+ "通过MAC地址添加要使用VPN的设备": [
+  "web_prosetting_vpn"
+ ],
+ "重连": [
+  "web_prosetting_vpn"
+ ],
+ "服务器地址": [
+  "web_prosetting_vpn"
+ ],
+ "未启用": [
+  "web_prosetting_vpn"
+ ],
+ "添加要使用VPN的服务地址": [
+  "web_prosetting_vpn"
+ ],
+ "请选择需要使用VPN的设备": [
+  "web_prosetting_vpn"
+ ],
+ "服务器": [
+  "web_prosetting_vpn"
+ ],
+ "PPTP（Point to Point Tunneling Protocol）和L2TP（Layer 2 Tunneling Protocol）为两种互联网隧道协议，都属于VPN（Virtual Private Network）虚拟专用网络的不同协议分类方式。": [
+  "web_prosetting_vpn"
+ ],
+ "当前正在连接的VPN将被断开，重新连接后该设置将生效。": [
+  "web_prosetting_vpn"
+ ],
+ "当你需要通过VPN使用外网时，可以开启此功能保证小米路由器APP远程服务可用，其他情况下关闭此功能": [
+  "web_prosetting_vpn"
+ ],
+ "请输入设备的MAC地址": [
+  "web_prosetting_vpn"
+ ],
+ "智能VPN分流": [
+  "web_prosetting_vpn"
+ ],
+ "正在断开...": [
+  "web_prosetting_vpn"
+ ],
+ "子网掩码": [
+  "web_setting_lannetset",
+  "web_setting_wan"
+ ],
+ "WAN/LAN口自适应（推荐）": [
+  "web_setting_lannetset",
+  "web_setting_wan"
+ ],
+ "解绑选中": [
+  "web_setting_lannetset"
+ ],
+ "最大终端数量": [
+  "web_setting_lannetset"
+ ],
+ "绑定设备": [
+  "web_setting_lannetset"
+ ],
+ "上网设置": [
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "结束IP": [
+  "web_setting_lannetset"
+ ],
+ "该IP不在可用IP范围内，请重新输入。您可以参考DHCP服务可用IP段来设定。": [
+  "web_setting_lannetset"
+ ],
+ "最多接入设备为1000台，请重新设置": [
+  "web_setting_lannetset"
+ ],
+ "终端数量": [
+  "web_setting_lannetset"
+ ],
+ "5、静态 IP 地址绑定：通常您计算机的 IP 地址由路由器动态分配。如果您希望计算机拥有静态 IP 地址，您可以在静态 IP 地址绑定列表中手动添加您计算机的 MAC 地址和希望使用的静态 IP 地址。注意，静态 IP 地址需与路由器的局域网 IP 地址在同一网段。": [
+  "web_setting_lannetset"
+ ],
+ "Wi-Fi设置": [
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "此操作需要重启才能生效，是否提交?": [
+  "web_setting_lannetset"
+ ],
+ "移除": [
+  "web_setting_lannetset"
+ ],
+ "局域网设置": [
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "你还未选择任何设备": [
+  "web_setting_lannetset"
+ ],
+ "安全中心": [
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "处理中...": [
+  "web_setting_lannetset"
+ ],
+ "配置为C类IP地址时，请使用掩码255.255.255.0": [
+  "web_setting_lannetset"
+ ],
+ "DHCP服务": [
+  "web_setting_lannetset"
+ ],
+ "确定要删除这项数据吗": [
+  "web_setting_lannetset"
+ ],
+ "租约(分)": [
+  "web_setting_lannetset"
+ ],
+ "4、默认网关：路由器下接入设备的默认网关，默认是路由器内网IP。": [
+  "web_setting_lannetset"
+ ],
+ "确认要解除选中项目的绑定关系？": [
+  "web_setting_lannetset"
+ ],
+ "判断是否超出DHCP服务所设定的IP段": [
+  "web_setting_lannetset"
+ ],
+ "局域网IP": [
+  "web_setting_lannetset"
+ ],
+ "出现异常，请刷新页面": [
+  "web_setting_lannetset"
+ ],
+ "DHCP静态IP分配": [
+  "web_setting_lannetset"
+ ],
+ "设置有误，请重新输入": [
+  "web_setting_lannetset"
+ ],
+ "已绑定的设备列表：": [
+  "web_setting_lannetset"
+ ],
+ "你确定要解除此项绑定？": [
+  "web_setting_lannetset"
+ ],
+ "固定WAN口": [
+  "web_setting_lannetset",
+  "web_setting_wan"
+ ],
+ "WAN/LAN 自适应功能可以自动判断接入网口的设备是WAN设备还是LAN设备，并相应地配置端口的工作模式": [
+  "web_setting_lannetset",
+  "web_setting_wan"
+ ],
+ "开始IP": [
+  "web_setting_lannetset"
+ ],
+ "系统设置": [
+  "web_setting_lannetset",
+  "web_setting_safe",
+  "web_setting_upgrade",
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "WAN口选择": [
+  "web_setting_lannetset",
+  "web_setting_wan"
+ ],
+ "存在IP冲突，请检查输入项": [
+  "web_setting_lannetset"
+ ],
+ "解除绑定": [
+  "web_setting_lannetset"
+ ],
+ "1、DHCP 服务器：开启后，小米路由可以自动向您的接入设备分配 IP 地址、DNS 服务器地址等网络参数，并通过此功能实现 IP 地址的集中管理；关闭后，小米路由将不为您的计算机自动分配 IP 地址、DNS 服务器地址等网络参数，当另一台路由器通过 Wi-Fi 中继方式连接此路由器时，中继连接将会失败。": [
+  "web_setting_lannetset"
+ ],
+ "增加一项": [
+  "web_setting_lannetset"
+ ],
+ "默认网关": [
+  "web_setting_lannetset"
+ ],
+ "结束": [
+  "web_setting_lannetset"
+ ],
+ "3、路由器局域网IP地址：登陆Web配置后台的地址。": [
+  "web_setting_lannetset"
+ ],
+ "局域网IP地址": [
+  "web_setting_lannetset"
+ ],
+ "接入到运营商宽带的网线可以插在任意网口": [
+  "web_setting_lannetset",
+  "web_setting_wan"
+ ],
+ "2、租期：IP 地址分配给局域网计算机以后，如果使用时间超过这个租期，小米路由将给计算机分配新的 IP 地址。": [
+  "web_setting_lannetset"
+ ],
+ "租约": [
+  "web_setting_lannetset"
+ ],
+ "什么是DHCP？": [
+  "web_setting_lannetset"
+ ],
+ "新密码": [
+  "web_setting_safe"
+ ],
+ "无线访问控制": [
+  "web_setting_safe"
+ ],
+ "你什么都没改变，提交什么啊": [
+  "web_setting_safe",
+  "web_setting_wifi"
+ ],
+ "您没有将当前设备添加至白名单，保存后本机将无法访问网络！": [
+  "web_setting_safe"
+ ],
+ "您没有在列表中添加任何设备，保存后所有设备将无法访问网络！请返回修改": [
+  "web_setting_safe"
+ ],
+ "添加失败，Mesh路由不能添加到黑名单": [
+  "web_setting_safe"
+ ],
+ "您将当前设备添加至黑名单，保存后本机将无法访问网络！": [
+  "web_setting_safe"
+ ],
+ "通过MAC地址添加设备": [
+  "web_setting_safe"
+ ],
+ "确认密码": [
+  "web_setting_safe"
+ ],
+ "正在检测模式列表...": [
+  "web_setting_safe"
+ ],
+ "MAC地址白名单": [
+  "web_setting_safe"
+ ],
+ "原密码": [
+  "web_setting_safe"
+ ],
+ "无线MAC地址过滤": [
+  "web_setting_safe"
+ ],
+ "管理后台访问控制": [
+  "web_setting_safe"
+ ],
+ "新密码与原密码相同": [
+  "web_setting_safe"
+ ],
+ "修改管理密码": [
+  "web_setting_safe"
+ ],
+ "开启白名单功能后，将只允许名单中的设备访问管理后台，每次开启会将本机自动添加至白名单。": [
+  "web_setting_safe"
+ ],
+ "白名单模式（只允许列表中设备访问）": [
+  "web_setting_safe"
+ ],
+ "白名单设备列表": [
+  "web_setting_safe"
+ ],
+ "黑名单设备列表": [
+  "web_setting_safe"
+ ],
+ "黑名单模式（不允许列表中设备访问）": [
+  "web_setting_safe"
+ ],
+ "连接时长": [
+  "web_setting_safe"
+ ],
+ "保存并生效": [
+  "web_setting_safe"
+ ],
+ "开启后访问协议将自动重定向为https，需要重新登录Web管理后台。确认开启？": [
+  "web_setting_safe"
+ ],
+ "控制模式：": [
+  "web_setting_safe"
+ ],
+ "(UTC+3)内罗毕": [
+  "web_setting_upgrade"
+ ],
+ "开启或关闭此路由器的网络和系统状态指示灯": [
+  "web_setting_upgrade"
+ ],
+ "可选恢复的项目": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+6:30)仰光": [
+  "web_setting_upgrade"
+ ],
+ "上网设置(拨号方式和宽带账号密码)": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-8)太平洋时间(美国和加拿大)": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-1)佛得角": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-6)加拉帕戈斯": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+13)恩德伯里，法考福，通塔普": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)开罗": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-8)皮特克恩": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+9:30)达尔文": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+9)首尔": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+10)堪培拉,墨尔本,悉尼": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-3)布宜诺斯艾利斯，圣路易斯，马塞奥，蒙得维的亚，帕拉马里博": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)明斯克": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-6)芝加哥，马塔莫罗斯，新塞勒姆，雷尼河，温尼伯": [
+  "web_setting_upgrade"
+ ],
+ "星期二": [
+  "web_setting_upgrade"
+ ],
+ "yyyy年MM月dd日 hh:mm:ss": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-2)协调世界时-02": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)雅典,布加勒斯特": [
+  "web_setting_upgrade"
+ ],
+ "安装失败，系统错误或路由器空间不足。": [
+  "web_setting_upgrade"
+ ],
+ "请选择插件安装包:": [
+  "web_setting_upgrade"
+ ],
+ "(UTC)都柏林,爱丁堡,里斯本,伦敦": [
+  "web_setting_upgrade"
+ ],
+ "2.若此前已完成Mesh组网，子路由将会失去连接，待恢复出厂设置后需重新进行组网。": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+1)阿布贾，阿尔及尔，突尼斯": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-6)萨斯克彻温": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-5)波哥大,利马,基多": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+6)沃斯托克，阿拉木图，达卡，鄂木斯克，廷布": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-3)布宜诺斯艾利斯": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+4)埃里温": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+6)达卡": [
+  "web_setting_upgrade"
+ ],
+ "更新日志": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-11)中途岛，帕果帕果": [
+  "web_setting_upgrade"
+ ],
+ "原因，路由器设置备份失败！": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+10)布里斯班，林德曼": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+10:30)澳大利亚远东标准时间": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-7)山地时间(美国和加拿大)": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-5)印第安纳州(东部)": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)安曼": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-9)阿拉斯加": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+4)莫斯科,圣彼得堡,伏尔加格勒": [
+  "web_setting_upgrade"
+ ],
+ "直接恢复出厂设置": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)赫尔辛基,基辅,里加,索非亚,塔林,维尔纽斯": [
+  "web_setting_upgrade"
+ ],
+ "1.恢复出厂设置操作会抹掉当前路由器的所有设置；": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+4)迪拜，阿斯特拉罕，萨拉托夫，马海，毛里求斯": [
+  "web_setting_upgrade"
+ ],
+ "手动升级": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+9)伊尔库茨克": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+4)路易港": [
+  "web_setting_upgrade"
+ ],
+ "碰碰连设置失败": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+11)符拉迪沃斯托克": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+12)马加丹": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+1)卡萨布兰卡，阿伊恩": [
+  "web_setting_upgrade"
+ ],
+ "请选择备份文件": [
+  "web_setting_upgrade"
+ ],
+ "你的版本是最新的，无需升级。": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-4)圣地亚哥": [
+  "web_setting_upgrade"
+ ],
+ "开始备份": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+3)巴格达，科威特，卡塔尔，利雅得，伊斯坦布尔": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)大马士革": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+14)基里蒂马蒂": [
+  "web_setting_upgrade"
+ ],
+ "当前Wi-Fi的加密方式为超强加密（WPA3），在该模式下部分型号手机可能存在兼容性问题": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-3)巴西利亚": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+1)班吉，布拉柴维尔，杜阿拉，金沙萨，拉各斯": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)雅典，布加勒斯特，赫尔辛基，基辅，马里利亚哈姆": [
+  "web_setting_upgrade"
+ ],
+ "开始恢复": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+12)奥克兰,惠灵顿": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)特罗尔": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-10)拉罗汤加，塔希提岛": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+8)吉隆坡,新加坡": [
+  "web_setting_upgrade"
+ ],
+ "请选择固件：": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+3)亚的斯亚贝巴，阿斯马拉，达累斯萨拉姆，内罗毕，塔那那利佛": [
+  "web_setting_upgrade"
+ ],
+ "手动安装插件": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)伊斯坦布尔": [
+  "web_setting_upgrade"
+ ],
+ "时间设置": [
+  "web_setting_upgrade"
+ ],
+ "此页面仅支持对路由器灯效进行简单管理，如需自定义或定时控制灯效请使用米家App绑定此路由器后进行管理": [
+  "web_setting_upgrade"
+ ],
+ "重启规则": [
+  "web_setting_upgrade"
+ ],
+ "插件安装": [
+  "web_setting_upgrade"
+ ],
+ "该功能可为支持NFC的设备提供一碰入网服务。当前仅支持安卓手机，在使用前请确认：": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+1)都柏林": [
+  "web_setting_upgrade"
+ ],
+ "时区设置": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-3:30)圣约翰斯": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-7)克丽顿，道森克里克，纳尔逊堡，赫莫西略，凤凰城": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+8)文莱，伊尔库茨克，吉隆坡，新加坡，乌兰巴托": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+7)雅加达，坤甸": [
+  "web_setting_upgrade"
+ ],
+ "Wi-Fi设置(Wi-Fi名称、Wi-Fi密码)": [
+  "web_setting_upgrade"
+ ],
+ "(UTC)蒙罗维亚,雷克雅未克": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+8)望加锡": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+10)关岛，塞班岛": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-5)东部时间(美国和加拿大)": [
+  "web_setting_upgrade"
+ ],
+ "开始安装": [
+  "web_setting_upgrade"
+ ],
+ "当前系统时间：": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-10)阿达克": [
+  "web_setting_upgrade"
+ ],
+ "文件格式错误，请重新选择": [
+  "web_setting_upgrade"
+ ],
+ "从备份恢复路由器设置": [
+  "web_setting_upgrade"
+ ],
+ "当安装失败或需要降级到前一版本时使用手动安装插件。": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+5:30)钦奈,加尔各答,孟买,新德里": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-10)夏威夷": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+0)根西岛，马恩岛，泽西岛，伦敦": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-2)中大西洋": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+12)富纳富蒂，夸贾林，马朱罗，瑙鲁": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+9)平壤，首尔": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+11:30)诺福克岛标准时间": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+5)卡拉奇": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+1)伯尔尼，柏林，哥本哈根，马德里，巴黎，罗马": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+12)协调世界时+12": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+3)莫斯科，辛菲罗波尔": [
+  "web_setting_upgrade"
+ ],
+ "手动安装": [
+  "web_setting_upgrade"
+ ],
+ "碰碰连": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-6)瓜达拉哈拉,墨西哥城,蒙特雷": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+5)阿克托贝，杜尚贝，撒马尔罕，塔什干，叶卡捷琳堡": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+8)马尼拉": [
+  "web_setting_upgrade"
+ ],
+ "星期一": [
+  "web_setting_upgrade"
+ ],
+ "系统错误，请重试。": [
+  "web_setting_upgrade"
+ ],
+ "新建备份": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+1)贝尔格莱德,布拉迪斯拉发,布达佩斯,卢布尔雅那": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-9)安克雷奇，朱诺，梅特拉卡特拉，诺姆，西特卡，雅库塔特": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+7)曼谷,河内,雅加达": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+13)努库阿洛法": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+6:30)仰光，科科斯": [
+  "web_setting_upgrade"
+ ],
+ "执行一次": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-5)阿蒂科坎，坎昆，开曼，牙买加，巴拿马": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-4)乔治敦,拉巴斯,马瑙斯,圣湖安": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-6)中部时间(美国和加拿大)": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+12)斐济": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+3)巴格达": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-8)下加利福尼亚州": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+5:30)斯里加亚渥登普拉": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+0)达喀尔，蒙罗维亚，圣多美，丹马克斯沙文，雷克雅未克": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+6)阿斯塔纳": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+11)罗德豪维岛": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+10)布里斯班": [
+  "web_setting_upgrade"
+ ],
+ "上传日志": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-7)博伊西，剑桥湾，丹佛，埃德蒙顿，奥吉纳加": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-10)夏威夷－阿留申标准时间": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+9)查亚普拉": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-3)格陵兰": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+9)奇塔，帝力，坎迪加，雅库茨克，帕劳": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+9)大阪,札幌,东京": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+11)所罗门群岛,新喀里多尼亚": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-1)亚速尔群岛": [
+  "web_setting_upgrade"
+ ],
+ "由于": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+1)中非西部": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+6)叶卡捷琳堡": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+11)麦格理，马加丹，萨哈林，斯莱德内科林斯克，布干维尔": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)约翰内斯堡，马塞卢，姆巴巴内": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)加沙，希伯伦": [
+  "web_setting_upgrade"
+ ],
+ "路由器名称和路由器管理密码": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+3)加里宁格勒": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-4)亚松森": [
+  "web_setting_upgrade"
+ ],
+ "恢复出厂设置操作会抹掉当前路由器的所有设置，建议您先进行配置备份再恢复出厂设置。": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+13)萨摩亚": [
+  "web_setting_upgrade"
+ ],
+ "星期三": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+3:30)德黑兰": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-3)米克隆": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+3)科威特,利雅得": [
+  "web_setting_upgrade"
+ ],
+ "可选备份": [
+  "web_setting_upgrade"
+ ],
+ "1. NFC功能开启": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+4)第比利斯": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+9:30)阿德莱德": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-2)诺罗尼亚，南乔治亚岛": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-9)甘比尔": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-3)卡宴,福塔雷萨": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-5)底特律，拿骚，纽约，太子港，多伦多": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-1)斯科尔斯比松德，亚速尔群岛": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+8:45)尤克拉": [
+  "web_setting_upgrade"
+ ],
+ "备份路由器的配置，重新刷机或重置路由器后可以用来恢复。": [
+  "web_setting_upgrade"
+ ],
+ "备份路由器设置": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+8)北京,重庆,香港特别行政区,乌鲁木齐": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+8)台北": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+4:30)喀布尔": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-12)国际日期变更线西": [
+  "web_setting_upgrade"
+ ],
+ "每天": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-6)复活节岛": [
+  "web_setting_upgrade"
+ ],
+ "星期五": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)耶路撒冷": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+5:30)科伦坡": [
+  "web_setting_upgrade"
+ ],
+ "你未选择文件，请重新选择": [
+  "web_setting_upgrade"
+ ],
+ "至少选择1个": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+10)霍巴特": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-7)奇瓦瓦，马萨特兰": [
+  "web_setting_upgrade"
+ ],
+ "更改时间": [
+  "web_setting_upgrade"
+ ],
+ "检查失败，网络繁忙请刷新页面重试。": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-5)哈瓦那": [
+  "web_setting_upgrade"
+ ],
+ "路由器正常工作情况下建议使用系统升级检测进行升级。当系统无法升级时使用手动上传ROM包进行升级。": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+1)温得和克": [
+  "web_setting_upgrade"
+ ],
+ "立即升级": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-7)奇瓦瓦,拉巴斯,马萨特兰": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+8)克拉斯诺亚尔斯克": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+4)阿布扎比,马斯喀特": [
+  "web_setting_upgrade"
+ ],
+ "升级检测": [
+  "web_setting_upgrade"
+ ],
+ "(UTC)卡萨布兰卡": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-8)道森，洛杉矶，蒂华纳，温哥华，怀特霍斯": [
+  "web_setting_upgrade"
+ ],
+ "开始升级": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+1)布鲁塞尔,哥本哈根,马德里,巴黎": [
+  "web_setting_upgrade"
+ ],
+ "日志上传成功": [
+  "web_setting_upgrade"
+ ],
+ "系统版本": [
+  "web_setting_upgrade"
+ ],
+ "插件安装成功": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+10)关岛,莫尔兹比港": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)哈拉雷,比勒陀利亚": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-11)协调世界时": [
+  "web_setting_upgrade"
+ ],
+ "备份与恢复": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+0)加那利，法罗，马德拉，里斯本": [
+  "web_setting_upgrade"
+ ],
+ "超出最大添加数量": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+1)萨拉热窝,斯科普里,华沙,萨格勒布": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+10)杜蒙特杜尔维尔，乌斯特内拉，弗拉迪沃斯托克，楚克，莫尔斯比港": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-11)萨摩亚群岛": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+8)珀斯": [
+  "web_setting_upgrade"
+ ],
+ "升级失败，系统错误或路由硬盘已满。": [
+  "web_setting_upgrade"
+ ],
+ "星期四": [
+  "web_setting_upgrade"
+ ],
+ "路由器设置恢复成功，重启路由器即可生效！": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-4)大西洋时间(加拿大)": [
+  "web_setting_upgrade"
+ ],
+ "设置成功，稍后生效，请等待一会刷新。": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+5)伊斯兰堡,卡拉奇": [
+  "web_setting_upgrade"
+ ],
+ "DHCP服务和局域网IP设置": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-6)中美洲": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-9:30)马克萨斯群岛": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+5)塔什干": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-4:30)加拉加斯": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+14)基里巴斯": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-6)巴伊亚班德拉斯，梅里达，墨西哥城，蒙特雷": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+10)雅库茨克": [
+  "web_setting_upgrade"
+ ],
+ "星期": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+1)阿姆斯特丹,柏林,伯尔尼,罗马,斯德歌尔摩,维也纳": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+9:30)阿德莱德，布罗肯希尔": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+7)河内，曼谷，巴瑙尔，胡志明，新西伯利亚": [
+  "web_setting_upgrade"
+ ],
+ "立即恢复": [
+  "web_setting_upgrade"
+ ],
+ "正在检测更新，请稍候...": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-5)波哥大，埃里伦佩，瓜亚基尔，利马，里奥布兰科": [
+  "web_setting_upgrade"
+ ],
+ "更改时区": [
+  "web_setting_upgrade"
+ ],
+ "当前时间": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-3)戈塔布": [
+  "web_setting_upgrade"
+ ],
+ "恢复": [
+  "web_setting_upgrade",
+  "web_setting_wan"
+ ],
+ "(UTC-6)伯利兹，哥斯达黎加，萨尔瓦多，危地马拉，马那瓜": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-1)佛得角群岛": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-4)格拉斯湾，鹅湾，哈利法克斯，百慕大": [
+  "web_setting_upgrade"
+ ],
+ "星期六": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)基希讷乌": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+12:45)查塔姆岛": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-4)库亚巴": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-7)亚利桑那": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-9:30)马克萨斯群岛标准时间": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+8)乌兰巴托": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+0)协调世界时": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-4)勃朗萨布隆，格林纳达，西班牙港，波多黎各，圣多明各": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+7)新西伯利亚": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+8)中国澳门，上海，中国台北": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-4)坎波格兰德，加拉加斯，圭亚那，拉巴斯，波尔图韦略": [
+  "web_setting_upgrade"
+ ],
+ "重启计划": [
+  "web_setting_upgrade"
+ ],
+ "灯效控制": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)布兰太尔，布琼布拉，哈博罗内，哈拉雷": [
+  "web_setting_upgrade"
+ ],
+ "周一至周五": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)贝鲁特": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+4)巴库": [
+  "web_setting_upgrade"
+ ],
+ "(UTC)协调世界时": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-10)火奴鲁鲁": [
+  "web_setting_upgrade"
+ ],
+ "该操作会关闭路由器所有指示灯及氛围灯，请确认": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+2)开罗，特里波利，加里宁格勒": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+8:30)朝鲜标准时间": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-3)蒙得维的亚": [
+  "web_setting_upgrade"
+ ],
+ "星期日": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+12)惠灵顿，麦克默多，奥克兰": [
+  "web_setting_upgrade"
+ ],
+ "星期一,星期二,星期三,星期四,星期五": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-3:30)纽芬兰": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+5:45)加德满都": [
+  "web_setting_upgrade"
+ ],
+ "2. 屏幕处于亮屏解锁的状态": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+10)柯里，霍巴特，墨尔本，悉尼": [
+  "web_setting_upgrade"
+ ],
+ "状态指示灯": [
+  "web_setting_upgrade"
+ ],
+ "(UTC+12:45)查塔姆群岛标准时间": [
+  "web_setting_upgrade"
+ ],
+ "(UTC-11)纽埃": [
+  "web_setting_upgrade"
+ ],
+ "前缀长度": [
+  "web_setting_wan"
+ ],
+ "复用IPv4拨号链路": [
+  "web_setting_wan"
+ ],
+ "IPv6网络方式设置": [
+  "web_setting_wan"
+ ],
+ "启用此功能后，小米路由器将开启IPv6上网功能（使用前请咨询网络运营商是否支持IPv6）": [
+  "web_setting_wan"
+ ],
+ "联网方式设置中，请稍等...": [
+  "web_setting_wan"
+ ],
+ "1. Auto模式：智能配置此路由器IPv6网络为Passthough/ Native / NAT 6 ，推荐选择此配置方式；": [
+  "web_setting_wan"
+ ],
+ "获取失败,": [
+  "web_setting_wan"
+ ],
+ "手动配置DNS": [
+  "web_setting_wan"
+ ],
+ "适用于没有给路由分配IPv6前缀的上网环境，例如：上级光猫拨号": [
+  "web_setting_wan"
+ ],
+ "关闭IPv6设置成功": [
+  "web_setting_wan"
+ ],
+ "提示：中继模式下部分功能和插件将被屏蔽": [
+  "web_setting_wan"
+ ],
+ "局域网设备获取IP地址方式：": [
+  "web_setting_wan"
+ ],
+ "加密方式": [
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "IPv6连接类型：": [
+  "web_setting_wan"
+ ],
+ "正在扫描附近的无线网络": [
+  "web_setting_wan"
+ ],
+ "克隆": [
+  "web_setting_wan"
+ ],
+ "办法1:尝试关闭调制解调器(猫)和路由器，几分钟后重新通电再次尝试拨号": [
+  "web_setting_wan"
+ ],
+ "继续": [
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "联网方式设置": [
+  "web_setting_wan"
+ ],
+ "系统检测你的路由器未接入网线，请接好网线并继续": [
+  "web_setting_wan"
+ ],
+ "宽带运营商机房故障": [
+  "web_setting_wan"
+ ],
+ "当前工作模式切换为普通路由器会恢复为之前路由器的所有设置": [
+  "web_setting_wan"
+ ],
+ "IPv6设置介绍": [
+  "web_setting_wan"
+ ],
+ "，已断开": [
+  "web_setting_wan"
+ ],
+ "IP地址：": [
+  "web_setting_wan"
+ ],
+ "是否确定切换路由器的工作模式？": [
+  "web_setting_wan"
+ ],
+ "输入密码": [
+  "web_setting_wan"
+ ],
+ "账号": [
+  "web_setting_wan"
+ ],
+ "LAN IPv6前缀": [
+  "web_setting_wan"
+ ],
+ "该MAC地址与当前使用的MAC地址相同": [
+  "web_setting_wan"
+ ],
+ "WAN IPv6地址：": [
+  "web_setting_wan"
+ ],
+ "无线中继模式下，暂不支持Mesh组网。": [
+  "web_setting_wan"
+ ],
+ "IPv6防火墙": [
+  "web_setting_wan"
+ ],
+ "5. Passthrough：此模式透传IPv6数据，启用后相应数据将在路由器WAN侧和LAN侧之间点对点传输。": [
+  "web_setting_wan"
+ ],
+ "当前管理终端的MAC地址，可以手动更改为其他MAC地址": [
+  "web_setting_wan"
+ ],
+ "字节（网络正常情况下不建议修改）": [
+  "web_setting_wan"
+ ],
+ "选择网络": [
+  "web_setting_wan"
+ ],
+ "LAN IPv6地址：": [
+  "web_setting_wan"
+ ],
+ "2. DHCPv6：此模式会根据NAT 6方式采用情况动态配置IPv6上网方式；": [
+  "web_setting_wan"
+ ],
+ "在路由器工作模式和中继工作模式之间进行切换": [
+  "web_setting_wan"
+ ],
+ "子网掩码：": [
+  "web_setting_wan"
+ ],
+ "问题排查": [
+  "web_setting_wan"
+ ],
+ "混合加密(WPA/WPA2个人版)": [
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "当前MTU小于1280，开启IPv6后将自动设置为1280": [
+  "web_setting_wan"
+ ],
+ "1. 当前无线网络名称为：": [
+  "web_setting_wan"
+ ],
+ "强加密(WPA2个人版)": [
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "IPv6宽带密码": [
+  "web_setting_wan"
+ ],
+ "放弃": [
+  "web_setting_wan"
+ ],
+ "办法4:尝试调整WAN口协商速率，然后重新拨号": [
+  "web_setting_wan"
+ ],
+ "请检查账号密码是否输入正确": [
+  "web_setting_wan"
+ ],
+ "恭喜，小米路由器一键中继设置成功！": [
+  "web_setting_wan"
+ ],
+ "正在检测上网连接方式，请稍等...": [
+  "web_setting_wan"
+ ],
+ "MAC地址克隆": [
+  "web_setting_wan"
+ ],
+ "经过检测，建议使用PPPoE方式(需要输入账号与密码)": [
+  "web_setting_wan"
+ ],
+ "WAN IPv6网关：": [
+  "web_setting_wan"
+ ],
+ "账户：": [
+  "web_setting_wan"
+ ],
+ "手工输入网络名称": [
+  "web_setting_wan"
+ ],
+ "必填": [
+  "web_setting_wan"
+ ],
+ "切换为有线中继模式后，您的访客wifi将被关闭": [
+  "web_setting_wan"
+ ],
+ "Wi-Fi密码": [
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "开启IPv6防火墙后，将禁止所有外网对局域网设备的主动访问，提高网络安全性": [
+  "web_setting_wan"
+ ],
+ "找不到要中继的网络": [
+  "web_setting_wan"
+ ],
+ "DNS服务器无法服务，可以尝试自定义DNS解决（114.114.114.114, 114.114.115.115 国外8.8.8.8 8.8.4.4)": [
+  "web_setting_wan"
+ ],
+ "服务名": [
+  "web_setting_wan"
+ ],
+ "经过检测，你的WAN口无法连通，可能网线没插好": [
+  "web_setting_wan"
+ ],
+ "小米路由器支持IPv6网络，该路由器提供如下设置方式：": [
+  "web_setting_wan"
+ ],
+ "该MAC地址与WAN2口MAC地址冲突，请输入其他MAC地址": [
+  "web_setting_wan"
+ ],
+ "当前使用的MAC地址是": [
+  "web_setting_wan"
+ ],
+ "IPv4信息": [
+  "web_setting_wan"
+ ],
+ "经过检测，建议使用DHCP方式(系统自动分配IP地址)": [
+  "web_setting_wan"
+ ],
+ "网络名称": [
+  "web_setting_wan"
+ ],
+ "经过检测，无法识别你的上网类型，请手工选择上网方式": [
+  "web_setting_wan"
+ ],
+ "MAC地址克隆设置": [
+  "web_setting_wan"
+ ],
+ "经过检测，建议使用静态IP方式": [
+  "web_setting_wan"
+ ],
+ "2. 当前小米路由器的IP地址为：": [
+  "web_setting_wan"
+ ],
+ "尝试无线中继失败了": [
+  "web_setting_wan"
+ ],
+ "3.中继模式下部分功能和插件将被屏蔽": [
+  "web_setting_wan"
+ ],
+ "一键无线中继": [
+  "web_setting_wan"
+ ],
+ "1.请确保小米路由器的WAN口与旧路由器通过网线连接": [
+  "web_setting_wan"
+ ],
+ "关闭IPv6设置失败": [
+  "web_setting_wan"
+ ],
+ "WiFi密码": [
+  "web_setting_wan"
+ ],
+ "默认网关不合法": [
+  "web_setting_wan"
+ ],
+ "3. PPPoEv6：此模式将默认复用IPv4拨号链路，也可以手动输入IPv6宽带账号密码手动配置；": [
+  "web_setting_wan"
+ ],
+ "LAN IPv6前缀长度": [
+  "web_setting_wan"
+ ],
+ "下一步": [
+  "web_setting_wan"
+ ],
+ "普通路由器工作模式（创建一个无线网络）": [
+  "web_setting_wan"
+ ],
+ "请确认主路由器和中继路由器的Wi-Fi均已开启。": [
+  "web_setting_wan"
+ ],
+ "IPv6网络方式设置中，请稍等...": [
+  "web_setting_wan"
+ ],
+ "联系运营商了解是否当地有线路故障": [
+  "web_setting_wan"
+ ],
+ "选填": [
+  "web_setting_wan"
+ ],
+ "检查WAN口接入的宽带是否已经变更": [
+  "web_setting_wan"
+ ],
+ "办法2:使用电脑或者旧路由器完成拨号，然后手工选择“结束连接”或“关闭连接”，再尝试使用Redmi路由器拨号。": [
+  "web_setting_wan"
+ ],
+ "PPPOE设置页面": [
+  "web_setting_wan"
+ ],
+ "IPv6宽带账号": [
+  "web_setting_wan"
+ ],
+ "网关": [
+  "web_setting_wan"
+ ],
+ "WAN IPv6地址前缀长度默认为128位": [
+  "web_setting_wan"
+ ],
+ "自动配置DNS": [
+  "web_setting_wan"
+ ],
+ "NAT6开关": [
+  "web_setting_wan"
+ ],
+ "默认网关：": [
+  "web_setting_wan"
+ ],
+ "正在设置中，请稍候...": [
+  "web_setting_wan"
+ ],
+ "小米路由器的管理后台IP为": [
+  "web_setting_wan"
+ ],
+ "工作模式切换": [
+  "web_setting_wan"
+ ],
+ "特殊拨号": [
+  "web_setting_wan"
+ ],
+ "上网方式": [
+  "web_setting_wan"
+ ],
+ "有线中继工作模式说明": [
+  "web_setting_wan"
+ ],
+ "恭喜，小米路由器一键有线中继模式设置成功！": [
+  "web_setting_wan"
+ ],
+ "前缀": [
+  "web_setting_wan"
+ ],
+ "静态IP地址不合法": [
+  "web_setting_wan"
+ ],
+ "开启IPv6后，MTU取值范围为[1280-1492]，如需打开IPv6，请在上网设置中修改MTU值": [
+  "web_setting_wan"
+ ],
+ "设置WiFi名称和密码": [
+  "web_setting_wan"
+ ],
+ "未检测到IPv6信息": [
+  "web_setting_wan"
+ ],
+ "拨号状态异常": [
+  "web_setting_wan"
+ ],
+ "IPv6网络设置": [
+  "web_setting_wan"
+ ],
+ "未能扫描到Wi-Fi,请确保射频开启": [
+  "web_setting_wan"
+ ],
+ "IPv6信息": [
+  "web_setting_wan"
+ ],
+ "切换": [
+  "web_setting_wan"
+ ],
+ "上网信息": [
+  "web_setting_wan"
+ ],
+ "2.旧路由器与小米路由处于同一局域网中，可以互访": [
+  "web_setting_wan"
+ ],
+ "WAN IPv6地址": [
+  "web_setting_wan"
+ ],
+ "3. 用miwifi.com也可以访问路由器管理页面": [
+  "web_setting_wan"
+ ],
+ "请选择要扩大范围的无线网络": [
+  "web_setting_wan"
+ ],
+ "设置失败": [
+  "web_setting_wan"
+ ],
+ "地址前缀：": [
+  "web_setting_wan"
+ ],
+ "办法3:尝试在路由器上网设置中进行mac地址克隆，然后重新拨号": [
+  "web_setting_wan"
+ ],
+ "外网状态：": [
+  "web_setting_wan"
+ ],
+ "请手工选择需要的工作模式": [
+  "web_setting_wan"
+ ],
+ "连接类型：": [
+  "web_setting_wan"
+ ],
+ "LAN IPv6前缀：": [
+  "web_setting_wan"
+ ],
+ "请不要关闭浏览器或断开路由器": [
+  "web_setting_wan"
+ ],
+ "仅DHCPv6": [
+  "web_setting_wan"
+ ],
+ "选择已有网络": [
+  "web_setting_wan"
+ ],
+ "新建的有线中继无线网络名称为": [
+  "web_setting_wan"
+ ],
+ "若当前已完成Mesh组网，将自动断开。": [
+  "web_setting_wan"
+ ],
+ "宽带因欠费无法继续使用": [
+  "web_setting_wan"
+ ],
+ "无线网络的名称密码与目标路由器一致": [
+  "web_setting_wan"
+ ],
+ "无加密(允许所有人连接)": [
+  "web_setting_wan",
+  "web_setting_wifi"
+ ],
+ "更换了接入宽带": [
+  "web_setting_wan"
+ ],
+ "有线中继工作模式（扩展现有的网络）": [
+  "web_setting_wan"
+ ],
+ "无线中继工作模式（扩展现有的无线网络）": [
+  "web_setting_wan"
+ ],
+ "我已接好网线，继续": [
+  "web_setting_wan"
+ ],
+ "WiFi名称": [
+  "web_setting_wan"
+ ],
+ "手动配置": [
+  "web_setting_wan"
+ ],
+ "联系运营商查询宽带是否欠费": [
+  "web_setting_wan"
+ ],
+ "网络密码": [
+  "web_setting_wan"
+ ],
+ "WAN口协商速率设置": [
+  "web_setting_wan"
+ ],
+ "IPv6自动配置模式应用中": [
+  "web_setting_wan"
+ ],
+ "WAN IPv6网关": [
+  "web_setting_wan"
+ ],
+ "宽带拨号账号密码输入错误": [
+  "web_setting_wan"
+ ],
+ "恭喜，小米路由器切换为普通路由器工作模式成功！": [
+  "web_setting_wan"
+ ],
+ "4. 静态IP模式：通过手动填写IPv6相关信息配置静态IPv6上网方式；": [
+  "web_setting_wan"
+ ],
+ "尝试工作模式切换失败了": [
+  "web_setting_wan"
+ ],
+ "切换为无线中继模式后，您的访客wifi将被关闭": [
+  "web_setting_wan"
+ ],
+ "尝试有线中继失败了": [
+  "web_setting_wan"
+ ],
+ "开启后，2.4GHz和5GHz将合并显示为同一个名称，路由器将优先为终端选择最佳Wi-Fi网络。合并名称后部分终端可能离线，需重新连接。": [
+  "web_setting_wifi"
+ ],
+ "Wi-Fi 信号强度设置": [
+  "web_setting_wifi"
+ ],
+ "2. 若最新驱动仍无法解决兼容性问题，建议先关闭该功能。": [
+  "web_setting_wifi"
+ ],
+ "切换国家或地区将会变更路由器的无线网络工作信道，需要重启后生效，是否确定？": [
+  "web_setting_wifi"
+ ],
+ "穿墙": [
+  "web_setting_wifi"
+ ],
+ "WiFi双频合一关闭，5GHz会默认使用2.4GHz相同的网络名称（加后缀_5G）和密码，如需设成不一样，请进行修改。": [
+  "web_setting_wifi"
+ ],
+ "开关": [
+  "web_setting_wifi"
+ ],
+ "WiFi多频合一关闭，5GHz和5GHz-Game Wi-Fi会默认使用2.4GHz相同的网络名称（加后缀）和密码，如需设成不一样，请进行修改。": [
+  "web_setting_wifi"
+ ],
+ "160MHz频宽只适用于36至64信道，系统将自动为您切换至36信道": [
+  "web_setting_wifi"
+ ],
+ "访客Wi-Fi": [
+  "web_setting_wifi"
+ ],
+ "该信道属于DFS信道，当与不支持DFS信道的设备组网时，可能导致组网失败，是否继续？": [
+  "web_setting_wifi"
+ ],
+ "节能": [
+  "web_setting_wifi"
+ ],
+ "该修改会导致路由器重启，所有设备会短暂失去连接，是否确认修改？": [
+  "web_setting_wifi"
+ ],
+ "关闭MLO多链路加速将会重启Wi-Fi模块，此期间所有接入此路由器的设备都会断开Wi-Fi连接，请确认是否继续。": [
+  "web_setting_wifi"
+ ],
+ "当前频宽不支持将要切换的信道，系统已自动选择可用的频宽": [
+  "web_setting_wifi"
+ ],
+ "检测到未启用Wi-Fi多频合一，无法打开MLO开关。": [
+  "web_setting_wifi"
+ ],
+ "你手工选择的当前信道有可能造成部分机型较旧的设备无法连接": [
+  "web_setting_wifi"
+ ],
+ "频段带宽": [
+  "web_setting_wifi"
+ ],
+ "TWT节能模式兼容性问题解决办法": [
+  "web_setting_wifi"
+ ],
+ "2.4GHz 选项": [
+  "web_setting_wifi"
+ ],
+ "某些老设备对Wi-Fi6协议支持不好，可能扫描不到信号或者连接不上等。开启此开关后，将会切换到Wi-Fi5模式，解决兼容问题。但同时会关闭Wi-Fi6的相关功能，如OFDMA、TWT、BSS Coloring等。": [
+  "web_setting_wifi"
+ ],
+ "开启TWT节能模式后，可通过TWT节能技术降低接入此路由器的Wi-Fi6终端设备功耗，部分老旧终端可能会有兼容性问题。": [
+  "web_setting_wifi"
+ ],
+ "160MHz频宽只适用于36至64信道，系统将自动为您切换至80MHz频宽": [
+  "web_setting_wifi"
+ ],
+ "如果出现老旧终端在此路由开启TWT节能模式后出现兼容性问题，建议尝试以下方法：": [
+  "web_setting_wifi"
+ ],
+ "标准": [
+  "web_setting_wifi"
+ ],
+ "WPA3为新一代加密技术，可使安全性大大加强，但选择该选项后部分旧设备会存在兼容性问题而无法接入": [
+  "web_setting_wifi"
+ ],
+ "信号强度": [
+  "web_setting_wifi"
+ ],
+ "TWT节能模式": [
+  "web_setting_wifi"
+ ],
+ "开启此功能，路由器可自动发现支持畅快连的未初始化Wi-Fi设备，通过米家APP快速配网；修改路由器密码也将自动同步给支持畅快连的设备。": [
+  "web_setting_wifi"
+ ],
+ "选项": [
+  "web_setting_wifi"
+ ],
+ "少数设备可能不支持中文或特殊字符": [
+  "web_setting_wifi"
+ ],
+ "Wi-Fi多频合一": [
+  "web_setting_wifi"
+ ],
+ "仅支持WPA加密方式的设备将无法连接": [
+  "web_setting_wifi"
+ ],
+ "option:contains('自动')": [
+  "web_setting_wifi"
+ ],
+ "隐藏网络不被发现": [
+  "web_setting_wifi"
+ ],
+ "畅快连": [
+  "web_setting_wifi"
+ ],
+ "强混合加密(WPA3/WPA2个人版)": [
+  "web_setting_wifi"
+ ],
+ "三频模式覆盖明显弱于双频模式，该修改会导致路由器重启，所有设备会短暂失去连接，是否确认修改？": [
+  "web_setting_wifi"
+ ],
+ "注：检测到未开启Wi-Fi多频合一，无法打开MLO开关。": [
+  "web_setting_wifi"
+ ],
+ "设置已经生效，等待30秒后 Wi-Fi 重启。": [
+  "web_setting_wifi"
+ ],
+ "Wi-Fi 5 兼容模式": [
+  "web_setting_wifi"
+ ],
+ "注：检测到已开启Wi-Fi5兼容模式，无法打开MLO开关。": [
+  "web_setting_wifi"
+ ],
+ "超强加密(WPA3个人版)": [
+  "web_setting_wifi"
+ ],
+ "推荐使用自动(80M)频宽，以获得更好的覆盖及抗干扰性能": [
+  "web_setting_wifi"
+ ],
+ "1. 到相应终端制造商官网下载更新驱动；": [
+  "web_setting_wifi"
+ ],
+ "注：检测到已开启Wi-Fi5兼容模式，无法打开TWT开关。": [
+  "web_setting_wifi"
+ ],
+ "WiFi多频合一关闭，5GHz和5GHz-2 Wi-Fi会默认使用2.4GHz相同的网络名称（加后缀）和密码，如需设成不一样，请进行修改。": [
+  "web_setting_wifi"
+ ],
+ "无线信道": [
+  "web_setting_wifi"
+ ],
+ "切换国家或地区": [
+  "web_setting_wifi"
+ ],
+ "自动": [
+  "web_setting_wifi"
+ ]
+}

@@ -1,0 +1,37 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Сборка словаря
+        run: python tools/build_lang.py
+
+      - name: Проверки репозитория
+        run: python tools/verify.py
+
+      - name: Зависимости тестов
+        working-directory: test-env
+        run: npm ci
+
+      - name: Тесты на снимках панели
+        working-directory: test-env
+        run: node run-all.js

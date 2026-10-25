@@ -1,0 +1,1063 @@
+0	web_home	阁楼	阁楼
+1	web_home	设置	Настроить
+2	web_home	主卧	主卧
+3	web_home	餐厅	餐厅
+4	web_home	重试	Повтор
+5	web_home	次卧	次卧
+6	web_home	完成	Завершить
+7	web_home	超时	超时
+8	web_home	阳台	阳 устр.
+9	web_home	注销	Выход
+10	web_home	取消	Отменить
+11	web_home	确定	Применить
+12	web_home	上传	Загрузка
+13	web_home	提示	Подсказка
+14	web_home	保存	 Сохранить
+15	web_home	客厅	客厅
+16	web_home	频段	频段
+17	web_home	确认	Подтвердить
+18	web_home	下载	Скачивание
+19	web_home	书房	书房
+20	web_home	添加	Добавить
+21	web_home	内存	内存
+22	web_home	操作	Опции
+23	web_home	厨房	厨房
+24	web_home	重启	Перезагрузка
+25	web_home	内测版	内测版
+26	web_home	已断开	Отключен
+27	web_home	消息框	Окно сообщения
+28	web_home	办公室	办公室
+29	web_home	未开启	未Вкл.
+30	web_home	卫生间	卫生间
+31	web_home	地下室	地下室
+32	web_home	稳定版	Стабил.
+33	web_home	知道了	知道了
+34	web_home	开发版	DEV.
+35	web_home	去开启	去Вкл.
+36	web_home	互联网	Интернет
+37	web_home	IP地址	IP Адрес
+38	web_home	温馨提示	温馨Подсказка
+39	web_home	拨号成功	Успешно подключено
+40	web_home	设置带宽	НастроитьСкорость 
+41	web_home	已连接:	На связи:
+42	web_home	上次测速	上次测速
+43	web_home	立即测速	立即测速
+44	web_home	重新测速	Повторить
+45	web_home	静态IP	Статический IP
+46	web_home	网关地址	Адрес шлюза
+47	web_home	官方网站	Оф. сайт
+48	web_home	终端设备	Устройства
+49	web_home	自动配置	Авто.
+50	web_home	外网速度	外网速度
+51	web_home	外网带宽	Пропускная способность
+52	web_home	任务名称	任务Имя
+53	web_home	常用设置	Настройки
+54	web_home	连接类型	Тип соединения
+55	web_home	官方微博	Оставить отзыв
+56	web_home	开始测速	Начальная скорость
+57	web_home	全盘访问	全盘访问
+58	web_home	手工设置	Вручную
+59	web_home	访问外网	Интернет
+60	web_home	拨号失败	拨号失败
+61	web_home	上传带宽	Отдача
+62	web_home	设置成功	Задание выполнено успешно!
+63	web_home	用户社区	Сообщество
+64	web_home	| 本机	| ПК
+65	web_home	系统升级	Обновление
+66	web_home	常见问题	ЧаВо
+67	web_home	下载带宽	Загрузка
+68	web_home	路由状态	Статус
+69	web_home	限速设置	Установить
+70	web_home	高级设置	Дополнительно
+71	web_home	开始搜索	Искать
+72	web_home	重新搜索	重新Поиск
+73	web_home	网络速度	Скорость сети
+74	web_home	官方微信	4PDA
+75	web_home	小米路由器	XIAOMI 
+76	web_home	无线组网：	无线组网：
+77	web_home	手机客户端	Мобильный клиент
+78	web_home	关闭路由器	Выкл.路由器
+79	web_home	PC客户端	PC Клиент
+80	web_home	有线组网：	有线组网：
+81	web_home	任务管理器	Диспетчер задач
+82	web_home	路由器名称	Имя
+83	web_home	MAC地址	MAC-адрес
+84	web_home	测速不准？	Неверно? 
+85	web_home	路由器关机	Выключение роутера
+86	web_home	IP地址:	IP Адрес:
+87	web_home	路由器型号	Модель маршрутизатора
+88	web_home	重启路由器	Перезагрузка маршрутизатора. 
+89	web_home	避让IP冲突	Избегайте конфликтов IP
+90	web_home	Mesh组网	Mesh组网
+91	web_home	外网带宽检测	Определение пропускной способности
+92	web_home	MAC地址:	MAC-адрес:
+93	web_home	暂无设备接入	暂无设备接入
+94	web_home	最高下载速度	Максимальная Отдача
+95	web_home	恢复出厂设置	Восстановление заводских настроек
+96	web_home	MAC客户端	MAC Клиент
+97	web_home	重启中...	Перезагрузка...
+98	web_home	密码输入有误	Пароль введен неверно
+99	web_home	小米路由器4	XIAOMI 4
+100	web_home	访客连网设备	访客 Точка
+101	web_home	加载中...	Загружается...
+102	web_home	静态IPv6	Статический IPv6
+103	web_home	小米路由器2	XIAOMI 2
+104	web_home	网线连网设备	Сетевой кабель
+105	web_home	无效的手机号	无效的手机号
+106	web_home	最高上传速度	Максимальная Загрузка
+107	web_home	小米路由器3	XIAOMI 3
+108	web_home	下载米家APP	Скачивание米ДомAPP
+109	web_home	连接设备数量：	Уствойств подключено：
+110	web_home	正在拨号...	Набор...
+111	web_home	小米路由器3A	XIAOMI 3A
+112	web_home	小米路由器4C	XIAOMI 4C
+113	web_home	还没有进行测速	还没有进行测速
+114	web_home	选择放置的位置	选择放置的Место установки
+115	web_home	小米路由器4Q	XIAOMI 4Q
+116	web_home	修改路由器名称	Имя роутера
+117	web_home	正在测速...	Идет определение скорости...<br/>Скорость может отличаться от реальной из за дальности китайских серверов.
+118	web_home	小米路由器3G	Mi Router 3G
+119	web_home	Wi-Fi名称	Wi-FiИмя
+120	web_home	小米路由器HD	XIAOMI HD
+121	web_home	小米路由器3C	XIAOMI 3C
+122	web_home	系统ROM版本	Версия прошивки
+123	web_home	小米路由器4A	XIAOMI 4A
+124	web_home	两次输入不一致。	Пароли не совпадают
+125	web_home	手工设置外网带宽	Ручная установка пределов скорости
+126	web_home	小米路由器青春版	XIAOMI 青春版
+127	web_home	3、点击开始搜索	3、点击Искать
+128	web_home	下载和家亲APP	Скачиваниеа также Дом亲APP
+129	web_home	点击进行网络检测	Щелкните для обнаружения сети
+130	web_home	添加Mesh节点	ДобавитьMesh节点
+131	web_home	请检查您的输入。	请检查您的输入。
+132	web_home	没有运行中的任务	没有运行中的任务
+133	web_home	Wi-Fi名称：	Wi-FiИмя：
+134	web_home	Mesh组网设备	Mesh组网设备
+135	web_home	Redmi路由器	Redmi роутер
+136	web_home	Wi-Fi密码：	Пароль Wi-Fi：
+137	web_home	请选择要添加的设备	Пожалуйста, выберите要Добавить的设备
+138	web_home	小米路由器Mesh	XIAOMI Mesh
+139	web_home	添加Mesh子路由	ДобавитьMesh子路由
+140	web_home	下载小翼管家APP	Скачивание小翼管ДомAPP
+141	web_home	此时5G网络已打开	此时5G网络已打开
+142	web_home	Mesh 组网设备	Mesh 组网设备
+143	web_home	你确认要关闭自己？	你Подтвердить要Выкл.自己？
+144	web_home	小米路由器2600	Mi Router 2600
+145	web_home	开启访客Wi-Fi	Вкл.Гостевой Wi-Fi
+146	web_home	5GHz 连网设备	5GHz  Точка
+147	web_home	正在测速，请等待。	Загрузка обновлений...
+148	web_home	连接设备数量 --	Уствойств подключено --
+149	web_home	小米路由器1500	Mi Router 1500
+150	web_home	小米路由器2100	XIAOMI 2100
+151	web_home	此时5G网络已关闭	此时5G网络已Выкл.
+152	web_home	可以尝试以下方法：	可以尝试以下方法：
+153	web_home	当前未开启访客模式	当前未Вкл.访客模式
+154	web_home	小米路由器4 v2	Mi Router 4 v2
+155	web_home	小米路由器MINI	XIAOMI MINI
+156	web_home	请输入正确的端口号。	请输入正确的端口号。
+157	web_home	小米路由器3 Pro	XIAOMI 3 Pro
+158	web_home	WAN 1 外网带宽	WAN 1 Пропускная способность
+159	web_home	当前未有5G连网设备	В настоящее время нет сетевого оборудования 5G
+160	web_home	WAN 2 外网状态	WAN 2 Тип соединения
+161	web_home	WAN 2 外网带宽	WAN 2 Пропускная способность
+162	web_home	WAN 1 外网状态	WAN 1 Тип соединения
+163	web_home	请检查您输入的姓名。	请检查您输入的姓名。
+164	web_home	Mesh网络扩展失败	Mesh网络扩展失败
+165	web_home	您输入的范围不合理。	Диапазон ввода не является разумным.
+166	web_home	Wi-Fi 连网设备	Wi-Fi  Точка
+167	web_home	Mesh网络扩展成功	Mesh网络扩展成功
+168	web_home	请输入有效的IP地址	请输入有效的IP Адрес
+169	web_home	操作生效,重启成功！	Операция вступает в силу.<br/>Перезагрузка прошла успешно!
+170	web_home	正在扩展Mesh网络	正在扩展Mesh网络
+171	web_home	小米路由器AC2100	Mi Router AC2100
+172	web_home	No name (家)	No name (Дом)
+173	web_home	Xiaomi 全屋路由	Xiaomi 全屋路由
+174	web_home	请输入正确的服务器地址	请输入正确的Адрес сервера
+175	web_home	请输入一个2位负整数。	Введите до 2位负整数。
+176	web_home	发生未知错误，测速失败	发生未知错误，测速失败
+177	web_home	请检查您输入的验证码。	请检查您输入的验证码。
+178	web_home	2.4GHz 连网设备	2.4GHz  Точка
+179	web_home	搜索并添加Mesh节点	Поиск并ДобавитьMesh节点
+180	web_home	Xiaomi万兆路由器	Xiaomi万兆路由器
+181	web_home	请检查您输入的邮政编码。	请检查您输入的邮政编码。
+182	web_home	© 2025 小米路由器	© 2025 XIAOMI 
+183	web_home	请检查您输入的银行账号。	请检查您输入的银行Аккаунт。
+184	web_home	请检查您输入的电话号码。	请检查您输入的电话号码。
+185	web_home	Wi-Fi密码: 未设置	Пароль Wi-Fi: 未Настроить
+186	web_home	请检查您输入的电话区号。	请检查您输入的电话区号。
+187	web_home	小米路由器 AX3000	XIAOMI  AX3000
+188	web_home	请检查您输入的手机号码。	请检查您输入的手机号码。
+189	web_home	起始端口必须小于终止端口	Начальный порт必须小于终止端口
+190	web_home	IoT专属网络 连网设备	IoT专属网络  Точка
+191	web_home	小米路由器 AX6000	XIAOMI  AX6000
+192	web_home	请检查您输入的时间格式。	请检查您输入的时间格式。
+193	web_home	搜索Mesh子路由...	ПоискMesh子路由...
+194	web_home	去小米网购买5G智能设备	Купить 5G оборудование
+195	web_home	截止日期不能小于起始日期。	截止 дн. 期不能小于起始 дн. 期。
+196	web_home	未找到可用的Mesh子路由	未找到可用的Mesh子路由
+197	web_home	起始日期不能大于截止日期。	起始 дн. 期不能大于截止 дн. 期。
+198	web_home	小米Wi-Fi 7 路由器	小米Wi-Fi 7 路由器
+199	web_home	选择要添加的Mesh子路由	选择要Добавить的Mesh子路由
+200	web_home	搜索要添加的Mesh子路由	Поиск要Добавить的Mesh子路由
+201	web_home	没有搜索到可用的mesh节点	没有Поиск到可用的mesh节点
+202	web_home	操作生效，等待设备重启...	Проводится перезагрузка маршрутизатора. Ожидайте завершения...
+203	web_home	5GHz-Game 连网设备	5GHz-Game  Точка
+204	web_home	正在连接Mesh子路由...	正在СвязьMesh子路由...
+205	web_home	手机扫描二维码安装米家APP	手机扫描二维码安装米ДомAPP
+206	web_home	数字前面好像有多余的"0"。	Есть лишние "0"
+207	web_home	，正在尝试特殊拨号模式...	，正在尝试Спец. код模式...
+208	web_home	请检查您输入的电话分机号码。	请检查您输入的电话мин. 机号码。
+209	web_home	Xiaomi路由器BE7000	Xiaomi路由器BE7000
+210	web_home	请输入0~10000的正整数。	请输入0~10000的正整数。
+211	web_home	输入格式不正确,请输入标准字符	Неверный формат ввода, введите стандартные символы
+212	web_home	正在同步Mesh节点配置...	正在同步Mesh节点配置...
+213	web_home	Redmi路由器 AX3000	Redmi роутер AX3000
+214	web_home	支持小米Mesh组网的路由产品	支持小米Mesh组网的路由产品
+215	web_home	2、将主路由升至最新固件版本；	2、将主路由升至最新固件版本；
+216	web_home	请输入数字、英文字母或英文符号	请输入数字、英文字母或英文符号
+217	web_home	请检查您输入的Email格式。	请检查您输入的Email格式。
+218	web_home	小米AIoT路由器 AX1800	小米AIoT路由器 AX1800
+219	web_home	执行此操作，局域网IP将会变更为	Выполните эту операцию, IP-адрес LAN будет изменен на
+220	web_home	小米AIoT路由器 AX3600	小米AIoT路由器 AX3600
+221	web_home	服务热线 400-100-5678	Горячая линия 400-100-5678
+222	web_home	Xiaomi路由器 AX3000T	Xiaomi路由器 AX3000T
+223	web_home	LAN IPv6前缀需要以::结尾	Префикс LAN IPv6 должен заканчиваться на ::
+224	web_home	Xiaomi路由器 AX3000E	Xiaomi路由器 AX3000E
+225	web_home	该过程无线网络会重启，将出现短暂掉线。	Во время этого процесса беспроводная сеть перезапустится, и произойдет короткое отключение.
+226	web_home	密码应同时包含数字、英文字母和英文字符	Пароль应同时包含数字、英文字母а также 英文字符
+227	web_home	双WAN模式下，不支持在此处设置外网带宽	双WAN模式下，不支持在此处НастроитьПропускная способность
+228	web_home	日期输入格式为"YYYY-MM-DD"。	 дн. 期输入格式为"YYYY-MM-DD"。
+229	web_home	正在扩展Mesh节点(1-2分钟)...	正在扩展Mesh节点(1-2Минуты)...
+230	web_home	您可以选择以下两种方式来新增Mesh子路由	您可以选择以下两种方式来新增Mesh子路由
+231	web_home	关机中，请等待路由器指示灯熄灭后再断开电源	Во время выключения дождитесь, пока индикатор маршрутизатора погаснет, прежде чем отключать питание.
+232	web_home	确定要恢复出厂设置让小米路由器回到初始状态？	Вы уверены, что хотите восстановить заводские настройки, чтобы вернуть маршрутизатор Xiaomi в исходное состояние?
+233	web_home	黑白名单名称不支持特殊字符$ & | ；‘ ·	黑白名单Имя不支持特殊字符$ & | ；‘ ·
+234	web_home	请输入正确的端口号（XXX、XXX-YYY）。	请输入正确的端口号（XXX、XXX-YYY）。
+235	web_home	4、将待添加的子路由升至最新固件，并重置后重试	4、将待Добавить的子路由升至最新固件，并重置后Повтор
+236	web_home	确定重启路由器，重启将断开和小米路由器的连接。	Маршрутизатор будет отключен, включение займет больше минуты.
+237	web_home	是否确定关闭路由器，操作将断开和小米路由器的连接。	Независимо от того, решено ли отключить маршрутизатор, операция отключит соединение с маршрутизатором Xiaomi.
+238	web_home	自动连接路由器失败，请检查无线或者网线是否连接正确。	Не удалось автоматически подключиться к маршрутизатору, проверьте, правильно ли подключен беспроводной или сетевой кабель.
+239	web_home	IPv6地址由8组四个十六进制数组成，每组之间用:区隔	Адрес IPv6 должен состоять из 8 групп по четыре шестнадцатеричных числа разделенных двоеточием
+240	web_home	密码应同时包含数字、英文字母和特殊字符(~!@#$等)	Пароль应同时包含数字、英文字母а также 特殊字符(~!@#$等)
+241	web_home	请检查您输入的身份证号码，目前只支持15位或者18位。	请检查您输入的身份证号码，目前只支持15位или18位。
+242	web_home	MAC地址格式有误，如ab:cd:ef:11:22:33	Формат MAC-адреса неверен, например, ab:cd:ef:11:22:33
+243	web_home	1、将未配置过的子路由WAN口与主路由LAN口通过网线连接	1、将未配置过的子路由WAN口与主路由LAN口通过网线Связь
+244	web_home	该地址由4个 0~255 之间的数字组成，数字之间用点区隔	该 Адрес由4个 0~255 之间的数字组成，数字之间用点区隔
+245	web_home	1、确认主路由与待添加的子路由均支持小米Mesh组网功能：	1、Подтвердить主路由与待Добавить的子路由均支持小米Mesh组网功能：
+246	web_home	3、将待添加的子路由靠近主路由并重试（注意保持1米以外的距离以免干扰）；	3、将待Добавить的子路由靠近主路由并Повтор（注意保持1米以外的距离以免干扰）；
+247	web_home	1、将待添加的子路由靠近主路由并重试（注意保持1米以外的距离以免干扰）；	1、将待Добавить的子路由靠近主路由并Повтор（注意保持1米以外的距离以免干扰）；
+248	web_home	搜索并添加Mesh节点时，请先到Wi-Fi设置页面，开启5G Wi-Fi。	Поиск并ДобавитьMesh节点时，请先到 Настройки Wi-Fi页面，Вкл.5G Wi-Fi。
+249	web_home	*请确保此路由器处于未配置状态，如已配置请长按Reset按键5秒以上进行重置	*请确保此路由器处于未配置Состояние，如已配置请长按Reset按键5сек. 以上进行重置
+250	web_home	2、将子路由上电，启动完成后将自动进行组网，组网时子路由Internet指示灯快闪	2、将子路由上电，启动Завершить后将Автоматически进行组网，组网时子路由Internet指示灯快闪
+251	web_home	3、将待添加的子路由升至最新固件，并重置后重试（长按Reset按钮5秒后即可重置）	3、将待Добавить的子路由升至最新固件，并重置后Повтор（长按Reset按钮5сек. 后即可重置）
+252	web_home	系统版本: 2.0.28 稳定版 MAC地址: D4:53:2A:3D:0B:47	Прошивка: 2.0.28 Стабил. MAC-адрес: D4:53:2A:3D:0B:47
+253	web_home	你的浏览器禁止了Javascript功能，会造成无法使用系统进行路由器管理，请开启。	你的浏览器禁止了Javascript功能，会造成无法使用系统进行路由器管理，请Вкл.。
+254	web_home	2、确保待添加的子路由处于未配置状态（长按Reset按钮5秒后即可恢复成未配置状态）;	2、确保待Добавить的子路由处于未配置Состояние（长按Reset按钮5сек. 后即可Восстановление成未配置Состояние）;
+255	web_home	路由器重启需要等待十几秒或更多时间，重启过程中将会断开网络连接，稍后将自动重新连接网络。	Перезагрузка займет какое-то время. Наберитесь терпения.
+256	web_home	请检查您选择的图片文件路径，只支持jpg、jpeg、png、gif、tif、bmp格式。	请检查您选择的Изображения文件路径，只支持jpg、jpeg、png、gif、tif、bmp格式。
+257	web_home	关闭路由器将断开其他设备的数据访问和网络连接，之后便可以安全的断开电源。（再次启动需要手工连接电源）	Выключение маршрутизатора приведет к отключению доступа к данным и сетевого подключения других устройств, после чего вы сможете безопасно отключить питание. (Вам нужно вручную подключить блок питания, чтобы начать снова)
+258	web_home	1、将未配置过的路由器作为子路由，放置在需要Wi-Fi信号覆盖的房间 （如已配置请长按Reset按键5秒以上进行重置）	1、将未配置过的路由器作为子路由，放置在需要Wi-Fi信号覆盖的房间 （如已配置请长按Reset按键5сек. 以上进行重置）
+259	web_home	为保证Mesh网络良好的使用体验，当前至多可支持10台Mesh路由器组网，更多Mesh路由器建议组成新的Mesh网络。	为保证Mesh网络  ХорошийХорошо使用体验，当前至多可支持10 устр.Mesh路由器组网，更多Mesh路由器建议组成新的Mesh网络。
+260	web_home	开启后会自动生成一个独立的WiFi，这样在亲朋到好友到来时，独立的WiFi账号和家庭网络彼此隔离，也不用担心家庭网络中的任何隐私会泄露出去	Вкл.后会Автоматически生成一个独立的WiFi，这样在亲朋到好友到来时，独立的WiFiАккаунта также Дом庭网络彼此隔离，也不用担心Дом庭网络中的任何隐私会泄露出去
+261	web_home	5G Wi-Fi是运行在5GHz以上的高频段的独立Wi-Fi比较2.4G Wi-Fi速度更快更稳定，适合电视、盒子包括距离路由器较近的设备	5G Wi-Fi - это более быстрый Wi-Fi по сравнению с 2.4G, он более стабильный, но обладает меньшей дальностью действия.
+262	web_prosetting_ddns	停用	停用
+263	web_prosetting_ddns	编辑	Изменить
+264	web_prosetting_ddns	密码	Пароль
+265	web_prosetting_ddns	启用	启用
+266	web_prosetting_ddns	删除	Удалить
+267	web_prosetting_ddns	分钟	Минуты
+268	web_prosetting_ddns	状态	Состояние
+269	web_prosetting_ddns	小时	час. 
+270	web_prosetting_ddns	用户名	Имя
+271	web_prosetting_ddns	端口转发	Перенаправление портов
+272	web_prosetting_ddns	强制更新	Обновление
+273	web_prosetting_ddns	主机名称	Имя хоста
+274	web_prosetting_ddns	添加服务	Добавить службу
+275	web_prosetting_ddns	最近更新	Последние изменения
+276	web_prosetting_ddns	状态检查	Проверка статуса
+277	web_prosetting_ddns	连接正常	Связь正常
+278	web_prosetting_ddns	暂无更新	暂无更新
+279	web_prosetting_ddns	更新成功	更新成功
+280	web_prosetting_ddns	手动更新	手动更新
+281	web_prosetting_ddns	编辑服务	Изменить服务
+282	web_prosetting_ddns	连接错误	Связь错误
+283	web_prosetting_ddns	网口自定义	网口Настроить
+284	web_prosetting_ddns	注意事项:	Меры предосторожности:
+285	web_prosetting_ddns	服务列表：	Список служб：
+286	web_prosetting_ddns	服务提供商	Провайдер
+287	web_prosetting_ddns	保存中...	Сохранение ...
+288	web_prosetting_ddns	连接中...	Связь中...
+289	web_prosetting_ddns	QoS智能限速	QoS Смарт скорость
+290	web_prosetting_ddns	什么是DDNS？	Что такое DDNS？
+291	web_prosetting_ddns	状态检查的分钟间隔	Проверка статуса的Минуты间隔
+292	web_prosetting_ddns	未启动无法强制更新	未启动无法Обновление
+293	web_prosetting_ddns	如何设置DDNS？	Как установить DDNS?
+294	web_prosetting_ddns	强制更新的小时间隔	Обновление的час. 间隔
+295	web_prosetting_ddns	服务提供商及主机名称	Имя хоста
+296	web_prosetting_ddns	公云（3322.org）	公云（3322.org）
+297	web_prosetting_ddns	花生壳（oray.com）	花生壳（oray.com）
+298	web_prosetting_ddns	主机名称为从运营商申请的域名；	Имя хоста - это доменное имя, применяемое от оператора;
+299	web_prosetting_ddns	只能同时开启一个DDNS服务。	«Одновременно может быть запущена только одна служба DDNS».
+300	web_prosetting_ddns	用户名和密码为注册该运营商的用户名与密码；	Имя пользователя и пароль - это имя пользователя и пароль для регистрации оператора;
+301	web_prosetting_ddns	1. 通过DDNS服务商获得域名及账号密码信息；	1. Получить имя домена и информацию об учетной записи пароля через поставщика услуг DDNS;
+302	web_prosetting_ddns	可以通过内置的DDNS运营商去该运营商官网去注册账号及申请域名；	Вы можете через встроенный оператор DDNS зарегистрировать учетную запись и подать заявку на доменное имя;
+303	web_prosetting_ddns	强制检查为WAN口IP的检查时间，如无特殊需求，建议使用默认配置；	Обязательной проверкой является время проверки IP-адреса WAN-порта. Если специальных требований нет, рекомендуется использовать конфигурацию по умолчанию;
+304	web_prosetting_ddns	强制更新为域名与IP强制更新的时间，如无特殊需求，建议使用默认配置；	Обязательное обновление - это время, когда доменное имя и IP-адрес обновляются в обязательном порядке. Если особых требований нет, рекомендуется использовать конфигурацию по умолчанию;
+305	web_prosetting_ddns	2. 开启DDNS服务，添加服务，输入前一步获取的信息，保存并启用该服务。	2. Открыть службы DDNS, ввести информацию, сохранить и включить.
+306	web_prosetting_ddns	DDNS（Dynamic Domain Name Server）是动态域名服务的缩写。	DDNS（Dynamic Domain Name Server）Это аббревиатура динамической службы доменных имен.
+307	web_prosetting_ddns	目前路由器拨号上网获得的多半都是动态IP，DDNS可以将路由器变化的外网IP和固定的域名绑定，从而用户可以在外网通过该固定域名来访问路由器。	Очень часто провайдеры Интернет при подключении к сети предоставляют внешний динамический ip-адрес (Stream, Beeline/Corbina и т.п.). Подавляющему большинству пользователей этого достаточно. Однако в некоторых случаях (для сетевых игр, для доступа к своему компьютеру из вне) необходим внешний статический адрес. Эту услугу предоставляют далеко не все провайдеры, а если и предоставляют, то за дополнительную плату. Обойти эту проблему можно с помощью технологии DDNS, позволяющей связать внешний динамический ip-адрес и постоянное доменное имя. Воспользоваться DDNS можно совершенно бесплатно!</span>
+308	web_prosetting_dmz	应用	Использовать
+309	web_prosetting_dmz	未生效	Не активно
+310	web_prosetting_dmz	已生效	已生效
+311	web_prosetting_dmz	设置DMZ	НастроитьDMZ
+312	web_prosetting_dmz	DMZ状态：	DMZ статус：
+313	web_prosetting_dmz	DMZ IP地址	DMZ IP Адрес
+314	web_prosetting_dmz	IP地址最后一位	IP Адрес最后一位
+315	web_prosetting_dmz	配置成功，请稍候...	配置成功，请稍候...
+316	web_prosetting_dmz	关闭成功，生效中，请稍候...	Выкл.成功，生效中，请稍候...
+317	web_prosetting_dmz	端口转发开启了，不可以设置DMZ	Настройте перенаправление портов!
+318	web_prosetting_dmz	开启DMZ功能可以将内网某一个设备的IP映射到外网，方便从外网访问到该设备。	DMZ (Демилитаризованная зона) - это конфигурация сети, в которой открытые для общего доступа сервера находятся в отдельном изолированном сегменте сети. Данная концепция обеспечивает отсутствие контактов между открытыми для общего доступа серверами и другими сегментами сети в случае взлома сервера. При реализации концепции DMZ особая роль отводится брандмауэру, так как именно он отвечает за проведение нужной политики по защите локальных сетей от сегмента DMZ с одновременным поддержанием доступа к DMZ. Из-за сложности реализации не рекомендуется применять технологию DMZ, если вы недостаточно знакомы с принципами создания и работы сетей. Использование технологии DMZ не является обязательным, но в большинстве случаев рекомендуется сетевыми администраторами, серьезно относящимися к вопросам безопасности.
+319	web_prosetting_nat	关闭	Выкл.
+320	web_prosetting_nat	协议	Протокол
+321	web_prosetting_nat	名称	Имя
+322	web_prosetting_nat	更新	更新
+323	web_prosetting_nat	开启	Вкл.
+324	web_prosetting_nat	起始端口	Начальный порт
+325	web_prosetting_nat	拒绝阈值	Порог отключения
+326	web_prosetting_nat	踢除阈值	Порог активации
+327	web_prosetting_nat	外部端口	Внешний порт
+328	web_prosetting_nat	内部端口	Внутренний порт
+329	web_prosetting_nat	目标IP	IP назнач.
+330	web_prosetting_nat	应用名称	Имя приложения
+331	web_prosetting_nat	结束端口	Конечный порт
+332	web_prosetting_nat	5G 漫游	5G роуминг
+333	web_prosetting_nat	客户端IP	IP клиента
+334	web_prosetting_nat	内部IP地址	Внутр. IP
+335	web_prosetting_nat	UPnP状态	UPnP статус
+336	web_prosetting_nat	查询中...	Обработка...
+337	web_prosetting_nat	UPnP未开启	UPnP не включен
+338	web_prosetting_nat	2.4G 漫游	2.4G роуминг
+339	web_prosetting_nat	编辑端口转发规则	ИзменитьПеренаправление портов规则
+340	web_prosetting_nat	没有UPnP设备	Нет UPnP устройств
+341	web_prosetting_nat	编辑范围转发规则	Изменить范围转发规则
+342	web_prosetting_nat	新建端口转发规则	Добавить правило переадресации портов
+343	web_prosetting_nat	新建范围转发规则	Создание правила переадресации диапазона
+344	web_prosetting_nat	修改Wi-Fi设置	Изменение настроек Wi-Fi
+345	web_prosetting_nat	UPnP设备列表：	Список устройств UPnP：
+346	web_prosetting_nat	范围转发规则列表：	Диапазон портов переадресации：
+347	web_prosetting_nat	端口转发规则列表：	Правила переадресации портов：
+348	web_prosetting_nat	配置中，请稍候...	配置中，请稍候...
+349	web_prosetting_nat	确定要删除这条规则吗？	Вы действительно хотите удалить это правило?
+350	web_prosetting_nat	修改 Wi-Fi 设置	Изменение настроек Wi-Fi
+351	web_prosetting_nat	网络异常，请检查是否联网	Сеть не в порядке, проверьте, подключена ли она к Интернету
+352	web_prosetting_nat	需在-90~-60范围内取值	需在-90~-60范围内取值
+353	web_prosetting_nat	需在-85~-55范围内取值	需在-85~-55范围内取值
+354	web_prosetting_nat	需在-95~-65范围内取值	需在-95~-65范围内取值
+355	web_prosetting_nat	需在-100~-70范围内取值	需在-100~-70范围内取值
+356	web_prosetting_nat	dBm(取值范围-90~-60)	dBm(Диапазон-90~-60)
+357	web_prosetting_nat	dBm(取值范围-85~-55)	dBm(Диапазон-85~-55)
+358	web_prosetting_nat	dBm(取值范围-95~-65)	dBm(Диапазон-95~-65)
+359	web_prosetting_nat	dBm(取值范围-100~-70)	dBm(Диапазон-100~-70)
+360	web_prosetting_nat	设置成功正在重启，需要30秒请等待...	Выполняется перезагрузка.<br/>Подождите 30 секунд...
+361	web_prosetting_nat	该操作将重启 Wi-Fi 并导致 Wi-Fi 下的所有设备失去连接，是否确认修改？	Операция перезапустит Wi-Fi и приведет к потере всех подключенных устройств Wi-Fi.
+362	web_prosetting_networkportcustom	模式	模式
+363	web_prosetting_networkportcustom	设置中	Настроить中
+364	web_prosetting_networkportcustom	自定义	Настроить
+365	web_prosetting_networkportcustom	注意：	注意：
+366	web_prosetting_networkportcustom	聚合口	聚合口
+367	web_prosetting_networkportcustom	手工添加	Добавить вручную
+368	web_prosetting_networkportcustom	保存成功	 Сохранить成功
+369	web_prosetting_networkportcustom	设备信息	Информация
+370	web_prosetting_networkportcustom	设备IP	设备IP
+371	web_prosetting_networkportcustom	设备名称	Имя устройства
+372	web_prosetting_networkportcustom	带宽聚合	Скорость 聚合
+373	web_prosetting_networkportcustom	提示信息	Подсказка
+374	web_prosetting_networkportcustom	不再提示	不再Подсказка
+375	web_prosetting_networkportcustom	游戏网口	游戏网口
+376	web_prosetting_networkportcustom	桥接模式	桥接模式
+377	web_prosetting_networkportcustom	WAN2口	WAN2口
+378	web_prosetting_networkportcustom	WAN1口	WAN1口
+379	web_prosetting_networkportcustom	请选择网口	Пожалуйста, выберите网口
+380	web_prosetting_networkportcustom	修改端口设置	修改端口Настроить
+381	web_prosetting_networkportcustom	WAN2优先	WAN2Отличный先
+382	web_prosetting_networkportcustom	LAN口聚合	LAN口聚合
+383	web_prosetting_networkportcustom	WAN口策略	WAN口策略
+384	web_prosetting_networkportcustom	请选择网口：	Пожалуйста, выберите网口：
+385	web_prosetting_networkportcustom	WAN1优先	WAN1Отличный先
+386	web_prosetting_networkportcustom	双WAN设置	双WANНастроить
+387	web_prosetting_networkportcustom	WAN2口带宽	WAN2口Скорость 
+388	web_prosetting_networkportcustom	还没有策略加入	还没有策略Принимаю 
+389	web_prosetting_networkportcustom	WAN1口带宽	WAN1口Скорость 
+390	web_prosetting_networkportcustom	从在线列表添加	Выбрать из списка
+391	web_prosetting_networkportcustom	双WAN功能介绍	双WAN功能介绍
+392	web_prosetting_networkportcustom	正在查询中...	Обработка...
+393	web_prosetting_networkportcustom	前往上网配置设置	前往上网配置Настроить
+394	web_prosetting_networkportcustom	什么是双WAN？	什么是双WAN？
+395	web_prosetting_networkportcustom	前往上网设置配置	前往 Интернет配置
+396	web_prosetting_networkportcustom	LAN口聚合成功	LAN口聚合成功
+397	web_prosetting_networkportcustom	网络服务提供商配置	网络Провайдер配置
+398	web_prosetting_networkportcustom	中进行WAN口配置	中进行WAN口配置
+399	web_prosetting_networkportcustom	请至少选择一个设备	Выберите хотя бы одно устройство
+400	web_prosetting_networkportcustom	WAN口转发规则设置	WAN口转发规则Настроить
+401	web_prosetting_networkportcustom	设置中，请稍等...	Настроить中，请稍等...
+402	web_prosetting_networkportcustom	“常用设置-上网设置”	“Настройки- Интернет”
+403	web_prosetting_networkportcustom	聚合未开启，请配置聚合	聚合未Вкл.，请配置聚合
+404	web_prosetting_networkportcustom	网络异常，获取列表失败	网络异常，获取列表失败
+405	web_prosetting_networkportcustom	WAN口转发规则列表：	WAN口转发规则列表：
+406	web_prosetting_networkportcustom	确认是否关闭双WAN功能	Подтвердить是否Выкл.双WAN功能
+407	web_prosetting_networkportcustom	IPTV VLAN优先级	IPTV VLANПриоритет
+408	web_prosetting_networkportcustom	请选择一个网口作为游戏网口	Пожалуйста, выберите一个网口作为游戏网口
+409	web_prosetting_networkportcustom	WAN1优先，WAN2备份	WAN1Отличный先，WAN2备份
+410	web_prosetting_networkportcustom	WAN2优先，WAN1备份	WAN2Отличный先，WAN1备份
+411	web_prosetting_networkportcustom	请选择网口作为WAN口，并在	Пожалуйста, выберите网口作为WAN口，并在
+412	web_prosetting_networkportcustom	双WAN设置中，请稍等...	双WANНастроить中，请稍等...
+413	web_prosetting_networkportcustom	请选择需要聚合的两个LAN口	Пожалуйста, выберите需要聚合的两个LAN口
+414	web_prosetting_networkportcustom	确认是否关闭LAN口聚合功能	Подтвердить是否Выкл.LAN口聚合功能
+415	web_prosetting_networkportcustom	错误：策略数量最大值为1000	错误：策略数量最大值为1000
+416	web_prosetting_networkportcustom	IPTV VLAN优先级(0~7)	IPTV VLANПриоритет(0~7)
+417	web_prosetting_networkportcustom	WAN1口/WAN2口转发比例设置	WAN1口/WAN2口转发比例Настроить
+418	web_prosetting_networkportcustom	将两个LAN口聚合，实现网口速率叠加	将两个LAN口聚合，实现网口Скорость叠加
+419	web_prosetting_networkportcustom	聚合失败，检测到聚合的LAN口未插入网线	聚合失败，检测到聚合的LAN口未插入网线
+420	web_prosetting_networkportcustom	可用端口不足，请先关闭其他端口功能后再试	可用端口不足，请先Выкл.Другое端口功能后再试
+421	web_prosetting_networkportcustom	聚合中，请确保接入聚合口的设备支持聚合功能	聚合中，请确保接入聚合口的设备支持聚合功能
+422	web_prosetting_networkportcustom	聚合失败，检测到选定的LAN口实际生效速率不同	聚合失败，检测到选定的LAN口实际生效Скорость不同
+423	web_prosetting_networkportcustom	配置生效过程中路由器会短暂断开网络，现在保存配置？	配置生效过程中路由器会短暂Отключить网络，现在 Сохранить配置？
+424	web_prosetting_networkportcustom	3.请勿将WAN1或WAN2口与其他Mesh组网设备相连	3.请勿将WAN1或WAN2口与ДругоеMesh组网设备相连
+425	web_prosetting_networkportcustom	网口协商速率不同时，将无法聚合成功。对端网卡需开启LACP协议。	网口协商Скорость不同时，将无法聚合成功。对端网卡需Вкл.LACPПротокол。
+426	web_prosetting_networkportcustom	为保证正常上网，请在“常用设置”-“上网设置”中进行WAN口配置	为保证正常上网，请在“Настройки”-“ Интернет”中进行WAN口配置
+427	web_prosetting_networkportcustom	配置生效过程中连接在路由器上的有线设备会短暂断开网络，请确认是否保存修改？	配置生效过程中Связь在路由器上的有线设备会短暂Отключить网络，请Подтвердить是否 Сохранить修改？
+428	web_prosetting_networkportcustom	4.双WAN功能仅支持IPv4，IPV6及IPTV功能仅支持在WAN1上部署	4.双WAN功能仅支持IPv4，IPV6及IPTV功能仅支持在WAN1上部署
+429	web_prosetting_networkportcustom	双WAN功能是指支持两条外网宽带线路同时工作以带来更佳的网络体验，其主要的功能如下：	双WAN功能是指支持两条外网宽带线路同时工作以带来更佳的网络体验，其主要的功能如下：
+430	web_prosetting_networkportcustom	1.开启双WAN功能后会与部分功能冲突，若仍想使用冲突功能，请先尝试关闭双WAN后再试	1.Вкл.双WAN功能后会与部мин. 功能冲突，若仍想使用冲突功能，请先尝试Выкл.双WAN后再试
+431	web_prosetting_networkportcustom	（1）增加带宽（带宽聚合模式）：可同时使用两条外网宽带线路以增加外网总带宽，实现更大的下载速率	（1）增加Скорость （Скорость 聚合模式）：可同时使用两条外网宽带线路以增加外网总Скорость ，实现更大的СкачиваниеСкорость
+432	web_prosetting_networkportcustom	（3）外网路径选择（带宽聚合模式）：可选择部分设备的数据优先通过固定的WAN口宽带，比如部分数据走移动网络，部分数据走电信网络	（3）外网路径选择（Скорость 聚合模式）：可选择部мин. 设备的数据Отличный先通过固定的WAN口宽带，比如部мин. 数据走移动网络，部мин. 数据走电信网络
+433	web_prosetting_networkportcustom	2.若某些终端设备出现金融类app无法正常使用的情况，可尝试在“WAN口策略”功能中将该设备设置为“WAN1优先”或“WAN2优先”后再试	2.若某些Устройства出现金融类app无法正常使用的情况，可尝试在“WAN口策略”功能中将该设备Настроить为“WAN1Отличный先”或“WAN2Отличный先”后再试
+434	web_prosetting_networkportcustom	（2）冗余备份（WAN1优先，WAN2备份/WAN2优先，WAN1备份）：如果其中一条外网宽带出现故障，可以数据分流到另一条宽带上，以保障与外部网络连通	（2）冗余备份（WAN1Отличный先，WAN2备份/WAN2Отличный先，WAN1备份）：如果其中一条外网宽带出现故障，可以数据мин. 流到另一条宽带上，以保障与外部网络连通
+435	web_prosetting_qos	未设置	未Настроить
+436	web_prosetting_qos	优先级	Приоритет
+437	web_prosetting_qos	无限制	Безлим.
+438	web_prosetting_qos	游戏优先	Игры
+439	web_prosetting_qos	上传限速	Ограничение загрузки
+440	web_prosetting_qos	视频优先	Видео
+441	web_prosetting_qos	当前网速	Скорость сети
+442	web_prosetting_qos	下载速度	Отдача
+443	web_prosetting_qos	最大速度	Макс. скорость
+444	web_prosetting_qos	自动模式	Автомат.
+445	web_prosetting_qos	系统自动	系统Автоматически
+446	web_prosetting_qos	下载限速	Ограничение отдачи
+447	web_prosetting_qos	网页优先	Страницы
+448	web_prosetting_qos	限速模式	限速模式
+449	web_prosetting_qos	上传速度	Загрузка
+450	web_prosetting_qos	优先级模式	Режим приоритета
+451	web_prosetting_qos	设置QoS	Настройка QoS
+452	web_prosetting_qos	手工限速模式	Ручной режим ограничения скорости
+453	web_prosetting_qos	IP和MAC	IPа также MAC
+454	web_prosetting_qos	最高速度设置	Установка максимальной скорости
+455	web_prosetting_qos	QoS智能分配	Умное распределение QoS
+456	web_prosetting_qos	访客WiFi限速	Ограничение скорости гост. Wi-Fi
+457	web_prosetting_qos	系统错误，请重试	系统错误，请Повтор
+458	web_prosetting_qos	家庭WiFi限速	Ограничение Wi-Fi скорости
+459	web_prosetting_qos	访客WiFi限速:	Ограничение скорости гост. Wi-Fi:
+460	web_prosetting_qos	根据应用优先级分配网速	Приоритетность скорости сети
+461	web_prosetting_qos	当前QoS服务暂未开启	<br/>Служба QoS не активна
+462	web_prosetting_qos	系统根据设备需要自动调配网速	Автоматическое распределение скорости.
+463	web_prosetting_qos	无限速阈值，请先进行限速设置	Неограниченный порог скорости, пожалуйста, сначала установите ограничение скорости
+464	web_prosetting_qos	优先保证看视频的网速，高清也流畅	Улучшает стабильность буферизации HD видео в интернете.
+465	web_prosetting_qos	优先保证浏览网页的网速，大图秒打开	Ускоряет загрузку страниц отдавая приоритет серфингу в браузере.
+466	web_prosetting_qos	优先保证打游戏的网速，不卡顿不掉线	Приоритет отдается играм, что уменьшает пинг.
+467	web_prosetting_qos	手工模式下路由器会根据您设置的速度调整带宽分配	В ручном режиме маршрутизатор настраивает распределение полосы пропускания в соответствии с установленной вами скоростью
+468	web_prosetting_qos	当外网下载带宽超过50Mbps时，建议无需开启QoS功能	Когда скорость загрузки свыше 50Mbps, не рекомендуется включать QoS
+469	web_prosetting_qos	优先级模式下路由器会动态调整带宽分配，保证优先级较高的设备网络体验流畅	Приоритетный режим, маршрутизатор будет динамически регулировать распределение полосы пропускания, чтобы обеспечить более высокое сетевое оборудование, которое имеет приоритет
+470	web_prosetting_qos	自动模式下路由器会根据当前网络使用情况动态调整带宽分配，保证网络体验流畅	В автоматическом режиме маршрутизатор динамически регулирует распределение полосы пропускания в соответствии с текущим сетевым использованием, чтобы обеспечить бесперебойную работу сети.
+471	web_prosetting_vpn	地址	 Адрес
+472	web_prosetting_vpn	离线	离线
+473	web_prosetting_vpn	在线	В сети
+474	web_prosetting_vpn	连接	Связь
+475	web_prosetting_vpn	重连	Переподкл.
+476	web_prosetting_vpn	已连接	На связи
+477	web_prosetting_vpn	未启用	Не включено
+478	web_prosetting_vpn	服务器	Сервер
+479	web_prosetting_vpn	断开连接	Отключить
+480	web_prosetting_vpn	取消连接	Отключить
+481	web_prosetting_vpn	协议类型	Протокол
+482	web_prosetting_vpn	连接异常	Связь异常
+483	web_prosetting_vpn	连接失败	Ошибка
+484	web_prosetting_vpn	按设备分流	по устройству
+485	web_prosetting_vpn	请输入地址	Введите адрес
+486	web_prosetting_vpn	服务器地址	Адрес сервера
+487	web_prosetting_vpn	添加服务地址	Добавить службу Адрес
+488	web_prosetting_vpn	什么是VPN	Что такое VPN
+489	web_prosetting_vpn	没有设置信息	Список пуст
+490	web_prosetting_vpn	开机自动连接	Автоматическое подключение при загрузке
+491	web_prosetting_vpn	VPN设置失败	VPNНастроить失败
+492	web_prosetting_vpn	按服务地址分流	по адресу
+493	web_prosetting_vpn	如何设置VPN	Как настроить VPN
+494	web_prosetting_vpn	智能VPN分流	Смарт VPN для обхода блокировки
+495	web_prosetting_vpn	正在断开...	正在Отключить...
+496	web_prosetting_vpn	小米服务走VPN	VPN для Mi
+497	web_prosetting_vpn	VPN 服务列表：	VPN Список служб：
+498	web_prosetting_vpn	通过MAC地址添加	Добавить по MAC-адресу
+499	web_prosetting_vpn	从设备列表添加设备	Добавить из списка
+500	web_prosetting_vpn	你确定要删除此项吗？	Вы уверены, что хотите удалить этот элемент?
+501	web_prosetting_vpn	请输入设备的MAC地址	Введите MAC-адрес устройства
+502	web_prosetting_vpn	添加要使用VPN的服务地址	Добавление VPN службы
+503	web_prosetting_vpn	请选择需要使用VPN的设备	Выберите устройство, на котором нужно использовать VPN
+504	web_prosetting_vpn	通过MAC地址添加要使用VPN的设备	Добавьте устройство по MAC-адресу
+505	web_prosetting_vpn	你可以自定义哪些服务或设备会走VPN的流量	Настройте услуги и сервисы для работы с VPN
+506	web_prosetting_vpn	2.将信息添加到服务中，并启用该VPN服务	2. Добавить информацию службы и включите службу VPN
+507	web_prosetting_vpn	可以通过添加设备来限定哪些设备可以使用VPN流量	Вы можете ограничить, какие устройства могут использовать трафик VPN, добавив устройства
+508	web_prosetting_vpn	重新连接vpn后该设置将生效，是否确认重新连接？	重新Связьvpn后该Настроить将生效，是否Подтвердить重新Связь？
+509	web_prosetting_vpn	可以通过添加服务地址来限定哪些服务流量会经过VPN	Вы можете добавить службу VPN и выбрать какие услуги будут использовать VPN
+510	web_prosetting_vpn	2.服务器地址可以是域名或IP地址，具体由服务商提供。	2.Адрес сервера可以是域名或IP Адрес，具体由服务商提供。
+511	web_prosetting_vpn	当前正在连接的VPN将被断开，重新连接后该设置将生效。	Текущий подключенный VPN будет отключен, и настройка вступит в силу после повторного подключения.
+512	web_prosetting_vpn	1.VPN用户名、密码、服务器地址、协议类型等信息需要向VPN服务商获取。	1. Имя пользователя VPN, пароль, адрес сервера, тип протокола и другую информацию необходимо получить от поставщика услуг VPN.
+513	web_prosetting_vpn	VPN属于远程访问技术，应用举例：出差员工在外地通过VPN服务访问企业内部网络。	<center><iframe width='560' height='315' src='https://www.youtube.com/embed/gAZxpGQNdac' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></center><br/>VPN - это технология удаленного доступа. Например: сотрудники, находящиеся в командировках, получают доступ к корпоративной внутренней сети через службы VPN.
+514	web_prosetting_vpn	1.首先需要在VPN服务商官网上注册账号，获得用户名、密码、服务器地址、协议类型等信息。	1. Во-первых, вам необходимо зарегистрировать учетную запись на официальном веб-сайте поставщика услуг VPN, чтобы получить такую ​​информацию, как имя пользователя, пароль, адрес сервера и тип протокола.
+515	web_prosetting_vpn	当你需要通过VPN使用外网时，可以开启此功能保证小米路由器APP远程服务可用，其他情况下关闭此功能	Когда вам нужно использовать внешнюю сеть через VPN, вы можете включить эту функцию, чтобы обеспечить доступ к удаленной службе APP маршрутизатора Xiaomi. В других случаях вы можете отключить эту функцию.
+516	web_prosetting_vpn	开启该功能后，需要您重新连接VPN方可生效，且智能分流功能将关闭。若开启后发现路由器App远程访问出现异常，请您关闭。是否确认开启？	После включения этой функции вам необходимо повторно подключиться к VPN, чтобы она вступила в силу, и функция интеллектуального шунтирования будет отключена. Если после включения вы обнаружите, что удаленный доступ к приложению роутера работает некорректно, выключите его.
+517	web_prosetting_vpn	PPTP（Point to Point Tunneling Protocol）和L2TP（Layer 2 Tunneling Protocol）为两种互联网隧道协议，都属于VPN（Virtual Private Network）虚拟专用网络的不同协议分类方式。	PPTP (протокол туннелирования точка-точка) и L2TP (протокол туннелирования уровня 2) - это два протокола туннелирования Интернета, оба из которых относятся к разным методам классификации протоколов VPN (виртуальная частная сеть).
+518	web_setting_lannetset	移除	Удалить
+519	web_setting_lannetset	结束	结束
+520	web_setting_lannetset	租约	租约
+521	web_setting_lannetset	子网掩码	Маска подсети
+522	web_setting_lannetset	解绑选中	Отвязать выбранные
+523	web_setting_lannetset	绑定设备	Привязать оборудование
+524	web_setting_lannetset	上网设置	 Интернет
+525	web_setting_lannetset	结束IP	Конеч. IP
+526	web_setting_lannetset	终端数量	终端数量
+527	web_setting_lannetset	安全中心	 Безопасность
+528	web_setting_lannetset	开始IP	Начал. IP
+529	web_setting_lannetset	系统设置	系统Настроить
+530	web_setting_lannetset	解除绑定	Отвязать
+531	web_setting_lannetset	增加一项	Добавить еще
+532	web_setting_lannetset	默认网关	Основной шлюз
+533	web_setting_lannetset	局域网设置	 Локальная сеть
+534	web_setting_lannetset	租约(分)	Сессия (мин.)
+535	web_setting_lannetset	局域网IP	Локальный IP
+536	web_setting_lannetset	最大终端数量	最大终端数量
+537	web_setting_lannetset	处理中...	Обработка...
+538	web_setting_lannetset	DHCP服务	DHCP служба
+539	web_setting_lannetset	固定WAN口	固定WAN口
+540	web_setting_lannetset	WAN口选择	Выбор порта WAN
+541	web_setting_lannetset	Wi-Fi设置	 Настройки Wi-Fi
+542	web_setting_lannetset	局域网IP地址	Локальный IP Адрес
+543	web_setting_lannetset	什么是DHCP？	Что такое DHCP? 
+544	web_setting_lannetset	你还未选择任何设备	你还未选择任何设备
+545	web_setting_lannetset	已绑定的设备列表：	Список назначенных устройств：
+546	web_setting_lannetset	确定要删除这项数据吗	Вы уверены, что хотите удалить эти данные?
+547	web_setting_lannetset	出现异常，请刷新页面	出现异常，请刷新页面
+548	web_setting_lannetset	DHCP静态IP分配	DHCP/IP присвоение
+549	web_setting_lannetset	设置有误，请重新输入	Настроить有误，请重新输入
+550	web_setting_lannetset	你确定要解除此项绑定？	Отменить привязку？
+551	web_setting_lannetset	存在IP冲突，请检查输入项	Конфликт IP-адресов, проверьте ввод
+552	web_setting_lannetset	WAN/LAN口自适应（推荐）	WAN/LAN口自适应（推荐）
+553	web_setting_lannetset	确认要解除选中项目的绑定关系？	Подтвердить要解除选中项目的绑定关系？
+554	web_setting_lannetset	此操作需要重启才能生效，是否提交?	Требуется перезагрузка!
+555	web_setting_lannetset	最多接入设备为1000台，请重新设置	最多接入设备为1000 устр.，请重新Настроить
+556	web_setting_lannetset	判断是否超出DHCP服务所设定的IP段	判断是否超出DHCP служба所设定的IP段
+557	web_setting_lannetset	接入到运营商宽带的网线可以插在任意网口	接入到运营商宽带的网线可以插在任意网口
+558	web_setting_lannetset	3、路由器局域网IP地址：登陆Web配置后台的地址。	3. IP-адрес маршрутизатора в локальной сети: войдите в систему с адресом фона веб-конфигурации. 
+559	web_setting_lannetset	配置为C类IP地址时，请使用掩码255.255.255.0	配置为C类IP Адрес时，请使用掩码255.255.255.0
+560	web_setting_lannetset	4、默认网关：路由器下接入设备的默认网关，默认是路由器内网IP。	4. Шлюз по умолчанию: шлюз по умолчанию для устройства доступа под маршрутизатором, по умолчанию - IP-адрес внутренней сети маршрутизатора.
+561	web_setting_lannetset	该IP不在可用IP范围内，请重新输入。您可以参考DHCP服务可用IP段来设定。	该IP不在可用IP范围内，请重新输入。您可以参考DHCP служба可用IP段来设定。
+562	web_setting_lannetset	WAN/LAN 自适应功能可以自动判断接入网口的设备是WAN设备还是LAN设备，并相应地配置端口的工作模式	WAN/LAN 自适应功能可以Автоматически判断接入网口的设备是WAN设备还是LAN设备，并相应地配置端口的工作模式
+563	web_setting_lannetset	2、租期：IP 地址分配给局域网计算机以后，如果使用时间超过这个租期，小米路由将给计算机分配新的 IP 地址。	2. Срок аренды: после назначения IP-адреса компьютеру в локальной сети, если время использования превышает срок аренды, маршрутизатор Xiaomi назначит компьютеру новый IP-адрес. 
+564	web_setting_lannetset	5、静态 IP 地址绑定：通常您计算机的 IP 地址由路由器动态分配。如果您希望计算机拥有静态 IP 地址，您可以在静态 IP 地址绑定列表中手动添加您计算机的 MAC 地址和希望使用的静态 IP 地址。注意，静态 IP 地址需与路由器的局域网 IP 地址在同一网段。	5. Привязка статического IP-адреса: Обычно IP-адрес вашего компьютера динамически назначается маршрутизатором. Если вы хотите, чтобы ваш компьютер имел статический IP-адрес, вы можете вручную добавить MAC-адрес вашего компьютера и статический IP-адрес, который вы хотите использовать, в список привязки статических IP-адресов. Обратите внимание, что статический IP-адрес должен находиться в том же сегменте сети, что и IP-адрес LAN маршрутизатора.
+565	web_setting_lannetset	1、DHCP 服务器：开启后，小米路由可以自动向您的接入设备分配 IP 地址、DNS 服务器地址等网络参数，并通过此功能实现 IP 地址的集中管理；关闭后，小米路由将不为您的计算机自动分配 IP 地址、DNS 服务器地址等网络参数，当另一台路由器通过 Wi-Fi 中继方式连接此路由器时，中继连接将会失败。	1. DHCP-сервер: после включения Xiaomi Router может автоматически назначать сетевые параметры, такие как IP-адрес и адрес DNS-сервера, вашему устройству доступа и осуществлять централизованное управление IP-адресами с помощью этой функции; после выключения Xiaomi Router не будет вашим Компьютер автоматически назначает сетевые параметры, такие как IP-адрес и адрес DNS-сервера. Когда другой маршрутизатор подключается к этому маршрутизатору через ретранслятор Wi-Fi, ретрансляционное соединение не работает.
+566	web_setting_safe	新密码	Новый
+567	web_setting_safe	原密码	Старый
+568	web_setting_safe	确认密码	Повторить пароль
+569	web_setting_safe	连接时长	Онлайн
+570	web_setting_safe	保存并生效	Сохранить
+571	web_setting_safe	控制模式：	Режим контроля：
+572	web_setting_safe	无线访问控制	Беспроводной контроль доступа
+573	web_setting_safe	修改管理密码	Изменить пароль панели управления
+574	web_setting_safe	白名单设备列表	Список устройств в белом списке
+575	web_setting_safe	黑名单设备列表	Список адресов
+576	web_setting_safe	MAC地址白名单	MAC-адреса белого списка
+577	web_setting_safe	管理后台访问控制	Фоновый контроль доступа
+578	web_setting_safe	无线MAC地址过滤	Фильтрация MAC-адресов беспроводной сети
+579	web_setting_safe	新密码与原密码相同	Новый пароль совпадает с исходным паролем.
+580	web_setting_safe	通过MAC地址添加设备	Добавить MAC устройства
+581	web_setting_safe	正在检测模式列表...	正在检测模式列表...
+582	web_setting_safe	你什么都没改变，提交什么啊	Вы ничего не меняли, отправить?
+583	web_setting_safe	白名单模式（只允许列表中设备访问）	Белый список
+584	web_setting_safe	黑名单模式（不允许列表中设备访问）	Черный список
+585	web_setting_safe	添加失败，Mesh路由不能添加到黑名单	Не удалось добавить, маршрут нельзя добавить в черный список
+586	web_setting_safe	您将当前设备添加至黑名单，保存后本机将无法访问网络！	Вы добавляете текущее устройство в черный список, и после сохранения устройство не сможет получить доступ к сети!
+587	web_setting_safe	您没有将当前设备添加至白名单，保存后本机将无法访问网络！	Вы не добавили текущее устройство в белый список. После сохранения устройство не сможет получить доступ к сети!
+588	web_setting_safe	您没有在列表中添加任何设备，保存后所有设备将无法访问网络！请返回修改	Вы не добавляли ни одно устройство в список, все устройства не смогут получить доступ к сети после сохранения! Пожалуйста, вернитесь к редактированию.
+589	web_setting_safe	开启后访问协议将自动重定向为https，需要重新登录Web管理后台。确认开启？	Вкл.后访问Протокол将Автоматически重定向为https，需要重新登录WebУправление。ПодтвердитьВкл.？
+590	web_setting_safe	开启白名单功能后，将只允许名单中的设备访问管理后台，每次开启会将本机自动添加至白名单。	После включения функции "белый список" доступ к управлению будет разрешен только для устройств из списка, и устройство будет автоматически добавляться в белый список при каждом его включении.
+591	web_setting_upgrade	由于	由于
+592	web_setting_upgrade	每天	每дн. 
+593	web_setting_upgrade	星期	星期
+594	web_setting_upgrade	恢复	Восстановление
+595	web_setting_upgrade	星期二	星期二
+596	web_setting_upgrade	碰碰连	碰碰连
+597	web_setting_upgrade	星期一	星期一
+598	web_setting_upgrade	星期三	星期三
+599	web_setting_upgrade	星期五	星期五
+600	web_setting_upgrade	星期四	星期四
+601	web_setting_upgrade	星期六	星期六
+602	web_setting_upgrade	星期日	星期 дн. 
+603	web_setting_upgrade	更新日志	Лог обновления (iframe с источника нельзя перевести)
+604	web_setting_upgrade	手动升级	Обновить вручную
+605	web_setting_upgrade	开始备份	Начать резервное копирование
+606	web_setting_upgrade	开始恢复	Начать восстановление
+607	web_setting_upgrade	时间设置	Настройки времени
+608	web_setting_upgrade	重启规则	Перезагрузка规则
+609	web_setting_upgrade	插件安装	Установка плагина
+610	web_setting_upgrade	时区设置	Настройка часового пояса
+611	web_setting_upgrade	开始安装	Начать установку
+612	web_setting_upgrade	手动安装	Ручная установка
+613	web_setting_upgrade	新建备份	Создать копию
+614	web_setting_upgrade	执行一次	执行一次
+615	web_setting_upgrade	上传日志	Загрузить журнал
+616	web_setting_upgrade	可选备份	Дополнительное резервное копирование
+617	web_setting_upgrade	更改时间	Изменить время
+618	web_setting_upgrade	立即升级	Выполнить обновление
+619	web_setting_upgrade	升级检测	Обновление
+620	web_setting_upgrade	开始升级	Начать обновление
+621	web_setting_upgrade	系统版本	Прошивка
+622	web_setting_upgrade	立即恢复	Быстр. восстановление
+623	web_setting_upgrade	更改时区	Изменить пояс
+624	web_setting_upgrade	当前时间	Текущее время
+625	web_setting_upgrade	重启计划	Перезагрузка计划
+626	web_setting_upgrade	灯效控制	灯效控制
+627	web_setting_upgrade	备份与恢复	Резервное копирование и восстановление
+628	web_setting_upgrade	周一至周五	周一至周五
+629	web_setting_upgrade	状态指示灯	Состояние指示灯
+630	web_setting_upgrade	请选择固件：	Выберите прошивку：
+631	web_setting_upgrade	手动安装插件	Установите плагин вручную
+632	web_setting_upgrade	至少选择1个	至少选择1个
+633	web_setting_upgrade	日志上传成功	Журнал успешно загружен
+634	web_setting_upgrade	插件安装成功	Установка плагина成功
+635	web_setting_upgrade	可选恢复的项目	Дополнительные элементы
+636	web_setting_upgrade	碰碰连设置失败	碰碰连Настроить失败
+637	web_setting_upgrade	请选择备份文件	Выберите файл резервной копии
+638	web_setting_upgrade	当前系统时间：	当前系统时间：
+639	web_setting_upgrade	备份路由器设置	Настроить рез. коп.
+640	web_setting_upgrade	直接恢复出厂设置	Откат настроек
+641	web_setting_upgrade	超出最大添加数量	超出最大Добавить数量
+642	web_setting_upgrade	(UTC+2)开罗	(UTC+2) Каир
+643	web_setting_upgrade	(UTC+9)首尔	(UTC+9) Сеул
+644	web_setting_upgrade	请选择插件安装包:	Выберите установочный пакет плагина:
+645	web_setting_upgrade	(UTC+6)达卡	(UTC+6) Дакка
+646	web_setting_upgrade	(UTC+2)安曼	(UTC+2) Амман
+647	web_setting_upgrade	系统错误，请重试。	系统错误，请Повтор。
+648	web_setting_upgrade	(UTC+8)台北	(UTC+8) Тайбэй
+649	web_setting_upgrade	(UTC+8)珀斯	(UTC+8) Перт
+650	web_setting_upgrade	(UTC+4)巴库	(UTC+4) Баку
+651	web_setting_upgrade	(UTC+3)内罗毕	(UTC+3) Найроби
+652	web_setting_upgrade	(UTC-1)佛得角	(UTC-1)佛得角
+653	web_setting_upgrade	(UTC+2)明斯克	(UTC+2) Минск
+654	web_setting_upgrade	(UTC+4)埃里温	(UTC+4) Ереван
+655	web_setting_upgrade	(UTC+4)路易港	(UTC+4) Порт-Луи
+656	web_setting_upgrade	(UTC+2)特罗尔	(UTC+2)特罗尔
+657	web_setting_upgrade	(UTC+1)都柏林	(UTC+1)都柏林
+658	web_setting_upgrade	(UTC+8)望加锡	(UTC+8)望加锡
+659	web_setting_upgrade	从备份恢复路由器设置	Восстановление резервной копии
+660	web_setting_upgrade	(UTC+5)卡拉奇	(UTC+5)卡拉奇
+661	web_setting_upgrade	(UTC+8)马尼拉	(UTC+8)马尼拉
+662	web_setting_upgrade	(UTC+12)斐济	(UTC+12) Фиджи
+663	web_setting_upgrade	(UTC+3)巴格达	(UTC+3) Багдад
+664	web_setting_upgrade	(UTC-3)格陵兰	(UTC-3) Гренландия
+665	web_setting_upgrade	(UTC-4)亚松森	(UTC-4) Асунсьон
+666	web_setting_upgrade	(UTC-3)米克隆	(UTC-3)米Клонировать
+667	web_setting_upgrade	1. NFC功能开启	1. NFC功能Вкл.
+668	web_setting_upgrade	(UTC-9)甘比尔	(UTC-9)甘比尔
+669	web_setting_upgrade	(UTC-5)哈瓦那	(UTC-5)哈瓦那
+670	web_setting_upgrade	(UTC)卡萨布兰卡	(UTC) Касабланка
+671	web_setting_upgrade	(UTC-6)中美洲	(UTC-6) Центральная Америка
+672	web_setting_upgrade	(UTC+5)塔什干	(UTC+5) Ташкент
+673	web_setting_upgrade	(UTC-3)戈塔布	(UTC-3)戈塔布
+674	web_setting_upgrade	(UTC-4)库亚巴	(UTC-4) Куяба
+675	web_setting_upgrade	(UTC+2)贝鲁特	(UTC+2) Бейрут
+676	web_setting_upgrade	(UTC)协调世界时	(UTC) Всемирное коорди. время
+677	web_setting_upgrade	(UTC-11)纽埃	(UTC-11)纽埃
+678	web_setting_upgrade	(UTC-8)皮特克恩	(UTC-8)皮特克恩
+679	web_setting_upgrade	(UTC-9)阿拉斯加	(UTC-9) Аляска
+680	web_setting_upgrade	(UTC+12)马加丹	(UTC+12) Магадан
+681	web_setting_upgrade	(UTC-4)圣地亚哥	(UTC-4) Сан Диего
+682	web_setting_upgrade	(UTC+2)大马士革	(UTC+2) Дамаск
+683	web_setting_upgrade	(UTC-3)巴西利亚	(UTC-3) Бразилиа
+684	web_setting_upgrade	(UTC-10)阿达克	(UTC-10)阿达克
+685	web_setting_upgrade	(UTC-10)夏威夷	(UTC-10) Гавайи
+686	web_setting_upgrade	(UTC-2)中大西洋	 Среднеатлантический
+687	web_setting_upgrade	(UTC+6)阿斯塔纳	(UTC+6) Астана
+688	web_setting_upgrade	(UTC+9)查亚普拉	(UTC+9)查亚普拉
+689	web_setting_upgrade	(UTC+1)中非西部	(UTC + 1) Западная Африка
+690	web_setting_upgrade	(UTC+13)萨摩亚	(UTC+13)萨摩亚
+691	web_setting_upgrade	(UTC+4)第比利斯	(UTC+4) Тбилиси
+692	web_setting_upgrade	(UTC-6)复活节岛	(UTC-6)复活节岛
+693	web_setting_upgrade	(UTC+2)耶路撒冷	(UTC+2) Иерусалим
+694	web_setting_upgrade	(UTC+10)霍巴特	(UTC+10) Хобарт
+695	web_setting_upgrade	(UTC+1)温得和克	(UTC+1) Виндхук
+696	web_setting_upgrade	(UTC+2)基希讷乌	(UTC+2)基希讷乌
+697	web_setting_upgrade	(UTC-7)亚利桑那	(UTC-7) Аризона
+698	web_setting_upgrade	(UTC+8)乌兰巴托	(UTC+8) Улан-Батор
+699	web_setting_upgrade	(UTC+6:30)仰光	(UTC+6:30) Янгон
+700	web_setting_upgrade	(UTC-6)加拉帕戈斯	(UTC-6)加拉帕戈斯
+701	web_setting_upgrade	(UTC-6)萨斯克彻温	(UTC-6) Саскачеван
+702	web_setting_upgrade	(UTC+9)伊尔库茨克	(UTC+9) Иркутск
+703	web_setting_upgrade	(UTC+2)伊斯坦布尔	(UTC+2) Стамбул
+704	web_setting_upgrade	文件格式错误，请重新选择	Неверный формат файла, выберите другой!
+705	web_setting_upgrade	(UTC+9)平壤，首尔	(UTC+9)平壤， Сеул
+706	web_setting_upgrade	(UTC+10)布里斯班	(UTC+10) Брисбен
+707	web_setting_upgrade	(UTC-1)亚速尔群岛	(UTC-1) Азорские острова
+708	web_setting_upgrade	(UTC+6)叶卡捷琳堡	(UTC+6) Екатеринбург
+709	web_setting_upgrade	(UTC+3)加里宁格勒	(UTC+3) Калининград
+710	web_setting_upgrade	你未选择文件，请重新选择	你未Выберите документ，请重新选择
+711	web_setting_upgrade	(UTC+14)基里巴斯	(UTC+14) Кирибати
+712	web_setting_upgrade	(UTC+10)雅库茨克	(UTC+10) Якутск
+713	web_setting_upgrade	(UTC-1)佛得角群岛	(UTC-1) Острова Зеленого Мыса
+714	web_setting_upgrade	(UTC+0)协调世界时	(UTC+0) Всемирное коорди. время
+715	web_setting_upgrade	(UTC+7)新西伯利亚	(UTC+7) Новосибирск
+716	web_setting_upgrade	(UTC-10)火奴鲁鲁	(UTC-10)火奴鲁鲁
+717	web_setting_upgrade	(UTC-3)蒙得维的亚	(UTC-3) Монтевидео
+718	web_setting_upgrade	(UTC+9:30)达尔文	(UTC+9:30) Дарвин
+719	web_setting_upgrade	原因，路由器设置备份失败！	原因，路由器Настроить备份失败！
+720	web_setting_upgrade	(UTC+14)基里蒂马蒂	(UTC+14)基里蒂马蒂
+721	web_setting_upgrade	(UTC+7)雅加达，坤甸	(UTC+7)雅加达，坤甸
+722	web_setting_upgrade	(UTC+13)努库阿洛法	(UTC+13) Нукуалофа
+723	web_setting_upgrade	(UTC+11)罗德豪维岛	(UTC+11)罗德豪维岛
+724	web_setting_upgrade	(UTC+2)加沙，希伯伦	(UTC+2)加沙，希伯伦
+725	web_setting_upgrade	路由器名称和路由器管理密码	Имяа также 路由器Панель управления
+726	web_setting_upgrade	(UTC+3:30)德黑兰	(UTC+3:30) Тегеран
+727	web_setting_upgrade	(UTC+8:45)尤克拉	(UTC+8:45)尤克拉
+728	web_setting_upgrade	(UTC+4:30)喀布尔	(UTC+4:30) Кабул
+729	web_setting_upgrade	(UTC+5:30)科伦坡	(UTC+5:30)科伦坡
+730	web_setting_upgrade	(UTC-11)协调世界时	(UTC-11) Всемирное коорди. время
+731	web_setting_upgrade	(UTC-11)萨摩亚群岛	(UTC-11) Самоа
+732	web_setting_upgrade	正在检测更新，请稍候...	Проверка обновлений...
+733	web_setting_upgrade	(UTC-3:30)纽芬兰	(UTC-3:30) Ньюфаундленд
+734	web_setting_upgrade	(UTC-3)布宜诺斯艾利斯	(UTC-3) Буэнос айрес
+735	web_setting_upgrade	你的版本是最新的，无需升级。	你的版本是最新的，无需升级。
+736	web_setting_upgrade	(UTC+8)吉隆坡,新加坡	(UTC+8) Куала-Лумпур, Сингапур
+737	web_setting_upgrade	(UTC-3:30)圣约翰斯	(UTC-3:30)圣约翰斯
+738	web_setting_upgrade	(UTC+10)关岛，塞班岛	(UTC+10)关岛，塞班岛
+739	web_setting_upgrade	(UTC-8)下加利福尼亚州	(UTC-8) Нижняя Калифорния
+740	web_setting_upgrade	(UTC+3)科威特,利雅得	(UTC+3) Кувейт, Эр-Рияд
+741	web_setting_upgrade	(UTC+9:30)阿德莱德	(UTC+9:30) Аделаида
+742	web_setting_upgrade	(UTC-3)卡宴,福塔雷萨	(UTC-3) Кайенна, Форталеза
+743	web_setting_upgrade	DHCP服务和局域网IP设置	Настройка службы DHCP и IP-адреса локальной сети
+744	web_setting_upgrade	(UTC-4:30)加拉加斯	(UTC-4:30) Каракас
+745	web_setting_upgrade	(UTC+5:45)加德满都	(UTC+5:45) Катманду
+746	web_setting_upgrade	2. 屏幕处于亮屏解锁的状态	2. 屏幕处于亮屏解锁的Состояние
+747	web_setting_upgrade	(UTC-2)协调世界时-02	(UTC-2) Всемирное коорд. время -02
+748	web_setting_upgrade	(UTC+2)雅典,布加勒斯特	(UTC+2) Афины, Бухарест
+749	web_setting_upgrade	(UTC+11)符拉迪沃斯托克	(UTC+11) Владивосток
+750	web_setting_upgrade	(UTC+12)奥克兰,惠灵顿	(UTC+12) Окленд, Веллингтон
+751	web_setting_upgrade	(UTC)蒙罗维亚,雷克雅未克	(UTC) Монровия, Рейкьявик
+752	web_setting_upgrade	(UTC+9)大阪,札幌,东京	(UTC+9) Осака, Саппоро, Токио
+753	web_setting_upgrade	(UTC-7)奇瓦瓦，马萨特兰	(UTC-7)奇瓦瓦，马萨特兰
+754	web_setting_upgrade	(UTC+8)克拉斯诺亚尔斯克	(UTC+8) Красноярск
+755	web_setting_upgrade	(UTC+5)伊斯兰堡,卡拉奇	(UTC+5) Исламабад, Карачи
+756	web_setting_upgrade	(UTC+12:45)查塔姆岛	(UTC+12:45)查塔姆岛
+757	web_setting_upgrade	(UTC-5)波哥大,利马,基多	(UTC-5) Богота, Лима, Кито
+758	web_setting_upgrade	(UTC-11)中途岛，帕果帕果	(UTC-11)中途岛，帕果帕果
+759	web_setting_upgrade	(UTC+10)布里斯班，林德曼	(UTC+10) Брисбен，林德曼
+760	web_setting_upgrade	(UTC-5)印第安纳州(东部)	(UTC-5) Индиана (восток)
+761	web_setting_upgrade	(UTC+1)卡萨布兰卡，阿伊恩	(UTC+1) Касабланка，阿伊恩
+762	web_setting_upgrade	(UTC+12)协调世界时+12	(UTC+12) Всемирное коорд. время +12
+763	web_setting_upgrade	(UTC+3)莫斯科，辛菲罗波尔	(UTC+3)莫斯科，辛菲罗波尔
+764	web_setting_upgrade	(UTC+7)曼谷,河内,雅加达	(UTC+7) Бангкок, Ханой, Джакарта
+765	web_setting_upgrade	(UTC+6:30)仰光，科科斯	(UTC+6:30) Янгон，科科斯
+766	web_setting_upgrade	(UTC-12)国际日期变更线西	(UTC-12) Международная Запад
+767	web_setting_upgrade	(UTC+4)阿布扎比,马斯喀特	(UTC+4) Абу-Даби, Маскат
+768	web_setting_upgrade	(UTC+10)关岛,莫尔兹比港	(UTC+10) Гуам, Порт-Морсби
+769	web_setting_upgrade	(UTC+2)哈拉雷,比勒陀利亚	(UTC+2) Хараре, Претория
+770	web_setting_upgrade	(UTC-9:30)马克萨斯群岛	(UTC-9:30)马克萨斯群岛
+771	web_setting_upgrade	(UTC+8:30)朝鲜标准时间	(UTC+8:30) Станд. время Северной Кореи
+772	web_setting_upgrade	上网设置(拨号方式和宽带账号密码)	 Интернет(拨号方式а также 宽带АккаунтПароль)
+773	web_setting_upgrade	(UTC-10)拉罗汤加，塔希提岛	(UTC-10)拉罗汤加，塔希提岛
+774	web_setting_upgrade	(UTC-2)诺罗尼亚，南乔治亚岛	(UTC-2)诺罗尼亚，南乔治亚岛
+775	web_setting_upgrade	检查失败，网络繁忙请刷新页面重试。	Проверка не удалась. Сеть перегружена. Повторите позже.
+776	web_setting_upgrade	升级失败，系统错误或路由硬盘已满。	Ошибка обновления，系统错误或路由硬盘已满。
+777	web_setting_upgrade	(UTC-4)大西洋时间(加拿大)	(UTC-4) Атлантическое время (Канада)
+778	web_setting_upgrade	(UTC+10)堪培拉,墨尔本,悉尼	(UTC+10) Канберра, Мельбурн, Сидней
+779	web_setting_upgrade	安装失败，系统错误或路由器空间不足。	安装失败，系统错误或路由器空间不足。
+780	web_setting_upgrade	(UTC+5:30)斯里加亚渥登普拉	(UTC+5:30) Шри Гая Воденпура
+781	web_setting_upgrade	设置成功，稍后生效，请等待一会刷新。	Настройка выполнена успешно и вступит в силу позже, пожалуйста, подождите некоторое время, чтобы обновить.
+782	web_setting_upgrade	(UTC)都柏林,爱丁堡,里斯本,伦敦	(UTC) Дублин, Эдинбург, Лондон
+783	web_setting_upgrade	(UTC+1)阿布贾，阿尔及尔，突尼斯	(UTC+1)阿布贾，阿尔及尔，突尼斯
+784	web_setting_upgrade	(UTC-7)山地时间(美国和加拿大)	(UTC-7) Горное время (США и Канада)
+785	web_setting_upgrade	(UTC-5)东部时间(美国和加拿大)	(UTC-5) Восточное время (США, Канада)
+786	web_setting_upgrade	(UTC+11:30)诺福克岛标准时间	(UTC+11:30) Стан. время острова Норфолк
+787	web_setting_upgrade	(UTC-6)中部时间(美国和加拿大)	(UTC-6) Центр. время (США, Канада)
+788	web_setting_upgrade	(UTC-10)夏威夷－阿留申标准时间	(UTC-10) Гавайи－阿留申Стандарт时间
+789	web_setting_upgrade	(UTC-7)奇瓦瓦,拉巴斯,马萨特兰	(UTC-7) Чиуауа, Ла-Пас, Масатлан
+790	web_setting_upgrade	(UTC+8)中国澳门，上海，中国台北	(UTC+8)中国澳门，上海，中国 Тайбэй
+791	web_setting_upgrade	星期一,星期二,星期三,星期四,星期五	星期一,星期二,星期三,星期四,星期五
+792	web_setting_upgrade	开启或关闭此路由器的网络和系统状态指示灯	Вкл.或Выкл.此路由器的网络а также Состояние指示灯
+793	web_setting_upgrade	(UTC-8)太平洋时间(美国和加拿大)	(UTC-8) Тихоокеанское (США, Канада)
+794	web_setting_upgrade	(UTC+13)恩德伯里，法考福，通塔普	(UTC+13)恩德伯里，法考福，通塔普
+795	web_setting_upgrade	yyyy年MM月dd日 hh:mm:ss	yyyy г. MM мес. dd дн.  hh:mm:ss
+796	web_setting_upgrade	(UTC+11)所罗门群岛,新喀里多尼亚	(UTC+11) Соломоновы ос., Новая Каледония
+797	web_setting_upgrade	(UTC-1)斯科尔斯比松德，亚速尔群岛	(UTC-1)斯科尔斯比松德， Азорские острова
+798	web_setting_upgrade	路由器设置恢复成功，重启路由器即可生效！	Настройки маршрутизатора успешно восстановлены, перезагрузите маршрутизатор, чтобы изменения вступили в силу!
+799	web_setting_upgrade	(UTC+9:30)阿德莱德，布罗肯希尔	(UTC+9:30) Аделаида，布罗肯希尔
+800	web_setting_upgrade	(UTC-9:30)马克萨斯群岛标准时间	(UTC-9:30) Станд. время Маркизских о.
+801	web_setting_upgrade	(UTC+2)开罗，特里波利，加里宁格勒	(UTC+2) Каир，特里波利， Калининград
+802	web_setting_upgrade	(UTC+12)惠灵顿，麦克默多，奥克兰	(UTC+12)惠灵顿，麦克默多，奥克兰
+803	web_setting_upgrade	(UTC+12:45)查塔姆群岛标准时间	(UTC+12:45) Станд. время островов Чатем
+804	web_setting_upgrade	(UTC+10:30)澳大利亚远东标准时间	(UTC+10:30) Станд. время Дальнего Востока Австралии
+805	web_setting_upgrade	(UTC+4)莫斯科,圣彼得堡,伏尔加格勒	(UTC+4) Москва, Санкт-Петербург, Волгоград (Может быть ошибочно!)
+806	web_setting_upgrade	(UTC+0)根西岛，马恩岛，泽西岛，伦敦	(UTC+0)根西岛，马恩岛，泽西岛，伦敦
+807	web_setting_upgrade	(UTC-6)瓜达拉哈拉,墨西哥城,蒙特雷	(UTC-6) Гвадалахара, Мехико, Монтеррей
+808	web_setting_upgrade	(UTC+2)约翰内斯堡，马塞卢，姆巴巴内	(UTC+2)约翰内斯堡，马塞卢，姆巴巴内
+809	web_setting_upgrade	(UTC+0)加那利，法罗，马德拉，里斯本	(UTC+0)加那利，法罗，马德拉，里斯本
+810	web_setting_upgrade	(UTC+10)柯里，霍巴特，墨尔本，悉尼	(UTC+10)柯里， Хобарт，墨尔本，悉尼
+811	web_setting_upgrade	(UTC-4)乔治敦,拉巴斯,马瑙斯,圣湖安	(UTC-4) Джорджтаун, Ла-Пас, Манаус...
+812	web_setting_upgrade	该操作会关闭路由器所有指示灯及氛围灯，请确认	该Опции会Выкл.路由器所有指示灯及氛围灯，请Подтвердить
+813	web_setting_upgrade	(UTC+12)富纳富蒂，夸贾林，马朱罗，瑙鲁	(UTC+12)富纳富蒂，夸贾林，马朱罗，瑙鲁
+814	web_setting_upgrade	(UTC+1)布鲁塞尔,哥本哈根,马德里,巴黎	(UTC+1) Брюссель, Копенгаген, Мадрид, Париж
+815	web_setting_upgrade	1.恢复出厂设置操作会抹掉当前路由器的所有设置；	1.Восстановление заводских настроекОпции会抹掉当前路由器的所有Настроить；
+816	web_setting_upgrade	Wi-Fi设置(Wi-Fi名称、Wi-Fi密码)	 Настройки Wi-Fi(Wi-FiИмя、Пароль Wi-Fi)
+817	web_setting_upgrade	(UTC+5:30)钦奈,加尔各答,孟买,新德里	(UTC+5:30) Ченнаи, Калькутта, Мумбаи, Нью-Дели
+818	web_setting_upgrade	(UTC+9)奇塔，帝力，坎迪加，雅库茨克，帕劳	(UTC+9)奇塔，帝力，坎迪加， Якутск，帕劳
+819	web_setting_upgrade	(UTC-5)底特律，拿骚，纽约，太子港，多伦多	(UTC-5)底特律，拿骚，纽约，太子港，多伦多
+820	web_setting_upgrade	(UTC+1)萨拉热窝,斯科普里,华沙,萨格勒布	(UTC+1) Сараево, Скопье, Варшава, Загреб
+821	web_setting_upgrade	(UTC-4)格拉斯湾，鹅湾，哈利法克斯，百慕大	(UTC-4)格拉斯湾，鹅湾，哈利法克斯，百慕大
+822	web_setting_upgrade	当安装失败或需要降级到前一版本时使用手动安装插件。	当安装失败或需要降级到前一版本时使用Установите плагин вручную。
+823	web_setting_upgrade	(UTC-5)阿蒂科坎，坎昆，开曼，牙买加，巴拿马	(UTC-5)阿蒂科坎，坎昆，开曼，牙买加，巴拿马
+824	web_setting_upgrade	(UTC+8)北京,重庆,香港特别行政区,乌鲁木齐	(UTC+8) Пекин, Чунцин, Гонконг, Урумчи
+825	web_setting_upgrade	(UTC+2)布兰太尔，布琼布拉，哈博罗内，哈拉雷	(UTC+2)布兰太尔，布琼布拉，哈博罗内，哈拉雷
+826	web_setting_upgrade	(UTC-8)道森，洛杉矶，蒂华纳，温哥华，怀特霍斯	(UTC-8)道森，洛杉矶，蒂华纳，温哥华，怀特霍斯
+827	web_setting_upgrade	(UTC+7)河内，曼谷，巴瑙尔，胡志明，新西伯利亚	(UTC+7)河内，曼谷，巴瑙尔，胡志明， Новосибирск
+828	web_setting_upgrade	(UTC+6)沃斯托克，阿拉木图，达卡，鄂木斯克，廷布	(UTC+6)沃斯托克，阿拉木图， Дакка，鄂木斯克，廷布
+829	web_setting_upgrade	(UTC+1)班吉，布拉柴维尔，杜阿拉，金沙萨，拉各斯	(UTC+1)班吉，布拉柴维尔，杜阿拉，金沙萨，拉各斯
+830	web_setting_upgrade	(UTC-7)博伊西，剑桥湾，丹佛，埃德蒙顿，奥吉纳加	(UTC-7)博伊西，剑桥湾，丹佛，埃德蒙顿，奥吉纳加
+831	web_setting_upgrade	备份路由器的配置，重新刷机或重置路由器后可以用来恢复。	Вы можете создать резервную копию настроек маршрутизатора, либо восстановить из копии сделанной ранее.
+832	web_setting_upgrade	(UTC-6)巴伊亚班德拉斯，梅里达，墨西哥城，蒙特雷	(UTC-6)巴伊亚班德拉斯，梅里达，Мексика城，蒙特雷
+833	web_setting_upgrade	(UTC+4)迪拜，阿斯特拉罕，萨拉托夫，马海，毛里求斯	(UTC+4)迪拜，阿斯特拉罕，萨拉托夫，马海，毛里求斯
+834	web_setting_upgrade	(UTC+3)巴格达，科威特，卡塔尔，利雅得，伊斯坦布尔	(UTC+3) Багдад，科威特，卡塔尔，利雅得， Стамбул
+835	web_setting_upgrade	(UTC+8)文莱，伊尔库茨克，吉隆坡，新加坡，乌兰巴托	(UTC+8)文莱， Иркутск，吉隆坡，Сингапур， Улан-Батор
+836	web_setting_upgrade	(UTC+1)伯尔尼，柏林，哥本哈根，马德里，巴黎，罗马	(UTC+1)伯尔尼，柏林，哥本哈根，马德里，巴黎，罗马
+837	web_setting_upgrade	(UTC-6)芝加哥，马塔莫罗斯，新塞勒姆，雷尼河，温尼伯	(UTC-6)芝加哥，马塔莫罗斯，新塞勒姆，雷尼河，温尼伯
+838	web_setting_upgrade	(UTC+2)赫尔辛基,基辅,里加,索非亚,塔林,维尔纽斯	(UTC+2) Хельсинки, Киев, Рига, София, Таллин, Вильнюс
+839	web_setting_upgrade	(UTC-5)波哥大，埃里伦佩，瓜亚基尔，利马，里奥布兰科	(UTC-5)波哥大，埃里伦佩，瓜亚基尔，利马，里奥布兰科
+840	web_setting_upgrade	(UTC+2)雅典，布加勒斯特，赫尔辛基，基辅，马里利亚哈姆	(UTC+2) Афины, Бухарест, Хельсинки, Киев, Мэрилихэм
+841	web_setting_upgrade	(UTC-7)克丽顿，道森克里克，纳尔逊堡，赫莫西略，凤凰城	(UTC-7)克丽顿，道森克里克，纳尔逊堡，赫莫西略，凤凰城
+842	web_setting_upgrade	(UTC+5)阿克托贝，杜尚贝，撒马尔罕，塔什干，叶卡捷琳堡	(UTC+5)阿克托贝，杜尚贝，撒马尔罕， Ташкент， Екатеринбург
+843	web_setting_upgrade	(UTC+1)贝尔格莱德,布拉迪斯拉发,布达佩斯,卢布尔雅那	(UTC+1) Белград, Братислава, Будапешт, Любляна
+844	web_setting_upgrade	(UTC-6)伯利兹，哥斯达黎加，萨尔瓦多，危地马拉，马那瓜	(UTC-6)伯利兹，哥斯达黎加，萨尔瓦多，危地马拉，马那瓜
+845	web_setting_upgrade	(UTC-4)坎波格兰德，加拉加斯，圭亚那，拉巴斯，波尔图韦略	(UTC-4)坎波格兰德， Каракас，圭亚那，拉巴斯，波尔图韦略
+846	web_setting_upgrade	(UTC+0)达喀尔，蒙罗维亚，圣多美，丹马克斯沙文，雷克雅未克	(UTC+0)达喀尔，蒙罗维亚，圣多美，丹马克斯沙文，雷克雅未克
+847	web_setting_upgrade	(UTC+1)阿姆斯特丹,柏林,伯尔尼,罗马,斯德歌尔摩,维也纳	(UTC+1) Амстердам, Берлин, Рим, Стокгольм
+848	web_setting_upgrade	(UTC-4)勃朗萨布隆，格林纳达，西班牙港，波多黎各，圣多明各	(UTC-4)勃朗萨布隆，格林纳达，Испания港，波多黎各，圣多明各
+849	web_setting_upgrade	(UTC-9)安克雷奇，朱诺，梅特拉卡特拉，诺姆，西特卡，雅库塔特	(UTC-9)安克雷奇，朱诺，梅特拉卡特拉，诺姆，西特卡，雅库塔特
+850	web_setting_upgrade	(UTC+11)麦格理，马加丹，萨哈林，斯莱德内科林斯克，布干维尔	(UTC+11)麦格理， Магадан，萨哈林，斯莱德内科林斯克，布干维尔
+851	web_setting_upgrade	(UTC-3)布宜诺斯艾利斯，圣路易斯，马塞奥，蒙得维的亚，帕拉马里博	(UTC-3) Буэнос айрес，圣路易斯，马塞奥， Монтевидео，帕拉马里博
+852	web_setting_upgrade	(UTC+3)亚的斯亚贝巴，阿斯马拉，达累斯萨拉姆，内罗毕，塔那那利佛	(UTC+3)亚的斯亚贝巴，阿斯马拉，达累斯萨拉姆， Найроби，塔那那利佛
+853	web_setting_upgrade	(UTC+10)杜蒙特杜尔维尔，乌斯特内拉，弗拉迪沃斯托克，楚克，莫尔斯比港	(UTC+10)杜蒙特杜尔维尔，乌斯特内拉，弗拉迪沃斯托克，楚克，莫尔斯比港
+854	web_setting_upgrade	该功能可为支持NFC的设备提供一碰入网服务。当前仅支持安卓手机，在使用前请确认：	该功能可为支持NFC的设备提供一碰入网服务。当前仅支持安卓手机，在使用前请Подтвердить：
+855	web_setting_upgrade	恢复出厂设置操作会抹掉当前路由器的所有设置，建议您先进行配置备份再恢复出厂设置。	Сброс заводских установок удалит все текущие настройки маршрутизатора, мы рекомендуем вам настроить резервную копию, а затем восстановить заводские настройки.
+856	web_setting_upgrade	2.若此前已完成Mesh组网，子路由将会失去连接，待恢复出厂设置后需重新进行组网。	2.若此前已ЗавершитьMesh组网，子路由将会失去Связь，待Восстановление заводских настроек后需重新进行组网。
+857	web_setting_upgrade	当前Wi-Fi的加密方式为超强加密（WPA3），在该模式下部分型号手机可能存在兼容性问题	当前Wi-Fi的Шифрование为超强加密（WPA3），在该模式下部мин. 型号手机可能存在兼容性Проблема
+858	web_setting_upgrade	路由器正常工作情况下建议使用系统升级检测进行升级。当系统无法升级时使用手动上传ROM包进行升级。	路由器正常工作情况下建议使用Обновление检测进行升级。当系统无法升级时使用手动ЗагрузкаROM包进行升级。
+859	web_setting_upgrade	此页面仅支持对路由器灯效进行简单管理，如需自定义或定时控制灯效请使用米家App绑定此路由器后进行管理	此页面仅支持对路由器灯效进行简单管理，如需Настроить或定时控制灯效请使用米ДомApp绑定此路由器后进行管理
+860	web_setting_wan	克隆	Клонировать
+861	web_setting_wan	继续	继续
+862	web_setting_wan	账号	Аккаунт
+863	web_setting_wan	放弃	放弃
+864	web_setting_wan	必填	Обязательное
+865	web_setting_wan	选填	Опционально
+866	web_setting_wan	网关	Шлюз
+867	web_setting_wan	前缀	前缀
+868	web_setting_wan	切换	Переключить
+869	web_setting_wan	账户：	Аккаунт：
+870	web_setting_wan	服务名	Служб.
+871	web_setting_wan	下一步	Далее
+872	web_setting_wan	前缀长度	前缀长度
+873	web_setting_wan	加密方式	Шифрование
+874	web_setting_wan	，已断开	，Отключен
+875	web_setting_wan	输入密码	Введите пароль
+876	web_setting_wan	选择网络	Выберите
+877	web_setting_wan	问题排查	Проблема排查
+878	web_setting_wan	网络名称	Имя сети
+879	web_setting_wan	特殊拨号	Спец. код
+880	web_setting_wan	上网方式	Доступ
+881	web_setting_wan	上网信息	Информация
+882	web_setting_wan	设置失败	Настроить失败
+883	web_setting_wan	手动配置	Настроить
+884	web_setting_wan	网络密码	网络Пароль
+885	web_setting_wan	获取失败,	Получить не удалось,
+886	web_setting_wan	IP地址：	IP Адрес：
+887	web_setting_wan	子网掩码：	Маска подсети：
+888	web_setting_wan	默认网关：	Основной шлюз：
+889	web_setting_wan	地址前缀：	 Адрес前缀：
+890	web_setting_wan	外网状态：	Тип соединения：
+891	web_setting_wan	连接类型：	Тип соединения：
+892	web_setting_wan	联网方式设置	联网方式Настроить
+893	web_setting_wan	IPv4信息	IPv4信息
+894	web_setting_wan	一键无线中继	Беспроводной повторитель в один клик
+895	web_setting_wan	WiFi密码	WiFiПароль
+896	web_setting_wan	NAT6开关	NAT6Режим
+897	web_setting_wan	工作模式切换	Режим переключения
+898	web_setting_wan	拨号状态异常	拨号Состояние异常
+899	web_setting_wan	IPv6信息	IPv6信息
+900	web_setting_wan	选择已有网络	Выбрать существующую сеть
+901	web_setting_wan	WiFi名称	WiFiИмя
+902	web_setting_wan	手动配置DNS	Настройка DNS
+903	web_setting_wan	IPv6防火墙	IPv6防火墙
+904	web_setting_wan	MAC地址克隆	MAC клонирование
+905	web_setting_wan	Wi-Fi密码	Пароль Wi-Fi
+906	web_setting_wan	默认网关不合法	Основной шлюз不合法
+907	web_setting_wan	自动配置DNS	Автоматический DNS
+908	web_setting_wan	仅DHCPv6	仅DHCPv6
+909	web_setting_wan	更换了接入宽带	Изменен доступ к ШПД
+910	web_setting_wan	IPv6设置介绍	IPv6Настроить介绍
+911	web_setting_wan	IPv6宽带密码	IPv6Широкополосный пароль
+912	web_setting_wan	手工输入网络名称	Ввести имя вручную
+913	web_setting_wan	IPv6宽带账号	IPv6宽带Аккаунт
+914	web_setting_wan	IPv6网络设置	IPv6网络Настроить
+915	web_setting_wan	IPv6连接类型：	Тип подключения IPv6：
+916	web_setting_wan	宽带运营商机房故障	Широкополосный оператор机房故障
+917	web_setting_wan	找不到要中继的网络	Не удается найти сеть для передачи
+918	web_setting_wan	MAC地址克隆设置	MAC клонированиеНастроить
+919	web_setting_wan	尝试无线中继失败了	Попытка беспроводной ретрансляции не удалась
+920	web_setting_wan	PPPOE设置页面	PPPOEНастроить页面
+921	web_setting_wan	静态IP地址不合法	Статический IP Адрес不合法
+922	web_setting_wan	我已接好网线，继续	我已接好网线，继续
+923	web_setting_wan	尝试有线中继失败了	Не удалось попробовать проводное реле
+924	web_setting_wan	复用IPv4拨号链路	复用IPv4拨号链路
+925	web_setting_wan	IPv6网络方式设置	Настройка сетевого режима IPv6
+926	web_setting_wan	关闭IPv6设置成功	IPv6 успешно отключен
+927	web_setting_wan	LAN IPv6前缀	Префикс LAN IPv6
+928	web_setting_wan	关闭IPv6设置失败	Выкл.IPv6Настроить失败
+929	web_setting_wan	有线中继工作模式说明	Режим проводного повторителя
+930	web_setting_wan	未检测到IPv6信息	未检测到IPv6信息
+931	web_setting_wan	WAN IPv6地址	WAN IPv6-адрес
+932	web_setting_wan	WAN口协商速率设置	WAN口协商СкоростьНастроить
+933	web_setting_wan	WAN IPv6网关	Шлюз WAN IPv6
+934	web_setting_wan	正在扫描附近的无线网络	Идет поиск сетей...
+935	web_setting_wan	WAN IPv6地址：	WAN IPv6-адрес：
+936	web_setting_wan	LAN IPv6地址：	LAN IPv6 Адрес：
+937	web_setting_wan	WAN IPv6网关：	Шлюз WAN IPv6：
+938	web_setting_wan	当前使用的MAC地址是	Текущий MAC адрес: 
+939	web_setting_wan	设置WiFi名称和密码	НастроитьWiFiИмяа также Пароль
+940	web_setting_wan	LAN IPv6前缀：	Префикс LAN IPv6：
+941	web_setting_wan	宽带因欠费无法继续使用	Широкополосный доступ не может быть использован из-за задолженности
+942	web_setting_wan	尝试工作模式切换失败了	Попытка переключить режим работы не удалась
+943	web_setting_wan	强加密(WPA2个人版)	Сильное шифрование WPA2
+944	web_setting_wan	LAN IPv6前缀长度	Длина префикса IPv6 LAN
+945	web_setting_wan	正在设置中，请稍候...	Настройка, подождите...
+946	web_setting_wan	请手工选择需要的工作模式	Выбрать режим вручную
+947	web_setting_wan	无加密(允许所有人连接)	Без шифрования
+948	web_setting_wan	宽带拨号账号密码输入错误	宽带拨号АккаунтПароль输入错误
+949	web_setting_wan	1. 当前无线网络名称为：	1. 当前无线Имя сети为：
+950	web_setting_wan	请检查账号密码是否输入正确	请检查АккаунтПароль是否输入正确
+951	web_setting_wan	小米路由器的管理后台IP为	XIAOMI 的УправлениеIP为
+952	web_setting_wan	请选择要扩大范围的无线网络	Выберите сеть расширения
+953	web_setting_wan	联系运营商查询宽带是否欠费	Свяжитесь с оператором, чтобы узнать, есть ли задолженность за широкополосный доступ.
+954	web_setting_wan	IPv6自动配置模式应用中	IPv6Авто.模式Использовать中
+955	web_setting_wan	联网方式设置中，请稍等...	Пожалуйста, подождите несколько секунд...
+956	web_setting_wan	局域网设备获取IP地址方式：	Локальный 设备获取IP Адрес方式：
+957	web_setting_wan	请不要关闭浏览器或断开路由器	Пожалуйста, не закрывайте браузер и не отключайте роутер
+958	web_setting_wan	新建的有线中继无线网络名称为	新建的Проводной повторитель无线Имя сети为
+959	web_setting_wan	是否确定切换路由器的工作模式？	是否ПрименитьПереключить路由器的工作模式？
+960	web_setting_wan	经过检测，建议使用静态IP方式	После тестирования рекомендуется использовать метод статического IP
+961	web_setting_wan	字节（网络正常情况下不建议修改）	Байт (не рекомендуется изменять при нормальных условиях сети)
+962	web_setting_wan	联系运营商了解是否当地有线路故障	联系运营商了解是否当地有线路故障
+963	web_setting_wan	混合加密(WPA/WPA2个人版)	Гибридное WPA/WPA2
+964	web_setting_wan	恭喜，小米路由器一键中继设置成功！	恭喜，XIAOMI 一键Настройка成功！
+965	web_setting_wan	正在检测上网连接方式，请稍等...	Обнаружено подключение к Интернету, пожалуйста, подождите ...
+966	web_setting_wan	2. 当前小米路由器的IP地址为：	2. 当前XIAOMI 的IP Адрес为：
+967	web_setting_wan	检查WAN口接入的宽带是否已经变更	Проверьте, был ли изменен широкополосный доступ к порту WAN
+968	web_setting_wan	无线网络的名称密码与目标路由器一致	无线网络的ИмяПароль与目标路由器一致
+969	web_setting_wan	有线中继工作模式（扩展现有的网络）	Проводное расширение
+970	web_setting_wan	3.中继模式下部分功能和插件将被屏蔽	3. Некоторые функции и плагины будут заблокированы в режиме повторителя
+971	web_setting_wan	IPv6网络方式设置中，请稍等...	Подождите, пока настраивается сетевой режим IPv6 ...
+972	web_setting_wan	未能扫描到Wi-Fi,请确保射频开启	Не удалось просканировать Wi-Fi, убедитесь, что радиочастота включена
+973	web_setting_wan	提示：中继模式下部分功能和插件将被屏蔽	Подсказка：中继模式下部мин. 功能а также 插件将被屏蔽
+974	web_setting_wan	该MAC地址与当前使用的MAC地址相同	该MAC-адрес与当前使用的MAC-адрес相同
+975	web_setting_wan	无线中继模式下，暂不支持Mesh组网。	Режим беспроводного повторителя下，暂不支持Mesh组网。
+976	web_setting_wan	普通路由器工作模式（创建一个无线网络）	Обычный режим маршрутизатора
+977	web_setting_wan	若当前已完成Mesh组网，将自动断开。	若当前已ЗавершитьMesh组网，将АвтоматическиОтключить。
+978	web_setting_wan	无线中继工作模式（扩展现有的无线网络）	Беспроводной репитер
+979	web_setting_wan	在路由器工作模式和中继工作模式之间进行切换	Переключение между режимом маршрутизатора и повторителя
+980	web_setting_wan	WAN IPv6地址前缀长度默认为128位	Длина префикса IPv6-адреса WAN по умолчанию составляет 128 бит.
+981	web_setting_wan	恭喜，小米路由器一键有线中继模式设置成功！	恭喜，XIAOMI 一键Режим проводного повторителяЗадание выполнено успешно!！
+982	web_setting_wan	系统检测你的路由器未接入网线，请接好网线并继续	系统检测你的路由器未接入网线，请接好网线并继续
+983	web_setting_wan	办法4:尝试调整WAN口协商速率，然后重新拨号	Метод 4: попробуйте настроить скорость согласования порта WAN, а затем повторно наберите
+984	web_setting_wan	切换为有线中继模式后，您的访客wifi将被关闭	После переключения в режим проводного ретранслятора гостевой Wi-Fi будет отключен»
+985	web_setting_wan	经过检测，你的WAN口无法连通，可能网线没插好	После тестирования ваш WAN-порт не может быть подключен, и сетевой кабель может быть неправильно подключен
+986	web_setting_wan	恭喜，小米路由器切换为普通路由器工作模式成功！	恭喜，XIAOMI Переключить为普通路由器工作模式成功！
+987	web_setting_wan	切换为无线中继模式后，您的访客wifi将被关闭	После переключения в режим беспроводной ретрансляции гостевой Wi-Fi будет отключен
+988	web_setting_wan	请确认主路由器和中继路由器的Wi-Fi均已开启。	Убедитесь, что Wi-Fi на основном маршрутизаторе и маршрутизаторе ретрансляции включен.
+989	web_setting_wan	2.旧路由器与小米路由处于同一局域网中，可以互访	2. Старый маршрутизатор и маршрутизатор Xiaomi находятся в одной локальной сети, и они могут посещать друг друга
+990	web_setting_wan	经过检测，无法识别你的上网类型，请手工选择上网方式	После тестирования ваш тип Интернета не может быть определен, выберите метод Интернета вручную
+991	web_setting_wan	1.请确保小米路由器的WAN口与旧路由器通过网线连接	1.请确保XIAOMI 的WAN口与旧路由器通过网线Связь
+992	web_setting_wan	3. 用miwifi.com也可以访问路由器管理页面	3. 用miwifi.com也可以访问路由器管理页面
+993	web_setting_wan	当前管理终端的MAC地址，可以手动更改为其他MAC地址	Текущий MAC-адрес. Вы можете вручную переключиться на другой.
+994	web_setting_wan	经过检测，建议使用PPPoE方式(需要输入账号与密码)	经过检测，建议使用PPPoE方式(需要输入Аккаунт与Пароль)
+995	web_setting_wan	小米路由器支持IPv6网络，该路由器提供如下设置方式：	XIAOMI 支持IPv6网络，该路由器提供如下Настроить方式：
+996	web_setting_wan	经过检测，建议使用DHCP方式(系统自动分配IP地址)	После тестирования, рекомендуется использовать DHCP (автоматически назначается IP-адрес)
+997	web_setting_wan	当前工作模式切换为普通路由器会恢复为之前路由器的所有设置	当前Режим переключения为普通路由器会Восстановление为之前路由器的所有Настроить
+998	web_setting_wan	当前MTU小于1280，开启IPv6后将自动设置为1280	当前MTU小于1280，Вкл.IPv6后将АвтоматическиНастроить为1280
+999	web_setting_wan	该MAC地址与WAN2口MAC地址冲突，请输入其他MAC地址	该MAC-адрес与WAN2口MAC-адрес冲突，请输入ДругоеMAC-адрес
+1000	web_setting_wan	适用于没有给路由分配IPv6前缀的上网环境，例如：上级光猫拨号	Применимо к Интернет-среде, где для маршрута не назначен префикс IPv6, например: удаленный доступ через оптический модем высшего качества.
+1001	web_setting_wan	办法3:尝试在路由器上网设置中进行mac地址克隆，然后重新拨号	办法3:尝试在路由器 Интернет中进行mac АдресКлонировать，然后重新拨号
+1002	web_setting_wan	办法1:尝试关闭调制解调器(猫)和路由器，几分钟后重新通电再次尝试拨号	办法1:尝试Выкл.调制解调器(猫)а также 路由器，几Минуты后重新通电再次尝试拨号
+1003	web_setting_wan	开启IPv6防火墙后，将禁止所有外网对局域网设备的主动访问，提高网络安全性	Вкл.IPv6防火墙后，将禁止所有外网对Локальный 设备的主动访问，提高网络Безопасность性
+1004	web_setting_wan	4. 静态IP模式：通过手动填写IPv6相关信息配置静态IPv6上网方式；	4. Статический IP模式：通过手动填写IPv6相关信息配置Статический IPv6Доступ；
+1005	web_setting_wan	2. DHCPv6：此模式会根据NAT 6方式采用情况动态配置IPv6上网方式；	2. DHCPv6：此模式会根据NAT 6方式采用情况动态配置IPv6Доступ；
+1006	web_setting_wan	启用此功能后，小米路由器将开启IPv6上网功能（使用前请咨询网络运营商是否支持IPv6）	После включения этой функции маршрутизатор Xiaomi включит доступ в Интернет по протоколу IPv6 (перед использованием проконсультируйтесь с оператором сети, поддерживает ли он IPv6)
+1007	web_setting_wan	3. PPPoEv6：此模式将默认复用IPv4拨号链路，也可以手动输入IPv6宽带账号密码手动配置；	3. PPPoEv6：此模式将默认复用IPv4拨号链路，也可以手动输入IPv6宽带АккаунтПарольНастроить；
+1008	web_setting_wan	开启IPv6后，MTU取值范围为[1280-1492]，如需打开IPv6，请在上网设置中修改MTU值	Вкл.IPv6后，MTUДиапазон为[1280-1492]，如需打开IPv6，请在 Интернет中修改MTU值
+1009	web_setting_wan	办法2:使用电脑或者旧路由器完成拨号，然后手工选择“结束连接”或“关闭连接”，再尝试使用Redmi路由器拨号。	办法2:使用电脑или旧路由器Завершить拨号，然后手工选择“结束Связь”或“Выкл.Связь”，再尝试使用Redmi роутер拨号。
+1010	web_setting_wan	5. Passthrough：此模式透传IPv6数据，启用后相应数据将在路由器WAN侧和LAN侧之间点对点传输。	5. Passthrough：此模式透传IPv6数据，启用后相应数据将在路由器WAN侧а также LAN侧之间点对点传输。
+1011	web_setting_wan	1. Auto模式：智能配置此路由器IPv6网络为Passthough/ Native / NAT 6 ，推荐选择此配置方式；	1. Auto模式：智能配置此路由器IPv6网络为Passthough/ Native / NAT 6 ，推荐选择此配置方式；
+1012	web_setting_wan	DNS服务器无法服务，可以尝试自定义DNS解决（114.114.114.114, 114.114.115.115 国外8.8.8.8 8.8.4.4)	DNSСервер无法服务，可以尝试НастроитьDNS解决（114.114.114.114, 114.114.115.115 国外8.8.8.8 8.8.4.4)
+1013	web_setting_wifi	穿墙	Максимум
+1014	web_setting_wifi	开关	Режим
+1015	web_setting_wifi	节能	Энергосбережение
+1016	web_setting_wifi	标准	Стандарт
+1017	web_setting_wifi	选项	选项
+1018	web_setting_wifi	自动	Автоматически
+1019	web_setting_wifi	畅快连	Беспечный
+1020	web_setting_wifi	频段带宽	Ширина
+1021	web_setting_wifi	信号强度	Мощность
+1022	web_setting_wifi	无线信道	Радиоканал
+1023	web_setting_wifi	访客Wi-Fi	Гостевой Wi-Fi
+1024	web_setting_wifi	TWT节能模式	TWTЭнергосбережение模式
+1025	web_setting_wifi	切换国家或地区	Переключить国Дом或地区
+1026	web_setting_wifi	隐藏网络不被发现	Скрыть сеть
+1027	web_setting_wifi	2.4GHz 选项	2.4GHz 选项
+1028	web_setting_wifi	Wi-Fi多频合一	Wi-Fi多频合一
+1029	web_setting_wifi	Wi-Fi 信号强度设置	Wi-Fi МощностьНастроить
+1030	web_setting_wifi	Wi-Fi 5 兼容模式	Режим совместимости Wi-Fi 5 
+1031	web_setting_wifi	超强加密(WPA3个人版)	Супер шифрование (персональная WPA3)
+1032	web_setting_wifi	TWT节能模式兼容性问题解决办法	TWTЭнергосбережение模式兼容性ПроблемаРешение
+1033	web_setting_wifi	少数设备可能不支持中文或特殊字符	Устройства могут не поддерживать специальные символы
+1034	web_setting_wifi	仅支持WPA加密方式的设备将无法连接	Подходит не для всех устройств
+1035	web_setting_wifi	强混合加密(WPA3/WPA2个人版)	Гибридное шифр. (WPA3 / WPA2)
+1036	web_setting_wifi	1. 到相应终端制造商官网下载更新驱动；	1. 到相应终端制造商官网Скачивание更新驱动；
+1037	web_setting_wifi	option:contains('自动')	option:contains('Автоматически')
+1038	web_setting_wifi	设置已经生效，等待30秒后 Wi-Fi 重启。	Настроить已经生效，等待30сек. 后 Wi-Fi Перезагрузка。
+1039	web_setting_wifi	检测到未启用Wi-Fi多频合一，无法打开MLO开关。	检测到Не включеноWi-Fi多频合一，无法打开MLOРежим。
+1040	web_setting_wifi	当前频宽不支持将要切换的信道，系统已自动选择可用的频宽	当前频宽不支持将要Переключить的信道，系统已Автоматически选择可用的频宽
+1041	web_setting_wifi	2. 若最新驱动仍无法解决兼容性问题，建议先关闭该功能。	2. 若最新驱动仍无法解决兼容性Проблема，建议先Выкл.该功能。
+1042	web_setting_wifi	你手工选择的当前信道有可能造成部分机型较旧的设备无法连接	Текущий канал, может вызвать сбой подключения старых моделей.
+1043	web_setting_wifi	注：检测到未开启Wi-Fi多频合一，无法打开MLO开关。	注：检测到未Вкл.Wi-Fi多频合一，无法打开MLOРежим。
+1044	web_setting_wifi	推荐使用自动(80M)频宽，以获得更好的覆盖及抗干扰性能	推荐使用Автоматически(80M)频宽，以获得更Хорошо覆盖及抗干扰性能
+1045	web_setting_wifi	注：检测到已开启Wi-Fi5兼容模式，无法打开MLO开关。	注：检测到已Вкл.Wi-Fi5 Режим совместимости，无法打开MLOРежим。
+1046	web_setting_wifi	注：检测到已开启Wi-Fi5兼容模式，无法打开TWT开关。	注：检测到已Вкл.Wi-Fi5 Режим совместимости，无法打开TWTРежим。
+1047	web_setting_wifi	该修改会导致路由器重启，所有设备会短暂失去连接，是否确认修改？	该修改会导致路由器Перезагрузка，所有设备会短暂失去Связь，是否Подтвердить修改？
+1048	web_setting_wifi	160MHz频宽只适用于36至64信道，系统将自动为您切换至36信道	160MHz频宽只适用于36至64信道，系统将Автоматически为您Переключить至36信道
+1049	web_setting_wifi	切换国家或地区将会变更路由器的无线网络工作信道，需要重启后生效，是否确定？	Выбор страны или региона приведет к изменению рабочего канала беспроводной сети маршрутизатора, и это вступит в силу после перезагрузки. Вы уверены? 
+1050	web_setting_wifi	160MHz频宽只适用于36至64信道，系统将自动为您切换至80MHz频宽	160MHz频宽只适用于36至64信道，系统将Автоматически为您Переключить至80MHz频宽
+1051	web_setting_wifi	如果出现老旧终端在此路由开启TWT节能模式后出现兼容性问题，建议尝试以下方法：	如果出现老旧终端在此路由Вкл.TWTЭнергосбережение模式后出现兼容性Проблема，建议尝试以下方法：
+1052	web_setting_wifi	该信道属于DFS信道，当与不支持DFS信道的设备组网时，可能导致组网失败，是否继续？	该信道属于DFS信道，当与不支持DFS信道的设备组网时，可能导致组网失败，是否继续？
+1053	web_setting_wifi	三频模式覆盖明显弱于双频模式，该修改会导致路由器重启，所有设备会短暂失去连接，是否确认修改？	三频模式覆盖明显弱于双频模式，该修改会导致路由器Перезагрузка，所有设备会短暂失去Связь，是否Подтвердить修改？
+1054	web_setting_wifi	WPA3为新一代加密技术，可使安全性大大加强，但选择该选项后部分旧设备会存在兼容性问题而无法接入	WPA3 повышает безопасность, но у старых устройств будут проблемы с совместимостью.
+1055	web_setting_wifi	关闭MLO多链路加速将会重启Wi-Fi模块，此期间所有接入此路由器的设备都会断开Wi-Fi连接，请确认是否继续。	Выкл.MLO多链路Скорость将会ПерезагрузкаWi-Fi模块，此期间所有接入此路由器的设备都会ОтключитьWi-FiСвязь，请Подтвердить是否继续。
+1056	web_setting_wifi	WiFi双频合一关闭，5GHz会默认使用2.4GHz相同的网络名称（加后缀_5G）和密码，如需设成不一样，请进行修改。	WiFi双频合一Выкл.，5GHz会默认使用2.4GHz相同的Имя сети（加后缀_5G）а также Пароль，如需设成不一样，请进行修改。
+1057	web_setting_wifi	开启TWT节能模式后，可通过TWT节能技术降低接入此路由器的Wi-Fi6终端设备功耗，部分老旧终端可能会有兼容性问题。	Вкл.TWTЭнергосбережение模式后，可通过TWTЭнергосбережение技术降低接入此路由器的Wi-Fi6Устройства功耗，部мин. 老旧终端可能会有兼容性Проблема。
+1058	web_setting_wifi	开启此功能，路由器可自动发现支持畅快连的未初始化Wi-Fi设备，通过米家APP快速配网；修改路由器密码也将自动同步给支持畅快连的设备。	Когда эта функция включена, маршрутизатор может автоматически обнаруживать неинициализированные устройства Wi-Fi, поддерживающие Easy Connect, и быстро настраивать сеть через приложение Mijia; изменение пароля маршрутизатора также автоматически синхронизируется с устройствами, поддерживающими Easy Connect. 
+1059	web_setting_wifi	开启后，2.4GHz和5GHz将合并显示为同一个名称，路由器将优先为终端选择最佳Wi-Fi网络。合并名称后部分终端可能离线，需重新连接。	Вкл.后，2.4GHzа также 5GHz将合并显示为同一个Имя，路由器将Отличный先为终端选择最佳Wi-Fi网络。合并Имя后部мин. 终端可能离线，需重新Связь。
+1060	web_setting_wifi	WiFi多频合一关闭，5GHz和5GHz-2 Wi-Fi会默认使用2.4GHz相同的网络名称（加后缀）和密码，如需设成不一样，请进行修改。	WiFi多频合一Выкл.，5GHzа также 5GHz-2 Wi-Fi会默认使用2.4GHz相同的Имя сети（加后缀）а также Пароль，如需设成不一样，请进行修改。
+1061	web_setting_wifi	WiFi多频合一关闭，5GHz和5GHz-Game Wi-Fi会默认使用2.4GHz相同的网络名称（加后缀）和密码，如需设成不一样，请进行修改。	WiFi多频合一Выкл.，5GHzа также 5GHz-Game Wi-Fi会默认使用2.4GHz相同的Имя сети（加后缀）а также Пароль，如需设成不一样，请进行修改。
+1062	web_setting_wifi	某些老设备对Wi-Fi6协议支持不好，可能扫描不到信号或者连接不上等。开启此开关后，将会切换到Wi-Fi5模式，解决兼容问题。但同时会关闭Wi-Fi6的相关功能，如OFDMA、TWT、BSS Coloring等。	某些老设备对Wi-Fi6Протокол支持不好，可能扫描不到信号илиСвязь不上等。Вкл.此Режим后，将会Переключить到Wi-Fi5模式，解决兼容Проблема。但同时会Выкл.Wi-Fi6的相关功能，如OFDMA、TWT、BSS Coloring等。

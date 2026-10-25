@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Node
+test-env/node_modules/
+test-env/.npm-cache/
+npm-debug.log*
+
+# Сгенерированные файлы
+build/
+
+# Оригинальное расширение RUMIWIFI — скачивается локально, не публикуется
+original/rumiwifi.crx
+original/extracted/
+original/content.pretty.js
+
+# Локальные секреты и данные
+router/token.txt
+.env
+*.local

@@ -1,0 +1,12 @@
+{
+  "name": "open-rumiwifi-tests",
+  "private": true,
+  "version": "1.0.0",
+  "description": "jsdom-тесты расширения Open RUMIWIFI",
+  "scripts": {
+    "test": "node run-all.js"
+  },
+  "devDependencies": {
+    "jsdom": "^26.1.0"
+  }
+}

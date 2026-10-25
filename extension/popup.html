@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Open RUMIWIFI</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header>
+    <img src="img/icon_48.png" alt="" width="34" height="34">
+    <div>
+      <h1>Open RUMIWIFI</h1>
+      <p id="status">Проверка страницы…</p>
+    </div>
+  </header>
+
+  <label class="row">
+    <span>Перевод включён</span>
+    <input type="checkbox" id="enabled" checked>
+  </label>
+
+  <label class="row">
+    <span>Язык интерфейса</span>
+    <select id="lang">
+      <option value="ru">Русский</option>
+      <option value="no">Оригинал (китайский)</option>
+    </select>
+  </label>
+
+  <p class="stats" id="stats"></p>
+
+  <button id="open" type="button">Открыть панель роутера</button>
+
+  <footer>
+    Строк в словаре: <span id="dict">—</span><br>
+    Работает офлайн и не меняет настройки роутера.
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>

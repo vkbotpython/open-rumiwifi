@@ -1,0 +1,3714 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="ie6 oldie" lang="zh"><![endif]-->
+<!--[if IE 7]><html class="ie7 oldie" lang="zh"><![endif]-->
+<!--[if IE 8]><html class="ie8 oldie" lang="zh"><![endif]-->
+<!--[if gt IE 8]><!--> <html lang="zh"> <!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="renderer" content="webkit">
+<link rel="shortcut icon" type="image/ico" href="/favicon.ico">
+<!--[if lt IE 7]>
+<meta http-equiv="refresh" content="0; url=http://miwifi.com/cgi-bin/luci/web/ieblock" />
+<![endif]-->
+<!--[if gte IE 9]>
+<style>
+body {
+   filter: none;
+}
+</style>
+<![endif]-->
+<title>小米路由器</title>
+<meta name="viewport" content="width=1200">
+<link href="/xiaoqiang/web/css/bc.css?v=0.0.3" rel="stylesheet">
+<link href="/xiaoqiang/web/css/proset.css?v=0.0.3" rel="stylesheet">
+<link href="/xiaoqiang/web/css/ddns.css?v=0.0.3" rel="stylesheet">
+<link href="/xiaoqiang/web/css/wancheck.css?v=0.0.3" rel="stylesheet">
+<meta name="referrer" content="never">
+</head>
+<body>
+<div id="doc">
+    
+<noscript>
+<div class="noscript">你的浏览器禁止了Javascript功能，会造成无法使用系统进行路由器管理，请开启。</div>
+</noscript>
+<script>
+var GLOBALHEADER = true;
+</script>
+<div id="hd">
+    <div class="inner">
+        <div class="mod-head clearfix">
+            <h1 id="logo"><a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/home"><img src="/xiaoqiang/web/img/logo.png?v=" alt="小米路由器"></a></h1>
+            <div id="nav">
+                <!-- netMode header=0 -->
+                
+                <ul>
+                    <li  style="margin-right: 70px"><a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/home">路由状态</a></li>
+                    
+                    <li class="active" style="margin-right: 70px"><a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/wifi">常用设置</a></li>
+
+                    <li  style="margin-right: 70px"><a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/prosetting/qos">高级设置</a></li>
+
+                </ul>
+                
+            </div>
+            <div id="userbar">
+                
+                
+
+
+                
+                   <span id="addMesh" style="cursor:pointer;margin-top:6px;margin-left:15px">添加Mesh子路由</span>
+                
+
+                <span id="sysmenu" class="name s-dropdown" style="margin-left:15px;margin-right:15px;max-width:8em;">No name (家)</span>
+                <span id="sysnotice" class="ico-notice"></span>
+            </div>
+        </div>
+
+        
+        
+        <div class="mod-set-nav">
+            <ul class="clearfix li-5">
+                <li >
+                    <a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/wifi">
+                        <i class="ico ico-1"></i>
+                        <span>Wi-Fi设置</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/wan">
+                        <i class="ico ico-2"></i>
+                        <span>上网设置</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/safe">
+                        <i class="ico ico-3"></i>
+                        <span>安全中心</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/lannetset">
+                        <i class="ico ico-4"></i>
+                        <span>局域网设置</span>
+                    </a>
+                </li>
+                <li >
+                    <a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/upgrade">
+                        <i class="ico ico-5"></i>
+                        <span>系统设置</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+
+        
+
+        
+    </div>
+</div>
+
+<script type="tmpl/html" id="tmplMeshMode">
+<div class="netmode-switch-dialog-cont">
+    <div class="switch-step step-select" id="mesh-select" style="display:block;overflow:hidden">
+        <div class="mesh_title">添加Mesh子路由</div>
+        <div class="mesh_content">
+            <p style="font-weight: bold;">您可以选择以下两种方式来新增Mesh子路由</p>
+            <p style="font-weight: bold;margin-top:6px">无线组网：</p>
+            <p style="margin-top:6px;">1、将未配置过的路由器作为子路由，放置在需要Wi-Fi信号覆盖的房间 （如已配置请长按Reset按键5秒以上进行重置）  </p>
+            <!-- <p style="color:#979797;;">*请确保此路由器处于未配置状态，如已配置请长按Reset按键5秒以上进行重置</p> -->
+            2、接通子路由电源，等待System指示灯变成蓝色或白色常亮（颜色取决于具体型号）<br/>
+            3、点击开始搜索<br/>
+            <p style="margin-top:6px;font-weight: bold;">有线组网：</p>
+            1、将未配置过的子路由WAN口与主路由LAN口通过网线连接<br/>
+            2、将子路由上电，启动完成后将自动进行组网，组网时子路由Internet指示灯快闪<br/>
+        </div>
+        <button class="mesh_buttons" id="mesh_search">开始搜索</button>
+    </div>
+
+    <div id="mesh-overMaxLength" class="switch-step">
+         <div class="mesh_title">温馨提示</div>
+         <div class="mesh_content">
+              <p class="content">
+             为保证Mesh网络良好的使用体验，当前至多可支持10台Mesh路由器组网，更多Mesh路由器建议组成新的Mesh网络。
+              </p>
+          </div>
+           <button class="mesh_buttons" id="mesh-close-button">知道了</button>
+    </div>
+
+     <div id="mesh-Off-5G" class="switch-step">
+         <div class="mesh_title">添加Mesh节点</div>
+         <div class="mesh_content">
+              <p class="content">
+             搜索并添加Mesh节点时，请先到Wi-Fi设置页面，开启5G Wi-Fi。
+              </p>
+          </div>
+           <button class="mesh_buttons" id="setting-5G-button">去开启</button>
+
+    </div>
+
+    <div class="switch-step step-search-loading" id="mesh-search-loading">
+        <div class="mesh_title">搜索要添加的Mesh子路由</div>
+        <img id="loading_mesh" src="/xiaoqiang/web/img/mesh_loading.png"/>
+        <div class="mesh_content" style="text-align:center">搜索Mesh子路由...</div>
+        <button class="mesh_buttons" id="mesh_search_cancle">取消</button>
+    </div>
+
+
+    <div class="switch-step step-search-lists"  id="mesh-search-lists">
+        <div class="mesh_title">选择要添加的Mesh子路由</div>
+        <div class="list_box"></div>
+        <button class="mesh_Dbuttons mesh_add_Dbuttons " id="show_locate_select">添加</button>
+        <button class="mesh_Dbuttons mesh_research_Dbuttons" id="mesh-research-btn">重试</button>
+    </div>
+
+    <div id="mesh_list_length0"  class="switch-step">
+      <div class="mesh_title">未找到可用的Mesh子路由</div>
+      <img class="fail_me" src="/xiaoqiang/web/img/mesh_fail.png"/>
+      <div class="mesh_content">
+          <p>可以尝试以下方法：</p>
+          <p>1、确认主路由与待添加的子路由均支持小米Mesh组网功能：<a href="http://www1.miwifi.com/mesh_device/index.html" target="_blank">支持小米Mesh组网的路由产品</a></p>
+          <p>2、确保待添加的子路由处于未配置状态（长按Reset按钮5秒后即可恢复成未配置状态）;</p>
+          <p>3、将待添加的子路由靠近主路由并重试（注意保持1米以外的距离以免干扰）；</p>
+          <p>4、将待添加的子路由升至最新固件，并重置后重试</p>
+      </div>
+      <button class="mesh_buttons" id="mesh_re_search">重新搜索</button>
+    </div>
+
+
+    <div class="switch-step step-add-loading"  id="mesh-add-loading">
+        <div class="mesh_title">正在扩展Mesh网络</div>
+        <img id="loading_mesh" src="/xiaoqiang/web/img/mesh_loading.png"/>
+        <p class="head">正在连接Mesh子路由...</p>
+    </div>
+
+    <div class="switch-step step-add-success"  id="mesh-add-success">
+        <div class="mesh_title">Mesh网络扩展成功</div>
+        <img class="success_me" src="/xiaoqiang/web/img/mesh_success.png"/>
+        <button class="mesh_buttons" id="mesh_add_success">完成</button>
+    </div>
+
+    <div class="switch-step step-add-failer"  id="mesh-add-failer">
+    <div class="mesh_title">Mesh网络扩展失败</div>
+        <img class="fail_me" src="/xiaoqiang/web/img/mesh_fail.png"/>
+        <div class="mesh_content">
+            <p>可以尝试以下方法：</p>
+            <p>1、将待添加的子路由靠近主路由并重试（注意保持1米以外的距离以免干扰）；</p>
+            <p>2、将主路由升至最新固件版本；</p>
+            <p>3、将待添加的子路由升至最新固件，并重置后重试（长按Reset按钮5秒后即可重置）</p>
+          
+        </div>
+        <button class="mesh_buttons" id="mesh_re_try">重试</button>
+    </div>
+    <div id="mesh-local" class="switch-step" style="display:none;">
+        <div class="mesh_title">选择放置的位置</div>
+        <div class="mesh_content">
+            <div class="form-item-select" style="margin-left:105px">
+                <select id="locateSelect" name="locateSelect" class="beautify">
+                    <option selected value="客厅">客厅</option>
+                    <option value="主卧">主卧</option>
+                    <option value="次卧">次卧</option>
+                    <option value="书房">书房</option>
+                    <option value="厨房">厨房</option>
+                    <option value="办公室">办公室</option>
+                    <option value="地下室">地下室</option>
+                    <option value="卫生间">卫生间</option>
+                    <option value="阁楼">阁楼</option>
+                    <option value="阳台">阳台</option>
+                    <option value="餐厅">餐厅</option>
+                </select>
+            </div>
+        </div>
+        <div style="clear:both">
+            <button class="mesh_buttons" id="mesh_search_add">确认</button>
+        </div>
+    </div>
+</div>
+</script>
+<script type="text/javascript">
+    try{
+        var children = document.getElementById('prosetting').children
+        var domArr = Array.prototype.slice.call(children)
+        var prosettingLen = children.length
+        var prosettingLiWidth = parseFloat((100 / prosettingLen).toFixed( 3 )) + '%'
+        for( var i = 0; i < domArr.length; i++){
+        domArr[i].style = 'width:' + prosettingLiWidth
+        }
+    }catch(e){}
+
+</script>
+
+    <div id="bd">
+        <div class="mod-set mod-dhcp" id="lanDhcp">
+            <div class="hd">
+                
+                    <div class="help" id="dhcpOpen">
+                        <span class="ico"></span>
+                        <span class="arrow-wrap" id="helpArrow">
+                            <span class="arrow1"></span>
+                            <span class="arrow2"></span>
+                        </span>
+                    </div>
+                
+                <h3>DHCP服务</h3>
+                <div class="switch">
+                    <a href="#" id="dhcpswitch" class="btn-switch btn-switch-off"></a>
+                </div>
+            </div>
+            <div class="bd">
+                <div class="section section-help" id="helpSection">
+                    <div class="help-cont">
+                        <span class="help-close" id="dhcpClose"></span>
+                        <div class="what">
+                            <h3>什么是DHCP？</h3>
+                        </div>
+                        <div class="qa">
+                            <p>1、DHCP 服务器：开启后，小米路由可以自动向您的接入设备分配 IP 地址、DNS 服务器地址等网络参数，并通过此功能实现 IP 地址的集中管理；关闭后，小米路由将不为您的计算机自动分配 IP 地址、DNS 服务器地址等网络参数，当另一台路由器通过 Wi-Fi 中继方式连接此路由器时，中继连接将会失败。</p>
+                            <p>2、租期：IP 地址分配给局域网计算机以后，如果使用时间超过这个租期，小米路由将给计算机分配新的 IP 地址。</p>
+                            <p>3、路由器局域网IP地址：登陆Web配置后台的地址。</p>
+                            <p>4、默认网关：路由器下接入设备的默认网关，默认是路由器内网IP。</p>
+                            <p>5、静态 IP 地址绑定：通常您计算机的 IP 地址由路由器动态分配。如果您希望计算机拥有静态 IP 地址，您可以在静态 IP 地址绑定列表中手动添加您计算机的 MAC 地址和希望使用的静态 IP 地址。注意，静态 IP 地址需与路由器的局域网 IP 地址在同一网段。</p>
+                        </div>
+                    </div>
+                </div>
+                <form method="post" class="form form-dhcp" name="netDhcp" id="netDhcp" action="#">
+                    <input type="hidden" name="ignore">
+                    <div class="set" style="display:none;">
+                        <div class="form-item">
+                            <!-- <label class="k">开始IP</label> -->
+                            <span class="v">
+                                <span class="ipprefix">192.168.31.</span>
+                                <input type="text" class="ipt-text iplimit" name="start1" id="start1" reqMsg="开始IP" datatype="hostnumber" minValue="0" maxValue="255" style="width:100px"  maxlength="3">
+                                <span>.</span>
+                                <input type="text" class="ipt-text iplimit" name="start2" id="start2" reqMsg="开始IP" datatype="hostnumber" minValue="1" maxValue="254" style="width:100px"  maxlength="3">
+                                <span class="t">开始IP</span>
+                            </span>
+                            <em class="t"></em>
+                        </div>
+                        <div class="form-item">
+                            <!-- <label class="k">开始IP</label> -->
+                            <span class="v">
+                                <span class="ipprefix">192.168.31.</span>
+                                <input type="text" class="ipt-text iplimit" name="end1" id="end1" reqMsg="结束" datatype="hostnumber" minValue="0" maxValue="255" style="width:100px"  maxlength="3">
+                                <span>.</span>
+                                <input type="text" class="ipt-text iplimit" name="end2" id="end2" reqMsg="结束IP" datatype="hostnumber" minValue="1" maxValue="254" style="width:100px"  maxlength="3">
+                                <span class="t">结束IP</span>
+                            </span>
+                            <em class="t"></em>
+                        </div>
+                        <!-- <div class="form-item">
+                            <label class="k">终端数量</label>
+                            <span class="v">
+                                <input type="text" class="ipt-text iplimit" name="limit" id="limit" reqMsg="最大终端数量" datatype="n-4"  minValue="1" maxValue="1000"  maxlength="4">
+                            </span>
+                            <em class="t"></em>
+                        </div> -->
+                        <!-- <div class="form-item">
+                            <label class="k">结束IP</label>
+                            <span class="v">
+                                <span class="ipprefix">192.168.31.</span><input type="text" class="ipt-text iplimit" name="end" id="endip" reqMsg="结束IP" datatype="nrange-3" fromNEl="startip"  minValue="2" maxValue="254" style="width:128px"  maxlength="3">
+                            </span>
+                            <em class="t"></em>
+                        </div> -->
+                        <div class="form-item" id="leasetime">
+                            <label class="k">租约(分)</label>
+                            <span class="v">
+                                <input type="text" name="leasetime" class="ipt-text" maxlength="6" reqMsg="租约" datatype="n-4" minValue="2" maxValue="2880">
+                            </span>
+                            <em class="t"></em>
+                        </div>
+                        <div class="form-item" id="dns1">
+                            <label class="k">DNS1</label>
+                            <span class="v"><input type="text" name="dns1" class="ipt-text" maxlength="15" datatype="ipaddr"></span>
+                            <em class="t"></em>
+                        </div>
+                        <div class="form-item" id="dns2">
+                            <label class="k">DNS2</label>
+                            <span class="v"><input type="text" name="dns2" class="ipt-text" maxlength="15" datatype="ipaddr"></span>
+                            <em class="t"></em>
+                        </div>
+                        <div class="form-item" id="router">
+                            <label class="k">默认网关</label>
+                            <span class="v"><input type="text" name="router" class="ipt-text" maxlength="15" datatype="ipaddr"></span>
+                            <em class="t"></em>
+                        </div>
+                    </div>
+                    <div class="form-contral">
+                        <button class="btn btn-primary btn-l hidden" type="submit" id="btnDhcpSubmit"><span>保存</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="mod-set mod-lanip" id="lanIp">
+            <div class="hd">
+
+                <h3>局域网IP地址</h3>
+            </div>
+            <div class="bd">
+
+                <form name="ipaddr" id="ipaddr" action="#" class="form form-lanip">
+                    <input type="hidden" name="old_ip">
+                    <div class="form-item">
+                        <label class="k">局域网IP</label>
+                        <span class="v"><input type="text" name="ip" class="ipt-text" maxlength="15" reqMsg="局域网IP" datatype="ipaddr"></span>
+                        <em class="t"></em>
+                    </div>
+                    
+                    <div class="form-item-select">
+                        <label class="k">子网掩码</label>
+                        <span class="v">
+                            <select name="mask" class="beautify" >
+                                <option value="255.255.255.0">255.255.255.0</option>
+                                
+                            </select>
+                        </span>
+                        <em class="t"></em>
+                    </div>
+                    
+                    <div class="form-contral">
+                        <button type="submit" id="btnLanipSubmit" class="btn btn-primary btn-l hidden"><span>保存</span></button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+
+
+<link href="/xiaoqiang/web/css/ipmacband.css?v=0.0.3" rel="stylesheet">
+
+
+
+        <div class="mod-dhcp-ipmacband">
+            <div class="hd">
+                <h3>DHCP静态IP分配</h3>
+            </div>
+            <div class="bd">
+                <h4>已绑定的设备列表：</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th width="30"></th>
+                            <th>设备名称</th>
+                            <th>IP地址</th>
+                            <th>MAC地址</th>
+                            <th width="150" class="center">操作</th>
+                        </tr>
+                    </thead>
+                    <tbody id="bandlist">
+                        <tr>
+                            <td class="center" colspan="5">查询中...</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="ft">
+                <button type="button" class="btn btn-primary btn-m" id="addlist" style="margin-right: 20px;"><span>添加</span></button>
+                <button type="button" class="btn btn-primary btn-m" id="dellist" style="display:none;"><span>解绑选中</span></button>
+            </div>
+        </div>
+
+
+
+<script type="tmpl/html" id="tplbandlist">
+{if($bandlist.length > 0)}
+{for(var i=0; i<$bandlist.length; i++)}
+<tr>
+    <td class="center"><input type="checkbox" class="bandmac" name="mac" value="{$bandlist[i].mac}"></td>
+    <td>{$bandlist[i].dname}</td>
+    <td>{$bandlist[i].ip}</td>
+    <td>{$bandlist[i].mac}</td>
+    <td class="center"><button type="button" class="btn btn-dft btn-s btn-unband" data-mac="{$bandlist[i].mac}"><span>解除绑定</span></button></td>
+</tr>
+{/for}
+{else}
+<tr>
+    <td colspan="5" class="center">没有设置信息</td>
+</tr>
+{/if}
+</script>
+<script type="tmpl/html" id="tpldevitem">
+<tr data-idx="{$idx}">
+    <td class="form-item"><input name="dname{$idx}" class="ipt-text dname" reqMsg="设备名称" datatype="text" maxLength="50"><em class="t"></em></td>
+    <td class="form-item">
+        {$ipprefix}
+        <input name="ip{$idx}" value="{$thirdStr}" class="ipt-text ip" reqMsg="IP地址" datatype="hostnumber" minValue="0" maxValue="254" style="width:30px" {if (!$isEdit)}readonly{/if}>
+        <!--
+            记得这里还没给第一个框加这个提示
+            <em class="t"></em>
+        -->
+        <span>.</span>
+        <input name="ip{$idx+1}" class="ipt-text ip" reqMsg="IP地址" datatype="hostnumber" minValue="1" maxValue="254" style="width:30px">
+        <em class="t"></em>
+    </td>
+    <td class="form-item"><input name="mac{$idx}" class="ipt-text mac" reqMsg="MAC地址" datatype="macaddr"><em class="t"></em></td>
+    <td class="center"><a href="#" class="btn btn-dft btn-del-item btn-s" href="#"><span>移除</span></a></td>
+</tr>
+</script>
+<script type="tmpl/html" id="tpldevlist">
+<form action="#" name="addbandlist" id="addbandlist" class="form-bandlist form-table">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>设备名称</th>
+                <th>IP地址</th>
+                <th>MAC地址</th>
+                <th class="center">操作</th>
+            </tr>
+        </thead>
+        <tbody id="banditems">
+        {if($devlist.length > 0)}
+            {for(var i=0; i<$devlist.length; i++)}
+            <tr data-idx="{js print(i)}">
+                <td class="form-item"><input value="{$devlist[i].dname}" name="dname{js print(i)}" class="ipt-text dname" reqMsg="设备名称" datatype="text" maxLength="50"><em class="t"></em></td>
+                <td class="form-item">
+                    {$ipprefix}
+                    <input value="{$devlist[i].ip1}" name="ip{js print(i)}" class="ipt-text ip" reqMsg="IP地址" datatype="hostnumber" minValue="0" maxValue="254" style="width:30px" maxlength="3" {if (!$isEdit)}readonly{/if}>
+                    <!--
+                        记得这里还没给第一个框加这个提示
+                        <em class="t"></em>
+                    -->
+                    <span>.</span>
+                    <input value="{$devlist[i].ip2}" name="ip{js print(i+1)}" class="ipt-text ip" reqMsg="IP地址" datatype="hostnumber" minValue="1" maxValue="254" style="width:30px" maxlength="3">
+                    <em class="t"></em>
+                </td>
+                <td class="form-item"><input value="{$devlist[i].mac}" name="mac{js print(i)}" class="ipt-text mac" reqMsg="MAC地址" datatype="macaddr"><em class="t"></em></td>
+                <td class="center"><a href="#" class="btn btn-dft btn-del-item btn-s" href="#"><span>移除</span></a></td>
+            </tr>
+            {/for}
+        {else}
+            <tr data-idx="0">
+                <td class="form-item"><input name="dname0" class="ipt-text dname" reqMsg="设备名称" datatype="text" maxLength="50"><em class="t"></em></td>
+                <td class="form-item">
+                    {$ipprefix}
+                    <input value="{$thirdStr}" name="ip0" class="ipt-text ip" reqMsg="IP地址" datatype="hostnumber" minValue="0" maxValue="254" style="width:30px" maxlength="3" {if (!$isEdit)}readonly{/if}>
+                    <!--
+                        记得这里还没给第一个框加这个提示
+                        <em class="t"></em>
+                    -->
+                    <span>.</span>
+                    <input name="ip1" class="ipt-text ip" reqMsg="IP地址" datatype="hostnumber" minValue="1" maxValue="254" style="width:30px" maxlength="3">
+                    <em class="t"></em>
+                </td>
+                <td class="form-item"><input name="mac0" class="ipt-text mac" reqMsg="MAC地址" datatype="macaddr"><em class="t"></em></td>
+                <td class="center"><a href="#" class="btn btn-dft btn-del-item btn-s" href="#"><span>移除</span></a></td>
+            </tr>
+        {/if}
+        </tbody>
+    </table>
+    <div class="btns">
+        <p><a href="#" id="addoneitem" class="btn btn-dft btn-m" href="#"><span>增加一项</span></a></p>
+        <p><button id="submitbandlist" class="btn btn-primary btn-m" type="submit"><span>应用</button></span></p>
+    </div>
+</form>
+</script>
+
+<!--[if lt IE 7]>
+<script>
+    try {
+        document.execCommand("BackgroundImageCache", false, true);
+    } catch (e) {
+    }
+</script>
+<![endif]-->
+<div class="mask-menu" id="maskMenu"
+     style="position:fixed;left:0;top:0; width:100%; height:100%; z-index:2; display:none;"></div>
+<div id="dropmenu" class="dropmenu" style="z-index:3; display:none;">
+    <ul>
+        <li><a href="#" id="toRename">修改路由器名称</a></li>
+        
+            
+            <li><a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/upgrade">系统升级</a></li>
+            
+        
+        
+        <li><a href="#" id="toDownloadClient">下载米家APP</a></li>
+        
+        <li><a href="#" id="toReboot">重启</a></li>
+        
+        <li class="last"><a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/logout">注销</a></li>
+    </ul>
+</div>
+<div id="noticebar" class="noticebar" style="z-index:3; display:none;">
+    <i class="ico-arrow"></i>
+    <div class="content"></div>
+</div>
+<script>
+var i18n = {};
+i18n.dialog = {
+	ok: '确认',
+	cancel: '取消',
+	loading: '加载中...',
+	dlgtitle: '消息框'
+};
+i18n.valid = {
+    n_integer: '请输入一个{$0}位以内正整数。',
+    n_format: '数字输入格式为&#34;{$0}&#34;。',
+    n_upper: '输入值太大，最大允许{$0}。', //注意：{$0}表示允许值，{$1}表示实际值
+    n_lower: '输入值太小，最小允许{$0}。',
+      n_negative: '请输入一个2位负整数。',
+    nrange_from: '您输入的范围不合理。',
+    nrange_to: '您输入的范围不合理。',
+    n_useless_zero: '数字前面好像有多余的&#34;0&#34;。',
+    _portnum: '请输入正确的端口号。',
+    _portnum_range: '请输入正确的端口号（XXX、XXX-YYY）。',
+    _portnum_relative: '起始端口必须小于终止端口',
+    d_format: '日期输入格式为&#34;YYYY-MM-DD&#34;。',
+    d_upper: '日期太晚，最晚允许{$0}。',
+    d_lower: '日期太早，最早允许{$0}。',
+    daterange_from: '起始日期不能大于截止日期。',
+    daterange_to: '截止日期不能小于起始日期。',
+    daterange_larger_span: "时间跨度不得超过{$0}天。",
+    text_longer: '最多允许{$0}个字。', //'{$1}字太多，最多允许{$0}字'
+    text_shorter: '请至少输入{$0}个字。', //'{$1}字太少，最少允许{$0}字'
+    bytetext_longer: '最多允许{$0}个字节。', //'{$1}字节太多，最多允许{$0}字节'
+    bytetext_shorter: '请至少输入{$0}个字节。', //'{$1}字节太少，最少允许{$0}字节'
+    richtext_longer: '最多允许{$0}个字。',
+    richtext_shorter: '请至少输入{$0}个字。',
+    _reconfirm: '两次输入不一致。',
+    _time: '请检查您输入的时间格式。',
+    _minute: '请检查您输入的时间格式。',
+    _email: '请检查您输入的Email格式。',
+    _mobilecode: '请检查您输入的手机号码。',
+    _phone: '请检查您输入的电话号码。',
+    _phonewithext: '请检查您输入的电话号码。',
+    _phonezone: '请检查您输入的电话区号。',
+    _phonecode: '请检查您输入的电话号码。',
+    _phoneext: '请检查您输入的电话分机号码。',
+    _phonenumber: '无效的手机号',
+    _mobiledata: '请输入0~10000的正整数。',
+    _hostnumber: '请输入有效的IP地址',
+    _zipcode: '请检查您输入的邮政编码。',
+    _idnumber: '请检查您输入的身份证号码，目前只支持15位或者18位。',
+    _bankcard: '请检查您输入的银行账号。',
+    _cnname: '请检查您输入的姓名。',
+    _vcode: '请检查您输入的验证码。',
+    _imgfile: '请检查您选择的图片文件路径，只支持jpg、jpeg、png、gif、tif、bmp格式。',
+    _regexp: '请检查您的输入。',
+    _magic: '请检查您的输入。',
+    _req_text: '请填写{$0}。',
+    _req_select: '请选择{$0}。',
+    _req_file: '请上传{$0}。',
+    _logicrequired: '{$0}输入不完整.',
+    _ssid: '输入格式不正确,请输入标准字符',
+    _macaddr: 'MAC地址格式有误，如ab:cd:ef:11:22:33',
+    _macname:'黑白名单名称不支持特殊字符$ &#38; | ；‘ ·',
+    _weppassword: '密码输入有误',
+    _wifipassword: '请输入数字、英文字母或英文符号',
+    _ipaddr: '该地址由4个 0~255 之间的数字组成，数字之间用点区隔',
+    _ipv6addr: 'IPv6地址由8组四个十六进制数组成，每组之间用:区隔',
+    _ipv6addrprefix: 'LAN IPv6前缀需要以::结尾',
+    _url: '必须是完整的URL,如 http://miwifi.com',
+    _server:'请输入正确的服务器地址',
+    _routerpassword:'密码应同时包含数字、英文字母和英文字符',
+    _routerpassword_strong:'密码应同时包含数字、英文字母和特殊字符(~!@#$等)',
+};
+</script>
+
+<script src="/js/jquery-1.8.3.js?v=0.0.3"></script>
+<script src="/js/qwrap.js?v=0.0.3"></script>
+<script src="/js/common.js?v=0.0.3"></script>
+<script src="/js/raphael.js?v=0.0.3"></script>
+<script src="/js/crypto-js/rollups/sha1.js?v=0.0.3"></script>
+<script src="/js/crypto-js/rollups/aes.js?v=0.0.3"></script>
+<script src="/js/crypto-js/rollups/sha256.js?v=0.0.3"></script>
+<script src="/js/valid.js?v=0.0.3"></script>
+<script src="/xiaoqiang/web/js/selectbeautify.js?v=0.0.3"></script>
+<script src="/xiaoqiang/web/js/jquery.dialog.js?v=0.0.3"></script>
+<script src="/xiaoqiang/web/js/jquery.cookie.js?v=0.0.3"></script>
+<script>
+    (function () {
+        var G_FEATURES = $.parseJSON('{"netmode":{"elink":"0","net2.5G":"0"},"hardware":{"disk":"0","usb_deploy":"0","usb":"0"},"wifi":{"wifi_access_ctl":"1","twt":"1","wifi24":"1","wifi50":"1","wifi_mu_mimo":"0","wifiguest":"1","wifimerge":"1","iot_dev":"1"},"apps":{"mipctlv2":"1","apptc":"0","timemachine":"0","LED_control":"1","wanLan":"1","swapmask":"0","lanPort":"1","game_port":"0","fault_diag":"1","nfc":"1","dhcpMsg":"1","local_gw_security":"1","sec_center":"2","ports_custom":"1","firewall":"1","xqdatacenter":"1","upnp":"1","download":"0","qos":"1","lan_lag":"1"},"apmode":{"lanapmode":"1","wifiapmode":"1"},"system":{"infileupload":"1","new_update":"1","task":"0","ipmaccheck":"1","multiwan":"1","downloadlogs":"0","ipv6_wired":"0","i18n":"0","ipv6_wired_v2":"1","mesh_bhtype_mode":"1","set_router_location":"0","shutdown":"0","upnp":"1","support_1000_dhcp":"0","ipv6_passthrough_relay":"1","change_time":"0"}}');
+        window['G_FEATURES'] = G_FEATURES;
+    }())
+</script>
+
+<script>
+// reboot
+var global_api_reboot = {
+	url : '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/reboot',
+	param : {"client":"web"}
+};
+function reboot_window( needconfirm ) {
+	console.log( needconfirm );
+	var reboot = function(){
+			$.getJSON( global_api_reboot.url, global_api_reboot.param, function( rsp ) {
+				if( rsp.code !== 0 ){
+					$.alert( rsp.msg ).time( 1.5*1000 );
+				} else {
+					var ip = rsp.lanIp[0].ip;
+					rebootWait( {
+						lanIp : ip,
+						action : '重启路由器',
+						refresh : true
+					} );
+				}
+			});
+		};
+	if ( typeof( needconfirm ) !== "undefined" && needconfirm === false ) {
+		reboot();
+		return;
+	}
+	$.confirm('确定重启路由器，重启将断开和小米路由器的连接。',function () {
+			var dlg = this;
+			reboot();
+			dlg.close();
+			return false;
+		});
+}
+// shutdown
+function shutdown_window(){
+	$.confirm('是否确定关闭路由器，操作将断开和小米路由器的连接。', function () {
+			$.getJSON( '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/shutdown', {}, function( rsp ){
+				if( rsp.code !== 0 ){
+					$.alert(rsp.msg).time( 1.5*1000 );
+				} else {
+					$.loadingDialog({
+						title: '关闭路由器',
+						content: '关机中，请等待路由器指示灯熄灭后再断开电源'
+					});
+				}
+			});
+		});
+}
+//reset
+function reset_window( format ){
+
+	var reset = (function( format ){
+		var requestURL = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/reset',
+			requestData = {
+				format: format ? 1 : 0
+			},
+			wait = function(){
+				rebootWait( {
+					action : '恢复出厂设置',
+					refresh : true,
+					lanIp: '192.168.31.1'
+				} );
+			},
+			clearCookies = function (){
+				var keys = document.cookie.match(/[^ =;]+(?=\=)/g);
+				if ( keys ) {
+					for (var i = keys.length; i--;){
+						document.cookie = keys[i]+'=0;path=/;expires=' + new Date(0).toUTCString();
+					}
+				}
+			};
+
+		return function(){
+			$.getJSON( requestURL , requestData, function( rsp ) {
+				if ( rsp.code !== 0 ) {
+					$.alert( rsp.msg ).time( 3*1000 );
+				}else{
+					// clear cookies
+					clearCookies();
+					//block wait
+					wait();
+				}
+			});
+		}
+	})( format );
+
+	$.confirm('确定要恢复出厂设置让小米路由器回到初始状态？', function(){
+		reset();
+	});
+}
+</script>
+
+<script type="text/tmpl" id="tplrename">
+<div class="mod-rename-dlg">
+    <p class="img"><img src="/xiaoqiang/web/img/topograph/router_rd03v2_101.png" style="width:96px;height:auto"></p>
+    <div class="form-rename">
+        <form action="#" class="form" id="routerNameEdit">
+            <div class="form-item">
+                <label class="k">路由器名称</label>
+                <span class="v">
+                    <input type="text" name="routername" id="routername" class="ipt-text" autocomplete="off" datatype="bytetext" maxlength="27" reqMsg="路由器名称" value="{$name}">
+                </span>
+                <em class="t"></em>
+            </div>
+            
+            <div class="form-contral">
+                <button type="submit" class="btn btn-primary btn-l"><span>保存</span></button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</script>
+<script type="text/tmpl" id="tplshutdown">
+<div class="mod-reboot-dlg">
+    <p class="img"><img src="/xiaoqiang/web/img/ico_shutdown.png"></p>
+    <p class="text">关闭路由器将断开其他设备的数据访问和网络连接，之后便可以安全的断开电源。（再次启动需要手工连接电源）</p>
+    <button id="shutdownAction" type="button" class="btn btn-primary btn-l"><span>关闭路由器</span></button>
+</div>
+
+</script>
+<script type="text/tmpl" id="tplreboot">
+<div class="mod-shutdown-dlg">
+    <p class="img"><img src="/xiaoqiang/web/img/ico_reboot.png"></p>
+    <p class="text">路由器重启需要等待十几秒或更多时间，重启过程中将会断开网络连接，稍后将自动重新连接网络。</p>
+    <button type="button" id="rebootAction" class="btn btn-primary btn-l"><span>重启路由器</span></button>
+</div>
+
+</script>
+<script type="text/tmpl" id="tpldowncn">
+<div class="mod-downloadclient-dlg">
+    <table>
+        <tr>
+            <td>
+                <i class="ico-down-client ico-down-pc"></i>
+                <a href="http://bigota.miwifi.com/xiaoqiang/client/xqpc_client.exe">PC客户端</a>
+            </td>
+            <td class="c1"></td>
+            <td class="c2"></td>
+            <td>
+                <i class="ico-down-client ico-down-mac"></i>
+                <a href="http://bigota.miwifi.com/xiaoqiang/client/xqmac_client.dmg">MAC客户端</a>
+            </td>
+        </tr>
+        <tr class="last">
+            <td>
+                <i class="ico-down-client ico-down-andriod"></i>
+                <a href="http://www1.miwifi.com/pc2app_download.html">手机客户端</a>
+            </td>
+            <td class="c1"></td>
+            <td class="c2"></td>
+            <td>
+                <i class=" ico-down-code"></i>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</script>
+<script type="text/tmpl" id="tpldownintl">
+    
+    <img style="width:183px;height:183px" class="onlineimg" src-local="/xiaoqiang/web/img/miHome.png" src="/xiaoqiang/web/img/miHome.png">
+    <p>手机扫描二维码安装米家APP</p>
+    
+
+</script>
+<script type="tmpl/html" id="wifiSetSucess">
+    <div class="meshContent">
+        <img class="success_me" src="/xiaoqiang/web/img/mesh_success.png"/>
+        <p>设置成功</p>
+
+    </div>
+
+</script>
+<script>
+    var DEBUG = false;
+    var isRedmi = '0'
+    if(isRedmi == 1){
+        document.title = "Redmi路由器";
+    }else if(isRedmi == 0){
+        document.title = "小米路由器";
+    }
+
+    if (!window.console || DEBUG == false) {
+        window.console = {
+            log: function () {
+            }
+        };
+    }
+    var isSetRouterLoaction = '0'
+    var newEncryptMode = parseInt('1')
+    var Encrypt = {
+        key: 'a2ffa5c9be07488bbb04a3a47d3c5f6a',
+        iv: '64175472480004614961023454661220',
+        nonce: null,
+        init: function () {
+            var nonce = this.nonceCreat();
+            this.nonce = nonce;
+            return this.nonce;
+        },
+        nonceCreat: function () {
+            var type = 0;
+            var deviceId = 'AA:BB:CC:DD:EE:FF';
+            var time = Math.floor(new Date().getTime() / 1000);
+            var random = Math.floor(Math.random() * 10000);
+            return [type, deviceId, time, random].join('_');
+        },
+        oldPwd: function (pwd) {
+            if(newEncryptMode == 1){
+                return CryptoJS.SHA256(this.nonce + CryptoJS.SHA256(pwd + this.key).toString()).toString();
+            }else{
+                return CryptoJS.SHA1(this.nonce + CryptoJS.SHA1(pwd + this.key).toString()).toString();
+            }
+
+        },
+        newPwd: function (pwd, newpwd) {
+            var key = CryptoJS.SHA1(pwd + this.key).toString();
+            var password = CryptoJS.SHA1(newpwd + this.key).toString();
+
+            key = CryptoJS.enc.Hex.parse(key).toString();
+            key = key.substr(0, 32);
+            key = CryptoJS.enc.Hex.parse(key);
+            var iv = CryptoJS.enc.Hex.parse(this.iv);
+            var aes = CryptoJS.AES.encrypt(
+                password,
+                key,
+                {iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7}
+            ).toString();
+            return aes;
+        },
+        newPwd256: function (pwd, newpwd) {
+            var key = CryptoJS.SHA256(pwd + this.key).toString();
+            var password = CryptoJS.SHA256(newpwd + this.key).toString();
+
+            key = CryptoJS.enc.Hex.parse(key).toString();
+            key = key.substr(0, 32);
+            key = CryptoJS.enc.Hex.parse(key);
+            var iv = CryptoJS.enc.Hex.parse(this.iv);
+            var aes = CryptoJS.AES.encrypt(
+                password,
+                key,
+                {iv: iv, mode: CryptoJS.mode.CBC, padding: CryptoJS.pad.Pkcs7}
+            ).toString();
+            return aes;
+        }
+    };
+
+    var pingRouter = function (on, off, ip) {
+        var online = on || function () {
+            },
+            offline = off || function () {
+            },
+            host = ip || location.host,
+            imgUrl = 'http://' + host + '/xiaoqiang/web/img/logo.png',
+            time = 5000,
+            timecounter = 0,
+            img = null,
+            wait = function () {
+                console.log('pingRouter:wait');
+                offline();
+            },
+            done = function () {
+                console.log('pingRouter:done');
+                window.clearInterval(timer);
+                online();
+            },
+            loadImg = function (onload, onerror) {
+                img = new Image();
+                img.onload = onload;
+                img.onerror = onerror;
+                img.src = imgUrl + '?' + (+new Date());
+            },
+            timer = window.setInterval(function () {
+
+                if ('onLine' in navigator) {
+                    if (navigator.onLine) {
+                        loadImg(
+                            function () {
+                                done();
+                            }, function () {
+                                wait();
+                            }
+                        );
+                    } else {
+                        wait();
+                    }
+                } else {
+                    loadImg(function () {
+                        done();
+                    }, function () {
+                        wait();
+                    });
+                }
+            }, time);
+    };
+
+    var rebootWait = function (opt) {
+        var action = opt.action,
+            ip = opt.lanIp || window.location.host,
+            refresh = opt.refresh || false,
+            tStart = (+new Date()),
+            tUse,
+            dlgRebootWait = $.loadingDialog({
+                title: '重启中...',
+                content: '操作生效，等待设备重启...'
+            }),
+            online = function () {
+                dlgRebootWait.content('操作生效,重启成功！');
+                dlgRebootWait.time(3 * 1000);
+                if (refresh) {
+                    window.setTimeout('window.top.location.href="http://' + ip + '";', 3000);
+                }
+            },
+            offline = function () {
+                tUse = Math.round(((+new Date()) - tStart) / 1000);
+                if (tUse > 150) {
+                    dlgRebootWait.content('自动连接路由器失败，请检查无线或者网线是否连接正确。');
+                    return;
+                }
+                dlgRebootWait.content(action + ', 等待自动跳转... 用时{$time}秒'.tmpl({time: tUse}));
+            };
+
+        window.setTimeout(function () {
+            pingRouter(online, offline, ip);
+        }, 1000 * 60);
+    };
+
+    (function ($) {
+
+        function formInit(container) {
+            var clsInput = 'form-item form-item-input',
+                clsEmpty = 'form-item form-item-empty',
+                clsDisabled = 'form-item-disabled',
+                clsError = 'form-item-err',
+                clsPassword = 'form-item-pwd';
+
+            container = container || 'body';
+            $(container).find('.form-item input').each(function () {
+                var me = this,
+                    $me = $(me),
+                    parent = $(me.parentNode.parentNode),
+                    label = parent.find('.k'),
+                    offsetX = $me.position().left;
+                if (!(this.type == 'text' || this.type == 'password')) {
+                    return;
+                }
+                // some input do not need init
+                if ($me.hasClass('no-init')) {
+                    return;
+                }
+                if (me.value !== '') {
+                    parent[0].className = clsInput;
+                } else {
+                    parent[0].className = clsEmpty;
+                    if (offsetX > 0) {
+                        label.css({'left': offsetX + 10});
+                    }
+                }
+                if (me.disabled) {
+                    parent.addClass(clsDisabled);
+                }
+                if ($me.attr('data-type') === 'password') {
+                    parent.addClass(clsPassword);
+                    parent.append('<i class="bt-showpwd bt-showpwd-off"></i>');
+                }
+
+                label.on('click', function (e) {
+                    try {
+                        me.focus();
+                    } catch (ex) {
+                    }
+                });
+
+            });
+            var focusHandler = function () {
+                if (!(this.type == 'text' || this.type == 'password')) {
+                    return;
+                }
+                var me = $(this),
+                    parent = $(this.parentNode.parentNode),
+                    label = parent.find('.k'),
+                    t = parent.find('.t'),
+                    classname;
+                if (me.hasClass('no-init')) {
+                    return;
+                }
+                if (parent.hasClass(clsPassword)) {
+                    classname = clsInput + ' ' + clsPassword;
+                } else {
+                    classname = clsInput;
+                }
+                if (parent.hasClass(clsError)) {
+                    t.hide();
+                }
+                label.css({'left': 'auto'});
+                label.hide();
+                parent[0].className = classname;
+            };
+            var blurHandler = function () {
+                var me = this,
+                    $me = $(me),
+                    parent = $(me.parentNode.parentNode),
+                    classname,
+                    label = parent.find('.k'),
+                    offsetX = $me.position().left;
+                if (!(this.type == 'text' || this.type == 'password')) {
+                    return;
+                }
+                if ($(this).hasClass('no-init')) {
+                    return;
+                }
+                label.show();
+                if (me.value == '') {
+                    if (parent.hasClass(clsPassword)) {
+                        classname = clsEmpty + ' ' + clsPassword;
+                    } else {
+                        classname = clsEmpty;
+                    }
+                    if (offsetX > 0) {
+                        label.css({'left': offsetX + 10});
+                    } else {
+                        label.css({'left': 12});
+                    }
+                    parent[0].className = classname;
+                }
+            };
+            var addInputEvent = function () {
+                $(container).find('.form-item input')
+                    .on('focus', focusHandler)
+                    .on('blur', blurHandler);
+            };
+
+            var delInputEvent = function () {
+                $(container).find('.form-item input').off('focus', focusHandler);
+                $(container).find('.form-item input').off('blur', blurHandler);
+            };
+            // del password event
+            $('body').undelegate('.bt-showpwd', 'click');
+            $('body').delegate('.bt-showpwd', 'click', function (e) {
+                console.log('showpwd');
+                var me = this,
+                    meclass = 'bt-showpwd',
+                    formItem = $(this).closest('.form-item'),
+                    input = formItem.find('input'),
+                    inputValue = input.val(),
+                    inputWrap = formItem.find('.v'),
+                    newinput = '',
+                    inputHTML = inputWrap.html();
+
+                if (input.attr('type') == 'password') {
+                    newinput = inputHTML.replace(/type\s*=\s*('|")?password('|")?/ig, 'type="text"');
+                    inputWrap.html(newinput).find('input')[0].value = inputValue;
+                    me.className = meclass + ' bt-showpwd-on';
+                } else {
+                    newinput = inputHTML.replace(/type\s*=\s*('|")?text('|")?/ig, 'type="password"');
+                    inputWrap.html(newinput).find('input')[0].value = inputValue;
+                    me.className = meclass + ' bt-showpwd-off';
+                }
+
+                setTimeout(function () {
+                    delInputEvent();
+                    addInputEvent();
+                }, 0);
+            });
+
+            addInputEvent();
+        }
+
+        $.formInit = formInit;
+
+    })(jQuery);
+
+    /**
+     * byte format
+     */
+    function byteFormat(number, precision, isarray) {
+        var val,
+            label,
+            ret;
+        precision = precision || 100,
+            isarray = isarray || false;
+        if (number > 1024 * 1024 * 1024) {
+            val = Math.floor(number / 1024 / 1024 / 1024 * precision) / precision;
+            label = 'GB';
+        } else if (number > 1024 * 1024 && number < 1024 * 1024 * 1024) {
+            val = Math.floor(number / 1024 / 1024 * precision) / precision;
+            label = 'MB';
+        } else {
+            val = Math.floor(number / 1024 * precision) / precision;
+            label = 'KB';
+        }
+
+        if (isarray) {
+            ret = [val, label];
+        } else {
+            ret = val + label;
+        }
+
+        return ret;
+    }
+
+
+    function secondToHour(time) {
+        var pint = function (num) {
+                return parseInt(num, 10);
+            },
+            hour = pint(time / 3600.0),
+            minute = pint((parseFloat(time / 3600.0) - hour) * 60),
+            second = pint(time) - hour * 3600 - minute * 60,
+            format = hour + '小时' + minute + '分' + second + '秒';
+        return format;
+    }
+
+    function secondToDate(second) {
+        var time = parseFloat(second),
+            pint = function (num) {
+                return parseInt(num, 10);
+            },
+            day;
+        if (time !== null && time !== "") {
+            if (time > 60 && time < 60 * 60) {
+                time = pint(time / 60.0) + '分' + pint((parseFloat(time / 60.0) - pint(time / 60.0, 10)) * 60) + '秒';
+            } else if (time >= 60 * 60 && time < 60 * 60 * 24) {
+                time = secondToHour(time);
+            } else if (time >= 24 * 60 * 60) {
+                day = pint(time / (3600.0 * 24));
+                time = time - (day * 3600 * 24);
+                time = day + '天' + secondToHour(time);
+            } else {
+                time = pint(time) + '秒';
+            }
+        }
+        return time;
+    }
+
+    (function ($) {
+        function pint(num) {
+            return parseInt(num, 10);
+        }
+
+        function secondToHour(time) {
+            var hour = pint(time / 3600.0),
+                minute = pint((parseFloat(time / 3600.0) - hour) * 60),
+                second = pint(time) - hour * 3600 - minute * 60,
+                format = hour + '小时' + minute + '分' + second + '秒';
+            return format;
+        }
+
+        function secondToDate(second) {
+            var time = parseFloat(second),
+                day;
+            if (time !== null && time !== "") {
+                if (time > 60 && time < 60 * 60) {
+                    time = pint(time / 60.0) + '分' + pint((parseFloat(time / 60.0) - pint(time / 60.0, 10)) * 60) + '秒';
+                } else if (time >= 60 * 60 && time < 60 * 60 * 24) {
+                    time = secondToHour(time);
+                } else if (time >= 24 * 60 * 60) {
+                    day = pint(time / (3600.0 * 24));
+                    time = time - (day * 3600 * 24);
+                    time = day + '天' + secondToHour(time);
+                } else {
+                    time = pint(time) + '秒';
+                }
+            }
+            return time;
+        }
+
+        function secondToDate2(second) {
+            var time = parseFloat(second),
+                num = 0,
+                unit = '天';
+            console.log(second, time);
+            if (!isNaN(time)) {
+                if (time > 60 && time < 60 * 60) {
+                    num = Math.floor(time / 60.0);
+                    unit = '分钟';
+                } else if (time >= 60 * 60 && time < 60 * 60 * 24) {
+                    num = Math.floor(time / 3600.0);
+                    unit = '小时'
+                } else if (time >= 24 * 60 * 60) {
+                    num = Math.floor(time / (3600.0 * 24));
+                    unit = '天';
+                } else {
+                    num = Math.floor(time);
+                    unit = '秒';
+                }
+            }
+            return {
+                num: num,
+                unit: unit
+            };
+        }
+
+        $.secondToHour = secondToHour;
+        $.secondToDate = secondToDate;
+        $.secondToDate2 = secondToDate2;
+    })(jQuery);
+
+
+    $(document).ajaxSuccess(function (event, xhr, settings) {
+        var rsp = xhr.responseText;
+        rsp = $.parseJSON(rsp);
+        // console.log(event, xhr, settings);
+        var ignore = [
+            'api\/xqsystem\/login',
+            'api\/xqsystem\/upgrade_rom'
+        ];
+        for (var i = 0; i < ignore.length; i++) {
+            var ignoreTest = new RegExp(ignore[i]);
+            // console.log( ignoreTest );
+            if (ignoreTest.test(settings.url)) {
+                return;
+            }
+        }
+        if (rsp.code === 401 || rsp.code === 403) {
+            document.location.href = 'http://' + location.host;
+        }
+    });
+
+    $(document).ajaxError(function (event, xhr, settings) {
+        if (xhr.status === 403) {
+            document.location.href = 'http://' + location.host;
+        }
+    });
+
+    $.sub('wait', function (evt, data) {
+        var selector = data.id;
+        if (!$.waitStatus) {
+            $.waitStatus = {};
+        }
+        $.waitStatus[selector] = $(selector).text();
+        $(selector).addClass('btn-primary-disabled').prop('disabled', true).find('span').text('处理中...');
+    });
+
+    $.sub('done', function (evt, data) {
+        var selector = data.id,
+            text = $.waitStatus[selector];
+        $(selector).removeClass('btn-primary-disabled').prop('disabled', false).find('span').text(text);
+    });
+
+    $.sub('loading:start', function () {
+        var isLoading = $('html').hasClass('isloading');
+        if (isLoading) {
+            return;
+        }
+        var tplMask = '<div id="panel-loading-mask" class="panel-mask" style="position:fixed;left:0;top:0;style:none;"></div>',
+            tplLoading = ''
+                + '<div id="panel-loading" class="panel-loading" style="style:none;">'
+                + '<img src="/img/loading2.gif">'
+                + '</div>',
+            $mask = $(tplMask),
+            $loading = $(tplLoading),
+            zIndex = 10000;
+        $mask.css({
+            'z-index': zIndex,
+            width: $(window).width() + 'px',
+            height: $(window).height() + 'px'
+        });
+        $loading.css({'z-index': zIndex + 1});
+        $mask.appendTo(document.body).show();
+        $loading.appendTo(document.body).show();
+        $('html').addClass('isloading');
+    });
+
+    $.sub('loading:stop', function () {
+        $('html').removeClass('isloading');
+        $('#panel-loading, #panel-loading-mask').remove();
+    });
+
+    // dialog block loading
+    (function ($) {
+        $.loadingDialog = function (config) {
+            var mix = ObjectH.mix,
+                _config = config || {
+                    title: '',
+                    content: ''
+                },
+                conf = mix(_config, {
+                    width: 390,
+                    padding: '25px 30px',
+                    title: config.title,
+                    content: '<p style="padding-bottom:30px;">{$content}</p><div class="loading-bar"></div>'.tmpl({content: config.content}),
+                    cancel: false
+                }, true),
+                dialog = $.dialog(conf);
+
+            var oldcontent = dialog.content;
+            dialog.content = function (cont) {
+                var _cont = '<p style="padding-bottom:30px;">{$content}</p><div class="loading-bar"></div>'.tmpl({content: cont});
+                return oldcontent.call(dialog, _cont);
+            };
+            return dialog;
+        }
+    })(jQuery);
+
+    // dialog block loading
+    (function( $ ){
+        $.radarDialog = function( config ){
+            var mix = ObjectH.mix,
+            _config = config || {
+                title: '',
+                content: ''
+            },
+            conf = mix( _config, {
+                width: 500,
+                padding:'25px 30px',
+                title: config.title,
+                content: '<div>{$content}</div>'.tmpl({content: config.content}),
+                cancel: false
+            }, true ),
+            dialog = $.dialog( conf );
+
+            var oldcontent = dialog.content;
+            dialog.content = function( cont ){
+            var _cont = '<p style="padding-bottom:30px;">{$content}</p><div class="loading-bar"></div>'.tmpl({content: cont});
+                return oldcontent.call( dialog, _cont);
+            };
+            return dialog;
+        }
+    })(jQuery);
+
+    // dialog alert
+    (function ($) {
+        $.alert = function (content, ok) {
+            ok = ok || function () {
+            };
+            return $.dialog({
+                width: 390,
+                padding: '25px 30px',
+                title: '提示信息',
+                content: content,
+                ok: ok,
+                cancel: false
+            });
+        }
+    })(jQuery);
+
+    // dialog confirm
+    (function ($) {
+        $.confirm = function (content, ok, cancel) {
+            var _cancel = cancel || function () {
+            };
+            return $.dialog({
+                width: 390,
+                padding: '25px 30px',
+                title: '确认信息',
+                content: content,
+                ok: ok,
+                cancel: _cancel,
+                lock: true
+            });
+        }
+    })(jQuery);
+
+    // wechat code dialog
+    $(function () {
+        $('#wechatcode').click(function (e) {
+            e.preventDefault();
+            var $this = $(this),
+                href = $this.attr('href');
+            $.dialog({
+                title: '官方微信',
+                content: '<img width="200" src="' + href + '">',
+                width: 250,
+                lock: true
+            });
+        });
+    });
+
+
+    // set sys language
+    (function ($) {
+        $.i18nSet = function (el) {
+            var $lan = $(el),
+                apiGetLan = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/get_languages',
+                apiSetlan = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/set_language',
+                dtd = $.Deferred();
+
+            $.get(apiGetLan, function (rsp) {
+                var rsp = $.parseJSON(rsp);
+                var selectContent = [];
+                if (rsp.code == 0) {
+                    for (var i = 0; i < rsp.list.length; i++) {
+                        var item = rsp.list[i],
+                            selected = item.lang == rsp.lang ? 'selected' : '',
+                            option = '<option value="' + item.lang + '" ' + selected + '>' + item['name'] + '</option>';
+                        // clear old conf en item
+                        // if ( item.lang != 'en') {
+                        selectContent.push(option);
+                        // }
+                    }
+                    ;
+                    $lan.html(selectContent.join(''));
+                    dtd.resolve();
+                }
+            });
+
+            $lan.on('change', function (e) {
+                var el = this,
+                    val = $(this).val();
+                $.pub('loading:start');
+                $.post(apiSetlan, {language: val}, function (rsp) {
+                    var rsp = $.parseJSON(rsp);
+                    if (rsp.code == 0) {
+                        location.reload(1);
+                    } else {
+                        $.alert(rsp.msg);
+                    }
+                    $.pub('loading:stop');
+                });
+            });
+
+            return dtd.promise();
+        };
+    }(jQuery));
+
+    function fillMessages(rsp) {
+        var classname;
+        var dwb_type = '0';
+        var dwb_status = '0';
+        var hardware = 'rd03v2';
+        if (rsp.count > 0 || (dwb_type == 1 && hardware == "rb08" && dwb_status != 1)) {
+            classname = 'ico-notice-new';
+        } else {
+            classname = 'ico-notice';
+        }
+        if ($('#sysnotice')[0]) {
+            $('#sysnotice')[0].className = classname;
+        }
+        var msgMap = {
+            '1': '<p>检测到最新版本为{$version}，<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/upgrade">点击此处立即升级</a>。</p>',
+            '2': '<p>你有新短信，<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/prosetting/upnp">点击此处查看</a></p>',
+            '3': '<p>5G Wi-Fi启动失败，<a target="_blank" href="http://www.mi.com/service/contact/">请联系小米客服解决</a></p>',
+            '4': '<p>检测到与上级路由器存在IP冲突，建议切换到<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/wan#netmode">有线中继模式</a>或者<a href="#" id="ipconflict" data-ip="{$ip}">避让IP冲突</a></p>',
+            '5': '<p>短信箱已满，<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/prosetting/upnp">请删除无用短信以保障短信功能正常</a></p>'
+        };
+
+        var msgMapD01 = {
+            '1': '<p>检测到最新版本为{$version}，<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/upgrade">点击此处立即升级</a>。</p>',
+            '2': '<p>你有新短信，<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/prosetting/upnp">点击此处查看</a></p>',
+            '3': '<p>5G Wi-Fi启动失败，<a target="_blank" href="http://www.mi.com/service/contact/">请联系小米客服解决</a></p>',
+            '4': '<p>检测到与上级路由器存在IP冲突，请<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/lannetset">修改局域网IP地址网段</a></p>',
+            '5': '<p>短信箱已满，<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/prosetting/upnp">请删除无用短信以保障短信功能正常</a></p>'
+        };
+
+        var msgHTML = [];
+        //rsp.messages = [{type: 4, data: {version: "0.3.78"}, timestamp: 1547150097}];
+        var hardware = 'rd03v2';
+        var isMesh = 'true';
+        if (isMesh) {
+            for (var i = rsp.messages.length - 1; i >= 0; i--) {
+                msgHTML.push(msgMapD01[rsp.messages[i].type].tmpl(rsp.messages[i].data));
+            }
+            ;
+        } else {
+            for (var i = rsp.messages.length - 1; i >= 0; i--) {
+                msgHTML.push(msgMap[rsp.messages[i].type].tmpl(rsp.messages[i].data));
+            }
+            ;
+        }
+
+        $('#noticebar .content').html(msgHTML.join(''));
+        if(dwb_type == 1){
+            var content = '<p>检测到Mesh网络均为有线组网，<a href="/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/wifi">您可以开放专有回程频段以获得更好的Wi-Fi体验</a></p>'
+            $('#noticebar .content').append(content)
+        }
+        if (rsp.count > 0 || (dwb_type == 1 && hardware == "rb08" && dwb_status != 1)) {
+            $('#sysnotice').trigger('click');
+        }
+    }
+    function getNotice() {
+        $.getJSON('/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/messages', function (rsp) {
+            if (rsp.code == 0) {
+                fillMessages(rsp);
+            }
+        });
+    }
+
+/************************************************************************
+* name  : throttle
+* func  : Block multiple submissions of requests within the set time frame
+* input : 
+        parm1 : the request function handle which needs to limit multiple submissions
+        parm2 : the delay for limiting multiple submissions, default is 1s
+* Demo  : throttle(req, 1000)
+************************************************************************/
+    function throttle(fn, delay = 1000) {
+        let throttleTimer = null;
+        return function(...args) {
+            if (throttleTimer) {
+                return;
+            }
+            fn.apply(this, args);
+            throttleTimer = setTimeout(() => {
+                throttleTimer = null;
+            }, delay);
+        }
+    }
+
+/************************************************************************
+* name  : arrayCompare
+* func  : Compare according to the key value in the specified order
+* input : parm1 : the array's key name for comparison
+            parm2 : specified order, such as 'ASC' and 'DESC'
+* Demo  : Arrayobj.sort(arrayCompare('id', 'DESC'))
+************************************************************************/
+    function arrayCompare(key, order) {
+        return function(object1, object2) {
+            var val1 = object1[key],
+                val2 = object2[key];
+            if (order == 'DESC') {
+                if (val1 > val2) {
+                    return -1;
+                }
+                else if (val1 == val2) {
+                    return 0;
+                }
+                else {
+                    return 1;
+                }
+            }
+            else {
+                if (val1 < val2) {
+                    return -1;
+                }
+                else if (val1 == val2) {
+                    return 0;
+                }
+                else {
+                    return 1;
+                }
+            }
+        }
+    }
+
+    // global event
+    (function ($) {
+        var dlgReboot,
+            dlgShutdown,
+            dlgRouterName;
+
+
+
+        function reNameHandler(e) {
+            e.preventDefault();
+            $.getJSON('/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/router_name')
+                .done(function (rsp) {
+                    if (rsp.code == 0) {
+                        var html = StringH.tmpl($('#tplrename').html(), {
+                            locale: StringH.encode4HtmlValue(rsp.locale),
+                            name: StringH.encode4HtmlValue(rsp.name)
+                        });
+                        dlgRouterName = $.dialog({
+                            width: 390,
+                            title: '修改路由器名称',
+                            content: html,
+                            lock: true
+                        });
+                        setTimeout(function () {
+                            $.formInit('.mod-rename-dlg');
+                            $.selectBeautify({container: '.mod-rename-dlg'});
+                        }, 100);
+                    }
+                });
+        }
+
+        function downloadClientHandler(e) {
+            e.preventDefault();
+            var ccode = 'CN', content;
+            // if (ccode == 'CN') {
+            //     content = $('#tpldowncn').html();
+            // } else {
+                content = $('#tpldownintl').html()
+            // }
+            var ispName = ''
+            if (ispName == "CMCC") {
+                $.dialog({
+                    width: 390,
+                    title: '下载和家亲APP',
+                    content: content,
+                    lock: true
+                });
+            }
+            else if (ispName == "CTCC") {
+                $.dialog({
+                    width: 390,
+                    title: '下载小翼管家APP',
+                    content: content,
+                    lock: true
+                });
+            }
+            else {
+                $.dialog({
+                    width: 390,
+                    title: '下载米家APP',
+                    content: content,
+                    lock: true
+                });
+            }
+
+            setTimeout(function () {
+                $('.onlineimg').each(function () {
+                    var img = new Image();
+                    var el = this;
+                    var remote = el.src;
+                    var local = $(el).attr('src-local');
+                    img.onerror = function () {
+                        el.src = local;
+                    }
+                    img.src = remote;
+                });
+            }, 100);
+        }
+
+        function rebootHandler(e) {
+            e.preventDefault();
+            dlgReboot = $.dialog({
+                width: 390,
+                title: '重启路由器',
+                content: $('#tplreboot').html(),
+                lock: true
+            });
+        }
+
+        function shutdownHandler(e) {
+            e.preventDefault();
+            dlgShutdown = $.dialog({
+                width: 390,
+                title: '路由器关机',
+                content: $('#tplshutdown').html(),
+                lock: true
+            });
+        }
+
+        function noticeHandler(e) {
+            e.preventDefault();
+            var that = this,
+                $this = $(this),
+                pos = $('#userbar').position(),
+                right,
+                wt = 1160,
+                wwt = $(window).width(),
+                offset = 0,
+                $arrow = $('#noticebar .ico-arrow');
+            if ('' == '1') {
+                wt = 1200
+                offset = 71;
+                $('#hd .inner').css({'width': wt});
+                $('#sysnotice').css({'margin-left': 7, 'margin-right': 1, 'height': 28});
+            }
+            if ($this.hasClass('ico-notice-new')) {
+                // right = wt - pos.left - 20;
+                if ('' == '1') {
+                    $('#noticebar').css({'top': 74});
+                }
+                if ($("#userbar .cpe-rat").text() === "") {
+                    offset = 53;
+                }
+                $arrow.css({'right': '10px'});
+                $('#noticebar').css({'right': offset + (wwt - wt) / 2});
+                $('#noticebar').toggle();
+            }
+            $('#maskMenu').height($(window).height());
+            $('#maskMenu').show();
+        }
+
+        function sysmenuHandler(e) {
+            e.preventDefault();
+            var that = this,
+                $this = $(this);
+            if ($this.hasClass('s-dropdown')) {
+                var ww = $(window).width();
+                // var rt = (ww - 1160) / 2;
+                var lt = $this.offset().left + $this.outerWidth() - $('#dropmenu').width();
+                $('#dropmenu').css({left: lt});
+                $('#dropmenu').show();
+                that.className = 'name s-dropup';
+            } else {
+                $('#dropmenu').hide();
+                that.className = 'name s-dropdown';
+            }
+            $('#maskMenu').height($(window).height());
+            $('#maskMenu').show();
+        }
+
+        function maskHandler(e) {
+            e.preventDefault();
+            $('#noticebar').hide();
+            $('#dropmenu').hide();
+            $('#maskMenu').hide();
+            $('#sysmenu')[0].className = 'name s-dropdown';
+        }
+        $(function () {
+            // notice
+            $('#sysnotice').click(noticeHandler);
+            // user dropmenu
+            $('#sysmenu').click(sysmenuHandler);
+            // space click
+            $('#maskMenu').click(maskHandler);
+            // rename
+            $('body').delegate('#toRename', 'click', reNameHandler);
+            // toDownloadClient
+            $('body').delegate('#toDownloadClient', 'click', downloadClientHandler);
+            // toReboot
+            $('body').delegate('#toReboot', 'click', rebootHandler);
+            // toShutdown
+            $('body').delegate('#toShutdown', 'click', shutdownHandler);
+
+            $('body').delegate('#shutdownAction', 'click', function (e) {
+                e.preventDefault();
+                dlgShutdown.close();
+                shutdown_window();
+            });
+
+            $('body').delegate('#rebootAction', 'click', function (e) {
+                e.preventDefault();
+                dlgReboot.close();
+                reboot_window();
+            });
+
+            $('body').delegate('#routerNameEdit', 'submit', function (e) {
+                e.preventDefault();
+                var validator = Valid.checkAll(this);
+                var routername = $('#routername').val();
+                var locale = $('#locale').val();
+                if (validator) {
+                    $.getJSON('/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/set_router_name', {
+                        name: routername,
+                        locale: locale
+                    }).done(function (rsp) {
+                        if (rsp.code == 0) {
+                            location.reload(1);
+                        } else {
+                            $.alert(rsp.msg)
+                        }
+                    });
+                }
+            });
+
+            $('body').delegate('#ipconflict', 'click', function (e) {
+                e.preventDefault();
+                var api = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/r_ip_conflict',
+                    ip = $(this).attr('data-ip');
+                $.dialog({
+                    title: '避让IP冲突',
+                    content: '执行此操作，局域网IP将会变更为' + ip + '<br>' + '该过程无线网络会重启，将出现短暂掉线。',
+                    lock: true,
+                    ok: function () {
+                        $.post(api, function (rsp) {
+                            rsp = $.parseJSON(rsp);
+                            if (rsp.code !== 0) {
+                                alert(rsp.msg);
+                            }
+                        });
+                    },
+                    cancel: function () {
+                    }
+                });
+            });
+
+            var meshModeDialog;
+            var isClick = false; //判断是否已经点击过添加按钮，防止多次点击，多次调用接口
+            $('body').delegate('#addMesh', 'click', function (e) {
+                e.preventDefault();
+
+                if (isClick) return;
+                // var apiDevicesGet = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/devicelist';
+                var apiDevicesGet = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/topo_graph';
+                isClick = true;
+                $.getJSON('/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/wifi_detail_all')
+                    .done(function (rsp) {
+// isClick = false;
+                        if (rsp.code == 0) {
+                            /*
+                               if (rsp.info[1].status == 0) {
+                                // console.log('此时5G网络已关闭');
+                                // debugger;
+                                meshModeDialog = $.dialog({
+                                    title: false,
+                                    content: $('#tmplMeshMode').html(),
+                                    padding: '30px 40px',
+                                    lock: true,
+                                    width: 400
+                                });
+
+                                $('#mesh-Off-5G').siblings('.switch-step').hide();
+                                $('#mesh-Off-5G').show();
+
+
+                            } else {
+                            */
+                                //console.log('此时5G网络已打开');
+                                $.ajax({
+                                    url: apiDevicesGet,
+                                    type: 'GET',
+                                    datatype: 'json',
+                                    data: {},
+                                    async: true,
+                                    success: function (rsp) {
+
+                                        rsp = $.parseJSON(rsp);
+                                        isClick = false;
+                                        if (rsp.code === 0) {
+                                            //取到devicelist中list数组
+                                            //  console.log(rsp.list);
+                                            var count = 0;
+                                            var maxMeshCount = '9';
+                                            //获取已添加Mesh组网设备数量
+                                            if (rsp.graph.renumber) {
+                                                count = rsp.graph.renumber
+                                            }
+                                            // debugger;
+                                            // console.log(count);
+
+                                            meshModeDialog = $.dialog({
+                                                title: false,
+                                                content: $('#tmplMeshMode').html(),
+                                                padding: '30px 30px',
+                                                lock: true,
+                                                width: 600,
+                                            });
+
+                                            // 设置最多只能添加九个路由器(新)
+
+                                            if (count >= maxMeshCount) {
+
+                                                $('#mesh-overMaxLength').siblings('.switch-step').hide();
+                                                $('#mesh-overMaxLength').show();
+
+
+                                            } else {
+
+                                                $('#mesh-select').siblings('.switch-step').hide();
+                                                $('#mesh-select').show();
+
+                                            }
+
+                                        }
+
+                                    }
+                                })
+                            //}
+
+
+                        }
+
+                    })
+
+
+            });
+
+            $('body').delegate('#mesh_re_try', 'click', function (e) {
+                e.preventDefault();
+                $('#mesh-add-loading').siblings('.switch-step').hide();
+                $('#mesh-add-loading').show();
+            });
+
+            //设置5G网络打开，跳转至常用设置页面
+            $('body').delegate('#setting-5G-button', 'click', function (e) {
+                e.preventDefault();
+                window.location.href = '/cgi-bin/luci/;stok=00000000000000000000000000000000/web/setting/wifi'
+            });
+
+
+            $('body').delegate('#mesh_search_cancle,#mesh_add_success,#mesh-close-button,#setting-5G-button', 'click', function (e) {
+
+                e.preventDefault();
+                if(isStopSearch) {
+                  isStopSearch.abort(); //停止搜索节点请求 接口scan_mesh_node
+                }
+                clearInterval(timeout);
+                $('#mesh-select,#mesh-search-lists,#mesh-overMaxLength,#mesh-search-loading,#mesh_list_length0,#mesh-add-success,#mesh-add-failer,#mesh-local,#mesh-Off-5G,#mesh-add-loading').hide();
+                meshModeDialog.close();
+            });
+
+            //点击关闭按钮关闭定时器
+            $('body').delegate('.panel span.d-close','click',function(e){
+                // debugger;
+                if(isStopSearch) {
+                  isStopSearch.abort();//停止搜索节点请求 接口scan_mesh_node
+                }
+                clearInterval(timeout);
+
+            })
+            $('body').delegate('#show_locate_select', 'click', function (e) {
+                e.preventDefault();
+
+                var iteValue = $('.list_box').find(".selected").attr("data-mac");
+
+                if (iteValue) {
+                    $('#mesh-local').siblings('.switch-step').hide();
+                    if(isSetRouterLoaction != 0 || isSetRouterLoaction == ""){
+                        $('#mesh-local').show();
+                    }else{
+                        addMeshNode()
+                    }
+                } else {
+                    $.alert('请选择要添加的设备');
+                }
+
+            });
+
+            var timeout ;
+            $('body').delegate('#mesh_search_add,#mesh_re_try', 'click', function (e) {
+                e.preventDefault();
+                addMeshNode()
+                
+            });
+
+            function addMeshNode(){
+                var iteValue = $('.list_box').find(".selected").attr("data-mac");
+                //开始添加子节点  api/xqnetwork/add_mesh_node
+                var localValue = isSetRouterLoaction!=0?$("#locateSelect").find("option:selected").val():'';
+                if (iteValue) {
+
+                    // $('#mesh-search-lists').hide();
+                    $('#mesh-add-loading').siblings('.switch-step').hide();
+                    $('#mesh-add-loading').show();
+                    // $('#mesh-local').hide();
+
+
+                    var api = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/add_mesh_node';
+                    $.post(api, {mac: iteValue, locate: localValue}, function (rsp) {
+                        rsp = $.parseJSON(rsp);
+                        // rsp = {
+                        //     "code": 0,
+                        //     "status": 4
+                        // };
+                        // 0:添加成功； 1：正在连接mesh节点  2：正在同步Mesh网络配置  3：正在扩展Mesh网络  4：失败
+
+                        if (rsp.code == 0) {
+                            timeout = setInterval(function () {
+                                getMeshStatus(iteValue);
+                            }, 10000)
+                        }
+                    })
+                }
+            }
+            function getMeshStatus(iteValue) {
+                //轮询获取添加子节点状态  api/xqnetwork/get_addnode_status
+                var api = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/get_addnode_status';
+                $.get(api, {mac: iteValue}, function (rsp) {
+                    rsp = $.parseJSON(rsp);
+                    // 0:添加成功； 1：正在连接mesh节点  2：正在同步Mesh网络配置  3：正在扩展Mesh网络  4：失败
+                    // rsp = {"status":4,"code":0}
+                    if (rsp.code == 0) {
+                        if (rsp.status == 0) {
+                            $('#mesh-add-success').siblings('.switch-step').hide();
+                            $('#mesh-add-success').show();
+                            clearInterval(timeout)
+                        } else if (rsp.status == 4) {
+                            $('#mesh-add-failer').siblings('.switch-step').hide();
+                            $('#mesh-add-failer').show();
+                            clearInterval(timeout)
+                        } else {
+                            if (rsp.status === 3) {
+                                $('#mesh-add-loading').find('p').html('正在扩展Mesh节点(1-2分钟)...')
+                            } else if (rsp.status === 2) {
+                                $('#mesh-add-loading').find('p').html('正在同步Mesh节点配置...')
+                            }
+                        }
+                    }
+                })
+            }
+
+            var isStopSearch ;
+            $('body').delegate('#mesh_search ,#mesh_re_search,#mesh-research-btn', 'click', function (e) {
+                e.preventDefault();
+                // $('#mesh-select').hide();
+                //隐藏 选择要添加的设备 的弹窗
+                // $('#mesh-search-lists').hide();
+
+                $('#mesh-search-loading').siblings('.switch-step').hide();
+                $('#mesh-search-loading').show();
+                // $('#mesh_list_length0').hide();
+                $('.d-hd').html('搜索并添加Mesh节点');
+                //获取可添加的Mesh子节点 /api/xqnetwork/scan_mesh_node
+                var api = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/scan_mesh_node';
+                // debugger;
+                isStopSearch = $.get(api, function (rsp) {
+                    rsp = $.parseJSON(rsp);
+                    if (rsp.code == 0) {
+                        // debugger;
+
+                        if (rsp.list.length > 0) {
+                            $.selectBeautify({
+                                'maxHeight': '205px'
+                            });
+
+
+                            var select = $('.list_box');
+                            select.html('');//添加之前清空列表，防止重复添加
+                            var list = rsp.list;
+
+
+                            $(list).each(function (index, item) {
+                                var div = $('<div class=' + (list.length === 1 ? '"mesh_item selected"' : '"mesh_item"') + '>');
+                                div.attr('data-ssid', StringH.encode4Html(item.ssid));
+                                div.attr('data-mac', StringH.encode4Html(item.mac));
+                                var rssi = '';
+                                var name = '<div class="name">' + StringH.encode4Html(item.ssid) + '</div>';
+                                var mac = '';
+                                if(item.rssi >= -15){
+                                    rssi = '<div class="rssi img_signal_red"></div>';
+                                    mac = '<div class="mac">' + StringH.encode4Html(item.mac) +  '<span>请放置在主路由1米以外</span>'  + '</div>';
+                                }else if(item.rssi >=-55 && item.rssi < -15){
+                                    rssi = '<div class="rssi img_signal_green"></div>';
+                                    mac = '<div class="mac">' + StringH.encode4Html(item.mac)   + '</div>';
+                                }else if(item.rssi >=-70 && item.rssi <= -55){
+                                    rssi = '<div class="rssi img_signal_yellow"></div>';
+                                    mac = '<div class="mac">' + StringH.encode4Html(item.mac)   + '</div>';
+                                }else if(item.rssi < -70){
+                                    rssi = '<div class="rssi img_badsignal_red"></div>';
+                                    mac = '<div class="mac">' + StringH.encode4Html(item.mac) +  '<span>请靠近主路由</span>' + '</div>';
+                                }
+                                //var mac = '<div class="mac">' + StringH.encode4Html(item.mac) + (item.rssi < -60 ? '<span>请靠近主路由</span>' : '') + '</div>';
+                                div.on('click', function () {
+                                    $('.list_box').find('.mesh_item').removeClass('selected')
+                                    $(this).addClass('selected');
+                                });
+
+                                div.append(rssi).append(name).append(mac)
+                                select.append(div);
+                            });
+                            $('#mesh-search-lists').siblings('.switch-step').hide();
+                            $('#mesh-search-lists').show();
+                        } else {
+                            //  debugger;
+                            $('#mesh_list_length0').siblings('.switch-step').hide();
+                            $('#mesh_list_length0').show();
+                            $('.d-hd').html('没有搜索到可用的mesh节点');
+
+                        }
+
+
+
+
+
+                        $('#mesh-search-loading').hide();
+
+                    } else {
+                        alert(rsp.msg);
+                    }
+                });
+
+            })
+
+
+            // user logined and has global header get notice
+            if (typeof (GLOBALHEADER) !== 'undefined' && GLOBALHEADER === true) {
+                var message = JSON.parse('[]')
+                var messageRsp = {
+                    code : 0,
+                    messages: message,
+                    count: message.length
+                }
+                fillMessages(messageRsp);
+            }
+            var betaFlag = '';
+            var romChannel = 'release';
+            if(betaFlag == "1" || romChannel == "stable"){
+                TpWatermark('only for test','170','300','-20','#333','25','.07');
+            }
+            function TpWatermark(CON,H,W,R,C,S,O){
+                if (document.getElementById('tp-watermark') != null) {
+    					return
+    			}
+    				var TpLine = parseInt(document.body.clientWidth/W) * 2; // 一行显示几列
+    				var StrLine = '';
+    				for(var i = 0; i < TpLine; i++){
+    					StrLine += '<span style="display: inline-block; line-height:' + H + 'px; width:' + W + 'px; text-align: center; transform:rotate(' + R + 'deg); color:' + C + '; font-size:'+ S + 'px; opacity:' + O + ';">'+ CON +'</span>'
+    				}
+    				var DivLine = document.createElement("div");
+    					DivLine.innerHTML = StrLine;
+    		
+    				var TpColumn = parseInt(document.body.clientHeight/H) * 2; // 一列显示几行
+    				var StrColumn = '';
+    				for(var i = 0; i < TpColumn; i++){
+    					StrColumn += '<div style="white-space: nowrap;">' + DivLine.innerHTML + '</div>';
+    				}
+    				var DivLayer = document.createElement("div");
+    					DivLayer.innerHTML = StrColumn;
+    					DivLayer.id = "tp-watermark"; // 给水印盒子添加类名
+    					DivLayer.style.position = "fixed";
+    					DivLayer.style.top = "0px"; // 整体水印距离顶部距离
+    					DivLayer.style.left = "-100px"; // 改变整体水印的left值
+    					DivLayer.style.zIndex = "99999"; // 水印页面层级
+    					DivLayer.style.pointerEvents = "none";
+    		
+    				document.body.appendChild(DivLayer); // 到页面中
+                }
+                //wifi设置请求成功提示框
+                $.sub( 'wifi:wifiSetSucessDialog', function(evt, data){
+                    $.dialog({
+                            title: false,
+                            content: $('#wifiSetSucess').html(),
+                            padding: '30px 40px',
+                            lock: true,
+                            width: 450,
+                            cancel: false
+                        });
+                    setTimeout(function () {
+                        window.location.reload( true );
+                    },1500)
+                })
+        });
+    })(jQuery);
+
+    if ('' == '1') {
+        //超时退出
+        var lastTime = new Date().getTime();
+        var currentTime = new Date().getTime();
+        var timeOut = 5 * 60 * 1000; //设置超时时间： 5分
+        $(document).ready(function(){
+            /* 鼠标移动事件 */
+            $(document).mousemove(function(){
+                lastTime = new Date().getTime(); 
+            });
+        });
+
+        function updateTime(){
+            currentTime = new Date().getTime(); //更新时间
+            if(currentTime - lastTime > timeOut){ //判断是否超时
+                console.log("超时");
+                document.location.href = 'http://' + location.host;//跳转ip地址
+            }
+        }
+        /* 定时器 间隔10秒(10000)轮询检测是否长时间未操作页面 */
+        window.setInterval(updateTime, 10*1000);
+    }
+
+</script>
+<script src="/js/miwifi-monitor.js"></script>
+<script>
+    // 流量统计
+    (function () {
+        var IS_MOBILE = (
+            navigator.userAgent.match(/Android/i)
+            || navigator.userAgent.match(/webOS/i)
+            || navigator.userAgent.match(/iPhone/i)
+            || navigator.userAgent.match(/iPad/i)
+            || navigator.userAgent.match(/iPod/i)
+            || navigator.userAgent.match(/BlackBerry/i)
+            || navigator.userAgent.match(/Windows Phone/i)
+        );
+        var PAGEURL = document.URL.split('/web/')[1];
+        var PAGE_MONITOR_CONF = {
+            deviceId: '26d90904-aa9e-3a9b-e879-4e0e3fcd090e',
+            isMobile: IS_MOBILE ? IS_MOBILE[0] : 'pc',
+            url: PAGEURL ? '/web/' + PAGEURL : '/web/login',
+            romVersion: '2.0.28',
+            romChannel: 'release',
+            hardwareVersion: 'RD03v2'
+        };
+
+        //默认URL配置，并启用鼠标点击和按键统计
+        setTimeout(function(){
+            MIWIFI_MONITOR.setConf({
+                trackUrl: window.location.protocol + '//' + 'api.miwifi.com/res_stat/track.gif',
+                clickUrl: window.location.protocol + '//' + 'api.miwifi.com/res_stat/click.gif',
+                wpoUrl: ''
+            });
+            MIWIFI_MONITOR.setProject('MIWIFIWEB');
+            MIWIFI_MONITOR.log(PAGE_MONITOR_CONF, 'track');
+
+            $(document).ajaxSend(function (event, jqxhr, settings) {
+                var apiUrl = settings.url.split('/api/')[1],
+                    api = '/api/' + apiUrl.split('?')[0],
+                    apiParams = StringH.queryUrl(apiUrl);
+
+                // console.log(apiUrl, api, apiParams);
+
+                var API_MONITOR_CONF = ObjectH.mix({element: 'apicall', api: api}, [PAGE_MONITOR_CONF, apiParams]);
+                // console.log(API_MONITOR_CONF);
+                MIWIFI_MONITOR.log(API_MONITOR_CONF);
+            });
+        },1000);
+        
+    }());
+</script>
+
+
+<script>
+var ModelDhcpband = (function(){
+    var lanIP = '192.168.31.1',
+        isEdit = true,
+        thirdStr,
+        ipprefix = (function(ip){
+            var arr = ip.split('.');
+            thirdStr = arr[2]
+            arr.pop();
+            arr.pop();
+            return arr.join('.') + '.';
+        })(lanIP),
+        currentList = {},
+        // get repeat set
+        getRepeat = function( data ){
+            data = data || [];
+            var repeat = [];
+            var _currentList = $.extend( {}, currentList);
+            for (var i = 0; i < data.length; i++) {
+                var v = data[i];
+                if ( typeof( _currentList[v] ) == 'undefined' ) {
+                    _currentList[v] = 1;
+                } else {
+                    repeat.push(v);
+                }
+            }
+            return repeat;
+        },
+        getList = function( callback ){
+            $.getJSON('/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/macbind_info',{},function(rsp){
+                if ( rsp.code != 0 ) {
+                    return;
+                }
+                isEdit = rsp.lanmask == '255.255.0.0'
+                callback( rsp );
+            });
+        },
+        randerBandlist = function( rsp ){
+            var tpl = $( '#tplbandlist' ).html(),
+                container = $( '#bandlist' ),
+                bandlistdata = rsp.list,
+                tpldata = [],
+                mac, ip, dname;
+            currentList = {};
+            if ( bandlistdata.length > 0 ) {
+                for (var i = 0; i < bandlistdata.length; i++) {
+                    mac = bandlistdata[i].mac.toUpperCase();
+                    ip = bandlistdata[i].ip;
+                    dname = StringH.encode4Html( bandlistdata[i].name );
+                    tpldata.push({
+                        dname: dname,
+                        ip: ip,
+                        mac: mac
+                    });
+                    currentList[ip] = 1;
+                }
+            }
+            container.html( tpl.tmpl( {bandlist: tpldata} ) );
+        },
+        randerDevlist = function( rsp ){
+            var tpl = $( '#tpldevlist' ).html(),
+                devlistdata = rsp.devicelist,
+                tpldata = [],
+                randerDom,
+                mac, ip, dname, tag;
+            if ( devlistdata.length > 0 ) {
+                for (var i = 0; i < devlistdata.length; i++) {
+                    mac = devlistdata[i].mac.toUpperCase();
+                    ip = devlistdata[i].ip;
+                    iplast1 = (function( ip ){
+                        var arr = ip.split('.');
+                        return arr[arr.length - 2];
+                    })( ip );
+                    iplast2 = (function( ip ){
+                        var arr = ip.split('.');
+                        return arr[arr.length - 1];
+                    })( ip );
+                    dname = StringH.encode4HtmlValue( devlistdata[i].name );
+                    tag = devlistdata[i].tag;
+                    if ( tag != 2 ) {
+                        tpldata.push({
+                            dname: dname,
+                            ip1: iplast1,
+                            ip2: iplast2,
+                            mac: mac,
+                            isEdit:isEdit,
+                            thirdStr:thirdStr
+                        });
+                    }
+                }
+            }
+            randerDom = tpl.tmpl( {
+                devlist: tpldata,
+                ipprefix: ipprefix,
+                thirdStr:thirdStr,
+                isEdit:isEdit
+            } );
+            $.dialog({
+                title: '绑定设备',
+                content: randerDom,
+                lock: true,
+                width: 828,
+                padding: '30px'
+            });
+            $.pub( 'done', {id: '#addlist'} );
+        },
+        serializeForm = function( form ){
+            var ips = $( '.ip', form ),
+                dnames = $( '.dname', form ),
+                macs = $( '.mac', form ),
+                data = [],
+                item,
+                elX,
+                preIdx = 0;
+            ips.each(function( idx, el ){
+                //因为前边又增加了一个输入框，所以可以判断它是否是奇数来确定是否push。并且每次将前一个框的el存下来，待到下一个框时再加上它
+                if(idx % 2 != 0){
+                    ++preIdx;
+                item = {
+                        ip: ipprefix + $.trim( elX.value ) + '.' + $.trim( el.value ),
+                        mac: $.trim( macs.eq( idx-preIdx).val() ),
+                        name: $.trim( dnames.eq( idx-preIdx ).val() )
+                };
+                data.push( item );
+                }else{
+                    elX = el
+                }
+            });
+
+            return ObjectH.stringify( data );
+        }
+        unbind = function( e, mac ){
+            e.preventDefault();
+            var that = this,
+                $this = $(that),
+                requestURL = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/mac_unbind',
+                requestData = {
+                    mac: mac
+                };
+            $.pub( 'loading:start' );
+            $.ajax({
+                url: requestURL,
+                type: 'POST',
+                data: requestData,
+                dataType: 'json',
+                success: function( rsp ){
+                    if ( rsp.code !== 0 ) {
+                        $.alert( rsp.msg );
+                    } else {
+                        getList( randerBandlist );
+                        $( '#dellist' ).hide();
+                    }
+                    $.pub( 'loading:stop' );
+                }
+            });
+        },
+        addEvent = function(){
+            // unband
+            $('body').delegate( '.btn-unband' ,'click', function( e ){
+                var that = this,
+                    $this = $( that ),
+                    mac = $this.attr('data-mac'),
+                    ok = function(){
+                        unbind.call( that, e, mac );
+                    };
+                $.confirm( '你确定要解除此项绑定？', ok );
+            });
+            // band
+            $( 'body' ).delegate( '#addbandlist', 'submit', function( e ){
+                e.preventDefault();
+                var form = e.target,
+                    formName = form.name,
+                    formels = $( 'input', form ),
+                    requestURL = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/mac_bind',
+                    requestData,
+                    rules,
+                    name,
+                    display,
+                    validator,
+                    formdata,
+                    iplist = [],
+                    formdata,
+                    formdataojb,
+                    repeatIP,
+                    validerules = [];
+
+                validator = Valid.checkAll( $('#addbandlist')[0] );
+
+                if ( validator) {
+                    formdata = serializeForm( form );
+                    formdataojb = StringH.evalExp( formdata );
+                    for (var i = 0; i < formdataojb.length; i++) {
+                        iplist.push(formdataojb[i]['ip']);
+                    }
+                    repeatIP = getRepeat( iplist );
+                    if ( repeatIP.length !== 0 ) {
+                        $.alert( '存在IP冲突，请检查输入项' + repeatIP.join(' , ') );
+                        return;
+                    }
+                    //静态IP分配应不可以设置IP地址与局域网一致
+                    for (var i = 0; i < iplist.length; i++) {
+                        if(iplist[i] == $('input[name=ip]').val()){
+                            $.alert( '存在IP冲突，请检查输入项');
+                            return
+                        }
+                    }                  
+                    //判断是否超出DHCP服务所设定的IP段
+                    //var ipAdrVal = formels[1].value //用户输入的ip地址
+                    //var isOverFlow = ipAdrVal >= parseInt($( 'input[name="start"]' ).attr('oldData'))  && ipAdrVal <= parseInt($( 'input[name="end"]' ).attr('oldData')) 
+                    //console.log('判断是否超出DHCP服务所设定的IP段',isOverFlow)
+                    // if(!isOverFlow){
+                    //     $.alert( '该IP不在可用IP范围内，请重新输入。您可以参考DHCP服务可用IP段来设定。');
+                    //     return
+                    // }
+
+                    requestData = {
+                        data: formdata
+                    };
+                    $.pub( 'wait', {id: '#submitbandlist'} );
+                    $.ajax({
+                        url: requestURL,
+                        data: requestData,
+                        type: 'POST',
+                        dataType: 'json',
+                        success: function( rsp ){
+                            if ( rsp.code == 0 ) {
+                                location.reload( 1 );
+                            } else {
+                                $.alert( rsp.msg );
+                            }
+                            $.pub( 'done', {id: '#submitbandlist'} );
+                        }
+                    });
+                }
+
+            });
+
+            // add a item
+            $( 'body' ).delegate( '#addoneitem', 'click', function( e ){
+                e.preventDefault();
+                var tpl = $( '#tpldevitem' ).html(),
+                    form = $( '#banditems' ),
+                    btnSubmit = $( '#submitbandlist' ),
+                    lastidx = (function(){
+                        if ( form.find('tr').length > 0 ) {
+                            return form.find('tr:last').attr( 'data-idx' );
+                        }
+                        return 0;
+                    }()),
+                    lastidx = parseInt( lastidx, 10 ),
+                    item = tpl.tmpl({
+                        idx: lastidx + 1,
+                        ipprefix: ipprefix,
+                        isEdit:isEdit,
+                        thirdStr:thirdStr
+                    });
+                if ( !isNaN( lastidx ) ) {
+                    form.append( item );
+                    if ( form.find( 'tr' ).length > 0 ) {
+                        btnSubmit.show();
+                    } else {
+                        btnSubmit.hide();
+                    }
+                } else {
+                    $.alert('出现异常，请刷新页面');
+                }
+            } );
+
+            // del a item
+            $( 'body' ).delegate( '.btn-del-item', 'click', function( e ){
+                e.preventDefault();
+                var tar = e.target,
+                    tr = $( tar ).parents( 'tr' ),
+                    form = $( '#banditems' ),
+                    btnSubmit = $( '#submitbandlist' ),
+                    isEmpty = (function(){
+                        var empty = true;
+                        tr.find('input').each(function(){
+                            if ( this.value !== '') {
+                                empty = false;
+                                return false;
+                            }
+                        });
+                        return empty;
+                    }()),
+                    ok = function(){
+                        tr.remove();
+                        if ( form.find( 'tr' ).length > 0 ) {
+                            btnSubmit.show();
+                        } else {
+                            btnSubmit.hide();
+                        }
+                    };
+                if ( isEmpty ) {
+                    ok();
+                } else {
+                    $.confirm( '确定要删除这项数据吗', ok );
+                }
+            } );
+
+            // open add dlg
+            $( '#addlist' ).click(function( e ){
+                e.preventDefault();
+                $.pub( 'wait', {id: '#addlist'} );
+                getList( randerDevlist );
+            });
+
+            // check for del
+            $( 'body' ).delegate( '.bandmac', 'click', function( e ){
+                if ( $('.bandmac:checked').length > 0 ) {
+                    $( '#dellist' ).show();
+                } else {
+                    $( '#dellist' ).hide();
+                }
+            } );
+
+            // del all
+            $( '#dellist' ).on( 'click', function( e ){
+                e.preventDefault();
+                if ( $('.bandmac:checked').length == 0 ) {
+                    $.alert( '你还未选择任何设备' );
+                    return;
+                }
+                var that = this,
+                    $this = $(that),
+                    mac = (function(){
+                        var tmp = [];
+                        $('.bandmac:checked').each(function(){
+                            tmp.push( this.value );
+                        });
+                        return tmp.join( ';' );
+                    }()),
+                    ok = function(){
+                        unbind.call( that, e, mac );
+                    };
+
+                $.confirm( '确认要解除选中项目的绑定关系？', ok );
+            } );
+        };
+
+    currentList[lanIP] = 1;
+
+    return {
+        init: function(){
+            getList( randerBandlist );
+            addEvent();
+        }
+    }
+}());
+$(function(){
+    ModelDhcpband.init();
+});
+</script>
+
+        <!--lan口聚合  -->
+        
+        
+
+<div class="mod-set wanCheckWrap" style="display:none">
+	<div class="hd">
+	    <h3>WAN口选择</h3>
+	</div>
+	<div class="bd">
+	    <form action="#" class="form" id="wanCheckForm" style="display:none">
+		<div class="form-item-select">
+		    <label class="k">模式</label>
+		    <span class="v">
+			<select name="wancheckSelect" class="beautify" class="profiles"  id="wanCheck">
+			    <option value="1">固定WAN口</option>
+			    <option value="2">WAN/LAN口自适应（推荐）</option>
+					
+			</select>
+		    </span>
+		    
+		</div>
+		
+		<div class="form-item wanItem gerenalWan">
+			
+			<div class="selectWan">
+			</div>
+		</div>
+		<div class="form-contral">
+			<p class="form-message">接入到运营商宽带的网线可以插在任意网口</p>
+			<p class="auto-sense">WAN/LAN 自适应功能可以自动判断接入网口的设备是WAN设备还是LAN设备，并相应地配置端口的工作模式</p>
+            <button type="submit" class="btn btn-primary hidden" id="btnSubmitwanCheck"><span>保存</span></button>
+        </div>
+	    </form>
+	</div>
+
+</div>
+
+
+<div class="mod-set lanCheckWrap" style="display:none">
+	<div class="hd">
+		
+		<h3>LAN口聚合</h3>
+		<div class="switch">
+			<a href="#lagSwitch" id="lagSwitch" class="btn-switch btn-switch-off" data-on="0"></a>
+		</div>
+	</div>
+	<div class="bd">
+		<form action="#" class="form" id="lanCheckForm">
+		
+			<p>将两个LAN口聚合，实现网口速率叠加</p>
+			<div class="form-item lagItem" style="display: none">
+				<div class="lagItemMsg">请选择需要聚合的两个LAN口</div>
+				<div class="selectLan">
+				</div>
+			</div>
+			<div class="form-contral">
+				<button type="submit" class="btn btn-primary lanBtn" id="btnSubmitlanCheck" style="display:none"><span>保存</span></button>
+			</div>
+		</form>
+        </div>
+	
+	<!-- <div class="lanListDiv" data-service="{$lanList[i]['service']}" onclick="clickFunction('{$lanList[i]['service']}')"></div> -->
+</div>
+<script type="text/tmpl" id="lanList">
+	{for(var i=0, len=$list.length; i<len; i++)}
+	{if ($list[i]['service'] == 'LAN')}
+	<div class="lanListDiv" data-service="{$list[i]['service']}" data-port="{$list[i]['port']}" data-speed="{$list[i]['speed']}">
+	{else}
+	<div class="lanListDiv disable" data-service="{$list[i]['service']}" data-port="{$list[i]['port']}" data-speed="{$list[i]['speed']}">
+		{/if}
+	<div class="service">{$list[i]['service']}</div>
+	<div class="lanPortImg"></div>
+	
+	<div class="portsIndex">{$list[i]['label']}</div>
+	</div>
+	{/for}
+    </script>
+    <script type="text/tmpl" id="wanList">
+	{for(var i=0, len=$list.length; i<len; i++)}
+	{if ($list[i]['service'] == 'LAN')}
+	<div class="wanListDiv" data-service="{$list[i]['service']}" data-port="{$list[i]['port']}" data-speed="{$list[i]['speed']}">
+	{else}
+	<div class="wanListDiv disable" data-service="{$list[i]['service']}" data-port="{$list[i]['port']}" data-speed="{$list[i]['speed']}">
+	{/if}
+	
+	<div class="service">{$list[i]['service']}</div>
+	<div class="wanPortImg"></div>
+	<div class="portsIndex">{$list[i]['label']}</div>
+	</div>
+	{/for}
+    </script>
+    
+
+        
+    </div>
+
+    
+<div id="ft">
+    <p class="rom-ver">系统版本: 2.0.28 稳定版  MAC地址: AA:BB:CC:DD:EE:FF</p>
+    <p>&copy; 2025 小米路由器<span>|</span><a href="http://www1.miwifi.com" target="_blank">官方网站</a><span>|</span><a href="http://weibo.com/xiaomiluyouqi" target="_blank">官方微博</a><span>|</span><a href="/xiaoqiang/web/img/wx_code.png" target="_blank" id="wechatcode">官方微信</a><span>|</span><a href="https://www.xiaomi.cn/board/557962" target="_blank">用户社区</a><span>|</span><a target="_blank" href="http://www1.miwifi.com/miwifi_faq.html">常见问题</a><span>|</span>服务热线  400-100-5678<p>
+</div>
+
+
+</div>
+
+
+<script>
+// reboot
+var global_api_reboot = {
+	url : '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/reboot',
+	param : {"client":"web"}
+};
+function reboot_window( needconfirm ) {
+	console.log( needconfirm );
+	var reboot = function(){
+			$.getJSON( global_api_reboot.url, global_api_reboot.param, function( rsp ) {
+				if( rsp.code !== 0 ){
+					$.alert( rsp.msg ).time( 1.5*1000 );
+				} else {
+					var ip = rsp.lanIp[0].ip;
+					rebootWait( {
+						lanIp : ip,
+						action : '重启路由器',
+						refresh : true
+					} );
+				}
+			});
+		};
+	if ( typeof( needconfirm ) !== "undefined" && needconfirm === false ) {
+		reboot();
+		return;
+	}
+	$.confirm('确定重启路由器，重启将断开和小米路由器的连接。',function () {
+			var dlg = this;
+			reboot();
+			dlg.close();
+			return false;
+		});
+}
+// shutdown
+function shutdown_window(){
+	$.confirm('是否确定关闭路由器，操作将断开和小米路由器的连接。', function () {
+			$.getJSON( '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/shutdown', {}, function( rsp ){
+				if( rsp.code !== 0 ){
+					$.alert(rsp.msg).time( 1.5*1000 );
+				} else {
+					$.loadingDialog({
+						title: '关闭路由器',
+						content: '关机中，请等待路由器指示灯熄灭后再断开电源'
+					});
+				}
+			});
+		});
+}
+//reset
+function reset_window( format ){
+
+	var reset = (function( format ){
+		var requestURL = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqsystem/reset',
+			requestData = {
+				format: format ? 1 : 0
+			},
+			wait = function(){
+				rebootWait( {
+					action : '恢复出厂设置',
+					refresh : true,
+					lanIp: '192.168.31.1'
+				} );
+			},
+			clearCookies = function (){
+				var keys = document.cookie.match(/[^ =;]+(?=\=)/g);
+				if ( keys ) {
+					for (var i = keys.length; i--;){
+						document.cookie = keys[i]+'=0;path=/;expires=' + new Date(0).toUTCString();
+					}
+				}
+			};
+
+		return function(){
+			$.getJSON( requestURL , requestData, function( rsp ) {
+				if ( rsp.code !== 0 ) {
+					$.alert( rsp.msg ).time( 3*1000 );
+				}else{
+					// clear cookies
+					clearCookies();
+					//block wait
+					wait();
+				}
+			});
+		}
+	})( format );
+
+	$.confirm('确定要恢复出厂设置让小米路由器回到初始状态？', function(){
+		reset();
+	});
+}
+</script>
+
+
+
+<script>
+    //需求改动：lan口聚合入口位置修改为局域网设置，故做判断拆分
+    if(window.location.href.indexOf("wan") > -1){
+        // if enabled multiwan, then hide wanCheckWarp
+        if ('0' == "1" && '' != "1")
+        {
+            $("#wanCheckWarp").hide();
+        } else {
+            $(".wanCheckWrap").show();
+            getData("wan");
+        }
+    }else if(window.location.href.indexOf("lannetset") > -1){
+        // if has ports_custom feature, lan lag will be shown in ports_custom page
+        if ((window.location.href.indexOf("apsetting") > -1 || '1' != "1") && '1' == "1")
+        {
+            $(".lanCheckWrap").show();
+            getData("lag");
+        }
+    }
+    var olddata = '';
+    var oldLagInfo = '';
+	$('#wanCheckForm').delegate('input[type=text], input[type=checkbox], input[type=radio]', 'click', onControlFocus)
+                  .delegate('.ipt-text,.textContent', 'click', onControlFocus);
+
+	function onControlFocus() {
+        	$(this).parents('form').find('.btn-primary, .btn-dft').removeClass('hidden');
+		if($('#wanCheck').val() == 2 ){
+			$(".form-message").html("接入到运营商宽带的网线可以插在任意网口")
+		}
+
+        // $("#static-ipv6,#native,#nat").find('.btn-primary, .btn-dft').removeClass('hidden');
+    	}
+
+	    //遍历LAN
+	function handlerLan(rsp,type){
+        var list = rsp.ports;
+        var container = $('.selectLan');
+        var tpl = $('#lanList').html();
+        //wan口选择
+        var wanContainer = $('.selectWan');
+        var wantpl = $('#wanList').html();
+        var arr = [];
+        var serviceTranslations = {
+            "聚合口": "聚合口",
+            "游戏网口": "游戏网口"
+        };
+        for(var i = 0; i < list.length; i++){
+            var item = {
+                index:list[i].index,
+                service:serviceTranslations[list[i].service] || list[i].service,
+                speed:list[i].speed,
+                speed:list[i].speed,
+                port:list[i].port,
+                label:list[i].label,
+            }
+            arr.push(item)
+        }
+        var tplData = {
+            list:arr
+        }
+        if(type == "lag"){
+            container.html( tpl.tmpl(tplData) );
+            setTimeout(function(){
+                clickFunction();
+                setVaule();
+            },10)
+        }else if(type == "wan"){
+            if (typeof(wantpl) == "undefined") {
+                return;
+            }
+            wanContainer.html( wantpl.tmpl(tplData) );
+            setTimeout(function(){
+                //wanClick();
+                setWanValue();
+                //setVaule();
+                if(rsp.description && rsp.description!=''){
+                    var description = '<div class="description">'+ rsp.description +'</div>'
+                    $('.selectWan').append(description);
+                    $(".selectWan").css("padding-bottom","40px")
+                }
+            },10)
+        }
+    }
+
+
+
+//LAN 口聚合选择
+    function clickFunction(obj,service){
+        $(".lanListDiv").on( 'click', function(){
+            if($(this).hasClass("disable") ){
+                return;
+            }else{
+                $(this).toggleClass("active");
+                if($(this).hasClass("active")){
+                    $(this).find(".service").text("聚合口")
+                }else{
+                    $(this).find(".service").text("LAN")
+                }
+
+                if($(".lanListDiv.active").length==2){
+                    $(".lanBtn").show();
+                    $(".lanListDiv").each(function(){
+                        if($(this).hasClass("active") == false){
+                            $(this).addClass("disable")
+                       }
+                    })
+                }
+                else{
+                    $(".lanBtn").hide();
+
+                    // find the selected port, and save it's speed
+                    var active_speed = '';
+                    $(".lanListDiv").each(function(){
+                        if($(this).hasClass("active")){
+                            active_speed = $(this).attr("data-speed")
+                        }
+                    })
+
+                    if('' == active_speed){
+                        //no selected port, so we show all
+                        $(".lanListDiv").each(function(){
+                            if($(this).hasClass("disable") && $(this).attr("data-service")!='WAN' && $(this).attr("data-service")!='IPTV'){
+                                $(this).removeClass("disable")
+                            }
+                        })
+                    }else{
+                        //only show those ports which has same speed with the first selected port
+                        $(".lanListDiv").each(function(){
+                            if($(this).attr("data-speed")==active_speed && $(this).attr("data-service")!='WAN' && $(this).attr("data-service")!='IPTV'){
+                                $(this).removeClass("disable")
+                            }else{
+                                $(this).addClass("disable")
+                            }
+                        })
+                    }
+                }
+            }
+        })
+    }
+    //获取数据
+    function getData(type){
+        $.ajax({
+            url: '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/get_ps_service',
+            dataType: 'json',
+            timeout: 5000,
+            type: 'GET',
+            data: {"service":type},
+            success: function( rsp ){
+            if( rsp.code == 0 ){
+                //存入
+                oldData = rsp
+                if(type == "lag"){
+                    var lagInfo = rsp['lag'];
+                    oldLagInfo = lagInfo;
+                    //开关
+                    if( lagInfo.enable == 1){
+                            $('#lagSwitch')
+                            .removeClass('btn-switch-off')
+                            .addClass('btn-switch-on')
+                            .attr('data-on', '1');
+                            $('.lagItem').show()
+                    }else{
+                        $('#lagSwitch')
+                            .removeClass('btn-switch-on')
+                            .addClass('btn-switch-off')
+                            .attr('data-on', '0');
+                            $('.lagItem').hide()
+                    }
+                }else if(type == "wan"){
+                    oldWandtData = rsp.wan;
+                    if(rsp.wan.mode == 2){
+                        $("#wanCheck").val(2);
+                        $("#wanCheckForm .dummy").text("WAN/LAN口自适应（推荐）");
+                    }else if(rsp.wan.mode == 1){
+                        $("#wanCheck").val(1);
+                        $("#wanCheckForm .dummy").text("固定WAN口");
+                    }else if(rsp.wan.mode == 3){
+                        $("#wanCheck").val(3);
+                        $("#wanCheckForm .dummy").text("全LAN口");
+                    }
+                }
+                $.getJSON('/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/get_ps_map').done(function(rsp){
+                if( rsp.code == 0 ){
+                    //遍历LAN
+                    if(type == "lag"){
+                        handlerLan(rsp,"lag")
+                    }else if(type == "wan"){
+                        handlerLan(rsp,"wan")
+                        $("#wanCheckForm").show()
+                    }
+                }
+            })
+            }
+        }
+    })
+    }
+
+    //lan口聚合提交
+    $('#btnSubmitlanCheck').on('click',function(e){
+        e.preventDefault();
+        var enable =  $('#lagSwitch').attr('data-on');
+        var ports = '';
+        $(".lanListDiv").each(function(index,item){
+            if($(item).hasClass("active")){
+                ports = ports + ' ' + $(item)[0].dataset.port;
+            }
+        })
+        var requestData = {
+            "service":"lag",
+            "enable":enable,
+            "ports":ports.substring(1),
+            "mode":oldLagInfo.mode
+        }
+        setLag(requestData,"lag");
+    })
+    //lan口开关
+    $('#lagSwitch').on('click',function(e){
+        e.preventDefault();
+        var on = $(this).attr('data-on') == 1 ? 1 : 0;
+        var enable = oldLagInfo.enable
+        if(enable == 0){
+            if( on == 0){
+                $(this).removeClass('btn-switch-off')
+                .addClass('btn-switch-on')
+                .attr('data-on', '1');
+                $('.lagItem').show()
+            }else{
+                $(this).removeClass('btn-switch-on')
+                .addClass('btn-switch-off')
+                .attr('data-on', '0');
+                $('.lagItem').hide()
+            }
+
+        }else{
+            var enable =  $('#lagSwitch').attr('data-on')==1?0:1;
+            var requestData = {
+                "service":"lag",
+                "enable":enable,
+                "ports":"",
+                "mode":oldLagInfo.mode
+                }
+
+                $.dialog({
+                    id : "confirm",
+                    width: 390,
+                    title : "提示信息",
+                    content : "确认是否关闭LAN口聚合功能",
+                    ok: function(){
+                        setLag(requestData,"lag");
+                    },
+                    cancel: function () {
+                    }
+                }).lock();
+            }
+        })
+    //wan口设置
+    $('#btnSubmitwanCheck').on('click', function(e){
+        e.preventDefault();
+        var ports = '';
+            $(".wanListDiv").each(function(index,item){
+                if($(item).hasClass("active")){
+                    ports = ports + ' ' + $(item)[0].dataset.port
+                }
+            })
+            var requestData = {
+                "service":"wan",
+                "mode":$("#wanCheck").val(),
+            }
+            if($("#wanCheck").val() == 1){
+                requestData.wan_port = ports.substring(1)
+            }
+            if(ports == '' && $("#wanCheck").val() == 1){
+                $.alert( '请选择网口' );
+                return
+            }
+            //$('#btnSubmitwanCheck').addClass('btn-primary-disabled').prop('disabled', true).find('span').text('保存中...');
+            setLag(requestData,"wan")
+    })
+    //设置lag wan
+    function setLag(requestData,type){
+        $.ajax({
+                url: '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/misystem/set_ps_service',
+                dataType: 'json',
+                timeout: 5000,
+                type: 'POST',
+                data: requestData,
+                success: function( rsp ){
+                  //$.pub('loading:stop');
+                  if( rsp.code === 0 ){
+                    //setTimeout(function(){setVaule()}) ;
+                    if(type == "lag"){
+                        getData("lag");
+                        //$("#lanCheckForm").find('.btn-primary, .btn-dft').addClass('hidden');
+                        $(".lanBtn").hide();
+                    }else if(type == "wan"){
+                        getData("wan");
+                        $.loadingDialog({
+                            title : '修改WAN口选择',
+                            content : '设置成功，正在重启，请等待…',
+                            cancel: false
+                        }).lock().time( 10*1000 );
+                        setTimeout( function(){
+                            window.location.reload( true );
+                        }, 10*1000 );
+
+                        $("#wanCheckForm").find('.btn-primary, .btn-dft').addClass('hidden');
+                        //$("#btnSubmitwanCheck").hide();
+                    }
+                  } else {
+                    $.alert( rsp.msg )
+                    $('#btnSubmitwanspeed').removeClass('btn-primary-disabled').prop('disabled', false).find('span').text('保存');
+                  }
+                },
+                error: function() {
+                  //$.pub('loading:stop');
+                  $.alert( '网络异常，请检查是否联网' );
+                }
+            });
+    }
+    //lan口赋值
+    function setVaule(){
+        var portString = oldLagInfo.ports;
+        if(portString !='' && portString!=undefined){
+            var stringResult = portString.split(' ');
+            $.each(stringResult,function (index,value){
+                $(".lanListDiv").each(function(index,item){
+                if($(item)[0].dataset.port == value){
+                    $(item).addClass("active");
+                    $(item).removeClass("disable");
+                }
+            })
+            })
+            $(".lanListDiv").each(function(){
+                if($(this).hasClass("active") == false){
+                    $(this).addClass("disable")
+                }
+            })
+        }
+    }
+
+    //wan口
+    function wanClick(){
+        $(".wanListDiv").on("click",function(){
+            if($(this).hasClass("disable") == false ){
+                // first, set all LAN and WAN active port's service text to "LAN".
+                $(".wanListDiv").each(function(){
+                    if($(this).attr("data-service")=='LAN' || $(this).attr("data-service")=='WAN'){
+                        $(this).find(".service").text("LAN")
+                    }
+                })
+
+                // then, set the port's service text to "WAN" which is clicked by user.
+                $(this).addClass("active");
+                $(this).siblings().removeClass("active");
+                $(this).find(".service").text("WAN")
+                $(this).siblings().attr("data-service")
+                $("#wanCheckForm").find('.btn-primary, .btn-dft').removeClass('hidden');
+            }
+        })
+    }
+
+    //wan口设置初始值
+    function setWanValue(){
+        if(oldWandtData.mode == 2 && oldWandtData.wan_port == -1){//智能
+            $(".wanListDiv").each(function(){
+                if($(this).hasClass("disable") == false){
+                    $(this).addClass("green")
+                    $(this).find(".service").text("WAN/LAN")
+                }
+            })
+            $(".form-message").text("未检测到宽带网线接入，请将网线连接到任意高亮网口")
+            $(".wanListDiv").unbind("onclick");
+
+        }else if(oldWandtData.mode == 2 && oldWandtData.wan_port !=-1){
+            var wanPort = parseInt(oldWandtData.wan_port);
+            $(".form-message").text("智能识别网口“{$wanPort}”作为WAN口".tmpl({wanPort: wanPort}));
+        }
+        else if(oldWandtData.mode == 1 && oldWandtData.wan_port !=-1){
+            $(".form-message").text("")
+            $(".wanListDiv").removeClass("green");
+            $(".form-message").text("请选择网口")
+            wanClick();
+            $(".auto-sense").hide();
+        }else if(oldWandtData.mode == 3){
+            $(".form-message").text("");
+            $(".wanListDiv").each(function(){
+                if($(this).hasClass("disable") == false){
+                    $(this).find(".service").text("LAN")
+                }
+            })
+            $(".auto-sense").hide();
+        }
+
+        $(".wanListDiv").each(function(index,item){
+                if($(item)[0].dataset.port == oldWandtData.wan_port){
+                    $(item).addClass("active");
+                    $(item).removeClass("disable");
+                    if(oldWandtData.mode == 2){
+                        $(this).siblings().addClass("disable");
+                    }
+                    return
+                }
+        })
+    }
+    //wan口选择
+    $("#wanCheck").change(function(){
+        $(".wanListDiv").removeClass("green");
+        $(".wanListDiv").removeClass("active");
+        $(".auto-sense").hide();
+        if($(this).val() == 1){//固定wan口
+            wanClick();
+            $(".wanListDiv").each(function(){
+                if($(this).hasClass("active") == false && $(this).attr("data-service")=='LAN'){
+                    $(this).find(".service").text("LAN")
+                    $(this).removeClass("disable");
+                }
+                else if($(this).attr("data-service")=='WAN'){
+                    if(oldWandtData.mode == 1){
+                        $(this).find(".service").text("WAN");
+                        $(this).addClass("active")
+                    }else{
+                        $(this).find(".service").text("LAN");
+                        $(this).removeClass("disable");
+                    }
+
+                }
+            })
+            //if(oldWandtData.wan_port ==-1){
+                $(".form-message").text("请选择网口")
+           // }else{
+              //  $(".form-message").text("")
+            //}
+        }else if($(this).val() == 2){
+            if(oldWandtData.mode == 2&& oldWandtData.wan_port !=-1){
+                var wanPort = parseInt(oldWandtData.wan_port);
+                $(".form-message").text("智能识别网口“{$wanPort}”作为WAN口".tmpl({wanPort: wanPort}));
+                $(".wanListDiv").each(function(index,item){
+                if($(item)[0].dataset.port == oldWandtData.wan_port){
+                    $(this).find(".service").text("WAN");
+                    $(this).addClass("active");
+                    $(this).siblings().addClass("disable");
+                    return
+                }
+            })
+            }else{
+                $(".wanListDiv").each(function(){
+                    if($(this).hasClass("disable") == false || $(this).attr("data-service")=='LAN'){
+                        $(this).find(".service").text("WAN/LAN");
+                        $(this).addClass("green");
+                    }
+                })
+                $(".form-message").text("未检测到网络，请用网线将猫连接到路由器的任一网口")
+            }
+
+            $(".wanListDiv").unbind("click");
+            $(".auto-sense").show();
+            //setWanValue()
+        }else if($(this).val() == 3){
+            $(".wanListDiv").unbind("click");
+            $(".form-message").text("");
+            $(".wanListDiv").each(function(){
+                if($(this).attr("data-service")=='LAN' || $(this).attr("data-service")=='WAN'){
+                    $(this).find(".service").text("LAN")
+                    $(this).removeClass("disable");
+                }
+            })
+        }
+    })
+    //helping
+    $("#lanOpen").click(function(){
+        $(".lan-section-help").show();
+    })
+    $("#lanClose").click(function(){
+        $(".lan-section-help").hide();
+    })
+</script>
+
+
+<script>
+(function(){
+    var ajaxcount = 0,
+        ajaxall = 2,
+        dhcpOldval = {},
+        mask = '255.255.255.0';
+
+    $.sub( 'ajaxdone', function(){
+        ajaxcount ++;
+        if ( ajaxcount >= ajaxall ) {
+            $.formInit();
+        }
+    } );
+
+    $.sub( 'dhcp:get', function( evt, data ){
+        var requestURL = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/lan_dhcp',
+            requestData = {},
+            thirdStr,
+            ipSplit = function( ip ) {
+                var ipSplit=[];
+                var strs = ip.split(".");
+                thirdStr = strs[2]
+                for (var i=0;i<strs.length-2;i++ )
+                {
+                    ipSplit.push(strs[i]);
+                }
+                return ipSplit.join('.') + '.';
+            };
+
+        $.getJSON( requestURL, requestData, function( rsp ){
+            if(rsp.code == 0){
+                var info = rsp.info,
+                    ip = info.lanIp[0].ip,
+                    mask = info.lanIp[0].mask,
+                    ipPrefix = ipSplit( ip ),
+                    ignore = info.ignore,
+                    start2 = info.start,
+                    limit = info.limit,
+                    dns1 = info.dns1 ? info.dns1 : '',
+                    dns2 = info.dns2 ? info.dns2 : '',
+                    router = info.router ? info.router : '',
+                    leasetime = info.leasetime,
+                    leasetimeNum = info.leasetimeNum,
+                    leasetimeUnit = info.leasetimeUnit,
+                    _leasetimeUnit = leasetimeUnit === 'h'? 60 : 1,
+                    _leasetime = leasetimeNum * _leasetimeUnit,
+                    end = parseInt( info.start, 10 ) + parseInt( info.limit, 10 ) - 1,
+                    startip = info.startip,
+                    endip = info.endip
+                $( '.ipprefix' ).html( ipPrefix );
+                if(mask == '255.255.255.0'){
+                    $( 'input[name="start1"]' ).attr('readonly',true)
+                    $( 'input[name="end1"]' ).attr('readonly',true)
+                    $( 'input[name="start1"]' ).val( thirdStr );
+                    $( 'input[name="start1"]' ).attr('oldData',thirdStr)
+                    $( 'input[name="start2"]' ).val( start2 );
+                    $( 'input[name="start2"]' ).attr('oldData',start2)
+                    $( 'input[name="end1"]' ).val( thirdStr );
+                    $( 'input[name="end1"]' ).attr('oldData',thirdStr)
+                    $( 'input[name="end2"]' ).val( end );
+                    $( 'input[name="end2"]' ).attr('oldData',end)
+                    dhcpOldval['start1'] = thirdStr;
+                    dhcpOldval['start2'] = start2;
+                    dhcpOldval['end1'] = thirdStr;
+                    dhcpOldval['end2'] = end;
+                }else{
+                    var start_thirdStr1 = startip.split('.')[2]
+                    start2 = startip.split('.')[3]
+                    var end_thirdStr1 = endip.split('.')[2]
+                    end = endip.split('.')[3]
+                    $( 'input[name="start1"]' ).val( start_thirdStr1 );
+                    $( 'input[name="start1"]' ).attr('oldData',start_thirdStr1);
+                    $( 'input[name="start2"]' ).val( start2 );
+                    $( 'input[name="start2"]' ).attr('oldData',start2)
+                    $( 'input[name="end1"]' ).val( end_thirdStr1 );
+                    $( 'input[name="end1"]' ).attr('oldData',end_thirdStr1)
+                    $( 'input[name="end2"]' ).val( end );
+                    $( 'input[name="end2"]' ).attr('oldData',end)
+                    dhcpOldval['start1'] = start_thirdStr1;
+                    dhcpOldval['start2'] = start2;
+                    dhcpOldval['end1'] = end_thirdStr1;
+                    dhcpOldval['end2'] = end;
+                }
+                $( 'input[name="limit"]' ).val( limit );
+                $( 'input[name="leasetime"]' ).val( _leasetime );
+                $( 'input[name="ignore"]' ).val( ignore );
+                $( 'input[name="dns1"]' ).val( dns1 );
+                $( 'input[name="dns2"]' ).val( dns2 );
+                $( 'input[name="router"]' ).val( router );
+                dhcpOldval['limit'] = limit;
+                dhcpOldval['leasetime'] = _leasetime;
+                dhcpOldval['ignore'] = ignore;
+                dhcpOldval['mask'] = mask;
+
+                if ( ignore === '1' ){
+                    //close
+                    $.pub('dhcp:switch', {'cmd': 'close'});
+                } else {
+                    $.pub('dhcp:switch', {'cmd': 'open'});
+                }
+
+                // $( 'input.iplimit' ).on( 'keydown', function(e){
+                //     var lanip = ipPrefix.replace( '.', '\\.' ),
+                //         re = new RegExp( '^'+ ipPrefix +'\\.\\d{1,3}$' );
+                //     if ( e.keyCode === 46 || e.keyCode === 8 ) {
+                //         if ( !re.test( this.value ) ) {
+                //             return false
+                //         }
+                //     }
+
+                // } );
+
+            } else {
+                $.alert( rsp.msg, function(){
+                    location.reload( true );
+                } );
+            }
+
+            $.pub( 'ajaxdone' );
+
+        });
+    } );
+
+    $.sub( 'lanip:get', function(){
+        var requestURL = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/lan_info',
+            requestData = {};
+        var helpMessage = '如何扩展{$limit}台终端接入？'.replace('{$limit}', '1000'),
+            tipsMessage = '2、保存子网掩码配置，系统将自动重启并开启{$limit}台终端接入支持。'.replace('{$limit}', '1000');
+
+        $.getJSON( requestURL, requestData, function( rsp ){
+            if( rsp.code === 0 ){
+                var ip = rsp.info.ipv4[0]['ip'];
+                var mask = rsp.info.ipv4[0]['mask'];
+                $( 'input[name=ip]' ).val( ip );
+                $( 'input[name=old_ip]' ).val( ip );
+                $( 'select[name=mask]' ).val(mask)
+                $( 'select[name=mask]' ).val(mask).attr('data-old',mask)
+            } else {
+                $.alert( rsp.msg, function(){
+                    location.reload( true );
+                } );
+            }
+
+            $.pub( 'ajaxdone' );
+            $.selectBeautify();
+            $("#lanipHelp").html(helpMessage + '<span class="helpIcon"></span>');
+            $(".helpHead").html(helpMessage);
+            $("#lanipTips").html(tipsMessage);
+        });
+    } );
+
+    $.sub( 'dhcp:switch', function( evt, data ){
+        var btnClass = data.cmd === 'open' ? 'btn-switch-on' : 'btn-switch-off',
+            $ignore = $( 'input[name="ignore"]' );
+
+        $( '#dhcpswitch' )[0].className = 'btn-switch ' + btnClass;
+
+        if ( data.cmd === 'open' ) {
+            $ignore.val( 0 );
+            $( '#lanDhcp .set' ).fadeIn();
+        }else{
+            $( '#lanDhcp .set' ).fadeOut();
+            $ignore.val( 1 );
+        }
+
+    } );
+
+    $.sub( 'addEvent', function( evt, data ){
+        $('#dhcpOpen .ico').on('click', function(){
+            $.pub('dhcp:showHelp');
+        });
+        $('#dhcpClose').on('click', function(){
+            $.pub('dhcp:hideHelp');
+        });
+        $("body").on('click', "#lanipOpen .helpIcon", function(){
+            $.pub('lanip:showHelp');
+        });
+        $('#lanipClose').on('click', function(){
+            $.pub('lanip:hideHelp');
+        });
+        // switch
+        $( '#dhcpswitch' ).click(function( e ){
+            e.preventDefault();
+            var cmd = $( this ).hasClass( 'btn-switch-on' ) ? 'close' : 'open';
+            $.pub( 'dhcp:switch', {'cmd': cmd} );
+        });
+
+        // submit
+        $( '#netDhcp' ).submit(function( e ){
+            e.preventDefault();
+            var formObj = this,
+                formName = formObj.name,
+                action = formObj.action,
+                $ignore = $( 'input[name=ignore]' ),
+                ignore = $ignore.val(),
+                validator = Valid.checkAll(formObj);
+
+            if ( ignore === '1' ) {
+                validator = true;
+            }
+
+            if ( validator ) {
+                var getIpLast = function( ip ){
+                        return parseInt( ip.split('.')[3], 10 );
+                    },
+                    leasetime = parseInt( $( 'input[name=leasetime]' ).val(), 10 ),
+                    start1 = $( 'input[name=start1]' ).val(),
+                    start2 = $( 'input[name=start2]' ).val(),
+                    end1 = $( 'input[name=end1]' ).val(),
+                    end2 = $( 'input[name=end2]' ).val(),
+                    startip = $( '.ipprefix' ).html() + start1 + '.' + start2,
+                    endip = $( '.ipprefix' ).html() + end1 + '.' + end2,
+                    limit = $( 'input[name=limit]' ).val(),
+                    dns1 = $( 'input[name=dns1]' ).val(),
+                    dns2 = $( 'input[name=dns2]' ).val(),
+                    router = $( 'input[name=router]' ).val(),
+                    leasetime_num,
+                    leasetime_unit,
+                    requestData,
+                    requestURL = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/set_lan_dhcp';
+                leasetime_unit = 'm';
+                leasetime_num = leasetime;
+
+                var mask = dhcpOldval['mask']
+                if(mask == '255.255.255.0'){
+                requestData = {
+                    leasetime: leasetime_num + leasetime_unit,
+                        start: start2,
+                        end: end2,
+                        limit: limit,
+                    ignore: ignore,
+                    dns1:dns1,
+                    dns2:dns2,
+                    router:router
+                    }
+                }else{
+                    requestData = {
+                        leasetime: leasetime_num + leasetime_unit,
+                        startip: startip,
+                        endip: endip,
+                        limit: limit,
+                        ignore: ignore,
+                        dns1:dns1,
+                        dns2:dns2,
+                        router:router
+                    }
+                }
+
+                //增加对ip网段的验证
+                var isOk = true,
+                    content = '设置有误，请重新输入',
+                    startIp_num = ipToInt(startip),
+                    endIp_num = ipToInt(endip),
+                    s1 = parseInt(start1),
+                    s2 = parseInt(start2),
+                    e1 = parseInt(end1),
+                    e2 = parseInt(end2);
+                var ipCheck = ( e1 - s1 ) * 256 + ( e2 - s2 )
+                if( startIp_num > endIp_num ){
+                    isOk = false
+                    content = '您输入的范围不合理。'
+                }else if( ipCheck > 1024 ){
+                    isOk = false
+                    content = '最多接入设备为1000台，请重新设置'
+                }
+                if(!isOk){
+                    $.dialog({
+                        width: 390,
+                        title : "提示信息",
+                        content : content,
+                        ok: function(){}
+                    });
+                    return
+                }
+
+                if ( ignore === '1' ) {
+                    requestData = {
+                        ignore: ignore
+                    };
+                    $('#btnDhcpSubmit').children('span').text('处理中...')
+                    $.getJSON( requestURL, requestData, function( rsp ){
+                        if( rsp.code === 0 ){
+                            $.dialog({
+                                width: 390,
+                                padding: '25px 30px',
+                                title: '提示信息',
+                                content: '设置成功',
+                                ok: true,
+                                cancel: false
+                            });
+                            $('#btnDhcpSubmit').children('span').text('保存')
+                        } else {
+                            $.alert( rsp.msg );
+                        }
+                    });
+                }else{
+                    $.confirm('此操作需要重启才能生效，是否提交?', function(){
+                        $.pub( 'loading:start' );
+                        $.getJSON( requestURL, requestData, function( rsp ){
+                            $.pub( 'loading:stop' );
+                            if( rsp.code === 0 ){
+                                location.reload(true);
+                            } else {
+                                $.alert( rsp.msg );
+                            }
+                        });
+                    });
+                }
+            }
+        });
+
+        // lanip
+        $( '#ipaddr' ).on( 'submit', function( e ){
+            e.preventDefault();
+            var formObj = this,
+                formName = formObj.name,
+                ip = $.trim( $('input[name=ip]', formObj).val() ),
+                oldIp = $.trim( $('input[name=old_ip]', formObj).val() ),
+                mask = $.trim( $('select[name=mask]', formObj).val() ),
+                validator =  Valid.checkAll(formObj);
+            if ( validator ) {
+                if (mask === "255.255.0.0" && ipToInt(ip) >= ipToInt("192.168.0.0")) {
+                    $.dialog({
+                        width: 390,
+                        title : "提示信息",
+                        content : "配置为C类IP地址时，请使用掩码255.255.255.0",
+                        ok: function(){}
+                    });
+                    return
+                }
+                var requestURL = '/cgi-bin/luci/;stok=00000000000000000000000000000000/api/xqnetwork/set_lan_ip',
+                    requestData = {
+                        ip: ip,
+                        mask: mask?mask:"255.255.255.0"
+                    };
+                var isSame = mask == $('select[name=mask]').attr('data-old')
+                var tip1 = '<div style="text-align:left">此操作需要重启才能生效</br>如果您已配置了以下内容，掩码的更改将会导致以下内容需重新配置：</br>-局域网默认网关</br>-DHCP静态IP分配</br>-端口转发</br>-DMZ主机设置<div style="text-align:center">是否提交?</div></div>'
+                var tip = isSame ? '此操作需要重启才能生效，是否提交?' : tip1
+                $.confirm(tip, function(){
+                    $.pub( 'wait', {id: '#btnLanipSubmit'} );
+                    $.getJSON( requestURL, requestData, function( rsp ){
+                        if( rsp.code === 0 ){
+                            var ip = rsp.ip;
+                            rebootWait( {
+                                lanIp : ip,
+                                action : '重启路由器',
+                                refresh : true
+                            } );
+                        } else {
+                            $.alert( rsp.msg );
+                        }
+                        $.pub( 'done', {id: '#btnLanipSubmit'} );
+                    });
+                });
+            }
+        } );
+
+        //选择子网掩码时，依据条件变化
+        $('body').delegate('#dummydata a' ,'click', function(e){
+            var mask = $(this).text()
+            var oldMask = $('select[name=mask]').attr('data-old')
+            var oldIp = $('input[name=old_ip]').val()
+            var isSame = mask == oldMask
+            var currentIp = mask == '255.255.255.0' ? '192.168.31.1' : '10.31.0.1'
+            if(isSame){
+            //    $('input[name=ip]').removeAttr('readonly').css('color','#000').val(oldIp)
+            }else{
+                $('input[name=ip]').val(currentIp)
+                $.formInit();
+            }
+        })
+
+        function onControlFocus() {
+            $(this).parents('form').find('.btn-primary').removeClass('hidden');
+        };
+        //解决全选输入不显示保存按钮
+        // $("#checkIp").on('input',function(){
+        //     console.log("1");
+        //     })
+        $("#checkIp").on('focus',function(){
+            $(this).parents('form').find('.btn-primary').removeClass('hidden');
+        })
+
+        //将ip地址转换为数字
+        function ipToInt(ip){
+            var REG =/^(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])\.(\d{1,2}|1\d\d|2[0-4]\d|25[0-5])$/;
+            var xH = "",result = REG.exec(ip);
+            if(!result) return -1;
+            for (var i = 1; i <= 4; i++) {
+                var h = parseInt(result[i]);
+                xH += (h > 15 ? "" : "0") + h.toString(16);
+            }
+            return parseInt(xH, 16);
+        }
+
+        $('#netDhcp, #ipaddr , #gateway_ipaddr, #dns_ipaddr').delegate('input[type=text], input[type=checkbox], input[type=radio]', 'click', onControlFocus).delegate('.ipt-text', 'click', onControlFocus);
+
+        $('#dhcpswitch').on('click', function onDhcpswitchFocus() {
+            $('#netDhcp').find('.btn-primary').removeClass('hidden');
+        });
+        //判断ip地址
+        $('#checkIp').on('input',function(){
+            var ipReg = /^((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){3}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})$/.test($(this).val())
+            var ip_check = $(this).val().split('.')
+            var mask_check = mask.split('.')
+            var newMask = []
+            var indexArr = []
+            var resArr = []
+            var isOk = true
+            for(var i = 0; i < mask_check.length; i++){
+                var c = mask_check[i] == '255' ? 0 : 255
+                newMask.push(c)
+                //记录为0的下标
+                if(mask_check[i] == 0){
+                    indexArr.push(i)
+                }
+            }
+            for(var j = 0; j < indexArr.length; j++){
+                var d = ip_check[indexArr[j]] & newMask[indexArr[j]]
+                // console.log('ip',ip_check[indexArr[j]])
+                // console.log('mask',newMask[indexArr[j]])
+                if(d == 0 || d == 255){
+                    resArr.push(d)
+                }
+            }
+            var testAdd = 0
+            var testVal = resArr[0]
+            for(var x = 0; x < resArr.length; x++){
+                if(resArr[x] == testVal){
+                    testAdd++
+                }
+            }
+
+            if(resArr.length > 0 && testAdd == indexArr.length && ipReg){
+                isOk = false
+            }
+            if(isOk){
+                $('#ipaddr').find('.tip').css('display','none')
+                $('#btnLanipSubmit').removeAttr('disabled')
+            }else{
+                $('#ipaddr').find('.tip').css('display','block')
+                $('#btnLanipSubmit').attr('disabled','true')
+            }
+        })
+    } );
+    $.sub('dhcp:showHelp', function(evt, data){
+        $('#helpArrow').show();
+        $('#helpSection').show();
+    });
+    $.sub('dhcp:hideHelp', function(evt, data){
+        $('#helpArrow').hide();
+        $('#helpSection').hide();
+    });
+    $.sub('lanip:showHelp', function(evt, data){
+        $('#helpArrow2').show();
+        $('#helpSection2').show();
+    });
+    $.sub('lanip:hideHelp', function(evt, data){
+        $('#helpArrow2').hide();
+        $('#helpSection2').hide();
+    });
+}());
+
+$(function(){
+    $.pub( 'dhcp:get' );
+    $.pub( 'lanip:get' );
+    $.pub( 'addEvent' );
+});
+</script>
+</body>
+</html>
