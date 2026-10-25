@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-only
 """Рисует иконки расширения (без сторонних изображений).
 
 Запуск: python tools/make_icons.py

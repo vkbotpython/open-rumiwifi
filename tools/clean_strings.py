@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-only
 import json, re, glob, os, sys
 sys.path.insert(0, 'tools')
 from analyze import extract_html, extract_js, clean, CJK

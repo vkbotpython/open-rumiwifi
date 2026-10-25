@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-only
 import json, re, sys
 
 CJK = re.compile(r'[\u3400-\u9fff\uf900-\ufaff]+')

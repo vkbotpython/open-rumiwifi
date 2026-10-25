@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-only
 import json, re
 
 rows = [l.rstrip('\n').split('\t') for l in open('data/all_clean.tsv', encoding='utf-8')]

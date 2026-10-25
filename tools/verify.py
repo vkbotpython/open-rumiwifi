@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-only
 """Проверки репозитория перед публикацией и в CI.
 
 Запуск: python tools/verify.py
@@ -156,6 +157,11 @@ for path in ('LICENSE', 'CHANGELOG.md', 'CONTRIBUTING.md', 'SECURITY.md',
              'NOTICE.md', 'docs/coverage.md', 'docs/PUBLISHING.md'):
     if not os.path.isfile(path):
         fail(f'нет обязательного файла: {path}')
+
+if os.path.isfile('LICENSE'):
+    license_text = open('LICENSE', encoding='utf-8').read()
+    if 'GNU GENERAL PUBLIC LICENSE' not in license_text or 'Version 3' not in license_text:
+        fail('LICENSE не содержит текст GNU GPL v3.0')
 
 if os.path.isdir('original/extracted') or os.path.isfile('original/rumiwifi.crx'):
     warn('в папке original/ лежат файлы RUMIWIFI — они не должны попасть в git (см. .gitignore)')

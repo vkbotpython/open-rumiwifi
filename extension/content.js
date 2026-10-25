@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: GPL-3.0-only */
 /*
  * Open RUMIWIFI — русская локализация веб-панели Xiaomi / Redmi роутеров.
  *

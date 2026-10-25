@@ -43,7 +43,7 @@ git remote add origin https://github.com/<user>/open-rumiwifi.git
 git push -u origin main
 ```
 
-После пуша GitHub сам определит лицензию MIT.
+После пуша GitHub сам определит лицензию GPL-3.0.
 
 ## 3. GitLab
 
@@ -104,7 +104,7 @@ git push origin v2.0.0
 - [ ] `python tools/verify.py` проходит;
 - [ ] `node run-all.js` зелёный;
 - [ ] в репозитории нет `original/extracted/`, `*.crx`, `node_modules`;
-- [ ] лицензия MIT видна на странице репозитория;
+- [ ] лицензия GPL-3.0 видна на странице репозитория;
 - [ ] CI зелёный;
 - [ ] создан релиз `v2.0.0`;
 - [ ] в описании репозитория есть фраза «не связан с Xiaomi».

@@ -7,7 +7,7 @@
 от старого расширения RUMIWIFI.
 
 ![Manifest V3](https://img.shields.io/badge/manifest-v3-2f7cf6)
-![License MIT](https://img.shields.io/badge/license-MIT-green)
+![License GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue)
 ![No dependencies](https://img.shields.io/badge/runtime%20deps-0-success)
 
 ## Возможности
@@ -105,6 +105,12 @@ node run-all.js                # все страницы + динамическ�
 
 ## Лицензия
 
-Код и переводы — [MIT](LICENSE). Иконки нарисованы специально для проекта
-(`tools/make_icons.py`). Проект не связан с Xiaomi и авторами RUMIWIFI;
-Xiaomi, Redmi и MiWiFi — товарные знаки соответствующих правообладателей.
+Код и переводы — **GNU General Public License v3.0** ([текст](LICENSE)).
+
+Вы можете использовать, изменять и распространять проект, в том числе в
+коммерческих целях, но производные работы должны распространяться под GPL-3.0
+с открытым исходным кодом. Гарантий нет.
+
+Иконки нарисованы специально для проекта (`tools/make_icons.py`). Проект не связан
+с Xiaomi и авторами RUMIWIFI; Xiaomi, Redmi и MiWiFi — товарные знаки
+соответствующих правообладателей.

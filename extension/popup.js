@@ -1,3 +1,4 @@
+/* SPDX-License-Identifier: GPL-3.0-only */
 const DEFAULT_PANEL = "http://192.168.31.1/cgi-bin/luci/web";
 const $ = (id) => document.getElementById(id);
 

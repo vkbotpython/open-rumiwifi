@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-only
 """Собирает extension/lang/zh_ru.json из исходников в data/ru/.
 
 Словарь полностью собственный: старый словарь RUMIWIFI не используется,

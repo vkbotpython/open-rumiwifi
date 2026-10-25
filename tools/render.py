@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-only
 import json, re, sys, html as htmllib
 sys.path.insert(0, 'tools')
 from simulate import Trie, apply

@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-only
 import urllib.request, urllib.parse, http.cookiejar, hashlib, os, re, sys, json, time
 
 BASE = 'http://192.168.31.1'

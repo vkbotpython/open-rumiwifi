@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: GPL-3.0-only
 import re, json, sys, os, glob, html as htmllib, time
 
 CJK = re.compile(r'[\u3400-\u9fff\uf900-\ufaff]')
