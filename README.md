@@ -1,4 +1,19 @@
-# Open RUMIWIFI
+<div align="center">
+    <a href="https://www.youtube.com/@avencores/" target="_blank">
+      <img src="https://github.com/user-attachments/assets/338bcd74-e3c3-4700-87ab-7985058bd17e" alt="YouTube" height="40">
+    </a>
+    <a href="https://t.me/avencoresyt" target="_blank">
+      <img src="https://github.com/user-attachments/assets/939f8beb-a49a-48cf-89b9-d610ee5c4b26" alt="Telegram" height="40">
+    </a>
+    <a href="https://vk.ru/avencoresreuploads" target="_blank">
+      <img src="https://github.com/user-attachments/assets/dc109dda-9045-4a06-95a5-3399f0e21dc4" alt="VK" height="40">
+    </a>
+    <a href="https://dzen.ru/avencores" target="_blank">
+      <img src="https://github.com/user-attachments/assets/bd55f5cf-963c-4eb8-9029-7b80c8c11411" alt="Dzen" height="40">
+    </a>
+</div>
+
+# 📶 Open RUMIWIFI
 
 <img src="extension/img/icon.png" width="88" align="right" alt="Open RUMIWIFI">
 
@@ -10,7 +25,7 @@
 ![License GPL-3.0](https://img.shields.io/badge/license-GPL--3.0-blue)
 ![No dependencies](https://img.shields.io/badge/runtime%20deps-0-success)
 
-## Возможности
+## ✨ Возможности
 
 - Перевод **14 разделов** панели и страницы входа: 1193 строки, 0 китайских остатков.
 - Словарь на **1105** пар «китайский → русский», собран вручную по реальному UI.
@@ -20,7 +35,7 @@
 - Работает **офлайн**, без jQuery и без единого внешнего запроса.
 - Не вызывает API роутера и не меняет его настройки — только текст на странице.
 
-## Установка
+## 🚀 Установка
 
 1. Скачайте репозиторий (или `git clone`).
 2. Откройте `chrome://extensions` (в Edge — `edge://extensions`).
@@ -32,7 +47,7 @@
 с китайской прошивкой расширение тоже работает, но часть строк может остаться
 на китайском — их легко добавить в словарь.
 
-## Безопасность
+## 🔒 Безопасность
 
 - Расширение не делает сетевых запросов: словарь лежит внутри пакета.
 - Не читает и не сохраняет пароль роутера, не обращается к его API.
@@ -40,7 +55,7 @@
   от оригинального RUMIWIFI (см. [`original/README.md`](original/README.md)).
 - Подробнее — в [`SECURITY.md`](SECURITY.md).
 
-## Чем отличается от RUMIWIFI
+## 🆚 Чем отличается от RUMIWIFI
 
 | | RUMIWIFI 1.11.8 | Open RUMIWIFI 2.0.0 |
 |---|---|---|
@@ -51,7 +66,7 @@
 | Реклама и paywall | есть | нет |
 | Внешние переходы | `updiap.com` | нет |
 
-## Как это работает
+## ⚙️ Как это работает
 
 `extension/content.js` загружает `lang/zh_ru.json`, строит префиксное дерево и обходит
 текстовые узлы страницы. Для каждой позиции выбирается самый длинный ключ словаря,
@@ -59,7 +74,7 @@
 повторяет проход для новых узлов. Служебные теги (`script`, `style`, `textarea`,
 `code`, `pre`) пропускаются.
 
-## Структура
+## 🗂️ Структура
 
 ```
 extension/            готовое расширение (manifest v3)
@@ -75,7 +90,7 @@ docs/                 покрытие и инструкция по публик
 original/             разбор оригинального CRX (без чужих файлов)
 ```
 
-## Разработка
+## 🛠️ Разработка
 
 ```bash
 python tools/build_lang.py     # data/ru/*.json → extension/lang/zh_ru.json + проверка покрытия
@@ -92,18 +107,18 @@ node run-all.js                # все страницы + динамическ�
 в подходящий `data/ru/*.json`, пересоберите словарь. Подробнее — в
 [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
-## Публикация
+## 📦 Публикация
 
 Репозиторий уже подготовлен: лицензия, CI для GitHub/GitLab, `.gitignore`,
 шаблоны issue/PR и инструкция [`docs/PUBLISHING.md`](docs/PUBLISHING.md).
 
-## Участие
+## 🤝 Участие
 
 - как добавить перевод — [`CONTRIBUTING.md`](CONTRIBUTING.md);
 - правила общения — [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md);
 - уязвимости — [`SECURITY.md`](SECURITY.md).
 
-## Лицензия
+## 📜 Лицензия
 
 Код и переводы — **GNU General Public License v3.0** ([текст](LICENSE)).
 
@@ -114,3 +129,7 @@ node run-all.js                # все страницы + динамическ�
 Иконки нарисованы специально для проекта (`tools/make_icons.py`). Проект не связан
 с Xiaomi и авторами RUMIWIFI; Xiaomi, Redmi и MiWiFi — товарные знаки
 соответствующих правообладателей.
+
+---
+## 💰 Поддержать автора
++ **SBER**: `2202 2050 1464 4675`
