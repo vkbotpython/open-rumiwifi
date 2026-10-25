@@ -78,3 +78,15 @@
   width: auto !important;
   min-width: 160px;
 }
+
+/*
+ * Кнопки Mesh в диалоге имеют фиксированную ширину 100 px. Русские подписи
+ * «Начать поиск» и «Искать снова» не помещаются и переносятся на две строки.
+ */
+.rumi-i18n .mesh_buttons {
+  width: auto !important;
+  min-width: 100px;
+  padding-left: 14px !important;
+  padding-right: 14px !important;
+  white-space: nowrap;
+}
