@@ -42,7 +42,7 @@
 
 ### Chromium: Chrome, Edge, Yandex, Opera
 
-1. Скачайте `dist/open-rumiwifi-2.1.5-chromium.zip` из релиза или соберите его:
+1. Скачайте `dist/open-rumiwifi-2.1.6-chromium.zip` из релиза или соберите его:
    `python tools/build.py`.
 2. Распакуйте архив в любую папку.
 3. Откройте `chrome://extensions` (в Edge — `edge://extensions`) и включите
@@ -52,7 +52,7 @@
 
 ### Firefox 142+
 
-1. Скачайте `dist/open-rumiwifi-2.1.5-firefox.xpi` из релиза или соберите его:
+1. Скачайте `dist/open-rumiwifi-2.1.6-firefox.xpi` из релиза или соберите его:
    `python tools/build.py`.
 2. Откройте `about:debugging#/runtime/this-firefox`.
 3. Нажмите «Загрузить временное дополнение» и выберите `.xpi` (или `manifest.json`
@@ -78,7 +78,7 @@
 
 ## 🆚 Чем отличается от RUMIWIFI
 
-| | RUMIWIFI 1.11.8 | Open RUMIWIFI 2.1.5 |
+| | RUMIWIFI 1.11.8 | Open RUMIWIFI 2.1.6 |
 |---|---|---|
 | Браузеры | Chromium | Chromium и Firefox |
 | Словарь | 2021 год, машинный перевод | собран по прошивке 2.0.28 |
