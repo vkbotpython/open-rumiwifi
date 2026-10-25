@@ -124,6 +124,17 @@
     }
   }
 
+  /**
+   * Заголовок вкладки браузера лежит в <head> и не попадает в translateTree(body).
+   * Панель выставляет его из JS (document.title), поэтому переводим отдельно.
+   */
+  function translateTitle() {
+    const value = document.title;
+    if (!value || !CJK.test(value)) return;
+    const next = translateString(value);
+    if (next !== value) document.title = next;
+  }
+
   function translateTree(root) {
     if (!trie || !root) return;
     if (root.nodeType === Node.TEXT_NODE) {
@@ -155,6 +166,7 @@
       if (!node.isConnected) continue;
       translateTree(node);
     }
+    translateTitle();
     if (nodes.length) markActivity();
   }
 
@@ -236,6 +248,7 @@
         enabled = !!message.value;
         if (enabled) {
           translateTree(document.body);
+          translateTitle();
         }
         sendResponse(status());
         return true;
@@ -254,6 +267,7 @@
     // Класс включает правки шапки под длинные русские подписи (panel.css).
     document.documentElement.classList.add('rumi-i18n');
     translateTree(document.body);
+    translateTitle();
     startObserver();
     markActivity();
   }

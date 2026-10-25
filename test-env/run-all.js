@@ -93,10 +93,13 @@ async function checkPage(file, mode, status) {
   await sleep(400);
 
   const text = visibleText(window);
+  const title = window.document.title;
   const result = {
     file,
     cjk: count(text, CJK),
     punct: count(text, PUNCT),
+    titleCjk: count(title, CJK),
+    title,
     layout: window.document.documentElement.classList.contains('rumi-i18n')
   };
   window.close();
@@ -122,6 +125,13 @@ async function checkDynamic(mode, status) {
     '<a id="add-rule"><span>添加规则</span></a>' +
     '<table><tbody><tr><td>还没有设备添加进来</td></tr></tbody></table>';
   window.document.body.appendChild(dynamic);
+
+  window.document.title = '小米路由器';
+  await sleep(250);
+  const titleOk = window.document.title === 'Xiaomi роутер';
+  window.document.title = 'Redmi路由器';
+  await sleep(250);
+  const redmiTitleOk = window.document.title === 'Redmi роутер';
   await sleep(250);
 
   const text = (selector) => dynamic.querySelector(selector).textContent;
@@ -133,7 +143,9 @@ async function checkDynamic(mode, status) {
     text('#version') ===
       'Текущая версия 2.0.28, У вас последняя версия, обновление не требуется.' &&
     text('#add-rule') === 'Добавить правило' &&
-    text('td') === 'Устройства ещё не добавлены';
+    text('td') === 'Устройства ещё не добавлены' &&
+    titleOk &&
+    redmiTitleOk;
   window.close();
   return ok;
 }
@@ -202,10 +214,14 @@ async function checkPopup(mode, status) {
     console.log(`\nРежим ${mode === 'firefox' ? 'Firefox (browser.*)' : 'Chromium (chrome.*)'}:`);
     for (const file of files) {
       const result = await checkPage(file, mode, status);
-      const ok = result.cjk === 0 && result.punct === 0 && result.layout;
+      const ok =
+        result.cjk === 0 &&
+        result.punct === 0 &&
+        result.titleCjk === 0 &&
+        result.layout;
       if (!ok) failed++;
       console.log(
-        `  ${ok ? 'OK  ' : 'FAIL'} ${file.padEnd(38)} CJK=${result.cjk} punct=${result.punct} layout=${result.layout}`
+        `  ${ok ? 'OK  ' : 'FAIL'} ${file.padEnd(38)} CJK=${result.cjk} punct=${result.punct} title="${result.title}" layout=${result.layout}`
       );
     }
     const dynamic = await checkDynamic(mode, status);
