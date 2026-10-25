@@ -4,6 +4,8 @@
 исходники перевода — JSON-файлы в `data/ru/`, из них собирается
 `extension/lang/zh_ru.json`.
 
+Участвуя в проекте, вы соглашаетесь с [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md).
+
 ## Что понадобится
 
 - Python 3.10+ (стандартная библиотека; для иконок — Pillow);

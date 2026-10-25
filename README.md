@@ -97,6 +97,12 @@ node run-all.js                # все страницы + динамическ�
 Репозиторий уже подготовлен: лицензия, CI для GitHub/GitLab, `.gitignore`,
 шаблоны issue/PR и инструкция [`docs/PUBLISHING.md`](docs/PUBLISHING.md).
 
+## Участие
+
+- как добавить перевод — [`CONTRIBUTING.md`](CONTRIBUTING.md);
+- правила общения — [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md);
+- уязвимости — [`SECURITY.md`](SECURITY.md).
+
 ## Лицензия
 
 Код и переводы — [MIT](LICENSE). Иконки нарисованы специально для проекта
