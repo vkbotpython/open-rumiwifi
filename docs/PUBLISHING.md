@@ -26,7 +26,7 @@ git status --short
 ```bash
 git init -b main
 git add .
-git commit -m "feat: initial release 2.1.7"
+git commit -m "feat: initial release 2.1.8"
 gh repo create open-rumiwifi --public --source=. --remote=origin --push
 ```
 
@@ -38,7 +38,7 @@ gh repo create open-rumiwifi --public --source=. --remote=origin --push
 ```bash
 git init -b main
 git add .
-git commit -m "feat: initial release 2.1.7"
+git commit -m "feat: initial release 2.1.8"
 git remote add origin https://github.com/<user>/open-rumiwifi.git
 git push -u origin main
 ```
@@ -50,7 +50,7 @@ git push -u origin main
 ```bash
 git init -b main
 git add .
-git commit -m "feat: initial release 2.1.7"
+git commit -m "feat: initial release 2.1.8"
 git remote add origin https://gitlab.com/<user>/open-rumiwifi.git
 git push -u origin main
 ```
@@ -75,21 +75,21 @@ xiaomi  redmi  miwifi  router  localization  russian  chrome-extension  manifest
 
 ```bash
 python tools/build.py
-git tag -a v2.1.7 -m "Open RUMIWIFI 2.1.7"
-git push origin v2.1.7
+git tag -a v2.1.8 -m "Open RUMIWIFI 2.1.8"
+git push origin v2.1.8
 ```
 
 `tools/build.py` создаёт в `dist/`:
 
-- `open-rumiwifi-2.1.7-chromium.zip` — для Chrome, Edge, Yandex, Opera;
-- `open-rumiwifi-2.1.7-firefox.xpi` — для Firefox;
-- `open-rumiwifi-2.1.7-firefox.zip` — тот же пакет для проверки;
+- `open-rumiwifi-2.1.8-chromium.zip` — для Chrome, Edge, Yandex, Opera;
+- `open-rumiwifi-2.1.8-firefox.xpi` — для Firefox;
+- `open-rumiwifi-2.1.8-firefox.zip` — тот же пакет для проверки;
 - `SHA256SUMS.txt` — контрольные суммы.
 
 Приложите эти файлы к релизу на GitHub/GitLab, чтобы расширение можно было
 скачать без клонирования и сборки.
 
-На GitLab: **Deploy → Releases → New release**, тег `v2.1.7`,
+На GitLab: **Deploy → Releases → New release**, тег `v2.1.8`,
 описание из `CHANGELOG.md`, файлы из `dist/`.
 
 ## 6. После публикации
@@ -114,5 +114,5 @@ git push origin v2.1.7
 - [ ] в репозитории нет `original/extracted/`, `*.crx`, `node_modules`, `dist/`;
 - [ ] лицензия GPL-3.0 видна на странице репозитория;
 - [ ] CI зелёный;
-- [ ] создан релиз `v2.1.7` с пакетами из `dist/`;
+- [ ] создан релиз `v2.1.8` с пакетами из `dist/`;
 - [ ] в описании репозитория есть фраза «не связан с Xiaomi».

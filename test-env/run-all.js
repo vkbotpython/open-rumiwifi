@@ -123,6 +123,7 @@ async function checkDynamic(mode, status) {
     '<p class="form-message">智能识别网口“1”作为WAN口</p>' +
     '<p id="version">当前版本<em>2.0.28</em>，你的版本是最新的，无需升级。</p>' +
     '<p id="enc">强加密(WPA2个人版)</p>' +
+    '<p id="mesh-step">2、接通子路由电源，等待System指示灯变成蓝色或白色常亮（颜色取决于具体型号）</p>' +
     '<a id="add-rule"><span>添加规则</span></a>' +
     '<table><tbody><tr><td>还没有设备添加进来</td></tr></tbody></table>';
   window.document.body.appendChild(dynamic);
@@ -144,6 +145,8 @@ async function checkDynamic(mode, status) {
     text('#version') ===
       'Текущая версия 2.0.28, У вас последняя версия, обновление не требуется.' &&
     text('#enc') === 'Надёжное WPA2 Personal' &&
+    text('#mesh-step') ===
+      '2. Включите питание сателлита и дождитесь, пока индикатор System станет постоянно синим или белым (цвет зависит от модели).' &&
     text('#add-rule') === 'Добавить правило' &&
     text('td') === 'Устройства ещё не добавлены' &&
     titleOk &&
